@@ -1,0 +1,17 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    paths:
+        - app
+        - database
+        - routes
+
+    level: 6
+
+    tmpDir: storage/framework/phpstan
+
+    # Laravel 11+ models declare casts via a `casts(): array` method rather than
+    # a $casts property; without this, Larastan can't see those cast types and
+    # falls back to raw DB column types (e.g. datetime columns read as string).
+    parseModelCastsMethod: true

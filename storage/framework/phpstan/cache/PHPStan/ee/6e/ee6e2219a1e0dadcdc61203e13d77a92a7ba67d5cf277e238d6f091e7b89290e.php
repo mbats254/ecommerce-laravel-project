@@ -1,0 +1,106 @@
+<?php declare(strict_types = 1);
+
+// odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\database\factories\ProductVariantFactory.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Factories\ProductVariantFactory
+return \PHPStan\Cache\CacheItem::__set_state(array(
+   'variableKey' => 'v2-6.70.0.3-8.4.18-98b283c9936c1148e7a327df26d018f7b0b7ae101204b9969b2adbdca36705f0',
+   'data' => 
+  array (
+    'locatedSource' => 
+    array (
+      'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+      'data' => 
+      array (
+        'name' => 'Database\\Factories\\ProductVariantFactory',
+        'filename' => 'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/database/factories/ProductVariantFactory.php',
+      ),
+    ),
+    'namespace' => 'Database\\Factories',
+    'name' => 'Database\\Factories\\ProductVariantFactory',
+    'shortName' => 'ProductVariantFactory',
+    'isInterface' => false,
+    'isTrait' => false,
+    'isEnum' => false,
+    'isBackedEnum' => false,
+    'modifiers' => 0,
+    'docComment' => '/**
+ * @extends Factory<ProductVariant>
+ */',
+    'attributes' => 
+    array (
+    ),
+    'startLine' => 12,
+    'endLine' => 28,
+    'startColumn' => 1,
+    'endColumn' => 1,
+    'parentClassName' => 'Illuminate\\Database\\Eloquent\\Factories\\Factory',
+    'implementsClassNames' => 
+    array (
+    ),
+    'traitClassNames' => 
+    array (
+    ),
+    'immediateConstants' => 
+    array (
+    ),
+    'immediateProperties' => 
+    array (
+    ),
+    'immediateMethods' => 
+    array (
+      'definition' => 
+      array (
+        'name' => 'definition',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Define the model\'s default state.
+ *
+ * @return array<string, mixed>
+ */',
+        'startLine' => 19,
+        'endLine' => 27,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'Database\\Factories',
+        'declaringClassName' => 'Database\\Factories\\ProductVariantFactory',
+        'implementingClassName' => 'Database\\Factories\\ProductVariantFactory',
+        'currentClassName' => 'Database\\Factories\\ProductVariantFactory',
+        'aliasName' => NULL,
+      ),
+    ),
+    'traitsData' => 
+    array (
+      'aliases' => 
+      array (
+      ),
+      'modifiers' => 
+      array (
+      ),
+      'precedences' => 
+      array (
+      ),
+      'hashes' => 
+      array (
+      ),
+    ),
+  ),
+));

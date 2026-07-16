@@ -36,6 +36,19 @@ test('updating an admin-editable model writes an audit log entry with the change
         ->and($log->changes)->toHaveKey('name');
 });
 
+test('deleting an admin-editable model writes an audit log entry', function () {
+    $category = Category::factory()->create();
+
+    $this->actingAs($this->admin)->deleteJson("/api/v1/admin/categories/{$category->id}")->assertNoContent();
+
+    $this->assertDatabaseHas('audit_logs', [
+        'action' => 'category.deleted',
+        'subject_type' => Category::class,
+        'subject_id' => $category->id,
+        'user_id' => $this->admin->id,
+    ]);
+});
+
 test('the audit log endpoint lists entries filterable by action', function () {
     $this->actingAs($this->admin)->postJson('/api/v1/admin/categories', [
         'name' => 'Laptops',

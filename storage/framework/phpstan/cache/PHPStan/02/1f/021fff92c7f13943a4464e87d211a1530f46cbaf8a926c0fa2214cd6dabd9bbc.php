@@ -1,0 +1,143 @@
+<?php declare(strict_types = 1);
+
+// odsl-/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Requests\Admin\UpdateCategoryRequest
+return \PHPStan\Cache\CacheItem::__set_state(array(
+   'variableKey' => 'v2-6.70.0.3-8.4.23-66e8d9bbe07dbb2ee88b4b930884a516824298bf181b4cfe3e8931560815627a',
+   'data' => 
+  array (
+    'locatedSource' => 
+    array (
+      'class' => 'PHPStan\\BetterReflection\\SourceLocator\\Located\\LocatedSource',
+      'data' => 
+      array (
+        'name' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'filename' => '/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php',
+      ),
+    ),
+    'namespace' => 'App\\Http\\Requests\\Admin',
+    'name' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+    'shortName' => 'UpdateCategoryRequest',
+    'isInterface' => false,
+    'isTrait' => false,
+    'isEnum' => false,
+    'isBackedEnum' => false,
+    'modifiers' => 0,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
+    'attributes' => 
+    array (
+    ),
+    'startLine' => 12,
+    'endLine' => 41,
+    'startColumn' => 1,
+    'endColumn' => 1,
+    'parentClassName' => 'Illuminate\\Foundation\\Http\\FormRequest',
+    'implementsClassNames' => 
+    array (
+    ),
+    'traitClassNames' => 
+    array (
+    ),
+    'immediateConstants' => 
+    array (
+    ),
+    'immediateProperties' => 
+    array (
+    ),
+    'immediateMethods' => 
+    array (
+      'authorize' => 
+      array (
+        'name' => 'authorize',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'bool',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Determine if the user is authorized to make this request.
+ */',
+        'startLine' => 17,
+        'endLine' => 20,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Http\\Requests\\Admin',
+        'declaringClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'implementingClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'currentClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'aliasName' => NULL,
+      ),
+      'rules' => 
+      array (
+        'name' => 'rules',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * Get the validation rules that apply to the request.
+ *
+ * @return array<string, ValidationRule|array<mixed>|string>
+ */',
+        'startLine' => 27,
+        'endLine' => 40,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Http\\Requests\\Admin',
+        'declaringClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'implementingClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'currentClassName' => 'App\\Http\\Requests\\Admin\\UpdateCategoryRequest',
+        'aliasName' => NULL,
+      ),
+    ),
+    'traitsData' => 
+    array (
+      'aliases' => 
+      array (
+      ),
+      'modifiers' => 
+      array (
+      ),
+      'precedences' => 
+      array (
+      ),
+      'hashes' => 
+      array (
+      ),
+    ),
+  ),
+));

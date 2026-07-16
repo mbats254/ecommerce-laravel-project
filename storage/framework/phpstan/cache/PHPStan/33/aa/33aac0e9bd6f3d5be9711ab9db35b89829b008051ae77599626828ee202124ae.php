@@ -1,0 +1,127 @@
+<?php declare(strict_types = 1);
+
+// ftm-/var/www/html/database/seeders/CouponSeeder.php
+return \PHPStan\Cache\CacheItem::__set_state(array(
+   'variableKey' => 'v5-2.3.2',
+   'data' => 
+  array (
+    0 => 
+    array (
+      'a88c61737ff710152d8e55e6023f1ba9' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'coupon' => 'App\\Models\\Coupon',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'className' => 'Database\\Seeders\\CouponSeeder',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '278653d806cacd7ea577ae7ce2a09c43' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Database\\Console\\Seeds',
+         'uses' => 
+        array (
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+        ),
+         'className' => 'Database\\Seeders\\CouponSeeder',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+         'traitData' => 
+        array (
+          0 => '/var/www/html/database/seeders/CouponSeeder.php',
+          1 => 'Database\\Seeders\\CouponSeeder',
+          2 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      '6e55ed0073c7376675fb1ee3202d62d6' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Illuminate\\Database\\Console\\Seeds',
+         'uses' => 
+        array (
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+        ),
+         'className' => 'Database\\Seeders\\CouponSeeder',
+         'functionName' => 'withoutModelEvents',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+         'traitData' => 
+        array (
+          0 => '/var/www/html/database/seeders/CouponSeeder.php',
+          1 => 'Database\\Seeders\\CouponSeeder',
+          2 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          3 => NULL,
+          4 => NULL,
+        ),
+      )),
+      'c374fd7a7528e47110b41af886881208' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'coupon' => 'App\\Models\\Coupon',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'className' => 'Database\\Seeders\\CouponSeeder',
+         'functionName' => 'run',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+    ),
+    1 => 
+    array (
+      '/var/www/html/database/seeders/CouponSeeder.php' => '81834b18eaa4e20b3de4ab4cccddefe7df12f256c60b23575b2dde5e6d61f6be',
+      '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Database/Console/Seeds/WithoutModelEvents.php' => 'b546128633d71f88c7834595917a65683bf5415a5add0eeba398571c2f63ccc0',
+    ),
+  ),
+));

@@ -3791,5 +3791,38 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php' => 
+    array (
+      0 => '62cf6809ed61dd492ae75e2c9d6606d5230698c075fddbc90ce9925b98fd3dc0',
+      1 => 
+      array (
+        0 => 'app\\console\\commands\\sendsalesreportcommand',
+      ),
+      2 => 
+      array (
+        0 => 'app\\console\\commands\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\SalesReportNotification.php' => 
+    array (
+      0 => 'b5a94a579a6fac8c0f1f968d3d240cc7f1249a1f963cf5ce52bcc71d43e79cf0',
+      1 => 
+      array (
+        0 => 'app\\notifications\\salesreportnotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\notifications\\__construct',
+        1 => 'app\\notifications\\via',
+        2 => 'app\\notifications\\tomail',
+        3 => 'app\\notifications\\formatmoney',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));

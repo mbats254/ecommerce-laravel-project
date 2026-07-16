@@ -9,3 +9,6 @@ Artisan::command('inspire', function () {
 })->purpose('Display an inspiring quote');
 
 Schedule::command('app:generate-ai-insights')->dailyAt('02:00');
+
+Schedule::command('app:send-sales-report --period=daily')->dailyAt('17:00');
+Schedule::command('app:send-sales-report --period=weekly')->weeklyOn(0, '14:00');

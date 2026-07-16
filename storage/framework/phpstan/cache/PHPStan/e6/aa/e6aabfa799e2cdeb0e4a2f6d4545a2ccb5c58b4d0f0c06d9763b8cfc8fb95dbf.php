@@ -5,7 +5,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
    'variableKey' => 'v1-enums',
    'data' => 
   array (
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../guzzlehttp/guzzle/src/functions_include.php' => 
+    '/var/www/html/vendor/composer/../guzzlehttp/guzzle/src/functions_include.php' => 
     array (
       0 => '188619ae14fd7457f450a02fba9f4ab58ef3fd2eccf90ee5e0d39b2b6078480a',
       1 => 
@@ -18,7 +18,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Collections/functions.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Collections/functions.php' => 
     array (
       0 => '8308c0ddc8e20ec2fd6c362632aa4548612135932e255de6837cf30749ee55a8',
       1 => 
@@ -32,7 +32,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Collections/helpers.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Collections/helpers.php' => 
     array (
       0 => '0ab3c32b59702c826377fa2af8246cc11c803f7f69f86c41bfe84ab8fb86a8df',
       1 => 
@@ -55,7 +55,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Events/functions.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Events/functions.php' => 
     array (
       0 => 'a92f9ce9127248e29cb81564de57d9ca664a7fd7beecd460d04dbe9ec32c604f',
       1 => 
@@ -69,7 +69,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Filesystem/functions.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Filesystem/functions.php' => 
     array (
       0 => 'b73728cc75efbf6254ae79b77ecead9722b85f11abf07b33c5886e6169aec282',
       1 => 
@@ -83,7 +83,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Foundation/helpers.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Foundation/helpers.php' => 
     array (
       0 => '3fe9475e8c073a9c58af7e9cb8c74416031941413358f6082d558134d416ba86',
       1 => 
@@ -160,7 +160,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Log/functions.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Log/functions.php' => 
     array (
       0 => '9e7bd52e145e686ab716fceea81534f81528e339b48c498c8212006779c286da',
       1 => 
@@ -174,7 +174,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Reflection/helpers.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Reflection/helpers.php' => 
     array (
       0 => '7a07703c5343527b0eac6f26dc7f52d9a34653ba8a90b1a8800d5600f0331740',
       1 => 
@@ -191,7 +191,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Support/functions.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Support/functions.php' => 
     array (
       0 => 'fe246e687097276d36307d934b3fdedf5fd9ea06b2681ed9088f0ea07ddfd9cb',
       1 => 
@@ -217,7 +217,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/framework/src/Illuminate/Support/helpers.php' => 
+    '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Support/helpers.php' => 
     array (
       0 => '60a6387a3241a9d7780bf04bf2d928ce75e6a37c78cca9d9e3a8ee7599e3f613',
       1 => 
@@ -255,7 +255,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../laravel/prompts/src/helpers.php' => 
+    '/var/www/html/vendor/composer/../laravel/prompts/src/helpers.php' => 
     array (
       0 => '7ccc2f3fa7d8d3f8504785839a762028768775a492612a1c88a2f2a72e422e08',
       1 => 
@@ -299,7 +299,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../mockery/mockery/library/helpers.php' => 
+    '/var/www/html/vendor/composer/../mockery/mockery/library/helpers.php' => 
     array (
       0 => '93da8798c256eafe88dfc319557f853143c48aa1027f5197de1b963a87503e8f',
       1 => 
@@ -318,7 +318,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../mockery/mockery/library/Mockery.php' => 
+    '/var/www/html/vendor/composer/../mockery/mockery/library/Mockery.php' => 
     array (
       0 => '8b6663d4d2c8acda387d4e3a48a8d8998f80315912dcd119a1f67c4ada60f43f',
       1 => 
@@ -386,7 +386,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../myclabs/deep-copy/src/DeepCopy/deep_copy.php' => 
+    '/var/www/html/vendor/composer/../myclabs/deep-copy/src/DeepCopy/deep_copy.php' => 
     array (
       0 => '83a2f8c4b6e65d0c6c658a60614859a62faccc0f11f014c5ad609ba7d1fcebc2',
       1 => 
@@ -400,7 +400,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../nunomaduro/collision/./src/Adapters/Phpunit/Autoload.php' => 
+    '/var/www/html/vendor/composer/../nunomaduro/collision/./src/Adapters/Phpunit/Autoload.php' => 
     array (
       0 => '2b94063d75f6b7e4f0e46319d6a0d478df2be33ee3567c69fb91f17f15d802df',
       1 => 
@@ -413,7 +413,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../nunomaduro/termwind/src/Functions.php' => 
+    '/var/www/html/vendor/composer/../nunomaduro/termwind/src/Functions.php' => 
     array (
       0 => '211730f0c2316e6eed107a9523efcf48da5b3413431899947c7c22bfbc3b538f',
       1 => 
@@ -432,7 +432,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../pestphp/pest/src/Functions.php' => 
+    '/var/www/html/vendor/composer/../pestphp/pest/src/Functions.php' => 
     array (
       0 => 'd004a73527acc2a5e4547f4cba2d4d5694403ac07c82c21e9c29adc61c8a896b',
       1 => 
@@ -459,7 +459,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../pestphp/pest/src/Pest.php' => 
+    '/var/www/html/vendor/composer/../pestphp/pest/src/Pest.php' => 
     array (
       0 => '4080cb3d531ac55f7c197bb798f10ea9c48c8bc614ccfa3dcf5e0bcb14cf09fe',
       1 => 
@@ -474,7 +474,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../pestphp/pest-plugin-arch/src/Autoload.php' => 
+    '/var/www/html/vendor/composer/../pestphp/pest-plugin-arch/src/Autoload.php' => 
     array (
       0 => 'e81b074e08d0489c9ed7791ff2c45290a23e9a245088861c3f5b631064e81a6f',
       1 => 
@@ -488,7 +488,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../pestphp/pest-plugin-laravel/src/Autoload.php' => 
+    '/var/www/html/vendor/composer/../pestphp/pest-plugin-laravel/src/Autoload.php' => 
     array (
       0 => '7da5f79a9b4edc36b03e2296eb126ecfb7417a4816b4f867ceffd65629828155',
       1 => 
@@ -501,7 +501,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../phpstan/phpstan/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../phpstan/phpstan/bootstrap.php' => 
     array (
       0 => '7e685476f4b179a3b113e8dc5e1f72456f65ec7b770514128eb3d06008e772b7',
       1 => 
@@ -516,7 +516,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php' => 
+    '/var/www/html/vendor/composer/../phpunit/phpunit/src/Framework/Assert/Functions.php' => 
     array (
       0 => 'f6ff5e503f687f79e9cf782157e645f33264dfc839e3607a456d975caf3e904a',
       1 => 
@@ -771,7 +771,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../psy/psysh/src/functions.php' => 
+    '/var/www/html/vendor/composer/../psy/psysh/src/functions.php' => 
     array (
       0 => '832ef9e9db50daea72597825b6b59327dd72b63da6e0146a2346a48915dbdab6',
       1 => 
@@ -788,7 +788,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../ralouphie/getallheaders/src/getallheaders.php' => 
+    '/var/www/html/vendor/composer/../ralouphie/getallheaders/src/getallheaders.php' => 
     array (
       0 => 'b2275333d82617732ad407dd55420ff16c0d0c19a5599d60aa9e1e3871d5a654',
       1 => 
@@ -802,7 +802,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../ramsey/uuid/src/functions.php' => 
+    '/var/www/html/vendor/composer/../ramsey/uuid/src/functions.php' => 
     array (
       0 => 'ca402a0577a7b3235e22fbc2bd6d6d5282900b039debb13a9f9400390668f45e',
       1 => 
@@ -823,7 +823,46 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../spatie/laravel-permission/src/helpers.php' => 
+    '/var/www/html/vendor/composer/../sentry/sentry/src/functions.php' => 
+    array (
+      0 => '3bdda3598d2cb0ab79242d1348a2bfa6b02b8fd70a1b2be630ae0b1ea494eef6',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'sentry\\init',
+        1 => 'sentry\\capturemessage',
+        2 => 'sentry\\captureexception',
+        3 => 'sentry\\captureevent',
+        4 => 'sentry\\capturelasterror',
+        5 => 'sentry\\capturecheckin',
+        6 => 'sentry\\withmonitor',
+        7 => 'sentry\\addbreadcrumb',
+        8 => 'sentry\\configurescope',
+        9 => 'sentry\\withscope',
+        10 => 'sentry\\startcontext',
+        11 => 'sentry\\endcontext',
+        12 => 'sentry\\withcontext',
+        13 => 'sentry\\starttransaction',
+        14 => 'sentry\\trace',
+        15 => 'sentry\\getotlptracesendpointurl',
+        16 => 'sentry\\gettraceparent',
+        17 => 'sentry\\getw3ctraceparent',
+        18 => 'sentry\\getbaggage',
+        19 => 'sentry\\continuetrace',
+        20 => 'sentry\\logger',
+        21 => 'sentry\\metrics',
+        22 => 'sentry\\tracemetrics',
+        23 => 'sentry\\trace_metrics',
+        24 => 'sentry\\addfeatureflag',
+        25 => 'sentry\\flush',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    '/var/www/html/vendor/composer/../spatie/laravel-permission/src/helpers.php' => 
     array (
       0 => '95eaff1b51b8fd6b9d6ff753b549581ac03c763dcf9a19238b78e08b427138c3',
       1 => 
@@ -839,7 +878,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/clock/Resources/now.php' => 
+    '/var/www/html/vendor/composer/../symfony/clock/Resources/now.php' => 
     array (
       0 => '26423cefde6ed92b0e0d5476a890f91c199546fc23b7c07f6c252c8c8f74934a',
       1 => 
@@ -853,7 +892,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/deprecation-contracts/function.php' => 
+    '/var/www/html/vendor/composer/../symfony/deprecation-contracts/function.php' => 
     array (
       0 => '7b613b9e9473ab25c57052225446644319d4cfc18fb757921d827c278feadeb1',
       1 => 
@@ -867,7 +906,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-ctype/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-ctype/bootstrap.php' => 
     array (
       0 => 'df3a3ec4b85eb857e59297b6dd6b95245bc30bdb725bf947b20a819256abe052',
       1 => 
@@ -891,7 +930,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-intl-grapheme/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-intl-grapheme/bootstrap.php' => 
     array (
       0 => 'f8fe6f266364354cc84dfa5171da4e717553bb0f84d34ec52ff11a608b500c51',
       1 => 
@@ -919,7 +958,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         2 => 'GRAPHEME_EXTR_MAXCHARS',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-intl-idn/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-intl-idn/bootstrap.php' => 
     array (
       0 => 'd1c848be8e40cd932b4c417062a06e344aebe6beefebaf627f4990a05e651653',
       1 => 
@@ -972,7 +1011,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         35 => 'IDNA_ERROR_CONTEXTJ',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-intl-normalizer/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-intl-normalizer/bootstrap.php' => 
     array (
       0 => '22d58e117d75904b90c22c692c908d2f1f1cd54f1bcfaf94168a8bcb7a7f6996',
       1 => 
@@ -988,7 +1027,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-mbstring/bootstrap.php' => 
     array (
       0 => '0449da72338523c51270ddfe84447cd16fc110b7d4fae2bee1c2790d9f113fb0',
       1 => 
@@ -1001,7 +1040,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-php80/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-php80/bootstrap.php' => 
     array (
       0 => 'b4d02a09f7ff5a3bda455bcba0db48e110bcc0cb3aae554f9b1635aa792c757a',
       1 => 
@@ -1022,7 +1061,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'FILTER_VALIDATE_BOOL',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-php81/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-php81/bootstrap.php' => 
     array (
       0 => '23ef4152575462b2b9ca8cfb8c9888727e8c0eb1c7a6bce88052b07cf2a2e9d1',
       1 => 
@@ -1039,7 +1078,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'CURLOPT_ISSUERCERT_BLOB',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-php83/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-php83/bootstrap.php' => 
     array (
       0 => 'c1a38e6aeea87046fb4d04d5e5aeea5d4287faa995b1701fc76a1f7694af5476',
       1 => 
@@ -1059,7 +1098,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-php84/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-php84/bootstrap.php' => 
     array (
       0 => '3d9f616921fe53c928b93fef324736cc82b90dd98b09b06f7c74687b7000586b',
       1 => 
@@ -1089,7 +1128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'CURL_HTTP_VERSION_3ONLY',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-php85/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-php85/bootstrap.php' => 
     array (
       0 => '284aa090970bfaca0589ac017efd9116bf54f6116fbf1203bb91e652ee1d4115',
       1 => 
@@ -1108,7 +1147,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/polyfill-uuid/bootstrap.php' => 
+    '/var/www/html/vendor/composer/../symfony/polyfill-uuid/bootstrap.php' => 
     array (
       0 => '971a77f0d03fd33f8ed6cce53010a372b76ffc64aebf1c7ae96bb613002d6b0b',
       1 => 
@@ -1146,7 +1185,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         12 => 'UUID_TYPE_INVALID',
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/string/Resources/functions.php' => 
+    '/var/www/html/vendor/composer/../symfony/string/Resources/functions.php' => 
     array (
       0 => '974e6a19bccfc71615061207a08243311152b4759ce416b8f2bc3390790b1644',
       1 => 
@@ -1162,7 +1201,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/translation/Resources/functions.php' => 
+    '/var/www/html/vendor/composer/../symfony/translation/Resources/functions.php' => 
     array (
       0 => 'd3d21d3abab120c2488eaf5850182d2a6c64e42c27723500a58c980d658da8b6',
       1 => 
@@ -1176,7 +1215,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' => 
+    '/var/www/html/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' => 
     array (
       0 => 'b56854286c54a7e648bbb8b5126deb36f673bde888085c4cc0130cb1afbf27eb',
       1 => 
@@ -1186,45 +1225,6 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'dump',
         1 => 'dd',
-      ),
-      3 => 
-      array (
-      ),
-    ),
-    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../sentry/sentry/src/functions.php' => 
-    array (
-      0 => '3bdda3598d2cb0ab79242d1348a2bfa6b02b8fd70a1b2be630ae0b1ea494eef6',
-      1 => 
-      array (
-      ),
-      2 => 
-      array (
-        0 => 'sentry\\init',
-        1 => 'sentry\\capturemessage',
-        2 => 'sentry\\captureexception',
-        3 => 'sentry\\captureevent',
-        4 => 'sentry\\capturelasterror',
-        5 => 'sentry\\capturecheckin',
-        6 => 'sentry\\withmonitor',
-        7 => 'sentry\\addbreadcrumb',
-        8 => 'sentry\\configurescope',
-        9 => 'sentry\\withscope',
-        10 => 'sentry\\startcontext',
-        11 => 'sentry\\endcontext',
-        12 => 'sentry\\withcontext',
-        13 => 'sentry\\starttransaction',
-        14 => 'sentry\\trace',
-        15 => 'sentry\\getotlptracesendpointurl',
-        16 => 'sentry\\gettraceparent',
-        17 => 'sentry\\getw3ctraceparent',
-        18 => 'sentry\\getbaggage',
-        19 => 'sentry\\continuetrace',
-        20 => 'sentry\\logger',
-        21 => 'sentry\\metrics',
-        22 => 'sentry\\tracemetrics',
-        23 => 'sentry\\trace_metrics',
-        24 => 'sentry\\addfeatureflag',
-        25 => 'sentry\\flush',
       ),
       3 => 
       array (

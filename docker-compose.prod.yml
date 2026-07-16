@@ -1,0 +1,106 @@
+# Production compose file — deployed by deploy/deploy.sh (see
+# docs/ci-cd-deployment-plan.md). Unlike docker-compose.yml (local dev),
+# nothing here is built or bind-mounted from source: app/horizon/scheduler
+# and the webserver run entirely off images built and pushed by CI
+# (docker/php/Dockerfile's `app` and `web` targets), tagged by commit SHA.
+#
+# A production server needs only this file plus a hand-maintained `.env` —
+# no git checkout of the application code required.
+#
+# Required variables (export before `docker compose -f docker-compose.prod.yml ...`,
+# see deploy/deploy.sh):
+#   REGISTRY_IMAGE  e.g. registry.gitlab.com/<namespace>/<project>
+#   IMAGE_TAG       commit SHA to deploy
+
+x-app: &app
+  working_dir: /var/www/html
+  env_file: .env
+  environment:
+    OPTIMIZE_ON_BOOT: "true"
+  networks:
+    - anchor
+  restart: unless-stopped
+  logging:
+    driver: json-file
+    options:
+      max-size: "10m"
+      max-file: "3"
+
+services:
+  app:
+    <<: *app
+    image: ${REGISTRY_IMAGE}/app:${IMAGE_TAG}
+    container_name: anchor-api-app
+    depends_on:
+      - redis
+
+  webserver:
+    image: ${REGISTRY_IMAGE}/web:${IMAGE_TAG}
+    container_name: anchor-api-webserver
+    ports:
+      - "8000:80"
+    depends_on:
+      - app
+    networks:
+      - anchor
+    restart: unless-stopped
+
+  horizon:
+    <<: *app
+    image: ${REGISTRY_IMAGE}/app:${IMAGE_TAG}
+    container_name: anchor-api-horizon
+    command: ["php", "artisan", "horizon"]
+
+  scheduler:
+    <<: *app
+    image: ${REGISTRY_IMAGE}/app:${IMAGE_TAG}
+    container_name: anchor-api-scheduler
+    command: ["php", "artisan", "schedule:work"]
+
+  redis:
+    image: redis:7-alpine
+    container_name: anchor-api-redis
+    volumes:
+      - redis-data:/data
+    networks:
+      - anchor
+    restart: unless-stopped
+
+  # Reindexable from MySQL via `artisan scout:import` if this volume is ever
+  # lost, so — unlike MySQL — self-hosting it here needs no backup story.
+  meilisearch:
+    image: getmeili/meilisearch:v1.11
+    container_name: anchor-api-meilisearch
+    environment:
+      MEILI_NO_ANALYTICS: "true"
+    volumes:
+      - meilisearch-data:/meili_data
+    networks:
+      - anchor
+    restart: unless-stopped
+
+  # Uncomment if self-hosting MySQL instead of a managed database (see
+  # docs/ci-cd-deployment-plan.md, decision 2.3 — a managed DB is
+  # recommended). If self-hosting, wire up the backup cron from Phase 6 of
+  # that doc before relying on this in real production.
+  # mysql:
+  #   image: mysql:8.0
+  #   container_name: anchor-api-mysql
+  #   env_file: .env
+  #   environment:
+  #     MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  #     MYSQL_DATABASE: ${DB_DATABASE}
+  #   volumes:
+  #     - mysql-data:/var/lib/mysql
+  #   networks:
+  #     - anchor
+  #   restart: unless-stopped
+
+networks:
+  anchor:
+    driver: bridge
+
+volumes:
+  redis-data:
+  meilisearch-data:
+  # mysql-data:

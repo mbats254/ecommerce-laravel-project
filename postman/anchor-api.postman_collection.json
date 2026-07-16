@@ -1,0 +1,1119 @@
+{
+  "info": {
+    "_postman_id": "6f0a1c3e-6b2a-4b3a-9a3e-anchorapi0001",
+    "name": "Anchor API",
+    "description": "Complete request collection for the Anchor e-commerce API (Laravel 12, Sanctum SPA cookie auth). Folders mirror docs/api-design.md's domains in user-journey order: Auth -> Catalog -> Cart/Checkout -> Orders/Payments/Returns -> Admin domains -> Reports/Settings/Audit -> Health.\n\n## Auth setup (do this once per Postman session)\n1. Enable this collection's cookie jar: Settings > General > 'Automatically follow redirects' and make sure Postman's cookie manager is allowed to store cookies for {{baseUrl}}.\n2. Run 'Auth > Get CSRF Cookie' first. It hits Sanctum's /sanctum/csrf-cookie route and sets the XSRF-TOKEN cookie.\n3. Run 'Auth > Login' (or Register). Cookies (session + XSRF-TOKEN) are stored automatically by Postman against {{baseUrl}}.\n4. Every subsequent request automatically sends the session cookie. This collection's pre-request script also copies the XSRF-TOKEN cookie into an X-XSRF-TOKEN header on every request, matching what api-client.ts does in the real frontend — you don't need to do this by hand.\n5. Admin endpoints require the logged-in user to hold the relevant Spatie permission (see each folder's description) — log in as a seeded Administrator, or promote a user via `php artisan tinker`.\n\n## Known contract inconsistency (flagged, not fixed by this collection)\nCustomer-facing endpoints and Settings use camelCase body fields (`productId`, `shippingAddressId`, `emailOnNewOrder`). Admin write endpoints (categories/brands/products/warehouses/leads/quotations/coupons/banners/users/roles/inventory/order-status) currently use snake_case (`category_id`, `is_active`, `full_name`). The example bodies below match the API AS IT CURRENTLY BEHAVES so every request in this collection actually works — this is a pre-existing inconsistency worth fixing in the backend, not something to paper over here.\n\n## Variables\n`baseUrl` is the app root (no /api). Requests build `{{baseUrl}}/api/v1/...` themselves. ID variables (e.g. `{{categoryId}}`) are auto-populated by test scripts on the matching 'Create'/'Register' requests where practical — run folders top-to-bottom the first time through.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Mirrors what axios/api-client.ts does automatically for Sanctum SPA auth:",
+          "// read the XSRF-TOKEN cookie set by /sanctum/csrf-cookie and echo it back",
+          "// as a request header, since Postman's cookie jar sends the cookie but",
+          "// does not do this translation for you.",
+          "const token = pm.cookies.get('XSRF-TOKEN');",
+          "if (token) {",
+          "    pm.request.headers.upsert({ key: 'X-XSRF-TOKEN', value: decodeURIComponent(token) });",
+          "}"
+        ]
+      }
+    }
+  ],
+  "variable": [
+    { "key": "baseUrl", "value": "http://localhost:8000", "description": "App root, no /api suffix. Swap to your Herd domain (e.g. http://anchor-api.test) if not using `php artisan serve`." },
+    { "key": "userEmail", "value": "jane.customer@example.com" },
+    { "key": "userPassword", "value": "Password!234" },
+    { "key": "adminEmail", "value": "admin@anchor.test" },
+    { "key": "adminPassword", "value": "Password!234" },
+    { "key": "addressId", "value": "" },
+    { "key": "cartItemId", "value": "" },
+    { "key": "orderNumber", "value": "" },
+    { "key": "productSlug", "value": "" },
+    { "key": "categorySlug", "value": "" },
+    { "key": "brandSlug", "value": "" },
+    { "key": "categoryId", "value": "" },
+    { "key": "brandId", "value": "" },
+    { "key": "productId", "value": "" },
+    { "key": "reviewId", "value": "" },
+    { "key": "warehouseId", "value": "" },
+    { "key": "inventoryId", "value": "" },
+    { "key": "leadId", "value": "" },
+    { "key": "quotationId", "value": "" },
+    { "key": "couponId", "value": "" },
+    { "key": "bannerId", "value": "" },
+    { "key": "returnId", "value": "" },
+    { "key": "adminOrderId", "value": "" },
+    { "key": "adminUserId", "value": "" }
+  ],
+  "item": [
+    {
+      "name": "Auth",
+      "description": "Registration, login, and password recovery. First four endpoints are unauthenticated and rate-limited (throttle:auth, 5/min/IP).",
+      "item": [
+        {
+          "name": "Get CSRF Cookie",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/sanctum/csrf-cookie", "host": ["{{baseUrl}}"], "path": ["sanctum", "csrf-cookie"] },
+            "description": "Run this before Register/Login in a fresh Postman session so the XSRF-TOKEN cookie exists."
+          }
+        },
+        {
+          "name": "Register",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.test('registered', () => pm.expect(pm.response.code).to.eql(201)); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Jane Customer\",\n  \"email\": \"{{userEmail}}\",\n  \"phone\": \"254712345678\",\n  \"password\": \"{{userPassword}}\",\n  \"password_confirmation\": \"{{userPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/register", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "register"] },
+            "description": "Creates the account and logs it in (session cookie set). Queues an email-verification job."
+          }
+        },
+        {
+          "name": "Login (Customer)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"email\": \"{{userEmail}}\",\n  \"password\": \"{{userPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "login"] }
+          }
+        },
+        {
+          "name": "Login (Administrator)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"email\": \"{{adminEmail}}\",\n  \"password\": \"{{adminPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "login"] },
+            "description": "Use a seeded Administrator (see RolesAndPermissionsSeeder) before running the Admin folders."
+          }
+        },
+        {
+          "name": "Forgot Password",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"email\": \"{{userEmail}}\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/password/forgot", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "password", "forgot"] }
+          }
+        },
+        {
+          "name": "Reset Password",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"token\": \"REPLACE_WITH_TOKEN_FROM_EMAIL\",\n  \"email\": \"{{userEmail}}\",\n  \"password\": \"NewPassword!234\",\n  \"password_confirmation\": \"NewPassword!234\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/password/reset", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "password", "reset"] },
+            "description": "Token comes from the password-reset email/notification log in local dev."
+          }
+        },
+        {
+          "name": "Me",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/me", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "me"] },
+            "description": "Requires an authenticated session (auth:sanctum)."
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/logout", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "logout"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Account",
+      "description": "The logged-in customer's own shipping addresses. All require auth:sanctum.",
+      "item": [
+        {
+          "name": "List Addresses",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/account/addresses", "host": ["{{baseUrl}}"], "path": ["api", "v1", "account", "addresses"] }
+          }
+        },
+        {
+          "name": "Create Address",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('addressId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"label\": \"Home\",\n  \"full_name\": \"Jane Customer\",\n  \"phone\": \"254712345678\",\n  \"county\": \"Nairobi\",\n  \"city\": \"Nairobi\",\n  \"address_line\": \"123 Moi Avenue\",\n  \"is_default\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/account/addresses", "host": ["{{baseUrl}}"], "path": ["api", "v1", "account", "addresses"] }
+          }
+        },
+        {
+          "name": "Update Address",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"city\": \"Mombasa\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/account/addresses/{{addressId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "account", "addresses", "{{addressId}}"] }
+          }
+        },
+        {
+          "name": "Delete Address",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/account/addresses/{{addressId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "account", "addresses", "{{addressId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Catalog (Storefront)",
+      "description": "Public, unauthenticated browsing endpoints.",
+      "item": [
+        {
+          "name": "List Categories",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/categories", "host": ["{{baseUrl}}"], "path": ["api", "v1", "categories"] }
+          }
+        },
+        {
+          "name": "Get Category",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/categories/{{categorySlug}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "categories", "{{categorySlug}}"] }
+          }
+        },
+        {
+          "name": "List Brands",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/brands", "host": ["{{baseUrl}}"], "path": ["api", "v1", "brands"] }
+          }
+        },
+        {
+          "name": "Get Brand",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/brands/{{brandSlug}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "brands", "{{brandSlug}}"] }
+          }
+        },
+        {
+          "name": "List Products (filtered + sorted)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/products?categorySlug={{categorySlug}}&brandSlugs[]={{brandSlug}}&priceMin=100&priceMax=50000&query=phone&sort=price_asc&page=1&perPage=15",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "products"],
+              "query": [
+                { "key": "categorySlug", "value": "{{categorySlug}}" },
+                { "key": "brandSlugs[]", "value": "{{brandSlug}}" },
+                { "key": "priceMin", "value": "100" },
+                { "key": "priceMax", "value": "50000" },
+                { "key": "query", "value": "phone" },
+                { "key": "sort", "value": "price_asc", "description": "price_asc | price_desc | name_asc | name_desc" },
+                { "key": "page", "value": "1" },
+                { "key": "perPage", "value": "15" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Product",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/products/{{productSlug}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "products", "{{productSlug}}"] }
+          }
+        },
+        {
+          "name": "Product Reviews",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/products/{{productSlug}}/reviews", "host": ["{{baseUrl}}"], "path": ["api", "v1", "products", "{{productSlug}}", "reviews"] }
+          }
+        },
+        {
+          "name": "Search",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/search?q=phone", "host": ["{{baseUrl}}"], "path": ["api", "v1", "search"], "query": [{ "key": "q", "value": "phone" }] }
+          }
+        },
+        {
+          "name": "Flash Deals",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/flash-deals", "host": ["{{baseUrl}}"], "path": ["api", "v1", "flash-deals"] }
+          }
+        },
+        {
+          "name": "List Banners (storefront)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/banners", "host": ["{{baseUrl}}"], "path": ["api", "v1", "banners"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Wishlist & Compare",
+      "description": "Requires auth:sanctum.",
+      "item": [
+        {
+          "name": "List Wishlist",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/wishlist", "host": ["{{baseUrl}}"], "path": ["api", "v1", "wishlist"] }
+          }
+        },
+        {
+          "name": "Toggle Wishlist Item",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/wishlist/{{productId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "wishlist", "{{productId}}"] },
+            "description": "Adds if absent, removes if present."
+          }
+        },
+        {
+          "name": "List Compare",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/compare", "host": ["{{baseUrl}}"], "path": ["api", "v1", "compare"] }
+          }
+        },
+        {
+          "name": "Toggle Compare Item",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/compare/{{productId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "compare", "{{productId}}"] },
+            "description": "Max 4 products; the 5th toggle attempt is rejected."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Cart",
+      "description": "Session-keyed for guests, user-keyed once logged in (CartResolver merges on login).",
+      "item": [
+        {
+          "name": "Start/Get-or-Create Cart",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/cart", "host": ["{{baseUrl}}"], "path": ["api", "v1", "cart"] }
+          }
+        },
+        {
+          "name": "Show Cart",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/cart", "host": ["{{baseUrl}}"], "path": ["api", "v1", "cart"] }
+          }
+        },
+        {
+          "name": "Add Cart Item",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('cartItemId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"productId\": \"{{productId}}\",\n  \"quantity\": 1\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/cart/items", "host": ["{{baseUrl}}"], "path": ["api", "v1", "cart", "items"] }
+          }
+        },
+        {
+          "name": "Update Cart Item Quantity",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"quantity\": 2\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/cart/items/{{cartItemId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "cart", "items", "{{cartItemId}}"] }
+          }
+        },
+        {
+          "name": "Remove Cart Item",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/cart/items/{{cartItemId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "cart", "items", "{{cartItemId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Coupons",
+      "item": [
+        {
+          "name": "Validate Coupon",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"code\": \"SAVE10\",\n  \"cartTotal\": 5000\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/coupons/validate", "host": ["{{baseUrl}}"], "path": ["api", "v1", "coupons", "validate"] },
+            "description": "Preview-only; the same ValidateCouponAction runs for real inside Checkout."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Checkout",
+      "item": [
+        {
+          "name": "Checkout (Cash on Delivery)",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('orderNumber', pm.response.json().orderNumber); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"shippingAddressId\": \"{{addressId}}\",\n  \"deliveryMethod\": \"standard\",\n  \"paymentMethod\": \"cash_on_delivery\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/checkout", "host": ["{{baseUrl}}"], "path": ["api", "v1", "checkout"] },
+            "description": "throttle:checkout (10/min/user). Re-validates price and stock server-side regardless of the cart snapshot."
+          }
+        },
+        {
+          "name": "Checkout with Coupon (M-Pesa)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"shippingAddressId\": \"{{addressId}}\",\n  \"deliveryMethod\": \"express\",\n  \"paymentMethod\": \"mpesa\",\n  \"couponCode\": \"SAVE10\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/checkout", "host": ["{{baseUrl}}"], "path": ["api", "v1", "checkout"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Orders & Returns (Customer)",
+      "item": [
+        {
+          "name": "List My Orders",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/orders?perPage=15", "host": ["{{baseUrl}}"], "path": ["api", "v1", "orders"], "query": [{ "key": "perPage", "value": "15" }] }
+          }
+        },
+        {
+          "name": "Get Order (with timeline)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/orders/{{orderNumber}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "orders", "{{orderNumber}}"] }
+          }
+        },
+        {
+          "name": "Cancel Order",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/orders/{{orderNumber}}/cancel", "host": ["{{baseUrl}}"], "path": ["api", "v1", "orders", "{{orderNumber}}", "cancel"] },
+            "description": "Only legal from `pending`/`processing` per the order state machine; restocks inventory."
+          }
+        },
+        {
+          "name": "Request Return",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"orderItemId\": \"REPLACE_WITH_ORDER_ITEM_ID\",\n  \"reason\": \"Item arrived damaged.\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/orders/{{orderNumber}}/returns", "host": ["{{baseUrl}}"], "path": ["api", "v1", "orders", "{{orderNumber}}", "returns"] },
+            "description": "Only allowed once the order is `delivered`; orderItemId comes from 'Get Order' response's items array."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Payments (M-Pesa)",
+      "item": [
+        {
+          "name": "STK Push",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"orderId\": \"REPLACE_WITH_ORDER_ID\",\n  \"phone\": \"254712345678\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/payments/mpesa/stk-push", "host": ["{{baseUrl}}"], "path": ["api", "v1", "payments", "mpesa", "stk-push"] },
+            "description": "orderId is the order's ULID (not the order_number). Only valid for an order awaiting mpesa payment."
+          }
+        },
+        {
+          "name": "M-Pesa Callback (Daraja webhook simulation)",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Body\": {\n    \"stkCallback\": {\n      \"MerchantRequestID\": \"29115-34620561-1\",\n      \"CheckoutRequestID\": \"ws_CO_191220191020363925\",\n      \"ResultCode\": 0,\n      \"ResultDesc\": \"The service request is processed successfully.\",\n      \"CallbackMetadata\": {\n        \"Item\": [\n          { \"Name\": \"Amount\", \"Value\": 1000 },\n          { \"Name\": \"MpesaReceiptNumber\", \"Value\": \"NLJ7RT61SV\" },\n          { \"Name\": \"TransactionDate\", \"Value\": 20260716102115 },\n          { \"Name\": \"PhoneNumber\", \"Value\": 254712345678 }\n        ]\n      }\n    }\n  }\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "{{baseUrl}}/api/v1/payments/mpesa/callback", "host": ["{{baseUrl}}"], "path": ["api", "v1", "payments", "mpesa", "callback"] },
+            "description": "Real Daraja calls are IP-allowlisted (mpesa.verify-ip middleware) and throttled (throttle:webhooks, 60/min). From Postman on localhost this will 403 unless your IP/allowlist config permits it — relax `services.mpesa.allowed_callback_ips` locally to test. CheckoutRequestID must match a payment already created by STK Push (idempotent on provider_reference)."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Users & Roles",
+      "description": "Requires the `users.manage` permission (Administrator role).",
+      "item": [
+        {
+          "name": "List Users",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/users?status=active&role=Catalog+Manager&sort=-created_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "users"],
+              "query": [
+                { "key": "status", "value": "active", "description": "active | invited | suspended" },
+                { "key": "role", "value": "Catalog Manager" },
+                { "key": "sort", "value": "-created_at", "description": "name | created_at | last_login_at (prefix - for desc)" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Admin User",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('adminUserId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"New Admin\",\n  \"email\": \"new.admin@anchor.test\",\n  \"phone\": \"254700000000\",\n  \"role\": \"Catalog Manager\",\n  \"password\": \"Password!234\",\n  \"password_confirmation\": \"Password!234\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/users", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "users"] },
+            "description": "role must be an existing Spatie role name: Administrator | Catalog Manager | Sales & Support | Marketing."
+          }
+        },
+        {
+          "name": "Update Admin User",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"suspended\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/users/{{adminUserId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "users", "{{adminUserId}}"] }
+          }
+        },
+        {
+          "name": "List Roles",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/roles", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "roles"] }
+          }
+        },
+        {
+          "name": "Create Role",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Warehouse Staff\",\n  \"permissions\": [\"products.manage\"]\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/roles", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "roles"] },
+            "description": "permissions.* must be existing Spatie permission names (products.manage, orders.manage, customers.manage, marketing.manage, reports.view, settings.manage, users.manage)."
+          }
+        },
+        {
+          "name": "Update Role",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"permissions\": [\"products.manage\", \"reports.view\"]\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/roles/REPLACE_WITH_ROLE_ID", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "roles", "REPLACE_WITH_ROLE_ID"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Catalog",
+      "description": "Requires the `products.manage` permission. NOTE: request bodies here are snake_case — see the collection description.",
+      "item": [
+        {
+          "name": "List Categories (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/categories", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "categories"] }
+          }
+        },
+        {
+          "name": "Create Category",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('categoryId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Laptops\",\n  \"slug\": \"laptops\",\n  \"parent_id\": null,\n  \"icon_path\": null,\n  \"position\": 0,\n  \"is_active\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/categories", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "categories"] }
+          }
+        },
+        {
+          "name": "Update Category",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Laptops & Ultrabooks\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/categories/{{categoryId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "categories", "{{categoryId}}"] }
+          }
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/categories/{{categoryId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "categories", "{{categoryId}}"] }
+          }
+        },
+        {
+          "name": "List Brands (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/brands", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "brands"] }
+          }
+        },
+        {
+          "name": "Create Brand",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('brandId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Dell\",\n  \"slug\": \"dell\",\n  \"logo_path\": null,\n  \"is_active\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/brands", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "brands"] }
+          }
+        },
+        {
+          "name": "Update Brand",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"is_active\": false\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/brands/{{brandId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "brands", "{{brandId}}"] }
+          }
+        },
+        {
+          "name": "Delete Brand",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/brands/{{brandId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "brands", "{{brandId}}"] }
+          }
+        },
+        {
+          "name": "List Products (admin, filtered)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/products?status=active&category_id={{categoryId}}&brand_id={{brandId}}&sort=-created_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products"],
+              "query": [
+                { "key": "status", "value": "active", "description": "draft | active | archived" },
+                { "key": "category_id", "value": "{{categoryId}}" },
+                { "key": "brand_id", "value": "{{brandId}}" },
+                { "key": "sort", "value": "-created_at", "description": "name | price | created_at" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Product",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('productId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"category_id\": \"{{categoryId}}\",\n  \"brand_id\": \"{{brandId}}\",\n  \"name\": \"Dell XPS 13\",\n  \"slug\": \"dell-xps-13\",\n  \"sku\": \"DELL-XPS13-001\",\n  \"short_description\": \"13-inch ultrabook.\",\n  \"description\": \"Full product description here.\",\n  \"price\": 145000,\n  \"compare_at_price\": 160000,\n  \"status\": \"active\",\n  \"is_featured\": true,\n  \"is_flash_deal\": false,\n  \"meta_title\": \"Dell XPS 13\",\n  \"meta_description\": \"Buy the Dell XPS 13 in Kenya.\",\n  \"specifications\": [\n    { \"group\": \"Performance\", \"label\": \"CPU\", \"value\": \"Intel Core i7\" }\n  ]\n}",
+              "options": { "raw": { "language": "json" } }
+            },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/products", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products"] }
+          }
+        },
+        {
+          "name": "Get Product (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/products/{{productId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products", "{{productId}}"] }
+          }
+        },
+        {
+          "name": "Update Product",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"price\": 139999\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/products/{{productId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products", "{{productId}}"] }
+          }
+        },
+        {
+          "name": "Delete Product",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/products/{{productId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products", "{{productId}}"] }
+          }
+        },
+        {
+          "name": "Upload Product Image",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                { "key": "image", "type": "file", "src": [] },
+                { "key": "alt", "value": "Dell XPS 13 front view", "type": "text" },
+                { "key": "position", "value": "0", "type": "text" }
+              ]
+            },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/products/{{productId}}/images", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "products", "{{productId}}", "images"] },
+            "description": "multipart/form-data. image: jpg/jpeg/png/webp, max 5MB."
+          }
+        },
+        {
+          "name": "List Reviews (moderation queue)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/reviews?status=pending&sort=-created_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reviews"],
+              "query": [{ "key": "status", "value": "pending", "description": "pending | approved | rejected" }, { "key": "sort", "value": "-created_at", "description": "created_at | rating" }]
+            }
+          }
+        },
+        {
+          "name": "Moderate Review",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/reviews/{{reviewId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reviews", "{{reviewId}}"] },
+            "description": "Requires marketing.manage."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Orders & Returns",
+      "description": "Requires `orders.manage`.",
+      "item": [
+        {
+          "name": "List Orders (admin, filtered)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/orders?status=pending&paymentMethod=mpesa&sort=-placed_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "orders"],
+              "query": [
+                { "key": "status", "value": "pending", "description": "pending|processing|packing|shipped|delivered|cancelled|refunded" },
+                { "key": "paymentMethod", "value": "mpesa", "description": "mpesa | card | cash_on_delivery" },
+                { "key": "sort", "value": "-placed_at", "description": "placed_at | total | created_at" }
+              ]
+            },
+            "description": "Backs both the Kanban and table admin views (api-design.md)."
+          }
+        },
+        {
+          "name": "Get Order (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/orders/{{adminOrderId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "orders", "{{adminOrderId}}"] }
+          }
+        },
+        {
+          "name": "Update Order Status",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"processing\",\n  \"note\": \"Payment confirmed, preparing order.\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/orders/{{adminOrderId}}/status", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "orders", "{{adminOrderId}}", "status"] },
+            "description": "Enforced state machine: pending->processing->packing->shipped->delivered, with cancelled/refunded terminal branches. Illegal transitions return 422."
+          }
+        },
+        {
+          "name": "List Returns (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/returns", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "returns"] }
+          }
+        },
+        {
+          "name": "Approve/Reject Return",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"approved\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/returns/{{returnId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "returns", "{{returnId}}"] },
+            "description": "Approval restocks inventory and writes a refund payment record."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Inventory & Warehouses",
+      "description": "Requires `products.manage`.",
+      "item": [
+        {
+          "name": "List Warehouses",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/warehouses", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "warehouses"] }
+          }
+        },
+        {
+          "name": "Create Warehouse",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('warehouseId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Nairobi Central\",\n  \"location\": \"Industrial Area, Nairobi\",\n  \"manager\": \"John Manager\",\n  \"is_active\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/warehouses", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "warehouses"] }
+          }
+        },
+        {
+          "name": "List Inventory (filtered)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/inventory?warehouseId={{warehouseId}}&productId={{productId}}&lowStock=true",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "inventory"],
+              "query": [
+                { "key": "warehouseId", "value": "{{warehouseId}}" },
+                { "key": "productId", "value": "{{productId}}" },
+                { "key": "lowStock", "value": "true", "description": "boolean scope filter" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Adjust Inventory",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"quantity\": 50,\n  \"reason\": \"Manual stock recount\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/inventory/{{inventoryId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "inventory", "{{inventoryId}}"] },
+            "description": "quantity is the new absolute quantity, not a delta; writes an audit trail via AdjustInventoryAction."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: CRM (Leads & Quotations)",
+      "description": "Requires `customers.manage`.",
+      "item": [
+        {
+          "name": "List Leads",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/crm/leads?status=new&sort=-created_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "leads"],
+              "query": [{ "key": "status", "value": "new", "description": "new|contacted|qualified|lost|won" }, { "key": "sort", "value": "-created_at", "description": "contact_name | created_at" }]
+            }
+          }
+        },
+        {
+          "name": "Create Lead",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('leadId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"company_name\": \"Acme Corp\",\n  \"contact_name\": \"John Buyer\",\n  \"email\": \"john@acme.test\",\n  \"phone\": \"254711111111\",\n  \"source\": \"Website\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/crm/leads", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "leads"] }
+          }
+        },
+        {
+          "name": "Update Lead",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"qualified\",\n  \"assigned_to\": \"{{adminUserId}}\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/crm/leads/{{leadId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "leads", "{{leadId}}"] }
+          }
+        },
+        {
+          "name": "List Quotations",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/crm/quotations?status=draft&sort=-created_at",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "quotations"],
+              "query": [{ "key": "status", "value": "draft", "description": "draft|sent|accepted|rejected|expired" }, { "key": "sort", "value": "-created_at", "description": "created_at | total" }]
+            }
+          }
+        },
+        {
+          "name": "Create Quotation",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('quotationId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"lead_id\": \"{{leadId}}\",\n  \"valid_until\": \"2026-08-31\",\n  \"items\": [\n    { \"product_id\": \"{{productId}}\", \"quantity\": 5 }\n  ]\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/crm/quotations", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "quotations"] }
+          }
+        },
+        {
+          "name": "Update Quotation",
+          "request": {
+            "method": "PATCH",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"status\": \"sent\"\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/crm/quotations/{{quotationId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "crm", "quotations", "{{quotationId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Marketing (Coupons & Banners)",
+      "description": "Requires `marketing.manage`.",
+      "item": [
+        {
+          "name": "List Coupons",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/coupons?sort=-created_at", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "coupons"], "query": [{ "key": "sort", "value": "-created_at", "description": "code | created_at" }] }
+          }
+        },
+        {
+          "name": "Create Coupon",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('couponId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"code\": \"SAVE10\",\n  \"type\": \"percentage\",\n  \"value\": 10,\n  \"usage_limit\": 100,\n  \"starts_at\": \"2026-07-01\",\n  \"expires_at\": \"2026-12-31\",\n  \"is_active\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/coupons", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "coupons"] }
+          }
+        },
+        {
+          "name": "Update Coupon",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"value\": 15\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/coupons/{{couponId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "coupons", "{{couponId}}"] }
+          }
+        },
+        {
+          "name": "Delete Coupon",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/coupons/{{couponId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "coupons", "{{couponId}}"] }
+          }
+        },
+        {
+          "name": "List Banners (admin)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/banners?position=homepage_hero&sort=position",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "banners"],
+              "query": [{ "key": "position", "value": "homepage_hero", "description": "homepage_hero | homepage_top | category_top" }, { "key": "sort", "value": "position", "description": "position | created_at" }]
+            }
+          }
+        },
+        {
+          "name": "Create Banner",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "if (pm.response.code === 201) { pm.collectionVariables.set('bannerId', pm.response.json().id); }"
+          ] } }],
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"title\": \"Big Friday Sale\",\n  \"image_path\": \"/banners/big-friday-sale.jpg\",\n  \"link_url\": \"/products?onSale=true\",\n  \"position\": \"homepage_hero\",\n  \"starts_at\": \"2026-11-01\",\n  \"expires_at\": \"2026-11-30\",\n  \"is_active\": true\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/banners", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "banners"] },
+            "description": "image_path is a pre-uploaded asset path/URL, not a multipart file upload."
+          }
+        },
+        {
+          "name": "Update Banner",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"is_active\": false\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/banners/{{bannerId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "banners", "{{bannerId}}"] }
+          }
+        },
+        {
+          "name": "Delete Banner",
+          "request": {
+            "method": "DELETE",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/banners/{{bannerId}}", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "banners", "{{bannerId}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Admin: Reports, AI Insights, Audit Logs & Settings",
+      "description": "Reports/AI Insights/Audit Logs require `reports.view`; Settings requires `settings.manage`.",
+      "item": [
+        {
+          "name": "Dashboard KPIs",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/dashboard", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "dashboard"] },
+            "description": "Cached 2 minutes; invalidated on new order/new customer."
+          }
+        },
+        {
+          "name": "Sales Report",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/reports/sales?startDate=2026-07-01&endDate=2026-07-31",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reports", "sales"],
+              "query": [{ "key": "startDate", "value": "2026-07-01" }, { "key": "endDate", "value": "2026-07-31" }]
+            }
+          }
+        },
+        {
+          "name": "Sales Report (CSV export)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "text/csv" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/reports/sales?startDate=2026-07-01&endDate=2026-07-31&export=csv",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reports", "sales"],
+              "query": [{ "key": "startDate", "value": "2026-07-01" }, { "key": "endDate", "value": "2026-07-31" }, { "key": "export", "value": "csv" }]
+            }
+          }
+        },
+        {
+          "name": "Products Report",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/reports/products?startDate=2026-07-01&endDate=2026-07-31",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reports", "products"],
+              "query": [{ "key": "startDate", "value": "2026-07-01" }, { "key": "endDate", "value": "2026-07-31" }]
+            }
+          }
+        },
+        {
+          "name": "Customers Report",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/reports/customers", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "reports", "customers"] }
+          }
+        },
+        {
+          "name": "AI Insights",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/ai-insights", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "ai-insights"] },
+            "description": "Rows written nightly by `php artisan app:generate-ai-insights` — this endpoint only reads."
+          }
+        },
+        {
+          "name": "Audit Logs",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/admin/audit-logs?action=category.created&subjectType=Category",
+              "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "audit-logs"],
+              "query": [{ "key": "action", "value": "category.created", "description": "e.g. category.created, product.updated, setting.updated" }, { "key": "subjectType", "value": "Category" }]
+            }
+          }
+        },
+        {
+          "name": "Get Settings",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/settings", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "settings"] }
+          }
+        },
+        {
+          "name": "Update Settings",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"emailOnNewOrder\": true,\n  \"smsOnOrderShipped\": false\n}", "options": { "raw": { "language": "json" } } },
+            "url": { "raw": "{{baseUrl}}/api/v1/admin/settings", "host": ["{{baseUrl}}"], "path": ["api", "v1", "admin", "settings"] },
+            "description": "camelCase — unlike the rest of the Admin folder, Settings was built to match the customer-facing contract convention."
+          }
+        }
+      ]
+    },
+    {
+      "name": "Health",
+      "description": "Unauthenticated infrastructure checks.",
+      "item": [
+        {
+          "name": "Deep Health Check (DB/Redis/Queue)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/api/health", "host": ["{{baseUrl}}"], "path": ["api", "health"] },
+            "description": "200 with {status:'ok', checks:{database,redis,queue}} when all reachable, else 503."
+          }
+        },
+        {
+          "name": "Basic Liveness (/up)",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "url": { "raw": "{{baseUrl}}/up", "host": ["{{baseUrl}}"], "path": ["up"] },
+            "description": "Laravel's built-in health route — only proves the app booted."
+          }
+        }
+      ]
+    }
+  ]
+}

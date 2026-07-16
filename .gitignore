@@ -22,4 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
-/run.ps1
+/start-app.ps1
+/start-app
+/test-app

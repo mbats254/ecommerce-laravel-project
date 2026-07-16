@@ -1,0 +1,129 @@
+workflow:
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: '$CI_COMMIT_BRANCH == "main"'
+
+stages:
+  - lint
+  - test
+  - build
+  - deploy
+
+# --- shared PHP setup (lint/static-analysis/test) ---------------------------
+# Mirrors .github/workflows/ci.yml. Kept separate from the Docker image build
+# below so a lint failure doesn't need docker-in-docker to report quickly.
+.php_setup:
+  image: php:8.4-cli-alpine
+  before_script:
+    - apk add --no-cache git unzip $PHPIZE_DEPS icu-dev oniguruma-dev libzip-dev libpng-dev
+    - docker-php-ext-install pdo_mysql intl bcmath zip pcntl > /dev/null
+    - pecl install redis > /dev/null && docker-php-ext-enable redis
+    - curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+    - cp .env.example .env
+    - composer install --no-interaction --prefer-dist --no-progress
+    - php artisan key:generate
+
+lint:
+  stage: lint
+  extends: .php_setup
+  script:
+    - vendor/bin/pint --test
+
+static-analysis:
+  stage: lint
+  extends: .php_setup
+  script:
+    - vendor/bin/phpstan analyse --memory-limit=1G
+
+test:
+  stage: test
+  extends: .php_setup
+  services:
+    - name: mysql:8.0
+      alias: mysql
+    - name: redis:7-alpine
+      alias: redis
+  variables:
+    MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+    MYSQL_DATABASE: anchor_api_testing
+    APP_ENV: testing
+    DB_CONNECTION: mysql
+    DB_HOST: mysql
+    DB_PORT: "3306"
+    DB_DATABASE: anchor_api_testing
+    DB_USERNAME: root
+    DB_PASSWORD: ""
+    REDIS_HOST: redis
+    REDIS_PORT: "6379"
+    CACHE_STORE: redis
+    SESSION_DRIVER: redis
+    QUEUE_CONNECTION: redis
+  script:
+    - php artisan migrate:fresh --seed --no-interaction
+    - vendor/bin/pest --ci
+
+# --- image build -------------------------------------------------------------
+# Builds both Dockerfile targets (see docker/php/Dockerfile): `app` (PHP-FPM,
+# runs app/horizon/scheduler) and `web` (nginx with public/ + nginx.conf
+# baked in). Tagged by commit SHA only — see docs/ci-cd-deployment-plan.md,
+# Phase 2: never deploy off a `latest` tag.
+build:
+  stage: build
+  image: docker:27
+  services:
+    - docker:27-dind
+  variables:
+    DOCKER_TLS_CERTDIR: ""
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+  before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"
+  script:
+    - docker build --target app --build-arg APP_ENV=production -f docker/php/Dockerfile -t "$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHORT_SHA" .
+    - docker build --target web -f docker/php/Dockerfile -t "$CI_REGISTRY_IMAGE/web:$CI_COMMIT_SHORT_SHA" .
+    - docker push "$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHORT_SHA"
+    - docker push "$CI_REGISTRY_IMAGE/web:$CI_COMMIT_SHORT_SHA"
+
+# --- deploy --------------------------------------------------------------
+# Manual gate (docs/ci-cd-deployment-plan.md, decision 2.5): tests + build
+# must pass, then a human clicks deploy. Requires these CI/CD variables to
+# be set (Settings > CI/CD > Variables, protected + masked where noted):
+#   SSH_PRIVATE_KEY (masked)  — private half of the deploy key on the VPS
+#   VPS_HOST, VPS_USER        — e.g. 203.0.113.10, deploy
+#   APP_DIR (optional)        — defaults to /opt/anchor-api
+.ssh_setup:
+  image: alpine:3.20
+  before_script:
+    - apk add --no-cache openssh-client curl
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh && chmod 700 ~/.ssh
+    - ssh-keyscan -H "$VPS_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+deploy:production:
+  stage: deploy
+  extends: .ssh_setup
+  environment:
+    name: production
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: manual
+  script:
+    - scp deploy/deploy.sh "$VPS_USER@$VPS_HOST:${APP_DIR:-/opt/anchor-api}/deploy.sh"
+    - ssh "$VPS_USER@$VPS_HOST" "chmod +x ${APP_DIR:-/opt/anchor-api}/deploy.sh && REGISTRY_IMAGE=$CI_REGISTRY_IMAGE APP_DIR=${APP_DIR:-/opt/anchor-api} ${APP_DIR:-/opt/anchor-api}/deploy.sh $CI_COMMIT_SHORT_SHA"
+
+# Redeploys a previously-built image tag. Set ROLLBACK_TAG when triggering
+# this job (Run pipeline > Variables, or Run pipeline > this job > edit
+# variables) to the commit SHA you want to roll back to.
+deploy:rollback:
+  stage: deploy
+  extends: .ssh_setup
+  environment:
+    name: production
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: manual
+  script:
+    - test -n "$ROLLBACK_TAG" || (echo "Set ROLLBACK_TAG (Run pipeline > Variables) to the commit SHA to roll back to." && exit 1)
+    - scp deploy/deploy.sh "$VPS_USER@$VPS_HOST:${APP_DIR:-/opt/anchor-api}/deploy.sh"
+    - ssh "$VPS_USER@$VPS_HOST" "chmod +x ${APP_DIR:-/opt/anchor-api}/deploy.sh && REGISTRY_IMAGE=$CI_REGISTRY_IMAGE APP_DIR=${APP_DIR:-/opt/anchor-api} ${APP_DIR:-/opt/anchor-api}/deploy.sh $ROLLBACK_TAG"

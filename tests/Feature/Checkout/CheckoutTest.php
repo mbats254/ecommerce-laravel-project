@@ -5,6 +5,7 @@ use App\Models\Address;
 use App\Models\CartItem;
 use App\Models\Coupon;
 use App\Models\User;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Testing\TestResponse;
 
 function checkoutAs(User $user, array $overrides = []): TestResponse
@@ -149,4 +150,35 @@ test('another user cannot cancel someone elses order', function () {
     $this->actingAs($stranger)
         ->postJson("/api/v1/orders/{$order['orderNumber']}/cancel")
         ->assertForbidden();
+});
+
+test('checking out with express delivery applies the express fee instead of standard', function () {
+    $user = User::factory()->create();
+    $product = createInStockProduct(['price' => 1000]);
+
+    $this->actingAs($user)->postJson('/api/v1/cart/items', ['productId' => $product->id, 'quantity' => 1]);
+
+    $response = checkoutAs($user, ['deliveryMethod' => 'express']);
+
+    $response->assertCreated()->assertJsonPath('deliveryFee', (int) config('shipping.delivery_fees.express'));
+});
+
+test('checking out with card charges through stripe and records the pending payment intent', function () {
+    Http::fake([
+        'api.stripe.com/v1/payment_intents' => Http::response(['id' => 'pi_test_checkout']),
+    ]);
+
+    $user = User::factory()->create();
+    $product = createInStockProduct(['price' => 1000]);
+
+    $this->actingAs($user)->postJson('/api/v1/cart/items', ['productId' => $product->id, 'quantity' => 1]);
+
+    $order = checkoutAs($user, ['paymentMethod' => 'card'])->assertCreated()->json();
+
+    $this->assertDatabaseHas('payments', [
+        'order_id' => $order['id'],
+        'provider' => 'stripe',
+        'provider_reference' => 'pi_test_checkout',
+        'status' => 'pending',
+    ]);
 });

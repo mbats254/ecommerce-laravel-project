@@ -4,9 +4,12 @@
 built for local dev, deploying automatically and (near-)seamlessly on every
 merge to `main`.
 
-**Status**: planning — nothing described here exists yet except what's called
-out under "Already in place." This document is the checklist to work through,
-in order.
+**Status**: Phases 0, 1, 2 (config), 3, and 5 are implemented in-repo (see
+checkboxes below). What's **not** done, because it needs an actual account/
+server rather than code, is: creating the GitLab project + mirror (2.1),
+provisioning the VPS (Phase 4), and setting the real CI/CD variables
+(`SSH_PRIVATE_KEY`, `VPS_HOST`, `VPS_USER`) — that's the remaining work, and
+it's manual by nature. See §6 for the concrete next steps.
 
 ---
 
@@ -52,7 +55,7 @@ flowchart LR
     E -->|manual click, production| F[SSH to VPS]
     F --> G[docker compose pull]
     G --> H[docker compose run --rm app php artisan migrate --force]
-    H --> I[docker compose up -d --no-deps app horizon scheduler]
+    H --> I[docker compose up -d --no-deps app horizon scheduler webserver]
     I --> J[Health check /up]
     J -->|healthy| K[Old container already replaced — done]
     J -->|unhealthy| L[Rollback: redeploy previous image tag]
@@ -67,53 +70,73 @@ flowchart LR
 Goal: a GitLab pipeline that does what `.github/workflows/ci.yml` already
 does, so nothing regresses while the deploy half is built.
 
-- [ ] Create the GitLab project, set up pull mirroring from GitHub (2.1)
-- [ ] Add `.gitlab-ci.yml` with `lint`, `static-analysis`, `test` stages —
+- [ ] Create the GitLab project, set up pull mirroring from GitHub (2.1) —
+      **manual, needs a GitLab account/decision, not done yet**
+- [x] Add `.gitlab-ci.yml` with `lint`, `static-analysis`, `test` stages —
       direct port of the existing GitHub Actions job (same MySQL/Redis
       services, same Pint/Larastan/Pest commands)
 - [ ] Confirm the mirrored pipeline goes green on a few real commits before
-      touching anything deploy-related
+      touching anything deploy-related — blocked on the item above
 
 ### Phase 1 — Production Docker image
 
-The current `docker/php/Dockerfile` is a **dev** image (installs dev
-dependencies like Pest/Pint so `docker compose exec app php artisan test`
-works locally). Production needs a leaner variant.
+`docker/php/Dockerfile` is now multi-stage:
 
-- [ ] Add a build arg (`ARG APP_ENV=local`) or a second stage so the
-      production build runs:
-      `composer install --no-dev --optimize-autoloader --no-interaction`
-- [ ] Bake config/route/view caching into the image build
-      (`php artisan config:cache && route:cache && view:cache`) — this must
-      happen *inside* the image build, not at container start, since the
-      production compose file won't bind-mount source over it
-- [ ] Add a healthcheck to the image/container hitting `/up`
-- [ ] Build it locally once and confirm it boots without the dev `vendor`
-      packages present
+- [x] `app` target: `ARG APP_ENV` controls the composer install — `local`
+      (default, used by `docker-compose.yml`) installs dev tooling
+      (Pest/Pint/Larastan); `production` runs
+      `composer install --no-dev --no-scripts ...`. Verified locally: the
+      production build produced 5,437 autoloaded classes vs. ~8,258 for the
+      dev build, confirming dev packages are actually excluded.
+- [x] `web` target: `FROM nginx:1.27-alpine`, `COPY --from=app` bakes
+      `public/` and `docker/nginx/default.conf` straight into the image —
+      built from the same commit as `app`, so there's no drift between the
+      two and the production server needs no git checkout for nginx config
+      or static assets.
+- [x] Config/route/view/event caching — **deliberately moved to container
+      *boot* time, not image build time**, changing the original plan here:
+      baking `config:cache` into the image would freeze in whatever env was
+      present during the CI build (which has no access to the real
+      production `.env`, and shouldn't). `docker/php/entrypoint.sh` now runs
+      the four `artisan *:cache` commands when `OPTIMIZE_ON_BOOT=true` (set
+      in `docker-compose.prod.yml`), after the real `.env` is mounted. Same
+      performance benefit, correct values.
+- [ ] Container healthcheck — skipped for now; the deploy script's `curl` at
+      `/up` (Phase 5) already covers app+db+redis reachability end to end,
+      and php-fpm doesn't speak HTTP so a container-level check would need
+      `fcgi` tooling for little extra benefit. Revisit if orchestration ever
+      needs container-level self-healing (e.g. a future move to
+      Swarm/Kubernetes).
+- [x] Built and booted locally (both `--target app` and `--target web`) to
+      confirm the split works — see §7 "What broke during verification" below.
 
 ### Phase 2 — Container registry
 
-- [ ] Use GitLab's built-in Container Registry (`registry.gitlab.com/...`) —
-      no separate registry account needed, and CI auth is automatic via
-      `CI_REGISTRY_*` predefined variables
-- [ ] Tag images with the commit SHA (`$CI_COMMIT_SHORT_SHA`) — never
-      `latest` for a real deploy, so every deploy is traceable to a commit and
-      trivially rollback-able by tag
-- [ ] Add a registry cleanup policy (GitLab project setting) so old tags
-      don't accumulate forever
+- [x] Wired up in `.gitlab-ci.yml`'s `build` job: `docker build --target app`
+      and `--target web`, tagged `$CI_REGISTRY_IMAGE/app:$CI_COMMIT_SHORT_SHA`
+      / `.../web:$CI_COMMIT_SHORT_SHA`, pushed via the predefined
+      `CI_REGISTRY_USER`/`CI_REGISTRY_PASSWORD` — no manual registry setup
+      needed, GitLab's built-in registry activates automatically once the
+      project exists (2.1)
+- [x] Commit-SHA tagging only, no `latest` — matches the "never deploy off
+      `latest`" rule
+- [ ] Registry cleanup policy (GitLab project setting, UI-only — can't be
+      expressed in `.gitlab-ci.yml`) — set this once the project exists
 
 ### Phase 3 — `docker-compose.prod.yml`
 
-A second compose file, not a modification of the dev one — production must
-**not** bind-mount the repo over the baked image.
-
-- [ ] `docker-compose.prod.yml`: same services as `docker-compose.yml` minus
-      the `.:/var/www/html:cached` bind mount on `app`/`horizon`/`scheduler` —
-      they run purely off the built image
-- [ ] `image: registry.gitlab.com/.../anchor-api:${IMAGE_TAG}` instead of
-      `build:` for those three services
-- [ ] Decide 2.3 (managed vs containerized MySQL) and reflect it here — if
-      containerized, keep the named volume + add the backup cron from Phase 6
+- [x] Created. Uses `${REGISTRY_IMAGE}/app:${IMAGE_TAG}` and
+      `${REGISTRY_IMAGE}/web:${IMAGE_TAG}` (no `build:` key at all) for
+      `app`/`horizon`/`scheduler`/`webserver` — no bind mounts of the repo
+      anywhere in this file
+- [ ] Decide 2.3 (managed vs containerized MySQL) and reflect it here — the
+      file currently ships with the MySQL service **commented out** with
+      instructions either way; nothing to do until 2.3 is actually decided
+- [x] `redis` and `meilisearch` are self-hosted containers with named
+      volumes (`redis-data`, `meilisearch-data`) — both are the "cheap to
+      lose" side of the stack (Meilisearch is re-indexable from MySQL via
+      `artisan scout:import`), so neither needed the Phase 6 backup
+      treatment that MySQL does
 
 ### Phase 4 — Server bootstrap (one-time, manual, not in CI)
 
@@ -132,42 +155,29 @@ A second compose file, not a modification of the dev one — production must
 
 ### Phase 5 — The deploy job itself
 
-- [ ] Add a `deploy` stage to `.gitlab-ci.yml`, `when: manual`, restricted to
-      `main`
-- [ ] Job installs an SSH client, loads `SSH_PRIVATE_KEY`, and runs a deploy
-      script over SSH (kept in `deploy/deploy.sh` in the repo, not inlined in
-      YAML, so it's testable/editable without touching pipeline config):
-
-  ```bash
-  #!/usr/bin/env bash
-  set -euo pipefail
-  cd /opt/anchor-api
-
-  export IMAGE_TAG="$1"
-
-  docker compose -f docker-compose.prod.yml pull app horizon scheduler
-  docker compose -f docker-compose.prod.yml run --rm app php artisan migrate --force
-  docker compose -f docker-compose.prod.yml up -d --no-deps app horizon scheduler
-
-  # Wait for the new app container to report healthy before declaring success
-  for i in $(seq 1 15); do
-    if curl -fsS http://localhost:8000/up > /dev/null; then
-      echo "Deploy OK: $IMAGE_TAG"
-      exit 0
-    fi
-    sleep 2
-  done
-
-  echo "Health check failed after deploy — rolling back to previous tag"
-  docker compose -f docker-compose.prod.yml pull app horizon scheduler  # previous tag
-  exit 1
-  ```
-
+- [x] `deploy:production` job in `.gitlab-ci.yml`: `when: manual`,
+      restricted to `main`, `environment: production`
+- [x] Loads `SSH_PRIVATE_KEY` via `ssh-agent`, `scp`s `deploy/deploy.sh` to
+      the server, then runs it over SSH with `REGISTRY_IMAGE` and the commit
+      SHA — the script itself lives in the repo
+      ([`deploy/deploy.sh`](../deploy/deploy.sh)), not inlined in YAML, so
+      it's testable/editable without touching pipeline config. It: pulls the
+      new `app`/`webserver` images, runs `artisan migrate --force` in a
+      one-off container (old containers still serving traffic at this
+      point), recreates `app`/`horizon`/`scheduler`/`webserver` on the new
+      image, then polls `/up` for up to 30s before declaring success or
+      failure
+- [x] `deploy:rollback` job (same file): identical mechanism, but takes a
+      `ROLLBACK_TAG` variable (set via GitLab's "Run pipeline" custom
+      variables) instead of `$CI_COMMIT_SHORT_SHA` — redeploys any
+      previously-built tag without a rebuild
 - [ ] `migrate --force` runs against the **new** image but the **old**
       containers are still serving traffic until the `up -d` line — so
       migrations must always be additive/backward-compatible with the code
       still running (expand/contract pattern: add columns before code that
-      uses them ships; drop columns only after no running code reads them)
+      uses them ships; drop columns only after no running code reads them).
+      This is a discipline to maintain going forward, not something to
+      check off once.
 
 ### Phase 6 — Backups (only if 2.3 = containerized MySQL)
 
@@ -202,24 +212,66 @@ A second compose file, not a modification of the dev one — production must
 
 ## 5. Rollback
 
-Every image is tagged by commit SHA (Phase 2), so rollback is: re-run the
-Phase 5 deploy job with `IMAGE_TAG` set to the previous known-good SHA. No
-rebuild needed — the image already exists in the registry. Keep this as a
-manual GitLab job (`deploy:rollback`) that takes the tag as a pipeline
-variable, so it's a few clicks, not a from-scratch SSH session.
+Every image is tagged by commit SHA (Phase 2), so rollback is: run the
+`deploy:rollback` job (Phase 5, already in `.gitlab-ci.yml`) with
+`ROLLBACK_TAG` set to the previous known-good SHA via GitLab's "Run
+pipeline" screen. No rebuild needed — the image already exists in the
+registry, and it's a few clicks, not a from-scratch SSH session.
 
 ---
 
 ## 6. Suggested order to actually start
 
-1. Phase 0 (GitLab pipeline parity) — get *something* green in GitLab this
-   week, independent of everything else.
-2. Phase 1 + 2 (production image + registry) — can be built and tested
-   locally (`docker build`, `docker push`) before any server exists.
-3. Phase 4 (server bootstrap) — one afternoon, manual, do it once.
-4. Phase 3 + 5 (compose file + deploy job) — wire CI to the now-existing
-   server.
-5. Ship a trivial change (e.g. a comment) through the full pipeline end to
-   end before trusting it with anything real.
+1. ~~Phase 1 + 2 + 3 + 5 (image, registry config, compose file, deploy
+   job)~~ — **done**, see checkboxes above. Verified locally end-to-end
+   (§7).
+2. **Next**: Phase 0's remaining item — create the GitLab project and set up
+   pull mirroring from GitHub (2.1). This is the actual next action and it's
+   a GitLab.com UI task, not a code task.
+3. Push `.gitlab-ci.yml` through a few real commits once the mirror exists,
+   confirm `lint`/`static-analysis`/`test` go green.
+4. Phase 4 (server bootstrap) — one afternoon, manual, do it once. Needs
+   2.2/2.3/2.4 decided first.
+5. Set the three CI/CD variables (`SSH_PRIVATE_KEY`, `VPS_HOST`, `VPS_USER`)
+   in GitLab, then trigger `deploy:production` manually on a trivial commit
+   (e.g. a comment change) to prove the whole pipeline end to end before
+   trusting it with anything real.
 6. Phase 6 (backups) — don't skip if MySQL ends up containerized.
 7. Phase 7 — only after the above has run cleanly for a while.
+
+---
+
+## 7. What broke during verification (worth knowing before you touch this again)
+
+Building and boot-testing both image targets locally surfaced two real
+issues — neither is a Docker/pipeline bug, but both will bite again if
+forgotten:
+
+1. **The `vendor` named volume can drift from `composer.json`.**
+   `docker-compose.yml` intentionally keeps `vendor/` in a Docker volume
+   (see the "Docker setup" README section) so the container's PHP 8.4
+   dependencies don't collide with whatever the host's PHP installs. The
+   cost: when `composer.json`/`composer.lock` change (a package added,
+   e.g. Sentry got added to this project mid-way through this work) the
+   *volume* doesn't know until someone runs
+   `docker compose exec app composer install` inside the container.
+   Forgetting this produces `Class "X" not found` errors that look like a
+   broken image, not a stale volume. Run that command after pulling any
+   change that touches `composer.lock`.
+2. **`AppServiceProvider` only registers Telescope in `local`/`staging`**
+   (`$this->app->environment('local', 'staging')`). The production image
+   build (`--no-dev`) correctly excludes the Telescope package — so if a
+   production-built image is ever booted with `APP_ENV` still set to
+   `local` (e.g. testing the prod image against a leftover dev `.env`), it
+   crashes trying to load a class that was deliberately never installed.
+   Not a bug — it means the production `.env` **must** have
+   `APP_ENV=production` for real, which Phase 4 already assumes, but it's
+   easy to get wrong during ad-hoc testing (as happened here).
+3. Also fixed along the way: the production Dockerfile originally ran
+   `composer dump-autoload --optimize --no-scripts` after copying app code
+   in, meaning `artisan package:discover` never re-ran against the `--no-dev`
+   vendor set — so a stale `bootstrap/cache/packages.php` (generated on
+   whatever machine last ran `composer install` outside Docker) could list
+   providers that don't exist in the trimmed image, failing at boot. Fixed
+   by dropping `--no-scripts` from that step so package discovery always
+   matches what was actually installed for that specific build.

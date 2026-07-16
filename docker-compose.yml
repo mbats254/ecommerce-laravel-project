@@ -2,6 +2,7 @@ x-app: &app
   build:
     context: .
     dockerfile: docker/php/Dockerfile
+    target: app
   image: anchor-api-app
   working_dir: /var/www/html
   env_file: .env

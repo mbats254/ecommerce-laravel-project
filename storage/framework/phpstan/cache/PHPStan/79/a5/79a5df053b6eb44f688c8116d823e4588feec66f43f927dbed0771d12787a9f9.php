@@ -44,7 +44,30 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\StoreCategoryRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -68,7 +91,30 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\StoreCategoryRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -82,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => '0837e5e3f8f53ee92058204d48dc3886a266aa13a759d394e68c242e586a32ab',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => '86184c020cc994d070adab15a585dd19bee7ad0494834b7ff794a4f10b7faf47',
     ),
   ),
 ));

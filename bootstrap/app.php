@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Middleware\VerifyMpesaCallbackIp;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Sentry\Laravel\Integration;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -13,7 +15,12 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->statefulApi();
+
+        $middleware->alias([
+            'mpesa.verify-ip' => VerifyMpesaCallbackIp::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        // No-ops when SENTRY_LARAVEL_DSN is unset (config/sentry.php).
+        Integration::handles($exceptions);
     })->create();

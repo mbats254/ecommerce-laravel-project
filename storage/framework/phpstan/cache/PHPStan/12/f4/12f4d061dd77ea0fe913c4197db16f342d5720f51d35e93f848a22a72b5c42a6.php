@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\SearchController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\SearchController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-1fb52b7cac95bb0b7931650ebc09f29ae93635ac22d384f86e81b0d64904a402',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-7a7643fcd11fc594e33e3fefea1418a7544aae1a7bea7867274b2916a4f4162b',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 25,
+    'startLine' => 13,
+    'endLine' => 28,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -69,8 +71,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 12,
-            'endLine' => 12,
+            'startLine' => 15,
+            'endLine' => 15,
             'startColumn' => 27,
             'endColumn' => 42,
             'parameterIndex' => 0,
@@ -91,8 +93,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 12,
-        'endLine' => 24,
+        'startLine' => 15,
+        'endLine' => 27,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

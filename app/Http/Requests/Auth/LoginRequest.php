@@ -5,6 +5,9 @@ namespace App\Http\Requests\Auth;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class LoginRequest extends FormRequest
 {
     /**

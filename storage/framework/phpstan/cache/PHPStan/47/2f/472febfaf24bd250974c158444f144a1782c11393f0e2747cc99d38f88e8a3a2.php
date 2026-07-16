@@ -5150,6 +5150,108 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      '714bb408f9c46d28e4a600b5663f9c8d' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'adminuserstatus' => 'App\\Enums\\AdminUserStatus',
+          'queuedverifyemailnotification' => 'App\\Notifications\\QueuedVerifyEmailNotification',
+          'userfactory' => 'Database\\Factories\\UserFactory',
+          'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'orders',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '926d07da342e62cd9563037124eab47d' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'adminuserstatus' => 'App\\Enums\\AdminUserStatus',
+          'queuedverifyemailnotification' => 'App\\Notifications\\QueuedVerifyEmailNotification',
+          'userfactory' => 'Database\\Factories\\UserFactory',
+          'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'wishlist',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'a768474051357c0e71f4bd14ac004ba4' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'adminuserstatus' => 'App\\Enums\\AdminUserStatus',
+          'queuedverifyemailnotification' => 'App\\Notifications\\QueuedVerifyEmailNotification',
+          'userfactory' => 'Database\\Factories\\UserFactory',
+          'mustverifyemail' => 'Illuminate\\Contracts\\Auth\\MustVerifyEmail',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'authenticatable' => 'Illuminate\\Foundation\\Auth\\User',
+          'notifiable' => 'Illuminate\\Notifications\\Notifiable',
+          'hasapitokens' => 'Laravel\\Sanctum\\HasApiTokens',
+          'hasroles' => 'Spatie\\Permission\\Traits\\HasRoles',
+        ),
+         'className' => 'App\\Models\\User',
+         'functionName' => 'compareList',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
       '5885d71e4f847fb856aba954f86ff8a8' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
          'namespace' => 'App\\Models',
@@ -5187,7 +5289,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 'fc5cc079604ed47178240e370aa28bc3db603731fcb2b00f8f849da14c815387',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => '393cceae58109bc2e9b2c69633326a97da0c3e0f814039c94ae427a286d3fefe',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\sanctum\\src\\HasApiTokens.php' => '7400600b832dc377ac5f51d051a917775f6efc0d2176a1de7bd7826499ae6509',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\spatie\\laravel-permission\\src\\Traits\\HasRoles.php' => '3412a3f50444dd6c8a836b56c96c8cb47d0c197faad8e0e2963d94326f2fac9a',

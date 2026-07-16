@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Requests\Auth\ResetPasswordRequest.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Requests\Auth\ResetPasswordRequest
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-04d295aa4d7f4786934249641d0465f930319656703201e6e2ee34289d458bf8',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-006e441b33c4ecac80e20210d34e4f6f4411cf3f0beff8317b860bd8931c0cd8',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 32,
+    'startLine' => 12,
+    'endLine' => 35,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Http\\FormRequest',
@@ -67,8 +69,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Determine if the user is authorized to make this request.
  */',
-        'startLine' => 14,
-        'endLine' => 17,
+        'startLine' => 17,
+        'endLine' => 20,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -106,8 +108,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, ValidationRule|array<mixed>|string>
  */',
-        'startLine' => 24,
-        'endLine' => 31,
+        'startLine' => 27,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

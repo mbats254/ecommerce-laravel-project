@@ -46,7 +46,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Auth',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'password' => 'Illuminate\\Validation\\Rules\\Password',
+          ),
+           'className' => 'App\\Http\\Requests\\Auth\\RegisterRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -71,7 +95,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Auth',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'password' => 'Illuminate\\Validation\\Rules\\Password',
+          ),
+           'className' => 'App\\Http\\Requests\\Auth\\RegisterRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -85,7 +133,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => '015bff99ab555cdc4bf40b308cf9ed23a8a589dd29d3e743103e706f082753c8',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => '7058c56d16df5971026c92edbc9ec435e3d5ffee526e0be5547716b25e4f4ba6',
     ),
   ),
 ));

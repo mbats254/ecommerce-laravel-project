@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Requests\Auth\ForgotPasswordRequest.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Requests\Auth\ForgotPasswordRequest
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-7c8e58a511e8ca2d1fea2067a527c76846660592131e6458ff971162469600d5',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-d255fb44c4408772a05237778665bba865dd9b41d13dbd2272a660b5e1de8037',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 8,
-    'endLine' => 29,
+    'startLine' => 11,
+    'endLine' => 32,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Http\\FormRequest',
@@ -67,8 +69,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Determine if the user is authorized to make this request.
  */',
-        'startLine' => 13,
-        'endLine' => 16,
+        'startLine' => 16,
+        'endLine' => 19,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -106,8 +108,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, ValidationRule|array<mixed>|string>
  */',
-        'startLine' => 23,
-        'endLine' => 28,
+        'startLine' => 26,
+        'endLine' => 31,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

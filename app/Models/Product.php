@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Concerns\Auditable;
 use App\Enums\ProductStatus;
 use App\Enums\StockStatus;
 use App\Services\StockStatusResolver;
@@ -22,7 +23,7 @@ use Laravel\Scout\Searchable;
 class Product extends Model
 {
     /** @use HasFactory<ProductFactory> */
-    use HasFactory, HasUlids, Searchable, SoftDeletes;
+    use Auditable, HasFactory, HasUlids, Searchable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -118,6 +119,22 @@ class Product extends Model
     public function inventoryItems(): HasMany
     {
         return $this->hasMany(InventoryItem::class);
+    }
+
+    /**
+     * @return HasMany<Wishlist, $this>
+     */
+    public function wishlist(): HasMany
+    {
+        return $this->hasMany(Wishlist::class);
+    }
+
+    /**
+     * @return HasMany<CompareListItem, $this>
+     */
+    public function compareList(): HasMany
+    {
+        return $this->hasMany(CompareListItem::class);
     }
 
     /**

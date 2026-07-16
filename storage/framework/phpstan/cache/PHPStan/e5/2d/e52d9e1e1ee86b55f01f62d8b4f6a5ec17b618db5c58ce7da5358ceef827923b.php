@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\Controller.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\Controller
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-e5ddafa07059bfc9f8310767b0fc04dd3b8a1f50bcec1fd693b19f5555697825',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-9982ead1c00d3dc015c3b1fb8145172ba979f922400bc200f09d7ea399546528',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 64,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 7,
-    'endLine' => 10,
+    'startLine' => 10,
+    'endLine' => 13,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,

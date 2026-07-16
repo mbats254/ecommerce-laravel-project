@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -36,6 +37,150 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
+      )),
+      '838c120f71ca4ca37d387e0c6d2f194e' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Category',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+          1 => 'App\\Models\\Category',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<CategoryFactory> */',
+        ),
+      )),
+      '0774e88141564ea97fe3355824cf255b' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Category',
+         'functionName' => 'bootAuditable',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Category',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+          1 => 'App\\Models\\Category',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<CategoryFactory> */',
+        ),
+      )),
+      'ec6dbe845d573d0951516c67468e15fa' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Category',
+         'functionName' => 'auditAction',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Category',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+          1 => 'App\\Models\\Category',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<CategoryFactory> */',
+        ),
       )),
       '3873bc216aee8b2da7ac63028294a2d3' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
@@ -1691,6 +1836,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -1721,6 +1867,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -1751,6 +1898,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -1781,6 +1929,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -1811,6 +1960,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'categoryfactory' => 'Database\\Factories\\CategoryFactory',
           'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
@@ -1839,7 +1989,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 'dbb101369b3d68b750ba6941564f1f3560d0c7fcd21c15d184b6eaa997cea77a',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => '6c3e08489310544d9cce56b284984d42a52e4a40a9ff994df90d04873836374f',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUlids.php' => '05a9799d0cc82991d414228dbee5b77772ca18d2e3ca88f50bdafcb42bacde62',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUniqueStringIds.php' => '3d5612d3c0a56c6c9f19e628b02085d4d68a64d9d07656742725cec78d4a79c5',

@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Requests\Admin\UpdateAdminUserRequest.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Requests\Admin\UpdateAdminUserRequest
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-5aa18213371fd63682badff1aad6e70d531e8450e645ef0dffba3b27ac1ca943',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-d61a1e92df391c921accaeda8b57dfae302ed54742cd2453fb07032468dd355f',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 33,
+    'startLine' => 12,
+    'endLine' => 36,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Http\\FormRequest',
@@ -67,8 +69,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Determine if the user is authorized to make this request.
  */',
-        'startLine' => 14,
-        'endLine' => 17,
+        'startLine' => 17,
+        'endLine' => 20,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -106,8 +108,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, ValidationRule|array<mixed>|string>
  */',
-        'startLine' => 24,
-        'endLine' => 32,
+        'startLine' => 27,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -1191,5 +1191,44 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
+    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/../sentry/sentry/src/functions.php' => 
+    array (
+      0 => '3bdda3598d2cb0ab79242d1348a2bfa6b02b8fd70a1b2be630ae0b1ea494eef6',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'sentry\\init',
+        1 => 'sentry\\capturemessage',
+        2 => 'sentry\\captureexception',
+        3 => 'sentry\\captureevent',
+        4 => 'sentry\\capturelasterror',
+        5 => 'sentry\\capturecheckin',
+        6 => 'sentry\\withmonitor',
+        7 => 'sentry\\addbreadcrumb',
+        8 => 'sentry\\configurescope',
+        9 => 'sentry\\withscope',
+        10 => 'sentry\\startcontext',
+        11 => 'sentry\\endcontext',
+        12 => 'sentry\\withcontext',
+        13 => 'sentry\\starttransaction',
+        14 => 'sentry\\trace',
+        15 => 'sentry\\getotlptracesendpointurl',
+        16 => 'sentry\\gettraceparent',
+        17 => 'sentry\\getw3ctraceparent',
+        18 => 'sentry\\getbaggage',
+        19 => 'sentry\\continuetrace',
+        20 => 'sentry\\logger',
+        21 => 'sentry\\metrics',
+        22 => 'sentry\\tracemetrics',
+        23 => 'sentry\\trace_metrics',
+        24 => 'sentry\\addfeatureflag',
+        25 => 'sentry\\flush',
+      ),
+      3 => 
+      array (
+      ),
+    ),
   ),
 ));

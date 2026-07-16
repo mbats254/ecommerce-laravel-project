@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\CategoryController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\CategoryController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-c123a0561c3e020d1c41f6c53ceb833a5367c599919992ff7cee284c8edcf7a2',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-e56c6efefec46be70dc8ddddc3df412ae6f826282a41ad87b35fd4fb7d698e98',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 46,
+    'startLine' => 13,
+    'endLine' => 49,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -65,8 +67,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 12,
-        'endLine' => 22,
+        'startLine' => 15,
+        'endLine' => 25,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -104,8 +106,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 24,
-            'endLine' => 24,
+            'startLine' => 27,
+            'endLine' => 27,
             'startColumn' => 26,
             'endColumn' => 37,
             'parameterIndex' => 0,
@@ -126,8 +128,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 24,
-        'endLine' => 45,
+        'startLine' => 27,
+        'endLine' => 48,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

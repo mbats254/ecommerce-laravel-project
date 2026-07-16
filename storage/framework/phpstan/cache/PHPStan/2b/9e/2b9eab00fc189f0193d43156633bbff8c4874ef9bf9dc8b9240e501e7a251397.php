@@ -44,7 +44,30 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+          ),
+           'className' => 'App\\Http\\Requests\\UpdateAddressRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -68,7 +91,30 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+          ),
+           'className' => 'App\\Http\\Requests\\UpdateAddressRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -82,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => '22eab9b39354a53cebeef6fe2a158c39b110588d622c15a8840412e8a429568e',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => '860e78ffb9b91f3932ab64f1b8948aea7f1c83a3ba66d8a26c19e524b07ad681',
     ),
   ),
 ));

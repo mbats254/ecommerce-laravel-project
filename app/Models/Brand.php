@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Concerns\Auditable;
 use Database\Factories\BrandFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
@@ -13,7 +14,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Brand extends Model
 {
     /** @use HasFactory<BrandFactory> */
-    use HasFactory, HasUlids, SoftDeletes;
+    use Auditable, HasFactory, HasUlids, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.

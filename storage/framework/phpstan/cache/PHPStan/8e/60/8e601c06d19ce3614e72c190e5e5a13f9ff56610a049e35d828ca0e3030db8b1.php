@@ -58,7 +58,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Controllers',
+           'uses' => 
+          array (
+            'productcollection' => 'App\\Http\\Resources\\ProductCollection',
+            'productresource' => 'App\\Http\\Resources\\ProductResource',
+            'reviewcollection' => 'App\\Http\\Resources\\ReviewCollection',
+            'product' => 'App\\Models\\Product',
+            'flatqueryfilters' => 'App\\Support\\FlatQueryFilters',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'request' => 'Illuminate\\Http\\Request',
+            'allowedfilter' => 'Spatie\\QueryBuilder\\AllowedFilter',
+            'querybuilder' => 'Spatie\\QueryBuilder\\QueryBuilder',
+          ),
+           'className' => 'App\\Http\\Controllers\\ProductController',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -89,7 +119,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Controllers',
+           'uses' => 
+          array (
+            'productcollection' => 'App\\Http\\Resources\\ProductCollection',
+            'productresource' => 'App\\Http\\Resources\\ProductResource',
+            'reviewcollection' => 'App\\Http\\Resources\\ReviewCollection',
+            'product' => 'App\\Models\\Product',
+            'flatqueryfilters' => 'App\\Support\\FlatQueryFilters',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'request' => 'Illuminate\\Http\\Request',
+            'allowedfilter' => 'Spatie\\QueryBuilder\\AllowedFilter',
+            'querybuilder' => 'Spatie\\QueryBuilder\\QueryBuilder',
+          ),
+           'className' => 'App\\Http\\Controllers\\ProductController',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -120,7 +180,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Controllers',
+           'uses' => 
+          array (
+            'productcollection' => 'App\\Http\\Resources\\ProductCollection',
+            'productresource' => 'App\\Http\\Resources\\ProductResource',
+            'reviewcollection' => 'App\\Http\\Resources\\ReviewCollection',
+            'product' => 'App\\Models\\Product',
+            'flatqueryfilters' => 'App\\Support\\FlatQueryFilters',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'request' => 'Illuminate\\Http\\Request',
+            'allowedfilter' => 'Spatie\\QueryBuilder\\AllowedFilter',
+            'querybuilder' => 'Spatie\\QueryBuilder\\QueryBuilder',
+          ),
+           'className' => 'App\\Http\\Controllers\\ProductController',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -151,7 +241,37 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Controllers',
+           'uses' => 
+          array (
+            'productcollection' => 'App\\Http\\Resources\\ProductCollection',
+            'productresource' => 'App\\Http\\Resources\\ProductResource',
+            'reviewcollection' => 'App\\Http\\Resources\\ReviewCollection',
+            'product' => 'App\\Models\\Product',
+            'flatqueryfilters' => 'App\\Support\\FlatQueryFilters',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'request' => 'Illuminate\\Http\\Request',
+            'allowedfilter' => 'Spatie\\QueryBuilder\\AllowedFilter',
+            'querybuilder' => 'Spatie\\QueryBuilder\\QueryBuilder',
+          ),
+           'className' => 'App\\Http\\Controllers\\ProductController',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -165,7 +285,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => 'f78b2876b7d4f50a4e64d9645ccb4eb53468a8500c9545ebedffbe72a5a23b68',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => '33be3306804359b9173b3541f13e1edeb89efdc6d7959de32efaf15b38c30132',
     ),
   ),
 ));

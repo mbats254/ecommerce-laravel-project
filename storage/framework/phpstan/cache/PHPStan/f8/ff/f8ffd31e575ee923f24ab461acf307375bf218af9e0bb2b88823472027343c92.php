@@ -46,7 +46,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'rule' => 'Illuminate\\Validation\\Rule',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\UpdateAdminUserRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -71,7 +95,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'rule' => 'Illuminate\\Validation\\Rule',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\UpdateAdminUserRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -85,7 +133,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => '5aa18213371fd63682badff1aad6e70d531e8450e645ef0dffba3b27ac1ca943',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 'd61a1e92df391c921accaeda8b57dfae302ed54742cd2453fb07032468dd355f',
     ),
   ),
 ));

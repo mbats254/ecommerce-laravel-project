@@ -46,7 +46,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'rule' => 'Illuminate\\Validation\\Rule',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\UpdateProductRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -71,7 +95,31 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'templatePhpDocNodes' => 
         array (
         ),
-         'parent' => NULL,
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Http\\Requests\\Admin',
+           'uses' => 
+          array (
+            'validationrule' => 'Illuminate\\Contracts\\Validation\\ValidationRule',
+            'formrequest' => 'Illuminate\\Foundation\\Http\\FormRequest',
+            'rule' => 'Illuminate\\Validation\\Rule',
+          ),
+           'className' => 'App\\Http\\Requests\\Admin\\UpdateProductRequest',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
          'typeAliasesMap' => 
         array (
         ),
@@ -85,7 +133,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => '855c80d48f27275575af1c8a80bec5bbec462365eeaecb047f691c02943f6888',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => '23ee848a93bd830b52c90720add2613349737069b324413952f720db70580e5c',
     ),
   ),
 ));

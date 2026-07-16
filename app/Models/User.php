@@ -70,6 +70,30 @@ class User extends Authenticatable implements MustVerifyEmail
         return $this->hasMany(Address::class);
     }
 
+    /**
+     * @return HasMany<Order, $this>
+     */
+    public function orders(): HasMany
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    /**
+     * @return HasMany<Wishlist, $this>
+     */
+    public function wishlist(): HasMany
+    {
+        return $this->hasMany(Wishlist::class);
+    }
+
+    /**
+     * @return HasMany<CompareListItem, $this>
+     */
+    public function compareList(): HasMany
+    {
+        return $this->hasMany(CompareListItem::class);
+    }
+
     public function sendEmailVerificationNotification(): void
     {
         $this->notify(new QueuedVerifyEmailNotification);

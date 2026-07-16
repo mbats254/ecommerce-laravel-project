@@ -6,6 +6,9 @@ use App\Models\Address;
 use Illuminate\Contracts\Validation\ValidationRule;
 use Illuminate\Foundation\Http\FormRequest;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class StoreAddressRequest extends FormRequest
 {
     /**

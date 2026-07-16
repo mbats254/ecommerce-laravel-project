@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Models\Brand.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Brand
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-a596bd934c577a124f112826b6491aaf76dc25487eed7e4ded99ff71b517c08c',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-81d548248e56e026152184c543094f7c9d90e2e38e913664579f4591a49e5db5',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 13,
-    'endLine' => 58,
+    'startLine' => 14,
+    'endLine' => 59,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -36,9 +36,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
-      0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-      1 => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
-      2 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      0 => 'App\\Concerns\\Auditable',
+      1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      2 => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+      3 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
     ),
     'immediateConstants' => 
     array (
@@ -57,12 +58,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'name\', \'slug\', \'logo_path\', \'is_active\']',
           'attributes' => 
           array (
-            'startLine' => 23,
-            'endLine' => 28,
-            'startTokenPos' => 73,
-            'startFilePos' => 590,
-            'endTokenPos' => 87,
-            'endFilePos' => 670,
+            'startLine' => 24,
+            'endLine' => 29,
+            'startTokenPos' => 81,
+            'startFilePos' => 629,
+            'endTokenPos' => 95,
+            'endFilePos' => 709,
           ),
         ),
         'docComment' => '/**
@@ -73,8 +74,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 23,
-        'endLine' => 28,
+        'startLine' => 24,
+        'endLine' => 29,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -111,8 +112,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, string>
  */',
-        'startLine' => 35,
-        'endLine' => 40,
+        'startLine' => 36,
+        'endLine' => 41,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -148,8 +149,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<Product, $this>
  */',
-        'startLine' => 45,
-        'endLine' => 48,
+        'startLine' => 46,
+        'endLine' => 49,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -187,8 +188,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 54,
-            'endLine' => 54,
+            'startLine' => 55,
+            'endLine' => 55,
             'startColumn' => 33,
             'endColumn' => 46,
             'parameterIndex' => 0,
@@ -212,8 +213,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Brand>  $query
  * @return Builder<Brand>
  */',
-        'startLine' => 54,
-        'endLine' => 57,
+        'startLine' => 55,
+        'endLine' => 58,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

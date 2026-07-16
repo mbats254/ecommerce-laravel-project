@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'warehousefactory' => 'Database\\Factories\\WarehouseFactory',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
@@ -34,6 +35,150 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
+      )),
+      '6e9556477f5bef6f9d23c45d33f76bce' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Warehouse',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+          1 => 'App\\Models\\Warehouse',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<WarehouseFactory> */',
+        ),
+      )),
+      '19f43182d20679a81b22464b2921a301' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Warehouse',
+         'functionName' => 'bootAuditable',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Warehouse',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+          1 => 'App\\Models\\Warehouse',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<WarehouseFactory> */',
+        ),
+      )),
+      '5275bfab2e3c769a0bb2291c78d1911b' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Warehouse',
+         'functionName' => 'auditAction',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Warehouse',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+          1 => 'App\\Models\\Warehouse',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<WarehouseFactory> */',
+        ),
       )),
       '2dccbd63d944bbb7cd6a21768a3722bf' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
@@ -1689,6 +1834,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'warehousefactory' => 'Database\\Factories\\WarehouseFactory',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
@@ -1717,6 +1863,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'warehousefactory' => 'Database\\Factories\\WarehouseFactory',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
@@ -1743,7 +1890,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => '6088370ac2d8c8773d9ca3d83b528121330e0925ba383b6e333c03888b4631e9',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 'af689e1b69f65505754ab0f742ed7c5f6a1575b33e1026a3da5a49665d0182e8',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUlids.php' => '05a9799d0cc82991d414228dbee5b77772ca18d2e3ca88f50bdafcb42bacde62',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUniqueStringIds.php' => '3d5612d3c0a56c6c9f19e628b02085d4d68a64d9d07656742725cec78d4a79c5',

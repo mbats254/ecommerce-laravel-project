@@ -13,6 +13,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1690,6 +1691,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1718,6 +1720,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1746,6 +1749,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1774,6 +1778,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'uses' => 
         array (
           'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
           'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
           'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
           'model' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1796,10 +1801,39 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
       )),
+      '72c53c72162ebf3529a71b94c054fe6b' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'inventoryitemfactory' => 'Database\\Factories\\InventoryItemFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+        ),
+         'className' => 'App\\Models\\InventoryItem',
+         'functionName' => 'scopeLowStock',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => '40cf5cb13adc88b9cc32aaa090a3bd83b5dc6c79e55655464a498dfa594374c5',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => '5274650241cac746217f8e82a715a300375336ecb7aa0bcf0abd5436f148194d',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUlids.php' => '05a9799d0cc82991d414228dbee5b77772ca18d2e3ca88f50bdafcb42bacde62',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUniqueStringIds.php' => '3d5612d3c0a56c6c9f19e628b02085d4d68a64d9d07656742725cec78d4a79c5',

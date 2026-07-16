@@ -281,7 +281,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 'e5ddafa07059bfc9f8310767b0fc04dd3b8a1f50bcec1fd693b19f5555697825',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => '9982ead1c00d3dc015c3b1fb8145172ba979f922400bc200f09d7ea399546528',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Foundation\\Auth\\Access\\AuthorizesRequests.php' => '19d752f2ace60b09e4fd611e5893ad67ee4b87a3d256c284646719f5d97b6b2c',
     ),
   ),

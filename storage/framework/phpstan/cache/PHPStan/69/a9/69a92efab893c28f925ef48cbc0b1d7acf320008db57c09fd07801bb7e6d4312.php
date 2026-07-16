@@ -114,14 +114,15 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
     array (
-      0 => '6af25390583592e3295e322cc233cc671634f89b98c5e20579fc6c9ae55ea220',
+      0 => '4cdadad52eaa26b13b1b58398d0ab7ebdf7bda4770427d18d22ab6b3b74b5d52',
       1 => 
       array (
         0 => 'app\\actions\\auth\\loginaction',
       ),
       2 => 
       array (
-        0 => 'app\\actions\\auth\\handle',
+        0 => 'app\\actions\\auth\\__construct',
+        1 => 'app\\actions\\auth\\handle',
       ),
       3 => 
       array (
@@ -203,7 +204,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php' => 
     array (
-      0 => '0d142ad8055cbc4c06565b78b96db4252380456c7fefafaa7c70d09bce413af6',
+      0 => '97d5d78b9b630d014e9e361673ecf0af24c22d061474a78c83e6bd16ddf1e505',
       1 => 
       array (
         0 => 'app\\http\\controllers\\addresscontroller',
@@ -221,7 +222,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php' => 
     array (
-      0 => 'decb307b4df8c0c8a429d78b5019bb144466914fec058e064352ef95840ba9eb',
+      0 => '40984abd3ca41e921a789469d1f67044fdc9df0809e30b968c93ed4628d84971',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\rolecontroller',
@@ -238,7 +239,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php' => 
     array (
-      0 => 'd9f0b447bc15e803a8996c64f1201b0e4e8ce801bcb247d4680afb05ac298349',
+      0 => 'c1de1de1174d58c0e90d2d52ee077596044f9a8a7715dfbb4c1511e260054139',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\usercontroller',
@@ -255,7 +256,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
     array (
-      0 => 'd42bbd1cd3ee780db5db4127a96dbee578c9aa4eedb911dbae656d6316951250',
+      0 => '7dd1a154f965ce87a4120c7ae08749c3a51ea5796702a0daa4fa6e6365b61435',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\authcontroller',
@@ -275,7 +276,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 
     array (
-      0 => 'e5ddafa07059bfc9f8310767b0fc04dd3b8a1f50bcec1fd693b19f5555697825',
+      0 => '9982ead1c00d3dc015c3b1fb8145172ba979f922400bc200f09d7ea399546528',
       1 => 
       array (
         0 => 'app\\http\\controllers\\controller',
@@ -289,7 +290,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreAdminUserRequest.php' => 
     array (
-      0 => '0b69d76a049bc0aeae81418b639a14268d1854eccbcf16e1eac5e60a4e099251',
+      0 => '63635eca76ba5485b17d6de3ac653d3a88f5a19e060b516150f02444b0775676',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storeadminuserrequest',
@@ -305,7 +306,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php' => 
     array (
-      0 => '21c644941474961c22cdd86b08fcac25d006345ea39f0b01ddea435b80bd2920',
+      0 => 'fcb63046b468613a51009a96ac21806cfd21b781e5902bb82d5fdd5504744965',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storerolerequest',
@@ -321,7 +322,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 
     array (
-      0 => '5aa18213371fd63682badff1aad6e70d531e8450e645ef0dffba3b27ac1ca943',
+      0 => 'd61a1e92df391c921accaeda8b57dfae302ed54742cd2453fb07032468dd355f',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updateadminuserrequest',
@@ -337,7 +338,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateRoleRequest.php' => 
     array (
-      0 => '11190efeb6dc495a780feaf0041e11d402ffd46b4fad5c7b5e1160293bd9a5bf',
+      0 => '07beb5da44c483271c3dd217155c687938c463d627745e18925b5d03b25176cc',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updaterolerequest',
@@ -353,7 +354,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ForgotPasswordRequest.php' => 
     array (
-      0 => '7c8e58a511e8ca2d1fea2067a527c76846660592131e6458ff971162469600d5',
+      0 => 'd255fb44c4408772a05237778665bba865dd9b41d13dbd2272a660b5e1de8037',
       1 => 
       array (
         0 => 'app\\http\\requests\\auth\\forgotpasswordrequest',
@@ -369,7 +370,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
     array (
-      0 => 'd3e88242bbf4e355787cb3d50f767553cc2ec129c2c25011077f1d8e9cf68f2e',
+      0 => 'c65e17c69fe76347f95a6f2d1d7c952898e166bf073660c222376a35d56e3f12',
       1 => 
       array (
         0 => 'app\\http\\requests\\auth\\loginrequest',
@@ -385,7 +386,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => 
     array (
-      0 => '015bff99ab555cdc4bf40b308cf9ed23a8a589dd29d3e743103e706f082753c8',
+      0 => '7058c56d16df5971026c92edbc9ec435e3d5ffee526e0be5547716b25e4f4ba6',
       1 => 
       array (
         0 => 'app\\http\\requests\\auth\\registerrequest',
@@ -401,7 +402,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ResetPasswordRequest.php' => 
     array (
-      0 => '04d295aa4d7f4786934249641d0465f930319656703201e6e2ee34289d458bf8',
+      0 => '006e441b33c4ecac80e20210d34e4f6f4411cf3f0beff8317b860bd8931c0cd8',
       1 => 
       array (
         0 => 'app\\http\\requests\\auth\\resetpasswordrequest',
@@ -417,7 +418,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php' => 
     array (
-      0 => '59e1ffa7848048f48a4e949243f20253c7de4076b518057f20bd42bf95c2c454',
+      0 => '27a5cf0cb86798dce9d302b890854871fb32f45debf129fa214910beccadef5f',
       1 => 
       array (
         0 => 'app\\http\\requests\\storeaddressrequest',
@@ -433,7 +434,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => 
     array (
-      0 => '22eab9b39354a53cebeef6fe2a158c39b110588d622c15a8840412e8a429568e',
+      0 => '860e78ffb9b91f3932ab64f1b8948aea7f1c83a3ba66d8a26c19e524b07ad681',
       1 => 
       array (
         0 => 'app\\http\\requests\\updateaddressrequest',
@@ -583,7 +584,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 
     array (
-      0 => 'fc5cc079604ed47178240e370aa28bc3db603731fcb2b00f8f849da14c815387',
+      0 => '393cceae58109bc2e9b2c69633326a97da0c3e0f814039c94ae427a286d3fefe',
       1 => 
       array (
         0 => 'app\\models\\user',
@@ -592,7 +593,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\models\\casts',
         1 => 'app\\models\\addresses',
-        2 => 'app\\models\\sendemailverificationnotification',
+        2 => 'app\\models\\orders',
+        3 => 'app\\models\\wishlist',
+        4 => 'app\\models\\comparelist',
+        5 => 'app\\models\\sendemailverificationnotification',
       ),
       3 => 
       array (
@@ -632,7 +636,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php' => 
     array (
-      0 => 'fe3c028c63b68c7ee08c4f1ba985f5cfb711fcee44c6b6c9d389f00028af262b',
+      0 => 'a9ffd2698f6c572cbcd2337b2cf7b683ffe14aa9c3c3341a573fd141a266deda',
       1 => 
       array (
         0 => 'app\\providers\\appserviceprovider',
@@ -843,7 +847,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php' => 
     array (
-      0 => '8a05929d26fe6b4f686bee82dad69fa1b994fdc03d9da5916894ccee4d137e67',
+      0 => 'bd6b2dee56d00e8bc3fbdd48f12be8ffb6d8ad286fed1f895b9a1d0f4989ca7c',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\brandcontroller',
@@ -861,7 +865,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php' => 
     array (
-      0 => '9201515d96b7b54aa958777e8d6c5c0a23229a74e211d9dfacc4e6ef79169838',
+      0 => '58999c23ec034fd72ed6ca1dea6d0f690e08a8f3ecbdcd4849277a589f26ddcc',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\categorycontroller',
@@ -879,7 +883,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php' => 
     array (
-      0 => '85c42e0e523a207ea22b11c77606b36758e88ba5d16eda6b640a98e9af876ec3',
+      0 => 'b84f64ceb32d91cf65c566b3895a7dfeb0dd479dc3379a1666cbd011c3aa51b7',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\productcontroller',
@@ -899,7 +903,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php' => 
     array (
-      0 => 'e392b1f6e19b436d798ba284b192e37d33063759c13c220d783993727debd1ca',
+      0 => '54c5748884da5f36acf3f0687e5eb9d04b2303834c77cc51ae57a8a3774c309f',
       1 => 
       array (
         0 => 'app\\http\\controllers\\admin\\reviewcontroller',
@@ -915,7 +919,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php' => 
     array (
-      0 => '5af163ec66f48d84698ea794f075adc0a5a279daf3e84f54720ec64d04a02416',
+      0 => '8ecc5aeaed2cd7fc9ced08b4ba401895729c8db16feff00aa97ddbb262470d50',
       1 => 
       array (
         0 => 'app\\http\\controllers\\brandcontroller',
@@ -931,7 +935,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php' => 
     array (
-      0 => 'c123a0561c3e020d1c41f6c53ceb833a5367c599919992ff7cee284c8edcf7a2',
+      0 => 'e56c6efefec46be70dc8ddddc3df412ae6f826282a41ad87b35fd4fb7d698e98',
       1 => 
       array (
         0 => 'app\\http\\controllers\\categorycontroller',
@@ -947,7 +951,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php' => 
     array (
-      0 => '475c9976a238b17e35a5f2cdf4bf8698f475d7af166df4dc9b73f654a3cf3bd7',
+      0 => '42fc139be683ee9b945d9bfcfa33dfc36641acab00a09da701e26c1dec20c067',
       1 => 
       array (
         0 => 'app\\http\\controllers\\flashdealcontroller',
@@ -962,7 +966,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => 
     array (
-      0 => 'f78b2876b7d4f50a4e64d9645ccb4eb53468a8500c9545ebedffbe72a5a23b68',
+      0 => '33be3306804359b9173b3541f13e1edeb89efdc6d7959de32efaf15b38c30132',
       1 => 
       array (
         0 => 'app\\http\\controllers\\productcontroller',
@@ -980,7 +984,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php' => 
     array (
-      0 => '1fb52b7cac95bb0b7931650ebc09f29ae93635ac22d384f86e81b0d64904a402',
+      0 => '7a7643fcd11fc594e33e3fefea1418a7544aae1a7bea7867274b2916a4f4162b',
       1 => 
       array (
         0 => 'app\\http\\controllers\\searchcontroller',
@@ -995,7 +999,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php' => 
     array (
-      0 => '3b0704996bbf7d8b957bd9409080ca41e2a6611ba065a9125f12d700f717d21e',
+      0 => 'e9ec7b6b99b810f2fd332c1f2d860160dd6e1b79f76928768981817c83a4f0af',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storebrandrequest',
@@ -1011,7 +1015,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => 
     array (
-      0 => '0837e5e3f8f53ee92058204d48dc3886a266aa13a759d394e68c242e586a32ab',
+      0 => '86184c020cc994d070adab15a585dd19bee7ad0494834b7ff794a4f10b7faf47',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storecategoryrequest',
@@ -1027,7 +1031,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php' => 
     array (
-      0 => '0d0669686702927d8ac61035757cc01bc038b1eecd0d7ebaaa8f1a485e5ab35e',
+      0 => '3f2a35cfa511c889c535d09f1e170f395db77b76cc20ea6fd3017c4bed89cdd0',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storeproductimagerequest',
@@ -1043,7 +1047,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php' => 
     array (
-      0 => 'be608c4b769a501a89f7ee4905f04ae15ced32c9d56c5205c2891fede3414623',
+      0 => '32775205e3fa12b598edb78aa388aa5f62715567dd3062ff015e59a207156292',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\storeproductrequest',
@@ -1059,7 +1063,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBrandRequest.php' => 
     array (
-      0 => 'd1907183a21cb82de596c78a7a6f391dae8a21432d83ada3ba9e284f0317b5b6',
+      0 => 'b2b783fa4405ff63edb305f7f1af5ae5369f85dae0ec94ce6b57b082933b804e',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updatebrandrequest',
@@ -1075,7 +1079,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCategoryRequest.php' => 
     array (
-      0 => 'ddfd98f940e90fa05128e26d7c05a9c547458333df7c1f320b4422373fd37f91',
+      0 => '66e8d9bbe07dbb2ee88b4b930884a516824298bf181b4cfe3e8931560815627a',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updatecategoryrequest',
@@ -1091,7 +1095,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => 
     array (
-      0 => '855c80d48f27275575af1c8a80bec5bbec462365eeaecb047f691c02943f6888',
+      0 => '23ee848a93bd830b52c90720add2613349737069b324413952f720db70580e5c',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updateproductrequest',
@@ -1107,7 +1111,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php' => 
     array (
-      0 => '0d3cab73a8b2357008d33afc304f544f3e612ae180b4719e42e205efb4029352',
+      0 => '510838ef97ab060ccfe394ab85358a2233712beba78b475cfabf3bdbd6f9ee49',
       1 => 
       array (
         0 => 'app\\http\\requests\\admin\\updatereviewrequest',
@@ -1299,7 +1303,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php' => 
     array (
-      0 => 'a596bd934c577a124f112826b6491aaf76dc25487eed7e4ded99ff71b517c08c',
+      0 => '81d548248e56e026152184c543094f7c9d90e2e38e913664579f4591a49e5db5',
       1 => 
       array (
         0 => 'app\\models\\brand',
@@ -1316,7 +1320,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 
     array (
-      0 => 'dbb101369b3d68b750ba6941564f1f3560d0c7fcd21c15d184b6eaa997cea77a',
+      0 => '6c3e08489310544d9cce56b284984d42a52e4a40a9ff994df90d04873836374f',
       1 => 
       array (
         0 => 'app\\models\\category',
@@ -1335,7 +1339,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => 
     array (
-      0 => '40cf5cb13adc88b9cc32aaa090a3bd83b5dc6c79e55655464a498dfa594374c5',
+      0 => '5274650241cac746217f8e82a715a300375336ecb7aa0bcf0abd5436f148194d',
       1 => 
       array (
         0 => 'app\\models\\inventoryitem',
@@ -1346,6 +1350,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         1 => 'app\\models\\warehouse',
         2 => 'app\\models\\product',
         3 => 'app\\models\\variant',
+        4 => 'app\\models\\scopelowstock',
       ),
       3 => 
       array (
@@ -1353,7 +1358,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
     array (
-      0 => '3906109d026798d556cc8a86d9498b122ba19a829656631a95060320f3fb5661',
+      0 => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
       1 => 
       array (
         0 => 'app\\models\\product',
@@ -1368,16 +1373,18 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         5 => 'app\\models\\variants',
         6 => 'app\\models\\reviews',
         7 => 'app\\models\\inventoryitems',
-        8 => 'app\\models\\stockstatus',
-        9 => 'app\\models\\scopeactive',
-        10 => 'app\\models\\scopecategoryslug',
-        11 => 'app\\models\\scopebrandslugs',
-        12 => 'app\\models\\scopepricemin',
-        13 => 'app\\models\\scopepricemax',
-        14 => 'app\\models\\scopesearchquery',
-        15 => 'app\\models\\tosearchablearray',
-        16 => 'app\\models\\shouldbesearchable',
-        17 => 'app\\models\\makeallsearchableusing',
+        8 => 'app\\models\\wishlist',
+        9 => 'app\\models\\comparelist',
+        10 => 'app\\models\\stockstatus',
+        11 => 'app\\models\\scopeactive',
+        12 => 'app\\models\\scopecategoryslug',
+        13 => 'app\\models\\scopebrandslugs',
+        14 => 'app\\models\\scopepricemin',
+        15 => 'app\\models\\scopepricemax',
+        16 => 'app\\models\\scopesearchquery',
+        17 => 'app\\models\\tosearchablearray',
+        18 => 'app\\models\\shouldbesearchable',
+        19 => 'app\\models\\makeallsearchableusing',
       ),
       3 => 
       array (
@@ -1449,7 +1456,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 
     array (
-      0 => '6088370ac2d8c8773d9ca3d83b528121330e0925ba383b6e333c03888b4631e9',
+      0 => 'af689e1b69f65505754ab0f742ed7c5f6a1575b33e1026a3da5a49665d0182e8',
       1 => 
       array (
         0 => 'app\\models\\warehouse',
@@ -1488,6 +1495,2297 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'app\\support\\merge',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php' => 
+    array (
+      0 => '8f29f874d33ad1e20f375adf25828ae519dd7070547f14544c15b057dc7f85ac',
+      1 => 
+      array (
+        0 => 'app\\actions\\cart\\addcartitemaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\cart\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php' => 
+    array (
+      0 => '59ef3beffc0d446b03f5ec47cc40ed2b261735f2d34fd27425438d1ceb08d8d3',
+      1 => 
+      array (
+        0 => 'app\\actions\\cart\\mergeguestcartaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\cart\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\UpdateCartItemAction.php' => 
+    array (
+      0 => 'fd811ffcab7191687748c4bfa3d53da3918f0e18591ff82590c88789ccb69401',
+      1 => 
+      array (
+        0 => 'app\\actions\\cart\\updatecartitemaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\cart\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php' => 
+    array (
+      0 => '0d206b923c965d6093533b89f8f098b56b4d6e8ddd7d5f0888826a5afd6f539a',
+      1 => 
+      array (
+        0 => 'app\\actions\\checkout\\placeorderaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\checkout\\__construct',
+        1 => 'app\\actions\\checkout\\handle',
+        2 => 'app\\actions\\checkout\\decrementstock',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php' => 
+    array (
+      0 => 'bbff811d371bf772ac3797284e277aec0a3c5206c3a59c23e84d3f1b562baae6',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\togglecompareaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php' => 
+    array (
+      0 => '6005c1b9b0dfb772d8f4746a81e690d87144c0aec1a48b9860acee6ac7d345ae',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\togglewishlistaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php' => 
+    array (
+      0 => '7f459b7cb074a8c6ee4ef71e35ed74ee4ff8375bf23e1fef0201625f0c1a4378',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\validatecouponaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php' => 
+    array (
+      0 => '0c776e993e5b660225f8b7c6874f7946b9c665cf4e7f8347cc37b0c4702aa683',
+      1 => 
+      array (
+        0 => 'app\\actions\\order\\cancelorderaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\order\\__construct',
+        1 => 'app\\actions\\order\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\CouponType.php' => 
+    array (
+      0 => '4830fb1f82dc0e491cbbeeb51dbf829c20533e1aa01e903046cc20c841e9f627',
+      1 => 
+      array (
+        0 => 'app\\enums\\coupontype',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\OrderStatus.php' => 
+    array (
+      0 => '1c2ade26c002462c684afa843810c619729d59cda0ba20c4a2de830945578886',
+      1 => 
+      array (
+        0 => 'app\\enums\\orderstatus',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php' => 
+    array (
+      0 => '27ef3b54f37801e00bbc15898b5a0c8f2976e276da0d26f88e81baabcc74cbb4',
+      1 => 
+      array (
+        0 => 'app\\enums\\paymentmethod',
+      ),
+      2 => 
+      array (
+        0 => 'app\\enums\\provider',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentProvider.php' => 
+    array (
+      0 => '4a0c372b6f68bf4b0b49321c857257713e5a8462801d1ac838b64d2d2fb3ed4f',
+      1 => 
+      array (
+        0 => 'app\\enums\\paymentprovider',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentStatus.php' => 
+    array (
+      0 => '4e7d564d9b3a1bcee1766f67d7e7c6ad87b0957173a59e39983fffbcb8883154',
+      1 => 
+      array (
+        0 => 'app\\enums\\paymentstatus',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php' => 
+    array (
+      0 => 'de0bad6a10fb7599c9fd0e8a5709bb3466b535ea2ef05acfa57c96cdb3adfaae',
+      1 => 
+      array (
+        0 => 'app\\events\\orderplaced',
+      ),
+      2 => 
+      array (
+        0 => 'app\\events\\__construct',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php' => 
+    array (
+      0 => '1b9d64e1784727fcd06eabfb34a6046b93d88d655423678baeb5164a55571be5',
+      1 => 
+      array (
+        0 => 'app\\events\\stocklevellow',
+      ),
+      2 => 
+      array (
+        0 => 'app\\events\\__construct',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php' => 
+    array (
+      0 => '4e0319331c6ba3549896e1b69798dbff3f89dfb7442bd1ac13c73e172ebb9cdb',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\cartcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\__construct',
+        1 => 'app\\http\\controllers\\store',
+        2 => 'app\\http\\controllers\\show',
+        3 => 'app\\http\\controllers\\storeitem',
+        4 => 'app\\http\\controllers\\updateitem',
+        5 => 'app\\http\\controllers\\destroyitem',
+        6 => 'app\\http\\controllers\\authorizeitembelongstocurrentcart',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php' => 
+    array (
+      0 => 'a785cc94aaaf98b16da767fedd7be0cff0a00b8b7068e0470f3c5922d18195d5',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\checkoutcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\store',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php' => 
+    array (
+      0 => '50cbe093e823308615f7d39e9d44bf607190d54bf7cd246c106f406ca82781b7',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\comparecontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\index',
+        1 => 'app\\http\\controllers\\toggle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php' => 
+    array (
+      0 => '09aed70d64b46a2c0d8b5b8267867d7a1fecf51196eb52b9db6c5f3f0eaab540',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\couponcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\validatecoupon',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php' => 
+    array (
+      0 => '031049fcafc7ce54df522984a93fb0383db7afb1990b382efecdc61d99d1d671',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\ordercontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\index',
+        1 => 'app\\http\\controllers\\show',
+        2 => 'app\\http\\controllers\\cancel',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php' => 
+    array (
+      0 => 'ed0f79e025d86fb2b8f53964f183af8011c1c55135a1bf145ba1b6089184f534',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\paymentcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\mpesastkpush',
+        1 => 'app\\http\\controllers\\mpesacallback',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php' => 
+    array (
+      0 => '5b369516eb5b3acb26cbe3fe744dd05ab8aa6b0eb3d43bf68511cf4ac8d64308',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\wishlistcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\index',
+        1 => 'app\\http\\controllers\\toggle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\VerifyMpesaCallbackIp.php' => 
+    array (
+      0 => '0309d696e520ac859c09f7123c90a8906d72f8f9bf0b6ee9e366b9c0c6d498c2',
+      1 => 
+      array (
+        0 => 'app\\http\\middleware\\verifympesacallbackip',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\middleware\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php' => 
+    array (
+      0 => '680041852125ef1fe11a1024a570940cd1e4a07d0cf5a46190e58e866da8a964',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\checkoutrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php' => 
+    array (
+      0 => '88c767cb5f40e2cc295fe2da42f5dd5ecc6b6c6545f110f942fd306bac7dec3e',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\stkpushrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreCartItemRequest.php' => 
+    array (
+      0 => 'ea0e2017bf20356f7230eae744bdf6aa7224a8cd4657bef4704aee2ec1c1d2fa',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\storecartitemrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateCartItemRequest.php' => 
+    array (
+      0 => '6dd825ef0b6074d876ed03cea80c35ed8359b9b0162b128feb32db1e8c6f50de',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\updatecartitemrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\ValidateCouponRequest.php' => 
+    array (
+      0 => '40f70bac6fbfead873286f1528695a21a371d3e2d80b72f491f397db652b7464',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\validatecouponrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php' => 
+    array (
+      0 => '7a9a48f7c61d8fcbadd5ab1afb13c1d438466e23402e9e3eb982ea7029d13f22',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\cartitemresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php' => 
+    array (
+      0 => 'bf7dd50dc685167f7efc371c2e1f5dae7c783333d78191469705042bb4d8ba65',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\cartresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php' => 
+    array (
+      0 => '3fc338f4c9f65f4a7277e9fba0387da81329d4244af57441dec7e97dd5ee78d7',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\ordercollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php' => 
+    array (
+      0 => '90ffd1d4d20c449ce3cf41e90f799c71fff3a5dc06b2c336c175296e16ad525c',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\orderitemresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php' => 
+    array (
+      0 => 'a7c8e0d1c82eb252e34e275556133534a2784c5aefb2a074822425a724ebf4c8',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\orderresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php' => 
+    array (
+      0 => '4b8916f6284ca4e460ea44ae7fc9779c2e3e023da4bfdbeec701d6fe1c7fc76c',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\orderstatushistoryresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php' => 
+    array (
+      0 => '9fe02e213cc5f103b529fb5714456c56ccc74412d0532d65371bc908244bba39',
+      1 => 
+      array (
+        0 => 'app\\listeners\\checkforlowstockafterorder',
+      ),
+      2 => 
+      array (
+        0 => 'app\\listeners\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php' => 
+    array (
+      0 => 'b0d9a44b06b479c8700afda0f4f3abfa780a24a55931c7434fc9b7400bfcd4a2',
+      1 => 
+      array (
+        0 => 'app\\listeners\\notifyadminsoflowstock',
+      ),
+      2 => 
+      array (
+        0 => 'app\\listeners\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php' => 
+    array (
+      0 => 'cd24690ab243ae5525da44837e86b882a785a453d55f9b113ca9d36c2bdabccb',
+      1 => 
+      array (
+        0 => 'app\\listeners\\sendorderconfirmationnotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\listeners\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php' => 
+    array (
+      0 => '8db4ceb3a4b0363eec60692a47394c0643403548f338e6f516b4e332fe1c021f',
+      1 => 
+      array (
+        0 => 'app\\models\\cart',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\user',
+        1 => 'app\\models\\items',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php' => 
+    array (
+      0 => '2667fd46ce8111903dd263d4e3052aaeea7ed4e98fbd222bc6ddb63662bd7554',
+      1 => 
+      array (
+        0 => 'app\\models\\cartitem',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\cart',
+        2 => 'app\\models\\product',
+        3 => 'app\\models\\variant',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php' => 
+    array (
+      0 => '6e23ec8f46248b2fddd80191f15c32ee3c2f305e6bd27c56ea68ef66dcf422b7',
+      1 => 
+      array (
+        0 => 'app\\models\\comparelistitem',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\user',
+        1 => 'app\\models\\product',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php' => 
+    array (
+      0 => '56c9ba464374f4416a72fc0377c97796dfd89bdeb994166ba8632706e704e17d',
+      1 => 
+      array (
+        0 => 'app\\models\\coupon',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\orders',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php' => 
+    array (
+      0 => '6d42af55273a50ce5598ecad3412b915feae6c3e3751e7a1025b3756d8ffb7a3',
+      1 => 
+      array (
+        0 => 'app\\models\\order',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\user',
+        2 => 'app\\models\\shippingaddress',
+        3 => 'app\\models\\coupon',
+        4 => 'app\\models\\items',
+        5 => 'app\\models\\statushistory',
+        6 => 'app\\models\\payments',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php' => 
+    array (
+      0 => '2ded536d1fa5600653c17e73aab6dee8145ee3b041882447705993c494f38fe7',
+      1 => 
+      array (
+        0 => 'app\\models\\orderitem',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\order',
+        2 => 'app\\models\\product',
+        3 => 'app\\models\\variant',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php' => 
+    array (
+      0 => '6be35a11c9e4abfb3716fbfaedfd7e94de57686fed68bf3a90d3b0745e79715b',
+      1 => 
+      array (
+        0 => 'app\\models\\orderstatushistory',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\order',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php' => 
+    array (
+      0 => '432b3f1e7503e2469588c41f7f421328e2a61da47aef318c16cf911aa507b0cc',
+      1 => 
+      array (
+        0 => 'app\\models\\payment',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\order',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php' => 
+    array (
+      0 => 'beb1e5fb4d729c0c6910cc6486d8517984657cf66f4eb81d9088b7673c031cdd',
+      1 => 
+      array (
+        0 => 'app\\models\\wishlist',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\user',
+        1 => 'app\\models\\product',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php' => 
+    array (
+      0 => 'c8c1e6900403ecd942a047c957ff00802ba9138c13f0e20a835beb31cd1603b1',
+      1 => 
+      array (
+        0 => 'app\\notifications\\lowstockalertnotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\notifications\\__construct',
+        1 => 'app\\notifications\\via',
+        2 => 'app\\notifications\\tomail',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php' => 
+    array (
+      0 => '3d3cf5bdbbd5bde1bc52d115324919575414dc899f2af371124c6443b51b7687',
+      1 => 
+      array (
+        0 => 'app\\notifications\\orderconfirmationnotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\notifications\\__construct',
+        1 => 'app\\notifications\\via',
+        2 => 'app\\notifications\\tomail',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php' => 
+    array (
+      0 => '4dd796a9904e446ce56ea9e71568217dec388ea2efeef330a44e27a5e8c8a1be',
+      1 => 
+      array (
+        0 => 'app\\payments\\gateways\\cashondeliverygateway',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\gateways\\initiate',
+        1 => 'app\\payments\\gateways\\handlewebhook',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php' => 
+    array (
+      0 => 'a696c8edaeb699595abcc770ffcd17939e2758a3ce8fc9ad8861ff067964afbc',
+      1 => 
+      array (
+        0 => 'app\\payments\\gateways\\mpesagateway',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\gateways\\initiate',
+        1 => 'app\\payments\\gateways\\pushstk',
+        2 => 'app\\payments\\gateways\\getaccesstoken',
+        3 => 'app\\payments\\gateways\\handlewebhook',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php' => 
+    array (
+      0 => '380e3d63cd1b957d17443a2d8f5f5c239efad402735b07948adeca015b7c61dd',
+      1 => 
+      array (
+        0 => 'app\\payments\\gateways\\stripegateway',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\gateways\\initiate',
+        1 => 'app\\payments\\gateways\\handlewebhook',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php' => 
+    array (
+      0 => '616701aefb94972d7ee410f452221714184fd01c2ffaa0ecabfa2e63b949d312',
+      1 => 
+      array (
+        0 => 'app\\payments\\paymentgatewaycontract',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\initiate',
+        1 => 'app\\payments\\handlewebhook',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php' => 
+    array (
+      0 => 'cc46b394670f090011e82b6dd467d30406597e5c35ad41753a1b8e6b52af03eb',
+      1 => 
+      array (
+        0 => 'app\\payments\\paymentgatewaymanager',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\getdefaultdriver',
+        1 => 'app\\payments\\creatempesadriver',
+        2 => 'app\\payments\\createcarddriver',
+        3 => 'app\\payments\\createcashondeliverydriver',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php' => 
+    array (
+      0 => '89ac0a6ef528cd29aef5497d8eacea6f917f72441764f58f01b2fe853085792a',
+      1 => 
+      array (
+        0 => 'app\\payments\\paymentintent',
+      ),
+      2 => 
+      array (
+        0 => 'app\\payments\\__construct',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php' => 
+    array (
+      0 => 'ed3bcde48a6294e582daa720f3d7e165cd3848d152ddf1faea6d7fbd67d4369c',
+      1 => 
+      array (
+        0 => 'app\\policies\\orderpolicy',
+      ),
+      2 => 
+      array (
+        0 => 'app\\policies\\view',
+        1 => 'app\\policies\\cancel',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php' => 
+    array (
+      0 => '9529205f2a429dffb3216a2d784209388c0fe23e41410172ccb5c318424d9055',
+      1 => 
+      array (
+        0 => 'app\\services\\cartresolver',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\resolve',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\OrderNumberGenerator.php' => 
+    array (
+      0 => '3200218edb397e57c48f8c2d2c6d9b2036a35502753bbf8de729c2d7f26e7da9',
+      1 => 
+      array (
+        0 => 'app\\services\\ordernumbergenerator',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\generate',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php' => 
+    array (
+      0 => '96903a0bd53dfce34744225059707271521f61bc65a3828d08fbe9ab4a064172',
+      1 => 
+      array (
+        0 => 'app\\services\\pricingservice',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\calculate',
+        1 => 'app\\services\\deliveryfeefor',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php' => 
+    array (
+      0 => 'b6a0981712b884137015656ce14a31299aa5dac5cf29e2ebca8e5c57f618e75e',
+      1 => 
+      array (
+        0 => 'app\\actions\\order\\transitionorderstatusaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\order\\handle',
+        1 => 'app\\actions\\order\\restock',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php' => 
+    array (
+      0 => 'ffa86194e973ec107d1e7a6a00e5e8a662502a762fd6ec5d261825ad01ad3d95',
+      1 => 
+      array (
+        0 => 'app\\events\\orderstatuschanged',
+      ),
+      2 => 
+      array (
+        0 => 'app\\events\\__construct',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php' => 
+    array (
+      0 => 'ef28f79003ada40b5a740fbc539781307d3374d6c9ab1ecfcfb6a92511c3a7d8',
+      1 => 
+      array (
+        0 => 'app\\exceptions\\invalidordertransitionexception',
+      ),
+      2 => 
+      array (
+        0 => 'app\\exceptions\\make',
+        1 => 'app\\exceptions\\render',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php' => 
+    array (
+      0 => '8c46b382abc524cbdf4a2f06a76b7ff303dbfd08cdcd5e701833a907c1ccd9e9',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\ordercontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\show',
+        2 => 'app\\http\\controllers\\admin\\updatestatus',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php' => 
+    array (
+      0 => '7f22443d4a5ab09184a58922376da2db6fef8f82927102b667124be8eee35a8d',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updateorderstatusrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php' => 
+    array (
+      0 => 'b736fd3a88e4a7ca73e56057629085f8a768db4fd46483fe8e89bdeb29df282d',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\ordercollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php' => 
+    array (
+      0 => '9b92462ca97090d2aa4352d4421f5ee27769f84dbd8e191704cc8935147ecc04',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\orderresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php' => 
+    array (
+      0 => 'd6e5627d6594ea0ccb4be5b432083957033d8b166356972dbf5ddcb1dd6c02a3',
+      1 => 
+      array (
+        0 => 'app\\listeners\\sendorderstatuschangednotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\listeners\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php' => 
+    array (
+      0 => '0a19810c3fc92f4ac4d5a5fb17180e27fd2422693f700e324c5b6df09c4d469e',
+      1 => 
+      array (
+        0 => 'app\\notifications\\orderstatuschangednotification',
+      ),
+      2 => 
+      array (
+        0 => 'app\\notifications\\__construct',
+        1 => 'app\\notifications\\via',
+        2 => 'app\\notifications\\tomail',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php' => 
+    array (
+      0 => '5f0d62fc3fa01d15b7816103df1bfad1c6c966e1b278c3309a4dacb09e011e71',
+      1 => 
+      array (
+        0 => 'app\\actions\\crm\\createleadaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\crm\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php' => 
+    array (
+      0 => '3e80354d67cf18de2484c71ef1cc76c631d315f5d602748f2ee736bb5dc55cb3',
+      1 => 
+      array (
+        0 => 'app\\actions\\crm\\createquotationaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\crm\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php' => 
+    array (
+      0 => '94b0be30fb0b72b723e11537cb3a82ee0d8b1cba42f01cc9ad2affe812207052',
+      1 => 
+      array (
+        0 => 'app\\actions\\crm\\updateleadaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\crm\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php' => 
+    array (
+      0 => 'ea1bc09637396176972433a8723bd863737a915d1ed3dcd553b96f3e13df52e6',
+      1 => 
+      array (
+        0 => 'app\\actions\\crm\\updatequotationaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\crm\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php' => 
+    array (
+      0 => '10ad240ed374c13fad7f844e25b6fa4d18472fbee1b6507737fbbea5018a72e2',
+      1 => 
+      array (
+        0 => 'app\\actions\\inventory\\adjustinventoryaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\inventory\\__construct',
+        1 => 'app\\actions\\inventory\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php' => 
+    array (
+      0 => '14c7b00ce37a430a9271bf959f73a3716e12679575ecd13d501b0abb9c7b5099',
+      1 => 
+      array (
+        0 => 'app\\actions\\inventory\\createwarehouseaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\inventory\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php' => 
+    array (
+      0 => 'd7407c0af4ca626ecd6530c4f030f5a4dc2cea065ef8778dff736f46876fb823',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\createbanneraction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php' => 
+    array (
+      0 => '83110ce60523a854e286e2f33c92ac4790edf771dd6babc49325a1992e281acb',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\createcouponaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php' => 
+    array (
+      0 => '54ec205ecde73582c5b9a1a5618da0fc8e6dae9542b40bc4d08d1ea6d2621011',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\updatebanneraction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php' => 
+    array (
+      0 => '75f6c084be00241f013a8335bb75c272b85fbce52c85e518538a35b98adc4f8c',
+      1 => 
+      array (
+        0 => 'app\\actions\\marketing\\updatecouponaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\marketing\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php' => 
+    array (
+      0 => '3bf336e1fd2887b1854a740f8cd564d2c5e9c22c387e8924c30e5fab83d75e4a',
+      1 => 
+      array (
+        0 => 'app\\actions\\returns\\processrefundaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\returns\\__construct',
+        1 => 'app\\actions\\returns\\handle',
+        2 => 'app\\actions\\returns\\restock',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php' => 
+    array (
+      0 => '6a11b47e4b47240f59afa881c1aaddd36232c1e7a43144c12b04a2218e0c5ed7',
+      1 => 
+      array (
+        0 => 'app\\actions\\returns\\requestreturnaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\returns\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php' => 
+    array (
+      0 => '4591fdf625ead497213f959474eb5a579c50a178db9d2f7160d1d80bc9589d42',
+      1 => 
+      array (
+        0 => 'app\\actions\\returns\\updatereturnstatusaction',
+      ),
+      2 => 
+      array (
+        0 => 'app\\actions\\returns\\__construct',
+        1 => 'app\\actions\\returns\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\BannerPosition.php' => 
+    array (
+      0 => 'edcdef0556b269928a2bca3912ec79b721cadf71e413c26b129e51bf315c6e7b',
+      1 => 
+      array (
+        0 => 'app\\enums\\bannerposition',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\LeadStatus.php' => 
+    array (
+      0 => 'ed4e0e612f862eb70b1ad2f72ccb484d7b2dfe285db4413d2a5a27cb63536447',
+      1 => 
+      array (
+        0 => 'app\\enums\\leadstatus',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\QuotationStatus.php' => 
+    array (
+      0 => '34072a661851736d347db1e94acfdc7135855f9738f8bbe8a701a4f97f5096bd',
+      1 => 
+      array (
+        0 => 'app\\enums\\quotationstatus',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReturnStatus.php' => 
+    array (
+      0 => '06799accb737afcac385d4896c691d35c01d8a17d86fe3414c36c6c6dcf6c9e9',
+      1 => 
+      array (
+        0 => 'app\\enums\\returnstatus',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php' => 
+    array (
+      0 => 'dda6a46c8f22788d5d2b84cca9968a55d4df922ef9a3993a2186cf334ce9362a',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\bannercontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\store',
+        2 => 'app\\http\\controllers\\admin\\update',
+        3 => 'app\\http\\controllers\\admin\\destroy',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php' => 
+    array (
+      0 => '4bbcc11b1d13c6d7437f067a3054626f947a621fadbd370b268da9022335b698',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\couponcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\store',
+        2 => 'app\\http\\controllers\\admin\\update',
+        3 => 'app\\http\\controllers\\admin\\destroy',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php' => 
+    array (
+      0 => 'ab890b91c5cb163d7c67f1c6fdabffe92885063112b70549233a39857d6afe02',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\inventorycontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php' => 
+    array (
+      0 => '081d69423459e86ecaf5ae587d5e05db5e3605bdb0b633f423aad852dbbb9c9e',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\leadcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\store',
+        2 => 'app\\http\\controllers\\admin\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php' => 
+    array (
+      0 => '9ebd43a9f8ce4ad5f6496b2683a6012cdf6de61d4774b03085f02493277e94bd',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\quotationcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\store',
+        2 => 'app\\http\\controllers\\admin\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php' => 
+    array (
+      0 => '67dded643daa0d7e017abd80e30e2219b3e3d24126fe406818ece63727f60776',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\returncontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php' => 
+    array (
+      0 => 'ee84b1aa74425e7813fefc62ef0d511b68ed17ea6a69e337a175c577e0918e5d',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\warehousecontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+        1 => 'app\\http\\controllers\\admin\\store',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php' => 
+    array (
+      0 => '01c8d46c039b419d7d32440de773cd0aa5cfd57e0d9d1fe345a84f4ce4976aad',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\bannercontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\index',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php' => 
+    array (
+      0 => '63d356a718118ff14067aced1948d556ce38aeb74f4d024559d298d0c61429cc',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\returncontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\store',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php' => 
+    array (
+      0 => 'b9ebbecf72e1481db1cff0f1488c097920e207335cdfd05ab7b76d033b91fd16',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\storebannerrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php' => 
+    array (
+      0 => 'f0df6bf4feec7225033036298747c63ed2eb5822d68762562b73cbff502c0e7f',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\storecouponrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php' => 
+    array (
+      0 => 'd16e0b41c1a21b948a82de71b948bfda4e4076a5639ac8ec74d5f4b48b108dbb',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\storeleadrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php' => 
+    array (
+      0 => 'b79bdb626e5ccb32b1bddd27b8e82db3eab5e8572fdc56b3d69a979f98f928f8',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\storequotationrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php' => 
+    array (
+      0 => 'b84f5f30f58b4d98ce2d595705404fcdae6efb449a5ee00221f2feec13d6cc20',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\storewarehouserequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php' => 
+    array (
+      0 => 'd8a6f6b2ad2e2b011f32971cd870c8e7d21285313f8b4b26a041bbd2b7aa3f57',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updatebannerrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCouponRequest.php' => 
+    array (
+      0 => '3ad2e0541e7b633bb2b996e4ceb6e724dbaac1fe4b846b1efc4daebb2f1951a0',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updatecouponrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php' => 
+    array (
+      0 => 'd1403b7606f0ecce090f7767eaff5f471d2bf56f5393ab7929c834fbe68d91b8',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updateinventoryrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php' => 
+    array (
+      0 => 'd9c6dfa0e58668c3e4eb5eb59d55bf8b3f91aa77a1e9fd2d4ce4b0827ea47d9c',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updateleadrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php' => 
+    array (
+      0 => 'cf678705045f73cfc3306da3f100781da97ad42c0040fd8a1a4924a9c1f5d789',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updatequotationrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php' => 
+    array (
+      0 => '36f51747e83a4808c70f882dfc7aa9139ea9ed4a0cfb6fd3a92dcc62dc2e2ef6',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updatereturnrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php' => 
+    array (
+      0 => 'bf441a1f0093cc4c454a4a51d74b3950c2aed12897943937d242918cfe5f2a48',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\storereturnrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\authorize',
+        1 => 'app\\http\\requests\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php' => 
+    array (
+      0 => 'b644acd154bb71fe0d21fde3114fc9bbfd1d6e104125e05fef3741738d6bc9c0',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\bannercollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php' => 
+    array (
+      0 => '5b585c4d7d5b1a6a4c568ac5c2d8ed185ed2b70ffa5395c2229a3b573f7cf468',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\couponcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php' => 
+    array (
+      0 => '3a2a7a9307b04fda68f2b5bdb2e853b9c249989aa39f62abc7047a0b9562f31e',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\couponresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php' => 
+    array (
+      0 => '76df1b3f83296015a23178868332c35bdfafadd3d54bf1fdff27026cb3d6d5ce',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\inventoryitemcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php' => 
+    array (
+      0 => 'abad61e782635927b447ad19141fff7ecd215eecf2e093b2f5f800fa6ead32fe',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\inventoryitemresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php' => 
+    array (
+      0 => '7c57103a3dce856b8d5e9c3ea10d07341c94a0f6478983bf590e76b1af5ea11f',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\leadcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php' => 
+    array (
+      0 => '6472495eb1be9381ac3c2c08a77da1e8248355950d447a55f491ad81e43ca293',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\leadresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php' => 
+    array (
+      0 => '39c6c1cbe556b90b96514a91c4fad790677ad7182b662c50dbe430281b4c15b7',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\quotationcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php' => 
+    array (
+      0 => '7641e6ed53d914074884ae65252a604d646c65238b60444a164502b076a65ae4',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\quotationitemresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php' => 
+    array (
+      0 => '99d95a2f48f87f1a69dd66acefab3913ae110952c6db27389ee2ffa44e5ecae3',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\quotationresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php' => 
+    array (
+      0 => '251dacc28d37ab66e545753945f095f9b393e02c24d1b9e092596074bad7fe11',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\returncollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php' => 
+    array (
+      0 => '3b382fcdee942ca58c5fa5150626aef64068b71cf2505d3970b82177da9fd56a',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\returnresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php' => 
+    array (
+      0 => '9b908b6c7622fd5a194e04c5e6a135a42faf092f949cd9a277e4091bb963ddb4',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\warehouseresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php' => 
+    array (
+      0 => '538e3c79a57d44f1349a17e36e3a724c32c4603ca225eb4d1ebb295928f7a7c9',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\bannerresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php' => 
+    array (
+      0 => '11895e51c6191031fb5dd28914f97ef98045d24981084fba25e53eea8fca7b86',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\returnresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php' => 
+    array (
+      0 => 'ad2dfa08971a27146498e346b3ffcc27e5ec2dd82f57a51d7d327b3429ee03c5',
+      1 => 
+      array (
+        0 => 'app\\models\\auditlog',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\user',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php' => 
+    array (
+      0 => '232366d7a20f8afe55358a4d05f873a0458ed161d49390cca6a761b8aa80bfa5',
+      1 => 
+      array (
+        0 => 'app\\models\\banner',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\scopeactive',
+        2 => 'app\\models\\scopeposition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php' => 
+    array (
+      0 => '213efb02f5435762d6cfc7bba177947a4afbe0761d5863fd7abd83ae9618f2ac',
+      1 => 
+      array (
+        0 => 'app\\models\\lead',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\assignee',
+        2 => 'app\\models\\quotations',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php' => 
+    array (
+      0 => '29cb252c6e981d1ea82cba70b548ada2829264dcce64f924c6b70c0b9b890322',
+      1 => 
+      array (
+        0 => 'app\\models\\quotation',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\lead',
+        2 => 'app\\models\\customer',
+        3 => 'app\\models\\items',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php' => 
+    array (
+      0 => '66823f2a2eb8e38bcbe22f56f2acee2c9b0b4b7bdfc55f5e5385115316d3d174',
+      1 => 
+      array (
+        0 => 'app\\models\\quotationitem',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\quotation',
+        2 => 'app\\models\\product',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php' => 
+    array (
+      0 => 'c8913a6bcad3ed31915d8c908ffb3bf494b1bdfc56713231a18f94116ce0575d',
+      1 => 
+      array (
+        0 => 'app\\models\\returnrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\order',
+        2 => 'app\\models\\orderitem',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\AuditLogger.php' => 
+    array (
+      0 => 'b64730f98973360a76a5e03246750577c6def58d4514369e540d18dd2b138918',
+      1 => 
+      array (
+        0 => 'app\\services\\auditlogger',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\log',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 
+    array (
+      0 => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
+      1 => 
+      array (
+        0 => 'app\\concerns\\auditable',
+      ),
+      2 => 
+      array (
+        0 => 'app\\concerns\\bootauditable',
+        1 => 'app\\concerns\\auditaction',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php' => 
+    array (
+      0 => '9117fa77cbc5114ffdace00ba125a4aaf8f38153e6de87c5a79e3d43edc75e96',
+      1 => 
+      array (
+        0 => 'app\\console\\commands\\generateaiinsightscommand',
+      ),
+      2 => 
+      array (
+        0 => 'app\\console\\commands\\handle',
+        1 => 'app\\console\\commands\\reportlowstock',
+        2 => 'app\\console\\commands\\reportsalestrend',
+        3 => 'app\\console\\commands\\reporttopproduct',
+        4 => 'app\\console\\commands\\abspercent',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\InsightImpact.php' => 
+    array (
+      0 => 'c8267943b6fd4e94f557aba06cacdf125ca885cc995537e775cb567d11d13612',
+      1 => 
+      array (
+        0 => 'app\\enums\\insightimpact',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php' => 
+    array (
+      0 => '80e008a1e020ad5ccfbdce56e64cc9ed16413bf8059206aa676ae27a2760008e',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\aiinsightcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php' => 
+    array (
+      0 => '0debd284e56d0c391313d3a481fa7a60078cce6695228ecdf78dcabb3d21b83f',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\auditlogcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\index',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php' => 
+    array (
+      0 => 'be6f296b8c632c9b31ab7c9b5c171074b6766768024e44c72e4e03f4bcae4524',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\reportcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\__construct',
+        1 => 'app\\http\\controllers\\admin\\dashboard',
+        2 => 'app\\http\\controllers\\admin\\sales',
+        3 => 'app\\http\\controllers\\admin\\products',
+        4 => 'app\\http\\controllers\\admin\\customers',
+        5 => 'app\\http\\controllers\\admin\\tocsv',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php' => 
+    array (
+      0 => '2f4175c1f8995f32effcf81ed60f5d9dc4744e59d46e0f748e90719e37dc57a3',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\settingcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\admin\\show',
+        1 => 'app\\http\\controllers\\admin\\update',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php' => 
+    array (
+      0 => 'bc095ef45e424ae6a24fba3cc94733b3f4fd362548863104f88d0d5c29ab738c',
+      1 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\updatesettingrequest',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\requests\\admin\\authorize',
+        1 => 'app\\http\\requests\\admin\\rules',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php' => 
+    array (
+      0 => 'c25aba112349063b6643d6983b48061ebec9c9e42c12838e37db6fb0fb27c024',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\aiinsightcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php' => 
+    array (
+      0 => 'e570c422516a7a0cc9fd1c860f2260342add2345fb7435c4ac0c34e719f075e8',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\aiinsightresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php' => 
+    array (
+      0 => '0679030aaaef2b879729c6b8c5c6ae45a0f75b9a3705991c7fdab3166cef9cc5',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\auditlogcollection',
+      ),
+      2 => 
+      array (
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php' => 
+    array (
+      0 => 'd73252d5a9bb6a605781284be13e3997e04c482b33fae0ea48c6913b4649612a',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\auditlogresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php' => 
+    array (
+      0 => 'f9c4dbc6a1206427fa9c40942b1ee3b00aae7f47ecb1d864918e8dd2eec37076',
+      1 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\settingresource',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\resources\\admin\\toarray',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php' => 
+    array (
+      0 => 'd80de5c176ddc277d5957e60c5d25889c1950c4a3e65f11146b04d3653d52d8c',
+      1 => 
+      array (
+        0 => 'app\\listeners\\invalidatereportscache',
+      ),
+      2 => 
+      array (
+        0 => 'app\\listeners\\__construct',
+        1 => 'app\\listeners\\handle',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php' => 
+    array (
+      0 => '3d5c761af1c0e65ab58ade3f849cadbbe452a9038891ed78f28ab2ab8ad8a0f5',
+      1 => 
+      array (
+        0 => 'app\\models\\aiinsight',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php' => 
+    array (
+      0 => '285d889aeb0b2efb0902c729b6e01f8d12c1b9ae88ba023f50b6a94382d31ee2',
+      1 => 
+      array (
+        0 => 'app\\models\\setting',
+      ),
+      2 => 
+      array (
+        0 => 'app\\models\\casts',
+        1 => 'app\\models\\current',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php' => 
+    array (
+      0 => '0e90746020ef633bfeb9d46711eeda9616a37f94c8ab63e2730da8be5f7e69b6',
+      1 => 
+      array (
+        0 => 'app\\services\\reportsservice',
+      ),
+      2 => 
+      array (
+        0 => 'app\\services\\dashboard',
+        1 => 'app\\services\\sales',
+        2 => 'app\\services\\products',
+        3 => 'app\\services\\customers',
+        4 => 'app\\services\\flushdashboard',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php' => 
+    array (
+      0 => 'a03bafb813d4cadd2c51987aa93a0a96c9113a4bcff5f0fd0ac2f0690e29f059',
+      1 => 
+      array (
+        0 => 'app\\console\\commands\\loadtestcheckoutcommand',
+      ),
+      2 => 
+      array (
+        0 => 'app\\console\\commands\\handle',
+        1 => 'app\\console\\commands\\runworker',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\HealthController.php' => 
+    array (
+      0 => 'ea58556517f5cbf27d970a7da0729a8e955d91bdf3df6f086095a5b0c28a474b',
+      1 => 
+      array (
+        0 => 'app\\http\\controllers\\healthcontroller',
+      ),
+      2 => 
+      array (
+        0 => 'app\\http\\controllers\\index',
+        1 => 'app\\http\\controllers\\check',
       ),
       3 => 
       array (

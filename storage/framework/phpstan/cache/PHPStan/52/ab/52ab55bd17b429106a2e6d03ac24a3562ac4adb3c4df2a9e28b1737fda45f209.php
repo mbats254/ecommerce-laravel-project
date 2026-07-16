@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Models\User.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\User
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-fc5cc079604ed47178240e370aa28bc3db603731fcb2b00f8f849da14c815387',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-393cceae58109bc2e9b2c69633326a97da0c3e0f814039c94ae427a286d3fefe',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 18,
-    'endLine' => 77,
+    'endLine' => 101,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Foundation\\Auth\\User',
@@ -206,6 +206,117 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'currentClassName' => 'App\\Models\\User',
         'aliasName' => NULL,
       ),
+      'orders' => 
+      array (
+        'name' => 'orders',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<Order, $this>
+ */',
+        'startLine' => 76,
+        'endLine' => 79,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\User',
+        'implementingClassName' => 'App\\Models\\User',
+        'currentClassName' => 'App\\Models\\User',
+        'aliasName' => NULL,
+      ),
+      'wishlist' => 
+      array (
+        'name' => 'wishlist',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<Wishlist, $this>
+ */',
+        'startLine' => 84,
+        'endLine' => 87,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\User',
+        'implementingClassName' => 'App\\Models\\User',
+        'currentClassName' => 'App\\Models\\User',
+        'aliasName' => NULL,
+      ),
+      'compareList' => 
+      array (
+        'name' => 'compareList',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<CompareListItem, $this>
+ */',
+        'startLine' => 92,
+        'endLine' => 95,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\User',
+        'implementingClassName' => 'App\\Models\\User',
+        'currentClassName' => 'App\\Models\\User',
+        'aliasName' => NULL,
+      ),
       'sendEmailVerificationNotification' => 
       array (
         'name' => 'sendEmailVerificationNotification',
@@ -226,8 +337,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 73,
-        'endLine' => 76,
+        'startLine' => 97,
+        'endLine' => 100,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

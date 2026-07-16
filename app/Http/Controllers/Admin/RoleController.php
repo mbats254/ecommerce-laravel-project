@@ -12,6 +12,9 @@ use App\Http\Resources\Admin\RoleResource;
 use Spatie\Permission\Models\Role;
 use Spatie\QueryBuilder\QueryBuilder;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class RoleController extends Controller
 {
     public function index(): RoleCollection

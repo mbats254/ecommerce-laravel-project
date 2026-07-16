@@ -19,6 +19,9 @@ use Illuminate\Http\Response;
 use Spatie\QueryBuilder\AllowedFilter;
 use Spatie\QueryBuilder\QueryBuilder;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class ProductController extends Controller
 {
     public function index(Request $request): ProductCollection

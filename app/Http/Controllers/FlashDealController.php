@@ -6,6 +6,9 @@ use App\Http\Resources\ProductResource;
 use App\Models\Product;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class FlashDealController extends Controller
 {
     public function index(): AnonymousResourceCollection

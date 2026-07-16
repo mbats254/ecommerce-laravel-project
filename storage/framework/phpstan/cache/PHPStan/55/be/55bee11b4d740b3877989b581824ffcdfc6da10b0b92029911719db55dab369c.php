@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\database\seeders\DatabaseSeeder.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Seeders\DatabaseSeeder
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-74e0fd66765c7d2855e4ab536589163627181d0e42e4837c971f33b61847928d',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-c802c294f4d649b8d0aeb33fde244d4ca4ddf05e2f8592658d462afae454103a',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 10,
-    'endLine' => 32,
+    'endLine' => 33,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Seeder',
@@ -69,7 +69,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * Seed the application\'s database.
  */',
         'startLine' => 17,
-        'endLine' => 31,
+        'endLine' => 32,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

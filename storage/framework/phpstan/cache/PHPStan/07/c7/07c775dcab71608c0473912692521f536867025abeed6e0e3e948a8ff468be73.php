@@ -147,7 +147,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
     array (
-      0 => '74e0fd66765c7d2855e4ab536589163627181d0e42e4837c971f33b61847928d',
+      0 => 'c802c294f4d649b8d0aeb33fde244d4ca4ddf05e2f8592658d462afae454103a',
       1 => 
       array (
         0 => 'database\\seeders\\databaseseeder',
@@ -462,6 +462,551 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       2 => 
       array (
         0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php' => 
+    array (
+      0 => 'd848df8fc8556d0953838d5820bc1b2526cd62b359c942893fb92d1d8258a344',
+      1 => 
+      array (
+        0 => 'database\\factories\\cartfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+        1 => 'database\\factories\\guest',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php' => 
+    array (
+      0 => 'dd8da323d14a4c91a51274266b87e48e2a7e3566d80be1a4310d3b31a7919d74',
+      1 => 
+      array (
+        0 => 'database\\factories\\cartitemfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php' => 
+    array (
+      0 => '98e6de28fe5ff6c0781e91ebe6cc79de94e5d3fa245b8993f52862ccbfc523e5',
+      1 => 
+      array (
+        0 => 'database\\factories\\comparelistitemfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php' => 
+    array (
+      0 => 'a58ba44370b9b4bcc4d5c4e38e92c5ab6ec0c960adabd12d5090652050eee1ce',
+      1 => 
+      array (
+        0 => 'database\\factories\\couponfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+        1 => 'database\\factories\\fixed',
+        2 => 'database\\factories\\expired',
+        3 => 'database\\factories\\exhausted',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php' => 
+    array (
+      0 => 'fbdc09626917c1669f9f097da8fe5ea319ac7487d0df5f065ab24d9c7bdc2bfe',
+      1 => 
+      array (
+        0 => 'database\\factories\\orderfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php' => 
+    array (
+      0 => '6edd9aa02134c262b324349e89c07835e59f52a9a4b0a33cd476cbae52fd7868',
+      1 => 
+      array (
+        0 => 'database\\factories\\orderitemfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php' => 
+    array (
+      0 => '9d512f70b3a5724f320a2eafb975610a61ff2deb228c715a527769ea7565a8fa',
+      1 => 
+      array (
+        0 => 'database\\factories\\orderstatushistoryfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php' => 
+    array (
+      0 => '625ccc92e48cdb10ceef55bae42c0e868bc15b5a0504e316c19dc52e38ef5029',
+      1 => 
+      array (
+        0 => 'database\\factories\\paymentfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+        1 => 'database\\factories\\successful',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php' => 
+    array (
+      0 => '0d9f645740f86db846e3cb87a72c82d28ea2a76a0bdf61b2588eb68a6bf81b8b',
+      1 => 
+      array (
+        0 => 'database\\factories\\wishlistfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043448_create_carts_table.php' => 
+    array (
+      0 => 'a1c6de3b4e78933ee045ca5a6779ed27726f0428b8eeea71a872f04e7e847495',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043459_create_cart_items_table.php' => 
+    array (
+      0 => '9a43b452e0a4a5b696177a7ad0f015f52ad643a62cb5f5b230bc1ce13fe774af',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043504_create_coupons_table.php' => 
+    array (
+      0 => '3aba936e69d8ca1c54b20d09592a5ecba77b5917560f336eb2831025c8b6ddac',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043509_create_orders_table.php' => 
+    array (
+      0 => '74464942e33b0e729801813852b9dc6b9d088ea3a1c1cf705a91b588c22d2deb',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043514_create_order_items_table.php' => 
+    array (
+      0 => '785d6a1678614cfaaaed7754429acbc67eda5aacc975dc5d456f6c7da3226a76',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043519_create_order_status_history_table.php' => 
+    array (
+      0 => '00a73acd71c42473c28e79e5248f346de383146ad2cab217f6d438d831d64463',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043524_create_payments_table.php' => 
+    array (
+      0 => '933d0c5c263af79475c9d8d9b448a661d4560d8f599520def73147ec772120af',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043529_create_wishlists_table.php' => 
+    array (
+      0 => '3673bcf4173f79378dda643202e1e283af7b2fe0ca18662565884cfa923a6af7',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043534_create_compare_lists_table.php' => 
+    array (
+      0 => 'b4abe406d9425d66bee6854eccd989937c96a091107263a58d3b1ead2e3d5b98',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043813_add_order_id_foreign_key_to_reviews_table.php' => 
+    array (
+      0 => 'dfb717656857178f0506b3f4ccf989a73c6378b27a3431043a13959af59a0984',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
+    array (
+      0 => '81834b18eaa4e20b3de4ab4cccddefe7df12f256c60b23575b2dde5e6d61f6be',
+      1 => 
+      array (
+        0 => 'database\\seeders\\couponseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php' => 
+    array (
+      0 => '5f34ba3ed9afae089535b860e4959163703ae6e50649fcfe0709e55432f8265d',
+      1 => 
+      array (
+        0 => 'database\\factories\\auditlogfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php' => 
+    array (
+      0 => '8387b758c2f08eb45e0f3eb024eec791d8584795801be59b7538ad9fc86d645f',
+      1 => 
+      array (
+        0 => 'database\\factories\\bannerfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php' => 
+    array (
+      0 => '42fda3c85a6e5728a6b42f92db214f8604da8b914f04e2195b308b4544b5c052',
+      1 => 
+      array (
+        0 => 'database\\factories\\leadfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php' => 
+    array (
+      0 => 'f4c5783888d6c62e3b44a059b4b221b167819176292a183a284c447adaf0a322',
+      1 => 
+      array (
+        0 => 'database\\factories\\quotationfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php' => 
+    array (
+      0 => '41740d182937a2a5ccbbe09d0517170d6a7448e74220be77a89dac61bb0231ab',
+      1 => 
+      array (
+        0 => 'database\\factories\\quotationitemfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php' => 
+    array (
+      0 => '0b7584e99f109c875f231b04faf4f4f33c27ed2df2f8348a7cd973f32f44d799',
+      1 => 
+      array (
+        0 => 'database\\factories\\returnrequestfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062250_create_audit_logs_table.php' => 
+    array (
+      0 => '2fda6a0dbb37e5e7aba3913a660eca38ce05b43412e3bbefa7e797601d63bd6f',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062255_create_leads_table.php' => 
+    array (
+      0 => '4ad8124e5fc83509b947e8312478be2e2a717d15064b49ba2cd41ac5afe3cc9d',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062259_create_quotations_table.php' => 
+    array (
+      0 => '8f240e00ab172256ef8543454966c80f87f88c7767117b56d9ee21054bf1e514',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062304_create_quotation_items_table.php' => 
+    array (
+      0 => 'd6f748abdc224377535c87581bb0374b33c9e1eebcda7ad641d19d0cd5d11772',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062308_create_banners_table.php' => 
+    array (
+      0 => '9ea2b899986adeb5ad86b5aa43c42f9bba0d1865d29454793deb742a1b00dc74',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062313_create_returns_table.php' => 
+    array (
+      0 => '1dae7c4455b2d418635a28fce3b05ae4d16af2aab2e64fc364b9f6897b51222d',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php' => 
+    array (
+      0 => 'c1e58372d57e4991b5cd9bf8f4e2562b8020cb65f2ed81c3b8dc78130bb6ffbc',
+      1 => 
+      array (
+        0 => 'database\\factories\\aiinsightfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php' => 
+    array (
+      0 => '4bf8005b1b35357bc93a28c619f5cd7350bda0e813319e1dde112d21dd93b8b8',
+      1 => 
+      array (
+        0 => 'database\\factories\\settingfactory',
+      ),
+      2 => 
+      array (
+        0 => 'database\\factories\\definition',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072027_create_ai_insights_table.php' => 
+    array (
+      0 => '269c92cc9ecaec60b1ee12474a0e4ed6dc160caa57ce5c33d8c991626c16e7cf',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072032_create_settings_table.php' => 
+    array (
+      0 => '4b5ee30043b7dc0c4a7ea729e55a4b94b0f31af7ffe5fd342b7a3761b1ecd4cf',
+      1 => 
+      array (
+      ),
+      2 => 
+      array (
+        0 => 'up',
+        1 => 'down',
       ),
       3 => 
       array (

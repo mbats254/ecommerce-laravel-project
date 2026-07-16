@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Database\Factories\InventoryItemFactory;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -59,5 +60,18 @@ class InventoryItem extends Model
     public function variant(): BelongsTo
     {
         return $this->belongsTo(ProductVariant::class, 'variant_id');
+    }
+
+    /**
+     * @param  Builder<InventoryItem>  $query
+     * @return Builder<InventoryItem>
+     */
+    public function scopeLowStock(Builder $query, mixed $enabled = true): Builder
+    {
+        if (! filter_var($enabled, FILTER_VALIDATE_BOOL)) {
+            return $query;
+        }
+
+        return $query->whereColumn('quantity', '<=', 'low_stock_threshold');
     }
 }

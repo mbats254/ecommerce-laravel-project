@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\BrandController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\BrandController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-5af163ec66f48d84698ea794f075adc0a5a279daf3e84f54720ec64d04a02416',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-8ecc5aeaed2cd7fc9ced08b4ba401895729c8db16feff00aa97ddbb262470d50',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 24,
+    'startLine' => 12,
+    'endLine' => 27,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -65,8 +67,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 11,
-        'endLine' => 16,
+        'startLine' => 14,
+        'endLine' => 19,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -104,8 +106,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 18,
-            'endLine' => 18,
+            'startLine' => 21,
+            'endLine' => 21,
             'startColumn' => 26,
             'endColumn' => 37,
             'parameterIndex' => 0,
@@ -126,8 +128,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 18,
-        'endLine' => 23,
+        'startLine' => 21,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

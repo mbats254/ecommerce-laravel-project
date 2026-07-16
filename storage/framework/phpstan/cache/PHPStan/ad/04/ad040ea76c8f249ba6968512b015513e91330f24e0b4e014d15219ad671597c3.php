@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Models\InventoryItem.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\InventoryItem
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-40cf5cb13adc88b9cc32aaa090a3bd83b5dc6c79e55655464a498dfa594374c5',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-5274650241cac746217f8e82a715a300375336ecb7aa0bcf0abd5436f148194d',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 12,
-    'endLine' => 63,
+    'startLine' => 13,
+    'endLine' => 77,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -57,12 +57,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'quantity\', \'low_stock_threshold\']',
           'attributes' => 
           array (
-            'startLine' => 22,
-            'endLine' => 25,
-            'startTokenPos' => 68,
-            'startFilePos' => 574,
-            'endTokenPos' => 76,
-            'endFilePos' => 631,
+            'startLine' => 23,
+            'endLine' => 26,
+            'startTokenPos' => 73,
+            'startFilePos' => 616,
+            'endTokenPos' => 81,
+            'endFilePos' => 673,
           ),
         ),
         'docComment' => '/**
@@ -73,8 +73,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 22,
-        'endLine' => 25,
+        'startLine' => 23,
+        'endLine' => 26,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -111,8 +111,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, string>
  */',
-        'startLine' => 32,
-        'endLine' => 38,
+        'startLine' => 33,
+        'endLine' => 39,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -148,8 +148,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Warehouse, $this>
  */',
-        'startLine' => 43,
-        'endLine' => 46,
+        'startLine' => 44,
+        'endLine' => 47,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -185,8 +185,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Product, $this>
  */',
-        'startLine' => 51,
-        'endLine' => 54,
+        'startLine' => 52,
+        'endLine' => 55,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -222,8 +222,110 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<ProductVariant, $this>
  */',
-        'startLine' => 59,
-        'endLine' => 62,
+        'startLine' => 60,
+        'endLine' => 63,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\InventoryItem',
+        'implementingClassName' => 'App\\Models\\InventoryItem',
+        'currentClassName' => 'App\\Models\\InventoryItem',
+        'aliasName' => NULL,
+      ),
+      'scopeLowStock' => 
+      array (
+        'name' => 'scopeLowStock',
+        'parameters' => 
+        array (
+          'query' => 
+          array (
+            'name' => 'query',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'Illuminate\\Database\\Eloquent\\Builder',
+                'isIdentifier' => false,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 69,
+            'endLine' => 69,
+            'startColumn' => 35,
+            'endColumn' => 48,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+          'enabled' => 
+          array (
+            'name' => 'enabled',
+            'default' => 
+            array (
+              'code' => 'true',
+              'attributes' => 
+              array (
+                'startLine' => 69,
+                'endLine' => 69,
+                'startTokenPos' => 231,
+                'startFilePos' => 1629,
+                'endTokenPos' => 231,
+                'endFilePos' => 1632,
+              ),
+            ),
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'mixed',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 69,
+            'endLine' => 69,
+            'startColumn' => 51,
+            'endColumn' => 71,
+            'parameterIndex' => 1,
+            'isOptional' => true,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @param  Builder<InventoryItem>  $query
+ * @return Builder<InventoryItem>
+ */',
+        'startLine' => 69,
+        'endLine' => 76,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

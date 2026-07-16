@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Providers\AppServiceProvider.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Providers\AppServiceProvider
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-fe3c028c63b68c7ee08c4f1ba985f5cfb711fcee44c6b6c9d389f00028af262b',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-a9ffd2698f6c572cbcd2337b2cf7b683ffe14aa9c3c3341a573fd141a266deda',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 11,
-    'endLine' => 36,
+    'startLine' => 23,
+    'endLine' => 62,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Support\\ServiceProvider',
@@ -67,8 +67,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Register any application services.
  */',
-        'startLine' => 16,
-        'endLine' => 21,
+        'startLine' => 28,
+        'endLine' => 35,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -104,8 +104,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * Bootstrap any application services.
  */',
-        'startLine' => 26,
-        'endLine' => 35,
+        'startLine' => 40,
+        'endLine' => 61,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

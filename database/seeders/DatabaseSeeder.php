@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RolesAndPermissionsSeeder::class,
             CatalogSeeder::class,
+            CouponSeeder::class,
         ]);
 
         $administrator = User::factory()->create([

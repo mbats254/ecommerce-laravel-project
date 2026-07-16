@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Concerns\Auditable;
 use Database\Factories\CategoryFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUlids;
@@ -14,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Category extends Model
 {
     /** @use HasFactory<CategoryFactory> */
-    use HasFactory, HasUlids, SoftDeletes;
+    use Auditable, HasFactory, HasUlids, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.

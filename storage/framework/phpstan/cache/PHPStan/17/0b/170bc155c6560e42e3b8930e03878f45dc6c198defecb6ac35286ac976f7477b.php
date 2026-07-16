@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\FlashDealController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\FlashDealController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-475c9976a238b17e35a5f2cdf4bf8698f475d7af166df4dc9b73f654a3cf3bd7',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-42fc139be683ee9b945d9bfcfa33dfc36641acab00a09da701e26c1dec20c067',
    'data' => 
   array (
     'locatedSource' => 
@@ -22,12 +22,14 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'isEnum' => false,
     'isBackedEnum' => false,
     'modifiers' => 0,
-    'docComment' => NULL,
+    'docComment' => '/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */',
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 23,
+    'startLine' => 12,
+    'endLine' => 26,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -65,8 +67,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 11,
-        'endLine' => 22,
+        'startLine' => 14,
+        'endLine' => 25,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

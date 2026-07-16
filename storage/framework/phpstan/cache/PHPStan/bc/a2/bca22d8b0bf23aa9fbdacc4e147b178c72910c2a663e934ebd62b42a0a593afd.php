@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Models\Product.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Product
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-3906109d026798d556cc8a86d9498b122ba19a829656631a95060320f3fb5661',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
    'data' => 
   array (
     'locatedSource' => 
@@ -28,8 +28,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 22,
-    'endLine' => 220,
+    'startLine' => 23,
+    'endLine' => 237,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -38,10 +38,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'traitClassNames' => 
     array (
-      0 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
-      1 => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
-      2 => 'Laravel\\Scout\\Searchable',
-      3 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+      0 => 'App\\Concerns\\Auditable',
+      1 => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+      2 => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+      3 => 'Laravel\\Scout\\Searchable',
+      4 => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
     ),
     'immediateConstants' => 
     array (
@@ -60,12 +61,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'code' => '[\'category_id\', \'brand_id\', \'name\', \'slug\', \'sku\', \'short_description\', \'description\', \'price\', \'compare_at_price\', \'status\', \'is_featured\', \'is_flash_deal\', \'flash_deal_ends_at\', \'meta_title\', \'meta_description\']',
           'attributes' => 
           array (
-            'startLine' => 32,
-            'endLine' => 48,
-            'startTokenPos' => 108,
-            'startFilePos' => 888,
-            'endTokenPos' => 155,
-            'endFilePos' => 1227,
+            'startLine' => 33,
+            'endLine' => 49,
+            'startTokenPos' => 116,
+            'startFilePos' => 927,
+            'endTokenPos' => 163,
+            'endFilePos' => 1266,
           ),
         ),
         'docComment' => '/**
@@ -76,8 +77,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'attributes' => 
         array (
         ),
-        'startLine' => 32,
-        'endLine' => 48,
+        'startLine' => 33,
+        'endLine' => 49,
         'startColumn' => 5,
         'endColumn' => 6,
         'isPromoted' => false,
@@ -114,8 +115,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  *
  * @return array<string, string>
  */',
-        'startLine' => 55,
-        'endLine' => 65,
+        'startLine' => 56,
+        'endLine' => 66,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -151,8 +152,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Category, $this>
  */',
-        'startLine' => 70,
-        'endLine' => 73,
+        'startLine' => 71,
+        'endLine' => 74,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -188,8 +189,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return BelongsTo<Brand, $this>
  */',
-        'startLine' => 78,
-        'endLine' => 81,
+        'startLine' => 79,
+        'endLine' => 82,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -225,8 +226,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<ProductImage, $this>
  */',
-        'startLine' => 86,
-        'endLine' => 89,
+        'startLine' => 87,
+        'endLine' => 90,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -262,8 +263,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<ProductSpecification, $this>
  */',
-        'startLine' => 94,
-        'endLine' => 97,
+        'startLine' => 95,
+        'endLine' => 98,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -299,8 +300,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<ProductVariant, $this>
  */',
-        'startLine' => 102,
-        'endLine' => 105,
+        'startLine' => 103,
+        'endLine' => 106,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -336,8 +337,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<Review, $this>
  */',
-        'startLine' => 110,
-        'endLine' => 113,
+        'startLine' => 111,
+        'endLine' => 114,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -373,8 +374,82 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return HasMany<InventoryItem, $this>
  */',
-        'startLine' => 118,
-        'endLine' => 121,
+        'startLine' => 119,
+        'endLine' => 122,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Product',
+        'implementingClassName' => 'App\\Models\\Product',
+        'currentClassName' => 'App\\Models\\Product',
+        'aliasName' => NULL,
+      ),
+      'wishlist' => 
+      array (
+        'name' => 'wishlist',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<Wishlist, $this>
+ */',
+        'startLine' => 127,
+        'endLine' => 130,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 1,
+        'namespace' => 'App\\Models',
+        'declaringClassName' => 'App\\Models\\Product',
+        'implementingClassName' => 'App\\Models\\Product',
+        'currentClassName' => 'App\\Models\\Product',
+        'aliasName' => NULL,
+      ),
+      'compareList' => 
+      array (
+        'name' => 'compareList',
+        'parameters' => 
+        array (
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'isIdentifier' => false,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * @return HasMany<CompareListItem, $this>
+ */',
+        'startLine' => 135,
+        'endLine' => 138,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -410,8 +485,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return Attribute<StockStatus, never>
  */',
-        'startLine' => 126,
-        'endLine' => 131,
+        'startLine' => 143,
+        'endLine' => 148,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -449,8 +524,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 137,
-            'endLine' => 137,
+            'startLine' => 154,
+            'endLine' => 154,
             'startColumn' => 33,
             'endColumn' => 46,
             'parameterIndex' => 0,
@@ -474,8 +549,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 137,
-        'endLine' => 140,
+        'startLine' => 154,
+        'endLine' => 157,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -513,8 +588,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 146,
-            'endLine' => 146,
+            'startLine' => 163,
+            'endLine' => 163,
             'startColumn' => 39,
             'endColumn' => 52,
             'parameterIndex' => 0,
@@ -539,8 +614,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 146,
-            'endLine' => 146,
+            'startLine' => 163,
+            'endLine' => 163,
             'startColumn' => 55,
             'endColumn' => 66,
             'parameterIndex' => 1,
@@ -564,8 +639,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 146,
-        'endLine' => 149,
+        'startLine' => 163,
+        'endLine' => 166,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -603,8 +678,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 155,
-            'endLine' => 155,
+            'startLine' => 172,
+            'endLine' => 172,
             'startColumn' => 37,
             'endColumn' => 50,
             'parameterIndex' => 0,
@@ -629,8 +704,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 155,
-            'endLine' => 155,
+            'startLine' => 172,
+            'endLine' => 172,
             'startColumn' => 53,
             'endColumn' => 68,
             'parameterIndex' => 1,
@@ -654,8 +729,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 155,
-        'endLine' => 158,
+        'startLine' => 172,
+        'endLine' => 175,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -693,8 +768,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 164,
-            'endLine' => 164,
+            'startLine' => 181,
+            'endLine' => 181,
             'startColumn' => 35,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -719,8 +794,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 164,
-            'endLine' => 164,
+            'startLine' => 181,
+            'endLine' => 181,
             'startColumn' => 51,
             'endColumn' => 63,
             'parameterIndex' => 1,
@@ -744,8 +819,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 164,
-        'endLine' => 167,
+        'startLine' => 181,
+        'endLine' => 184,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -783,8 +858,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 173,
-            'endLine' => 173,
+            'startLine' => 190,
+            'endLine' => 190,
             'startColumn' => 35,
             'endColumn' => 48,
             'parameterIndex' => 0,
@@ -809,8 +884,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 173,
-            'endLine' => 173,
+            'startLine' => 190,
+            'endLine' => 190,
             'startColumn' => 51,
             'endColumn' => 63,
             'parameterIndex' => 1,
@@ -834,8 +909,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 173,
-        'endLine' => 176,
+        'startLine' => 190,
+        'endLine' => 193,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -873,8 +948,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 182,
-            'endLine' => 182,
+            'startLine' => 199,
+            'endLine' => 199,
             'startColumn' => 38,
             'endColumn' => 51,
             'parameterIndex' => 0,
@@ -899,8 +974,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 182,
-            'endLine' => 182,
+            'startLine' => 199,
+            'endLine' => 199,
             'startColumn' => 54,
             'endColumn' => 66,
             'parameterIndex' => 1,
@@ -924,8 +999,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 182,
-        'endLine' => 186,
+        'startLine' => 199,
+        'endLine' => 203,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -961,8 +1036,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'docComment' => '/**
  * @return array<string, mixed>
  */',
-        'startLine' => 191,
-        'endLine' => 205,
+        'startLine' => 208,
+        'endLine' => 222,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -996,8 +1071,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 207,
-        'endLine' => 210,
+        'startLine' => 224,
+        'endLine' => 227,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1035,8 +1110,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 216,
-            'endLine' => 216,
+            'startLine' => 233,
+            'endLine' => 233,
             'startColumn' => 44,
             'endColumn' => 57,
             'parameterIndex' => 0,
@@ -1060,8 +1135,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 216,
-        'endLine' => 219,
+        'startLine' => 233,
+        'endLine' => 236,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

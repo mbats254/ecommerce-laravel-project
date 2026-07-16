@@ -12,12 +12,41 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Actions\\Auth',
          'uses' => 
         array (
+          'mergeguestcartaction' => 'App\\Actions\\Cart\\MergeGuestCartAction',
           'user' => 'App\\Models\\User',
           'authenticationexception' => 'Illuminate\\Auth\\AuthenticationException',
+          'request' => 'Illuminate\\Http\\Request',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
         ),
          'className' => 'App\\Actions\\Auth\\LoginAction',
          'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      '1f7fed5d146644b5e5f76b055f3616d0' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Actions\\Auth',
+         'uses' => 
+        array (
+          'mergeguestcartaction' => 'App\\Actions\\Cart\\MergeGuestCartAction',
+          'user' => 'App\\Models\\User',
+          'authenticationexception' => 'Illuminate\\Auth\\AuthenticationException',
+          'request' => 'Illuminate\\Http\\Request',
+          'auth' => 'Illuminate\\Support\\Facades\\Auth',
+        ),
+         'className' => 'App\\Actions\\Auth\\LoginAction',
+         'functionName' => '__construct',
          'templatePhpDocNodes' => 
         array (
         ),
@@ -37,8 +66,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Actions\\Auth',
          'uses' => 
         array (
+          'mergeguestcartaction' => 'App\\Actions\\Cart\\MergeGuestCartAction',
           'user' => 'App\\Models\\User',
           'authenticationexception' => 'Illuminate\\Auth\\AuthenticationException',
+          'request' => 'Illuminate\\Http\\Request',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
         ),
          'className' => 'App\\Actions\\Auth\\LoginAction',
@@ -60,7 +91,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => '6af25390583592e3295e322cc233cc671634f89b98c5e20579fc6c9ae55ea220',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => '4cdadad52eaa26b13b1b58398d0ab7ebdf7bda4770427d18d22ab6b3b74b5d52',
     ),
   ),
 ));

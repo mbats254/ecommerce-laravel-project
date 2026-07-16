@@ -16,6 +16,9 @@ use App\Http\Resources\UserResource;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class AuthController extends Controller
 {
     public function register(RegisterRequest $request, RegisterUserAction $action): UserResource
@@ -27,7 +30,7 @@ class AuthController extends Controller
 
     public function login(LoginRequest $request, LoginAction $action): UserResource
     {
-        $user = $action->handle($request->validated());
+        $user = $action->handle($request, $request->validated());
 
         return new UserResource($user);
     }

@@ -12,6 +12,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -41,6 +42,150 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
          'typeAliasClassName' => NULL,
          'traitData' => NULL,
+      )),
+      'b704f719dc56d3b348930dcea5b2d325' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Product',
+         'functionName' => NULL,
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => NULL,
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+          1 => 'App\\Models\\Product',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<ProductFactory> */',
+        ),
+      )),
+      'b301296149c6dc154d865f0a879d2888' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Product',
+         'functionName' => 'bootAuditable',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Product',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+          1 => 'App\\Models\\Product',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<ProductFactory> */',
+        ),
+      )),
+      '60e303fc0f045eca5accb5f31b22fa34' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Concerns',
+         'uses' => 
+        array (
+          'auditlogger' => 'App\\Services\\AuditLogger',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'arr' => 'Illuminate\\Support\\Arr',
+        ),
+         'className' => 'App\\Models\\Product',
+         'functionName' => 'auditAction',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Concerns',
+           'uses' => 
+          array (
+            'auditlogger' => 'App\\Services\\AuditLogger',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'arr' => 'Illuminate\\Support\\Arr',
+          ),
+           'className' => 'App\\Models\\Product',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => 'App\\Concerns\\Auditable',
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => 'App\\Concerns\\Auditable',
+         'traitData' => 
+        array (
+          0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+          1 => 'App\\Models\\Product',
+          2 => 'App\\Concerns\\Auditable',
+          3 => NULL,
+          4 => '/** @use HasFactory<ProductFactory> */',
+        ),
       )),
       '8bed241fdb56eb7ffbf30b0679eb716a' => 
       \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
@@ -2944,6 +3089,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -2968,6 +3114,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3013,6 +3160,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3037,6 +3185,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3082,6 +3231,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3106,6 +3256,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3151,6 +3302,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3175,6 +3327,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3220,6 +3373,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3244,6 +3398,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3289,6 +3444,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3313,6 +3469,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3358,6 +3515,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3382,6 +3540,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3427,6 +3586,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3451,6 +3611,149 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
+            'productstatus' => 'App\\Enums\\ProductStatus',
+            'stockstatus' => 'App\\Enums\\StockStatus',
+            'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
+            'productfactory' => 'Database\\Factories\\ProductFactory',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'attribute' => 'Illuminate\\Database\\Eloquent\\Casts\\Attribute',
+            'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+            'searchable' => 'Laravel\\Scout\\Searchable',
+          ),
+           'className' => 'App\\Models\\Product',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'ee6168854375853b06b8f6ef6c5a6735' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Concerns\\Auditable',
+          'productstatus' => 'App\\Enums\\ProductStatus',
+          'stockstatus' => 'App\\Enums\\StockStatus',
+          'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
+          'productfactory' => 'Database\\Factories\\ProductFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'attribute' => 'Illuminate\\Database\\Eloquent\\Casts\\Attribute',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'searchable' => 'Laravel\\Scout\\Searchable',
+        ),
+         'className' => 'App\\Models\\Product',
+         'functionName' => 'wishlist',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models',
+           'uses' => 
+          array (
+            'auditable' => 'App\\Concerns\\Auditable',
+            'productstatus' => 'App\\Enums\\ProductStatus',
+            'stockstatus' => 'App\\Enums\\StockStatus',
+            'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
+            'productfactory' => 'Database\\Factories\\ProductFactory',
+            'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+            'attribute' => 'Illuminate\\Database\\Eloquent\\Casts\\Attribute',
+            'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+            'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+            'model' => 'Illuminate\\Database\\Eloquent\\Model',
+            'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+            'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+            'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+            'searchable' => 'Laravel\\Scout\\Searchable',
+          ),
+           'className' => 'App\\Models\\Product',
+           'functionName' => NULL,
+           'templatePhpDocNodes' => 
+          array (
+          ),
+           'parent' => NULL,
+           'typeAliasesMap' => 
+          array (
+          ),
+           'bypassTypeAliases' => false,
+           'constUses' => 
+          array (
+          ),
+           'typeAliasClassName' => NULL,
+           'traitData' => NULL,
+        )),
+         'typeAliasesMap' => 
+        array (
+        ),
+         'bypassTypeAliases' => false,
+         'constUses' => 
+        array (
+        ),
+         'typeAliasClassName' => NULL,
+         'traitData' => NULL,
+      )),
+      'ed20497ec8aa05f92762ddf8eea48111' => 
+      \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+         'namespace' => 'App\\Models',
+         'uses' => 
+        array (
+          'auditable' => 'App\\Concerns\\Auditable',
+          'productstatus' => 'App\\Enums\\ProductStatus',
+          'stockstatus' => 'App\\Enums\\StockStatus',
+          'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
+          'productfactory' => 'Database\\Factories\\ProductFactory',
+          'builder' => 'Illuminate\\Database\\Eloquent\\Builder',
+          'attribute' => 'Illuminate\\Database\\Eloquent\\Casts\\Attribute',
+          'hasulids' => 'Illuminate\\Database\\Eloquent\\Concerns\\HasUlids',
+          'hasfactory' => 'Illuminate\\Database\\Eloquent\\Factories\\HasFactory',
+          'model' => 'Illuminate\\Database\\Eloquent\\Model',
+          'belongsto' => 'Illuminate\\Database\\Eloquent\\Relations\\BelongsTo',
+          'hasmany' => 'Illuminate\\Database\\Eloquent\\Relations\\HasMany',
+          'softdeletes' => 'Illuminate\\Database\\Eloquent\\SoftDeletes',
+          'searchable' => 'Laravel\\Scout\\Searchable',
+        ),
+         'className' => 'App\\Models\\Product',
+         'functionName' => 'compareList',
+         'templatePhpDocNodes' => 
+        array (
+        ),
+         'parent' => 
+        \PHPStan\Analyser\IntermediaryNameScope::__set_state(array(
+           'namespace' => 'App\\Models',
+           'uses' => 
+          array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3496,6 +3799,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3520,6 +3824,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3565,6 +3870,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3589,6 +3895,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3634,6 +3941,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3658,6 +3966,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3703,6 +4012,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3727,6 +4037,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3772,6 +4083,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3796,6 +4108,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3841,6 +4154,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3865,6 +4179,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3910,6 +4225,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3934,6 +4250,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -3979,6 +4296,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4003,6 +4321,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4048,6 +4367,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4072,6 +4392,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4117,6 +4438,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
          'namespace' => 'App\\Models',
          'uses' => 
         array (
+          'auditable' => 'App\\Concerns\\Auditable',
           'productstatus' => 'App\\Enums\\ProductStatus',
           'stockstatus' => 'App\\Enums\\StockStatus',
           'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4141,6 +4463,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
            'namespace' => 'App\\Models',
            'uses' => 
           array (
+            'auditable' => 'App\\Concerns\\Auditable',
             'productstatus' => 'App\\Enums\\ProductStatus',
             'stockstatus' => 'App\\Enums\\StockStatus',
             'stockstatusresolver' => 'App\\Services\\StockStatusResolver',
@@ -4184,7 +4507,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => '3906109d026798d556cc8a86d9498b122ba19a829656631a95060320f3fb5661',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Factories\\HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUlids.php' => '05a9799d0cc82991d414228dbee5b77772ca18d2e3ca88f50bdafcb42bacde62',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Eloquent\\Concerns\\HasUniqueStringIds.php' => '3d5612d3c0a56c6c9f19e628b02085d4d68a64d9d07656742725cec78d4a79c5',

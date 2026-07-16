@@ -12,6 +12,9 @@ use App\Models\Brand;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
 use Illuminate\Http\Response;
 
+/**
+ * @author Mbatia Muniu <mbatia@keshonect.co.ke>
+ */
 class BrandController extends Controller
 {
     public function index(): AnonymousResourceCollection

@@ -3233,7 +3233,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     '/var/www/html/app/Models/Product.php' => 
     array (
-      0 => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+      0 => '24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
       1 => 
       array (
         0 => 'app\\models\\product',

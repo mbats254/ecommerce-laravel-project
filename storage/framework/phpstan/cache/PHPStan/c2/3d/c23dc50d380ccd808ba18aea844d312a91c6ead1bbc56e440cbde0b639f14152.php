@@ -4507,7 +4507,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      '/var/www/html/app/Models/Product.php' => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+      '/var/www/html/app/Models/Product.php' => '24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
       '/var/www/html/app/Concerns/Auditable.php' => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
       '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Factories/HasFactory.php' => 'b6cb2b164e90168e80963a5549541f5f3188a3ec8cfd368bf3611bd94fbd46a7',
       '/var/www/html/vendor/composer/../laravel/framework/src/Illuminate/Database/Eloquent/Concerns/HasUlids.php' => '05a9799d0cc82991d414228dbee5b77772ca18d2e3ca88f50bdafcb42bacde62',

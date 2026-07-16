@@ -207,6 +207,13 @@ class Product extends Model
      */
     public function toSearchableArray(): array
     {
+        // makeAllSearchableUsing() eager-loads these for bulk indexing, but
+        // that hook isn't in play for every engine's search path (e.g.
+        // Scout's "collection" engine re-scans plain, non-preloaded models
+        // on every query) — loadMissing keeps this safe under
+        // Model::preventLazyLoading regardless of caller.
+        $this->loadMissing(['brand', 'category', 'specifications', 'inventoryItems']);
+
         return [
             'id' => $this->id,
             'name' => $this->name,

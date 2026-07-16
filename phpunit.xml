@@ -38,7 +38,13 @@
         <env name="MAIL_MAILER" value="array" force="true"/>
         <env name="QUEUE_CONNECTION" value="sync" force="true"/>
         <env name="SESSION_DRIVER" value="array" force="true"/>
-        <env name="SCOUT_DRIVER" value="null" force="true"/>
+        <!--
+            "collection" (not "null"): Scout's built-in in-memory test engine
+            — filters real models against toSearchableArray() in PHP, no
+            Meilisearch required — so search-result correctness (not just
+            input validation) is actually testable.
+        -->
+        <env name="SCOUT_DRIVER" value="collection" force="true"/>
         <env name="PULSE_ENABLED" value="false" force="true"/>
         <env name="TELESCOPE_ENABLED" value="false" force="true"/>
         <env name="NIGHTWATCH_ENABLED" value="false" force="true"/>

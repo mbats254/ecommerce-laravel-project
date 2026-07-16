@@ -6305,108 +6305,6 @@ return [
     \PHPStan\Analyser\Error::__set_state(array(
        'message' => 'Access to an undefined property App\\Models\\Product::$name.',
        'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 212,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 212,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 213,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 213,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 214,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 214,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 215,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 215,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$category_id.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 217,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 217,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$brand_id.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 218,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 218,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Models/Product.php',
        'line' => 219,
        'canBeIgnored' => true,
        'filePath' => '/var/www/html/app/Models/Product.php',
@@ -6420,9 +6318,94 @@ return [
       ),
        'fixedErrorDiff' => NULL,
     )),
-    7 => 
+    1 => 
     \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$status.',
+       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 220,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 220,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    2 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 221,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 221,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    3 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 222,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 222,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    4 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Product::$category_id.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 224,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 224,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    5 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Product::$brand_id.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 225,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 225,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    6 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
        'file' => '/var/www/html/app/Models/Product.php',
        'line' => 226,
        'canBeIgnored' => true,
@@ -6430,6 +6413,23 @@ return [
        'traitFilePath' => NULL,
        'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
        'nodeLine' => 226,
+       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
+       'identifier' => 'property.notFound',
+       'metadata' => 
+      array (
+      ),
+       'fixedErrorDiff' => NULL,
+    )),
+    7 => 
+    \PHPStan\Analyser\Error::__set_state(array(
+       'message' => 'Access to an undefined property App\\Models\\Product::$status.',
+       'file' => '/var/www/html/app/Models/Product.php',
+       'line' => 233,
+       'canBeIgnored' => true,
+       'filePath' => '/var/www/html/app/Models/Product.php',
+       'traitFilePath' => NULL,
+       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
+       'nodeLine' => 233,
        'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
        'identifier' => 'property.notFound',
        'metadata' => 
@@ -13254,7 +13254,7 @@ return [
   ),
   '/var/www/html/app/Models/Product.php' => 
   array (
-    'fileHash' => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+    'fileHash' => '24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
     'dependentFiles' => 
     array (
       0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',

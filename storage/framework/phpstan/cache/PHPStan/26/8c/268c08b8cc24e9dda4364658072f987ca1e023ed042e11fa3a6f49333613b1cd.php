@@ -2,7 +2,7 @@
 
 // odsl-/var/www/html/app/Models/Product.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Models\Product
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.23-526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+   'variableKey' => 'v2-6.70.0.3-8.4.23-24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
    'data' => 
   array (
     'locatedSource' => 
@@ -29,7 +29,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 23,
-    'endLine' => 237,
+    'endLine' => 244,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Eloquent\\Model',
@@ -1037,7 +1037,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @return array<string, mixed>
  */',
         'startLine' => 208,
-        'endLine' => 222,
+        'endLine' => 229,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1071,8 +1071,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 224,
-        'endLine' => 227,
+        'startLine' => 231,
+        'endLine' => 234,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -1110,8 +1110,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 233,
-            'endLine' => 233,
+            'startLine' => 240,
+            'endLine' => 240,
             'startColumn' => 44,
             'endColumn' => 57,
             'parameterIndex' => 0,
@@ -1135,8 +1135,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
  * @param  Builder<Product>  $query
  * @return Builder<Product>
  */',
-        'startLine' => 233,
-        'endLine' => 236,
+        'startLine' => 240,
+        'endLine' => 243,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1784219365,
+	'lastFullAnalysisTime' => 1784348758,
 	'meta' => array (
   'cacheVersion' => 'v13-packageDependencies',
   'phpstanVersion' => '2.2.5',
@@ -9,24 +9,24 @@ return [
   'metaExtensions' => 
   array (
   ),
-  'phpVersion' => 80423,
-  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, parseModelCastsMethod: true, enableMigrationCache: false, paths: [/var/www/html/app, /var/www/html/database, /var/www/html/routes], level: 6, tmpDir: /var/www/html/storage/framework/phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: {{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ContractsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\FacadesMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ManagersMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\AuthsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @migrationsParser, reflectionProvider: @reflectionProvider}}, iamcalSqlParser: {class: Larastan\\Larastan\\SQL\\IamcalSqlParser, autowired: false}, sqlParserFactory: {class: Larastan\\Larastan\\SQL\\SqlParserFactory, arguments: {iamcalSqlParser: @iamcalSqlParser}}, sqlParser: {type: Larastan\\Larastan\\SQL\\SqlParser, factory: [@sqlParserFactory, create]}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper, arguments: {parser: @currentPhpVersionSimpleDirectParser, parseModelCastsMethod: %parseModelCastsMethod%}}, {class: Larastan\\Larastan\\Properties\\MigrationCache, arguments: {cacheDirectory: %tmpDir%, enabled: %enableMigrationCache%}}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%, treatPhpDocTypesAsCertain: %treatPhpDocTypesAsCertain%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentCollectionMapDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}, migrationsParser: {class: PHPStan\\Parser\\CachedParser, arguments: {originalParser: @currentPhpVersionSimpleDirectParser, cachedNodesByStringCountMax: %cache.nodesByStringCountMax%}, autowired: false}}}',
+  'phpVersion' => 80418,
+  'projectConfig' => '{conditionalTags: {Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule: {phpstan.rules.rule: %noEnvCallsOutsideOfConfig%}, Larastan\\Larastan\\Rules\\NoModelMakeRule: {phpstan.rules.rule: %noModelMake%}, Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule: {phpstan.rules.rule: %noUnnecessaryCollectionCall%}, Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule: {phpstan.rules.rule: %noUnnecessaryEnumerableToArrayCalls%}, Larastan\\Larastan\\Rules\\OctaneCompatibilityRule: {phpstan.rules.rule: %checkOctaneCompatibility%}, Larastan\\Larastan\\Rules\\UnusedViewsRule: {phpstan.rules.rule: %checkUnusedViews%}, Larastan\\Larastan\\Rules\\NoMissingTranslationsRule: {phpstan.rules.rule: %checkMissingTranslations%}, Larastan\\Larastan\\Rules\\ModelAppendsRule: {phpstan.rules.rule: %checkModelAppends%}, Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule: {phpstan.rules.rule: %checkModelMethodVisibility%}, Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule: {phpstan.rules.rule: %checkAuthCallsWhenInRequestScope%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %generalizeEnvReturnType%}, Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension: {phpstan.broker.dynamicFunctionReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension: {phpstan.broker.dynamicMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension: {phpstan.broker.dynamicStaticMethodReturnTypeExtension: %checkConfigTypes%}, Larastan\\Larastan\\Rules\\ConfigCollectionRule: {phpstan.rules.rule: %checkConfigTypes%}}, parameters: {universalObjectCratesClasses: [Illuminate\\Http\\Request, Illuminate\\Support\\Optional], earlyTerminatingFunctionCalls: [abort, dd], mixinExcludeClasses: [Eloquent], bootstrapFiles: [bootstrap.php], checkOctaneCompatibility: false, noEnvCallsOutsideOfConfig: true, noModelMake: true, noUnnecessaryCollectionCall: true, noUnnecessaryCollectionCallOnly: [], noUnnecessaryCollectionCallExcept: [], noUnnecessaryEnumerableToArrayCalls: false, squashedMigrationsPath: [], databaseMigrationsPath: [], disableMigrationScan: false, disableSchemaScan: false, configDirectories: [], viewDirectories: [], translationDirectories: [], checkModelProperties: false, checkUnusedViews: false, checkMissingTranslations: false, checkModelAppends: true, checkModelMethodVisibility: false, generalizeEnvReturnType: false, checkConfigTypes: false, checkAuthCallsWhenInRequestScope: false, parseModelCastsMethod: true, enableMigrationCache: false, paths: [C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app, C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database, C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes], level: 6, tmpDir: C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\storage\\framework\\phpstan}, rules: [Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessWithFunctionCallsRule, Larastan\\Larastan\\Rules\\UselessConstructs\\NoUselessValueFunctionCallsRule, Larastan\\Larastan\\Rules\\DeferrableServiceProviderMissingProvidesRule, Larastan\\Larastan\\Rules\\ConsoleCommand\\UndefinedArgumentOrOptionRule], services: {{class: Larastan\\Larastan\\Methods\\RelationForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\EloquentBuilderForwardsCallsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderTapProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\HigherOrderCollectionProxyExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\StorageMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ContractsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\FacadesMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ManagersMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\AuthsMethodsExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ModelFactoryMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\RedirectResponseMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\MacroMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Methods\\ViewWithMethodsClassReflectionExtension, tags: [phpstan.broker.methodsClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelAccessorExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\ModelPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\Properties\\HigherOrderCollectionProxyPropertyExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\HigherOrderTapProxyExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Container\\Container}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerArrayAccessDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {className: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\Properties\\ModelRelationsExtension, tags: [phpstan.broker.propertiesClassReflectionExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelOnlyDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelFactoryDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ModelDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AuthManagerExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DateExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\GuardExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestFileExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestRouteExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RequestUserExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentBuilderExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\RelationCollectionExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TestCaseExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Support\\CollectionHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AuthExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\CollectExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\NowAndTodayExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ResponseExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValidatorExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\LiteralExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionFilterRejectDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\CollectionWhereNotNullDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\NewModelQueryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\FactoryDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: abort, negate: true}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: false}}, {class: Larastan\\Larastan\\Types\\AbortIfFunctionTypeSpecifyingExtension, tags: [phpstan.typeSpecifier.functionTypeSpecifyingExtension], arguments: {methodName: throw, negate: true}}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\AppExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ValueExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\StrExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\TapExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\StorageDynamicStaticMethodReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\GenericEloquentCollectionTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Types\\ViewStringTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Rules\\OctaneCompatibilityRule}, {class: Larastan\\Larastan\\Rules\\NoEnvCallsOutsideOfConfigRule, arguments: {configDirectories: %configDirectories%}}, {class: Larastan\\Larastan\\Rules\\NoModelMakeRule}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryCollectionCallRule, arguments: {onlyMethods: %noUnnecessaryCollectionCallOnly%, excludeMethods: %noUnnecessaryCollectionCallExcept%}}, {class: Larastan\\Larastan\\Rules\\NoUnnecessaryEnumerableToArrayCallsRule}, {class: Larastan\\Larastan\\Rules\\ModelAppendsRule}, {class: Larastan\\Larastan\\Rules\\NoPublicModelScopeAndAccessorRule}, {class: Larastan\\Larastan\\Types\\GenericEloquentBuilderTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension], arguments: {class: Illuminate\\Contracts\\Foundation\\Application}}, {class: Larastan\\Larastan\\ReturnTypes\\AppFacadeEnvironmentReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Types\\ModelProperty\\ModelPropertyTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension], arguments: {active: %checkModelProperties%}}, {class: Larastan\\Larastan\\Types\\CollectionOf\\CollectionOfTypeNodeResolverExtension, tags: [phpstan.phpDoc.typeNodeResolverExtension]}, {class: Larastan\\Larastan\\Properties\\MigrationHelper, arguments: {databaseMigrationPath: %databaseMigrationsPath%, disableMigrationScan: %disableMigrationScan%, parser: @migrationsParser, reflectionProvider: @reflectionProvider}}, iamcalSqlParser: {class: Larastan\\Larastan\\SQL\\IamcalSqlParser, autowired: false}, sqlParserFactory: {class: Larastan\\Larastan\\SQL\\SqlParserFactory, arguments: {iamcalSqlParser: @iamcalSqlParser}}, sqlParser: {type: Larastan\\Larastan\\SQL\\SqlParser, factory: [@sqlParserFactory, create]}, {class: Larastan\\Larastan\\Properties\\SquashedMigrationHelper, arguments: {schemaPaths: %squashedMigrationsPath%, disableSchemaScan: %disableSchemaScan%}}, {class: Larastan\\Larastan\\Properties\\ModelCastHelper, arguments: {parser: @currentPhpVersionSimpleDirectParser, parseModelCastsMethod: %parseModelCastsMethod%}}, {class: Larastan\\Larastan\\Properties\\MigrationCache, arguments: {cacheDirectory: %tmpDir%, enabled: %enableMigrationCache%}}, {class: Larastan\\Larastan\\Properties\\ModelPropertyHelper}, {class: Larastan\\Larastan\\Rules\\ModelRuleHelper}, {class: Larastan\\Larastan\\Methods\\BuilderHelper, arguments: {checkProperties: %checkModelProperties%}}, {class: Larastan\\Larastan\\Rules\\RelationExistenceRule, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Bus\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Rules\\CheckDispatchArgumentTypesCompatibleWithClassConstructorRule, arguments: {dispatchableClass: Illuminate\\Foundation\\Events\\Dispatchable}, tags: [phpstan.rules.rule]}, {class: Larastan\\Larastan\\Properties\\Schema\\MySqlDataTypeToPhpTypeConverter}, {class: Larastan\\Larastan\\LarastanStubFilesExtension, tags: [phpstan.stubFilesExtension]}, {class: Larastan\\Larastan\\Rules\\UnusedViewsRule}, {class: Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedEmailViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewFacadeMakeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedRouteFacadeViewCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedViewInAnotherViewCollector}, {class: Larastan\\Larastan\\Support\\ViewFileHelper, arguments: {viewDirectories: %viewDirectories%}}, {class: Larastan\\Larastan\\Support\\ViewParser, arguments: {parser: @currentPhpVersionSimpleDirectParser}}, {class: Larastan\\Larastan\\Rules\\NoMissingTranslationsRule, arguments: {translationDirectories: %translationDirectories%}}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationTranslatorCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationFacadeCollector, tags: [phpstan.collector]}, {class: Larastan\\Larastan\\Collectors\\UsedTranslationViewCollector}, {class: Larastan\\Larastan\\ReturnTypes\\ApplicationMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ContainerMakeDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\ArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasArgumentDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\OptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\ConsoleCommand\\HasOptionDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TranslatorGetReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\LangGetReturnTypeExtension, tags: [phpstan.broker.dynamicStaticMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\TransHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\DoubleUnderscoreHelperReturnTypeExtension, tags: [phpstan.broker.dynamicFunctionReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\AppMakeHelper}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationResolver}, {class: Larastan\\Larastan\\Internal\\ConsoleApplicationHelper}, {class: Larastan\\Larastan\\Support\\HigherOrderCollectionProxyHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\ConfigFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigRepositoryDynamicMethodReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\ConfigFacadeCollectionDynamicStaticMethodReturnTypeExtension}, {class: Larastan\\Larastan\\Support\\ConfigParser, arguments: {parser: @currentPhpVersionSimpleDirectParser, configPaths: %configDirectories%, treatPhpDocTypesAsCertain: %treatPhpDocTypesAsCertain%}}, {class: Larastan\\Larastan\\Internal\\ConfigHelper}, {class: Larastan\\Larastan\\ReturnTypes\\Helpers\\EnvFunctionDynamicFunctionReturnTypeExtension}, {class: Larastan\\Larastan\\ReturnTypes\\FormRequestSafeDynamicMethodReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\ReturnTypes\\EloquentCollectionMapDynamicReturnTypeExtension, tags: [phpstan.broker.dynamicMethodReturnTypeExtension]}, {class: Larastan\\Larastan\\Rules\\NoAuthFacadeInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\NoAuthHelperInRequestScopeRule}, {class: Larastan\\Larastan\\Rules\\ConfigCollectionRule}, {class: Illuminate\\Filesystem\\Filesystem, autowired: self}, migrationsParser: {class: PHPStan\\Parser\\CachedParser, arguments: {originalParser: @currentPhpVersionSimpleDirectParser, cachedNodesByStringCountMax: %cache.nodesByStringCountMax%}, autowired: false}}}',
   'analysedPaths' => 
   array (
-    0 => '/var/www/html/app',
-    1 => '/var/www/html/database',
-    2 => '/var/www/html/routes',
+    0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app',
+    1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database',
+    2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes',
   ),
   'scannedFiles' => 
   array (
   ),
   'composerLocks' => 
   array (
-    '/var/www/html/composer.lock' => '1ce45cd52ba7d6bd87435de7164bec2db08a8ff5429251e3a3e47e1bbf3d2b7b',
+    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/composer.lock' => '1ce45cd52ba7d6bd87435de7164bec2db08a8ff5429251e3a3e47e1bbf3d2b7b',
   ),
   'composerInstalled' => 
   array (
-    '/var/www/html/vendor/composer/installed.php' => 
+    'C:/Users/Afya/Documents/Personal/Anchor/anchor-api/vendor/composer/installed.php' => 
     array (
       'versions' => 
       array (
@@ -36,7 +36,7 @@ return [
           'version' => '7.8.5.0',
           'reference' => '9b324c8fc319cf9728b581c7a90e1c8f6361c5e5',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../brianium/paratest',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../brianium/paratest',
           'aliases' => 
           array (
           ),
@@ -48,7 +48,7 @@ return [
           'version' => '0.14.8.0',
           'reference' => '63422359a44b7f06cae63c3b429b59e8efcc0629',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../brick/math',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../brick/math',
           'aliases' => 
           array (
           ),
@@ -60,7 +60,7 @@ return [
           'version' => '3.2.0.0',
           'reference' => '18ba5ddfec8976260ead6e866180bd5d2f71aa1d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../carbonphp/carbon-doctrine-types',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../carbonphp/carbon-doctrine-types',
           'aliases' => 
           array (
           ),
@@ -88,7 +88,7 @@ return [
           'version' => '3.0.3.0',
           'reference' => 'a23a2bf4f31d3518f3ecb38660c95715dfead60f',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../dflydev/dot-access-data',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../dflydev/dot-access-data',
           'aliases' => 
           array (
           ),
@@ -100,7 +100,7 @@ return [
           'version' => '1.1.6.0',
           'reference' => 'd4fe3e6fd9bb9e72557a19674f44d8ac7db4c6ca',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../doctrine/deprecations',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../doctrine/deprecations',
           'aliases' => 
           array (
           ),
@@ -112,7 +112,7 @@ return [
           'version' => '2.1.0.0',
           'reference' => '6d6c96277ea252fc1304627204c3d5e6e15faa3b',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../doctrine/inflector',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../doctrine/inflector',
           'aliases' => 
           array (
           ),
@@ -124,7 +124,7 @@ return [
           'version' => '3.0.1.0',
           'reference' => '31ad66abc0fc9e1a1f2d9bc6a42668d2fbbcd6dd',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../doctrine/lexer',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../doctrine/lexer',
           'aliases' => 
           array (
           ),
@@ -136,7 +136,7 @@ return [
           'version' => '3.6.0.0',
           'reference' => 'd61a8a9604ec1f8c3d150d09db6ce98b32675013',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../dragonmantank/cron-expression',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../dragonmantank/cron-expression',
           'aliases' => 
           array (
           ),
@@ -148,7 +148,7 @@ return [
           'version' => '4.0.4.0',
           'reference' => 'd42c8731f0624ad6bdc8d3e5e9a4524f68801cfa',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../egulias/email-validator',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../egulias/email-validator',
           'aliases' => 
           array (
           ),
@@ -160,7 +160,7 @@ return [
           'version' => '1.24.1.0',
           'reference' => 'e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../fakerphp/faker',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../fakerphp/faker',
           'aliases' => 
           array (
           ),
@@ -172,7 +172,7 @@ return [
           'version' => '1.3.0.0',
           'reference' => 'db9508f7b1474469d9d3c53b86f817e344732678',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../fidry/cpu-core-counter',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../fidry/cpu-core-counter',
           'aliases' => 
           array (
           ),
@@ -184,7 +184,7 @@ return [
           'version' => '2.18.4.0',
           'reference' => 'd2102955e48b9fd9ab24280a7ad12ed552752c4d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../filp/whoops',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../filp/whoops',
           'aliases' => 
           array (
           ),
@@ -196,7 +196,7 @@ return [
           'version' => '1.4.0.0',
           'reference' => '38aaa6c3fd4c157ffe2a4d10aa8b9b16ba8de379',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../fruitcake/php-cors',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../fruitcake/php-cors',
           'aliases' => 
           array (
           ),
@@ -208,7 +208,7 @@ return [
           'version' => '1.1.4.0',
           'reference' => 'e01f4a821471308ba86aa202fed6698b6b695e3b',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../graham-campbell/result-type',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../graham-campbell/result-type',
           'aliases' => 
           array (
           ),
@@ -220,7 +220,7 @@ return [
           'version' => '7.14.2.0',
           'reference' => 'fa88c57803501ad0770f5cddb1e60525d49da9a1',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../guzzlehttp/guzzle',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../guzzlehttp/guzzle',
           'aliases' => 
           array (
           ),
@@ -232,7 +232,7 @@ return [
           'version' => '2.5.1.0',
           'reference' => '9ad1e4fc607446a055b95870c7f668e93b5cff29',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../guzzlehttp/promises',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../guzzlehttp/promises',
           'aliases' => 
           array (
           ),
@@ -244,7 +244,7 @@ return [
           'version' => '2.12.5.0',
           'reference' => '9365d578a9fd1552ad6ca9c3cb530708526feb09',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../guzzlehttp/psr7',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../guzzlehttp/psr7',
           'aliases' => 
           array (
           ),
@@ -256,7 +256,7 @@ return [
           'version' => '1.0.9.0',
           'reference' => 'd7580af6d3f8384325d9cd3e99b21c3ed1848176',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../guzzlehttp/uri-template',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../guzzlehttp/uri-template',
           'aliases' => 
           array (
           ),
@@ -268,7 +268,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => 'f8b1c0173b22fa6ec77a81fe63e5b01eba7e6487',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../hamcrest/hamcrest-php',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../hamcrest/hamcrest-php',
           'aliases' => 
           array (
           ),
@@ -280,7 +280,7 @@ return [
           'version' => '0.7.0.0',
           'reference' => '610392f38de49a44dab08dc1659960a29874c4b8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../iamcal/sql-parser',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../iamcal/sql-parser',
           'aliases' => 
           array (
           ),
@@ -580,7 +580,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => '4d7aa5dab42e2a76d99559706022885de0e18e1a',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../jean85/pretty-package-versions',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../jean85/pretty-package-versions',
           'aliases' => 
           array (
           ),
@@ -600,7 +600,7 @@ return [
           'version' => '3.10.0.0',
           'reference' => '2970f83398154178a739609c244577267c7ee8eb',
           'type' => 'phpstan-extension',
-          'install_path' => '/var/www/html/vendor/composer/../larastan/larastan',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../larastan/larastan',
           'aliases' => 
           array (
           ),
@@ -612,7 +612,7 @@ return [
           'version' => '12.64.0.0',
           'reference' => '727a8ea2949c23ca8b5316b86a00984b6017b7a0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/framework',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/framework',
           'aliases' => 
           array (
           ),
@@ -624,7 +624,7 @@ return [
           'version' => '5.47.2.0',
           'reference' => 'a6ac142293ad02db4d7cccb961dd32f56ef1462d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/horizon',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/horizon',
           'aliases' => 
           array (
           ),
@@ -636,7 +636,7 @@ return [
           'version' => '1.2.7.0',
           'reference' => '2f7d27dada8effc48b8c424445a69cca7007daaa',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/pail',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/pail',
           'aliases' => 
           array (
           ),
@@ -648,7 +648,7 @@ return [
           'version' => '1.29.3.0',
           'reference' => 'da1d1111a6aa2e082d2a388b194afe1ba0a05d14',
           'type' => 'project',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/pint',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/pint',
           'aliases' => 
           array (
           ),
@@ -660,7 +660,7 @@ return [
           'version' => '0.3.21.0',
           'reference' => '7753c65c281c2550c7c183f14e18062073b7d821',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/prompts',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/prompts',
           'aliases' => 
           array (
           ),
@@ -672,7 +672,7 @@ return [
           'version' => '1.63.0.0',
           'reference' => '51bbce3f803c1d386cabbb44e618c955a12ff5fc',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/sail',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/sail',
           'aliases' => 
           array (
           ),
@@ -684,7 +684,7 @@ return [
           'version' => '4.3.2.0',
           'reference' => '2a9bccc18e9907808e0018dd15fa643937886b1e',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/sanctum',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/sanctum',
           'aliases' => 
           array (
           ),
@@ -696,7 +696,7 @@ return [
           'version' => '11.3.0.0',
           'reference' => '7d0903e083dee7c3d295a27917c82496c5c41970',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/scout',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/scout',
           'aliases' => 
           array (
           ),
@@ -708,7 +708,7 @@ return [
           'version' => '1.1.0.0',
           'reference' => '972d9885d9d14312a118e9565c4e6ecc5e751ea1',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/sentinel',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/sentinel',
           'aliases' => 
           array (
           ),
@@ -720,7 +720,7 @@ return [
           'version' => '2.0.13.0',
           'reference' => 'b566ee0dd251f3c4078bed003a7ce015f5ea6dce',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/serializable-closure',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/serializable-closure',
           'aliases' => 
           array (
           ),
@@ -732,7 +732,7 @@ return [
           'version' => '5.20.0.0',
           'reference' => '38ec6e6006a67e05e0c476c5f8ef3550b72e43d8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/telescope',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/telescope',
           'aliases' => 
           array (
           ),
@@ -744,7 +744,7 @@ return [
           'version' => '2.11.1.0',
           'reference' => 'c9f80cc835649b5c1842898fb043f8cc098dd741',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../laravel/tinker',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../laravel/tinker',
           'aliases' => 
           array (
           ),
@@ -756,7 +756,7 @@ return [
           'version' => '2.8.3.0',
           'reference' => '1902f60f984235023acbe03db6ad614a37b3c3e7',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/commonmark',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/commonmark',
           'aliases' => 
           array (
           ),
@@ -768,7 +768,7 @@ return [
           'version' => '1.2.0.0',
           'reference' => '754b3604fb2984c71f4af4a9cbe7b57f346ec1f3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/config',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/config',
           'aliases' => 
           array (
           ),
@@ -780,7 +780,7 @@ return [
           'version' => '3.35.2.0',
           'reference' => 'b277b5dc3d56650b68904117124e79c851e12376',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/flysystem',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/flysystem',
           'aliases' => 
           array (
           ),
@@ -792,7 +792,7 @@ return [
           'version' => '3.31.0.0',
           'reference' => '2f669db18a4c20c755c2bb7d3a7b0b2340488079',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/flysystem-local',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/flysystem-local',
           'aliases' => 
           array (
           ),
@@ -804,7 +804,7 @@ return [
           'version' => '1.17.0.0',
           'reference' => 'f5f47eff7c48ed1003069a2ca67f316fb4021c76',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/mime-type-detection',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/mime-type-detection',
           'aliases' => 
           array (
           ),
@@ -816,7 +816,7 @@ return [
           'version' => '7.8.1.0',
           'reference' => '08cf38e3924d4f56238125547b5720496fac8fd4',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/uri',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/uri',
           'aliases' => 
           array (
           ),
@@ -828,7 +828,7 @@ return [
           'version' => '7.8.1.0',
           'reference' => '85d5c77c5d6d3af6c54db4a78246364908f3c928',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../league/uri-interfaces',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../league/uri-interfaces',
           'aliases' => 
           array (
           ),
@@ -840,7 +840,7 @@ return [
           'version' => '1.16.1.0',
           'reference' => 'f9f63e0e7d12ffaae54f7317fa8f4f4dfa8ae7b6',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../meilisearch/meilisearch-php',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../meilisearch/meilisearch-php',
           'aliases' => 
           array (
           ),
@@ -852,7 +852,7 @@ return [
           'version' => '1.6.12.0',
           'reference' => '1f4efdd7d3beafe9807b08156dfcb176d18f1699',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../mockery/mockery',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../mockery/mockery',
           'aliases' => 
           array (
           ),
@@ -864,7 +864,7 @@ return [
           'version' => '3.10.0.0',
           'reference' => 'b321dd6749f0bf7189444158a3ce785cc16d69b0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../monolog/monolog',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../monolog/monolog',
           'aliases' => 
           array (
           ),
@@ -884,7 +884,7 @@ return [
           'version' => '1.13.4.0',
           'reference' => '07d290f0c47959fd5eed98c95ee5602db07e0b6a',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../myclabs/deep-copy',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../myclabs/deep-copy',
           'aliases' => 
           array (
           ),
@@ -896,7 +896,7 @@ return [
           'version' => '3.13.1.0',
           'reference' => '2937ad3d1d2c506fd2bc97d571438a95641f44e2',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nesbot/carbon',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nesbot/carbon',
           'aliases' => 
           array (
           ),
@@ -908,7 +908,7 @@ return [
           'version' => '1.3.5.0',
           'reference' => 'f0ab1a3cda782dbc5da270d28545236aa80c4002',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nette/schema',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nette/schema',
           'aliases' => 
           array (
           ),
@@ -920,7 +920,7 @@ return [
           'version' => '4.1.4.0',
           'reference' => '7da6c396d7ebe142bc857c20479d5e70a5e1aac7',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nette/utils',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nette/utils',
           'aliases' => 
           array (
           ),
@@ -932,7 +932,7 @@ return [
           'version' => '5.8.0.0',
           'reference' => '044a6a392ff8ad0d61f14370a5fbbd0a0107152f',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nikic/php-parser',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nikic/php-parser',
           'aliases' => 
           array (
           ),
@@ -944,7 +944,7 @@ return [
           'version' => '8.9.4.0',
           'reference' => '716af8f95a470e9094cfca09ed897b023be191a5',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nunomaduro/collision',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nunomaduro/collision',
           'aliases' => 
           array (
           ),
@@ -956,7 +956,7 @@ return [
           'version' => '2.4.0.0',
           'reference' => '712a31b768f5daea284c2169a7d227031001b9a8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nunomaduro/termwind',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nunomaduro/termwind',
           'aliases' => 
           array (
           ),
@@ -968,7 +968,7 @@ return [
           'version' => '1.8.2.0',
           'reference' => 'a71f2b11690f4b24d099d6b16690a90ae14fc6f3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../nyholm/psr7',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../nyholm/psr7',
           'aliases' => 
           array (
           ),
@@ -980,7 +980,7 @@ return [
           'version' => '3.8.7.0',
           'reference' => 'f108313b52e8c28dc7121ce34303f817a3790202',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../pestphp/pest',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../pestphp/pest',
           'aliases' => 
           array (
           ),
@@ -992,7 +992,7 @@ return [
           'version' => '3.0.0.0',
           'reference' => 'e79b26c65bc11c41093b10150c1341cc5cdbea83',
           'type' => 'composer-plugin',
-          'install_path' => '/var/www/html/vendor/composer/../pestphp/pest-plugin',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../pestphp/pest-plugin',
           'aliases' => 
           array (
           ),
@@ -1004,7 +1004,7 @@ return [
           'version' => '3.1.1.0',
           'reference' => 'db7bd9cb1612b223e16618d85475c6f63b9c8daa',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../pestphp/pest-plugin-arch',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../pestphp/pest-plugin-arch',
           'aliases' => 
           array (
           ),
@@ -1016,7 +1016,7 @@ return [
           'version' => '3.2.0.0',
           'reference' => '6801be82fd92b96e82dd72e563e5674b1ce365fc',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../pestphp/pest-plugin-laravel',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../pestphp/pest-plugin-laravel',
           'aliases' => 
           array (
           ),
@@ -1028,7 +1028,7 @@ return [
           'version' => '3.0.5.0',
           'reference' => 'e10dbdc98c9e2f3890095b4fe2144f63a5717e08',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../pestphp/pest-plugin-mutate',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../pestphp/pest-plugin-mutate',
           'aliases' => 
           array (
           ),
@@ -1040,7 +1040,7 @@ return [
           'version' => '2.0.4.0',
           'reference' => '54750ef60c58e43759730615a392c31c80e23176',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phar-io/manifest',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phar-io/manifest',
           'aliases' => 
           array (
           ),
@@ -1052,7 +1052,7 @@ return [
           'version' => '3.2.1.0',
           'reference' => '4f7fd7836c6f332bb2933569e566a0d6c4cbed74',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phar-io/version',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phar-io/version',
           'aliases' => 
           array (
           ),
@@ -1080,7 +1080,7 @@ return [
           'version' => '1.20.0.0',
           'reference' => '82fe4c73ef3363caed49ff8dd1539ba06044910d',
           'type' => 'composer-plugin',
-          'install_path' => '/var/www/html/vendor/composer/../php-http/discovery',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../php-http/discovery',
           'aliases' => 
           array (
           ),
@@ -1100,7 +1100,7 @@ return [
           'version' => '2.2.0.0',
           'reference' => '1d01c49d4ed62f25aa84a747ad35d5a16924662b',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpdocumentor/reflection-common',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpdocumentor/reflection-common',
           'aliases' => 
           array (
           ),
@@ -1112,7 +1112,7 @@ return [
           'version' => '6.0.3.0',
           'reference' => '7bae67520aa9f5ecc506d646810bd40d9da54582',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpdocumentor/reflection-docblock',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpdocumentor/reflection-docblock',
           'aliases' => 
           array (
           ),
@@ -1124,7 +1124,7 @@ return [
           'version' => '2.0.0.0',
           'reference' => '327a05bbee54120d4786a0dc67aad30226ad4cf9',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpdocumentor/type-resolver',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpdocumentor/type-resolver',
           'aliases' => 
           array (
           ),
@@ -1136,7 +1136,7 @@ return [
           'version' => '1.9.5.0',
           'reference' => '75365b91986c2405cf5e1e012c5595cd487a98be',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpoption/phpoption',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpoption/phpoption',
           'aliases' => 
           array (
           ),
@@ -1148,7 +1148,7 @@ return [
           'version' => '2.3.3.0',
           'reference' => 'fb19eedd2bb67ff8cf7a5502ad329e701d6398a3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpstan/phpdoc-parser',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpstan/phpdoc-parser',
           'aliases' => 
           array (
           ),
@@ -1160,7 +1160,7 @@ return [
           'version' => '2.2.5.0',
           'reference' => '909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpstan/phpstan',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpstan/phpstan',
           'aliases' => 
           array (
           ),
@@ -1172,7 +1172,7 @@ return [
           'version' => '11.0.12.0',
           'reference' => '2c1ed04922802c15e1de5d7447b4856de949cf56',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/php-code-coverage',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/php-code-coverage',
           'aliases' => 
           array (
           ),
@@ -1184,7 +1184,7 @@ return [
           'version' => '5.1.1.0',
           'reference' => '2f3a64888c814fc235386b7387dd5b5ed92ad903',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/php-file-iterator',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/php-file-iterator',
           'aliases' => 
           array (
           ),
@@ -1196,7 +1196,7 @@ return [
           'version' => '5.0.1.0',
           'reference' => 'c1ca3814734c07492b3d4c5f794f4b0995333da2',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/php-invoker',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/php-invoker',
           'aliases' => 
           array (
           ),
@@ -1208,7 +1208,7 @@ return [
           'version' => '4.0.1.0',
           'reference' => '3e0404dc6b300e6bf56415467ebcb3fe4f33e964',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/php-text-template',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/php-text-template',
           'aliases' => 
           array (
           ),
@@ -1220,7 +1220,7 @@ return [
           'version' => '7.0.1.0',
           'reference' => '3b415def83fbcb41f991d9ebf16ae4ad8b7837b3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/php-timer',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/php-timer',
           'aliases' => 
           array (
           ),
@@ -1232,7 +1232,7 @@ return [
           'version' => '11.5.56.0',
           'reference' => '5f83edffa6967c3db468d48a695ec7bcb02e9256',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../phpunit/phpunit',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../phpunit/phpunit',
           'aliases' => 
           array (
           ),
@@ -1244,7 +1244,7 @@ return [
           'version' => '1.0.0.0',
           'reference' => 'e41a24703d4560fd0acb709162f73b8adfc3aa0d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/clock',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/clock',
           'aliases' => 
           array (
           ),
@@ -1264,7 +1264,7 @@ return [
           'version' => '2.0.2.0',
           'reference' => 'c71ecc56dfe541dbd90c5360474fbc405f8d5963',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/container',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/container',
           'aliases' => 
           array (
           ),
@@ -1284,7 +1284,7 @@ return [
           'version' => '1.0.0.0',
           'reference' => 'dbefd12671e8a14ec7f180cab83036ed26714bb0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/event-dispatcher',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/event-dispatcher',
           'aliases' => 
           array (
           ),
@@ -1304,7 +1304,7 @@ return [
           'version' => '1.0.3.0',
           'reference' => 'bb5906edc1c324c9a05aa0873d40117941e5fa90',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/http-client',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/http-client',
           'aliases' => 
           array (
           ),
@@ -1325,7 +1325,7 @@ return [
           'version' => '1.1.0.0',
           'reference' => '2b4765fddfe3b508ac62f829e852b1501d3f6e8a',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/http-factory',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/http-factory',
           'aliases' => 
           array (
           ),
@@ -1346,7 +1346,7 @@ return [
           'version' => '2.0.0.0',
           'reference' => '402d35bcb92c70c026d1a6a9883f06b2ead23d71',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/http-message',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/http-message',
           'aliases' => 
           array (
           ),
@@ -1367,7 +1367,7 @@ return [
           'version' => '3.0.2.0',
           'reference' => 'f16e1d5863e37f8d8c2a01719f5b34baa2b714d3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/log',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/log',
           'aliases' => 
           array (
           ),
@@ -1388,7 +1388,7 @@ return [
           'version' => '3.0.0.0',
           'reference' => '764e0b3939f5ca87cb904f570ef9be2d78a07865',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psr/simple-cache',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psr/simple-cache',
           'aliases' => 
           array (
           ),
@@ -1408,7 +1408,7 @@ return [
           'version' => '0.12.24.0',
           'reference' => 'ca0fdcf8a7617afa3adfdf1b5fef573dffb69ca1',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../psy/psysh',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../psy/psysh',
           'aliases' => 
           array (
           ),
@@ -1420,7 +1420,7 @@ return [
           'version' => '3.0.3.0',
           'reference' => '120b605dfeb996808c31b6477290a714d356e822',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../ralouphie/getallheaders',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../ralouphie/getallheaders',
           'aliases' => 
           array (
           ),
@@ -1432,7 +1432,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => '344572933ad0181accbf4ba763e85a0306a8c5e2',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../ramsey/collection',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../ramsey/collection',
           'aliases' => 
           array (
           ),
@@ -1444,7 +1444,7 @@ return [
           'version' => '4.9.3.0',
           'reference' => '1df15849d00943a67d677dc9cfd80795f038c9f8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../ramsey/uuid',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../ramsey/uuid',
           'aliases' => 
           array (
           ),
@@ -1464,7 +1464,7 @@ return [
           'version' => '3.0.2.0',
           'reference' => '15c5dd40dc4f38794d383bb95465193f5e0ae180',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/cli-parser',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/cli-parser',
           'aliases' => 
           array (
           ),
@@ -1476,7 +1476,7 @@ return [
           'version' => '3.0.3.0',
           'reference' => '54391c61e4af8078e5b276ab082b6d3c54c9ad64',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/code-unit',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/code-unit',
           'aliases' => 
           array (
           ),
@@ -1488,7 +1488,7 @@ return [
           'version' => '4.0.1.0',
           'reference' => '183a9b2632194febd219bb9246eee421dad8d45e',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/code-unit-reverse-lookup',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/code-unit-reverse-lookup',
           'aliases' => 
           array (
           ),
@@ -1500,7 +1500,7 @@ return [
           'version' => '6.3.3.0',
           'reference' => '2c95e1e86cb8dd41beb8d502057d1081ccc8eca9',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/comparator',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/comparator',
           'aliases' => 
           array (
           ),
@@ -1512,7 +1512,7 @@ return [
           'version' => '4.0.1.0',
           'reference' => 'ee41d384ab1906c68852636b6de493846e13e5a0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/complexity',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/complexity',
           'aliases' => 
           array (
           ),
@@ -1524,7 +1524,7 @@ return [
           'version' => '6.0.2.0',
           'reference' => 'b4ccd857127db5d41a5b676f24b51371d76d8544',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/diff',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/diff',
           'aliases' => 
           array (
           ),
@@ -1536,7 +1536,7 @@ return [
           'version' => '7.2.1.0',
           'reference' => 'a5c75038693ad2e8d4b6c15ba2403532647830c4',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/environment',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/environment',
           'aliases' => 
           array (
           ),
@@ -1548,7 +1548,7 @@ return [
           'version' => '6.3.2.0',
           'reference' => '70a298763b40b213ec087c51c739efcaa90bcd74',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/exporter',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/exporter',
           'aliases' => 
           array (
           ),
@@ -1560,7 +1560,7 @@ return [
           'version' => '7.0.2.0',
           'reference' => '3be331570a721f9a4b5917f4209773de17f747d7',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/global-state',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/global-state',
           'aliases' => 
           array (
           ),
@@ -1572,7 +1572,7 @@ return [
           'version' => '3.0.1.0',
           'reference' => 'd36ad0d782e5756913e42ad87cb2890f4ffe467a',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/lines-of-code',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/lines-of-code',
           'aliases' => 
           array (
           ),
@@ -1584,7 +1584,7 @@ return [
           'version' => '6.0.1.0',
           'reference' => 'f5b498e631a74204185071eb41f33f38d64608aa',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/object-enumerator',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/object-enumerator',
           'aliases' => 
           array (
           ),
@@ -1596,7 +1596,7 @@ return [
           'version' => '4.0.1.0',
           'reference' => '6e1a43b411b2ad34146dee7524cb13a068bb35f9',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/object-reflector',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/object-reflector',
           'aliases' => 
           array (
           ),
@@ -1608,7 +1608,7 @@ return [
           'version' => '6.0.3.0',
           'reference' => 'f6458abbf32a6c8174f8f26261475dc133b3d9dc',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/recursion-context',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/recursion-context',
           'aliases' => 
           array (
           ),
@@ -1620,7 +1620,7 @@ return [
           'version' => '5.1.3.0',
           'reference' => 'f77d2d4e78738c98d9a68d2596fe5e8fa380f449',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/type',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/type',
           'aliases' => 
           array (
           ),
@@ -1632,7 +1632,7 @@ return [
           'version' => '5.0.2.0',
           'reference' => 'c687e3387b99f5b03b6caa64c74b63e2936ff874',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sebastian/version',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sebastian/version',
           'aliases' => 
           array (
           ),
@@ -1644,7 +1644,7 @@ return [
           'version' => '4.29.0.0',
           'reference' => 'd732a4da195f231cedb2a2a78ae16dd73082afa3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sentry/sentry',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sentry/sentry',
           'aliases' => 
           array (
           ),
@@ -1656,7 +1656,7 @@ return [
           'version' => '4.27.0.0',
           'reference' => 'caa0ff39805a2eb8c70c4535a1443d7421c5a5b8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../sentry/sentry-laravel',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../sentry/sentry-laravel',
           'aliases' => 
           array (
           ),
@@ -1668,7 +1668,7 @@ return [
           'version' => '1.93.1.0',
           'reference' => 'd5552849801f2642aea710557463234b59ef65eb',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../spatie/laravel-package-tools',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../spatie/laravel-package-tools',
           'aliases' => 
           array (
           ),
@@ -1680,7 +1680,7 @@ return [
           'version' => '8.3.0.0',
           'reference' => '60e8ed5b2fbf043c2264433fc2680c76b8b66aa6',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../spatie/laravel-permission',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../spatie/laravel-permission',
           'aliases' => 
           array (
           ),
@@ -1692,7 +1692,7 @@ return [
           'version' => '7.3.0.0',
           'reference' => '3554c005f778d9da89d44b9895d2cca149110fea',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../spatie/laravel-query-builder',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../spatie/laravel-query-builder',
           'aliases' => 
           array (
           ),
@@ -1712,7 +1712,7 @@ return [
           'version' => '1.0.5.0',
           'reference' => 'd8334211a140ce329c13726d4a715adbddd0a163',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../staabm/side-effects-detector',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../staabm/side-effects-detector',
           'aliases' => 
           array (
           ),
@@ -1724,7 +1724,7 @@ return [
           'version' => '8.1.0.0',
           'reference' => '701ef4de9705d6c32292ebee5e8044094a09fbf6',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/clock',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/clock',
           'aliases' => 
           array (
           ),
@@ -1736,7 +1736,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => '92f58bc4bf97a92ed1b9f367f0cd44f20bde0e87',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/console',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/console',
           'aliases' => 
           array (
           ),
@@ -1748,7 +1748,7 @@ return [
           'version' => '8.1.0.0',
           'reference' => 'dc0e2be45c9b5588c82414f02ac574b4b986abcd',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/css-selector',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/css-selector',
           'aliases' => 
           array (
           ),
@@ -1760,7 +1760,7 @@ return [
           'version' => '3.7.1.0',
           'reference' => 'f3202fa1b5097b0af062dc978b32ecf63404e31d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/deprecation-contracts',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/deprecation-contracts',
           'aliases' => 
           array (
           ),
@@ -1772,7 +1772,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => '4e1a093b481f323e6e326451f9760c3868430673',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/error-handler',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/error-handler',
           'aliases' => 
           array (
           ),
@@ -1784,7 +1784,7 @@ return [
           'version' => '8.1.1.0',
           'reference' => 'abd6c11dc468725d1627302ad10f6cd486e9e3d0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/event-dispatcher',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/event-dispatcher',
           'aliases' => 
           array (
           ),
@@ -1796,7 +1796,7 @@ return [
           'version' => '3.7.1.0',
           'reference' => 'c7de7a00ffb67842132da02ea92988a39ccd9f4e',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/event-dispatcher-contracts',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/event-dispatcher-contracts',
           'aliases' => 
           array (
           ),
@@ -1816,7 +1816,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => '13b38720174286f55d1761152b575a8d1436fc25',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/finder',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/finder',
           'aliases' => 
           array (
           ),
@@ -1828,7 +1828,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => '06db5ae1552177bf8572f8908839f12e3c06aed3',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/http-foundation',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/http-foundation',
           'aliases' => 
           array (
           ),
@@ -1840,7 +1840,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => 'e99af79b1e776646eda0e1c23b7b45c184ff99be',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/http-kernel',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/http-kernel',
           'aliases' => 
           array (
           ),
@@ -1852,7 +1852,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => 'f88ce03ae73e3edb5c176ce1f337709996e88495',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/mailer',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/mailer',
           'aliases' => 
           array (
           ),
@@ -1864,7 +1864,7 @@ return [
           'version' => '7.4.13.0',
           'reference' => 'a845722765c4f6b2ce88beaf4f4479975b186770',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/mime',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/mime',
           'aliases' => 
           array (
           ),
@@ -1876,7 +1876,7 @@ return [
           'version' => '8.1.0.0',
           'reference' => '88f9c561f678a02d54b897014049fa839e33ff82',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/options-resolver',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/options-resolver',
           'aliases' => 
           array (
           ),
@@ -1888,7 +1888,7 @@ return [
           'version' => '1.37.0.0',
           'reference' => '141046a8f9477948ff284fa65be2095baafb94f2',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-ctype',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-ctype',
           'aliases' => 
           array (
           ),
@@ -1900,7 +1900,7 @@ return [
           'version' => '1.38.1.0',
           'reference' => 'e9247d281d694a5120554d9afaf54e070e88a603',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-intl-grapheme',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-intl-grapheme',
           'aliases' => 
           array (
           ),
@@ -1912,7 +1912,7 @@ return [
           'version' => '1.38.1.0',
           'reference' => 'dc21118016c039a66235cf93d96b435ffb282412',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-intl-idn',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-intl-idn',
           'aliases' => 
           array (
           ),
@@ -1924,7 +1924,7 @@ return [
           'version' => '1.38.0.0',
           'reference' => '2d446c214bdbe5b71bde5011b060a05fece3ae6b',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-intl-normalizer',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-intl-normalizer',
           'aliases' => 
           array (
           ),
@@ -1936,7 +1936,7 @@ return [
           'version' => '1.38.2.0',
           'reference' => 'd3d318bad5e7a1bfbd026009c8bfb8d8f99ae6b6',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-mbstring',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-mbstring',
           'aliases' => 
           array (
           ),
@@ -1948,7 +1948,7 @@ return [
           'version' => '1.37.0.0',
           'reference' => 'dfb55726c3a76ea3b6459fcfda1ec2d80a682411',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-php80',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-php80',
           'aliases' => 
           array (
           ),
@@ -1960,7 +1960,7 @@ return [
           'version' => '1.38.1.0',
           'reference' => '6bfb9c766cacffbc8e118cb87217d08ed84e5cd7',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-php81',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-php81',
           'aliases' => 
           array (
           ),
@@ -1972,7 +1972,7 @@ return [
           'version' => '1.38.2.0',
           'reference' => '796a26abb75ce49f3a84433cd81bf1009d73d5f8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-php83',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-php83',
           'aliases' => 
           array (
           ),
@@ -1984,7 +1984,7 @@ return [
           'version' => '1.38.1.0',
           'reference' => 'f4e1dfaee5b74aba5964fe1fd4dfc7ba5e3085fa',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-php84',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-php84',
           'aliases' => 
           array (
           ),
@@ -1996,7 +1996,7 @@ return [
           'version' => '1.38.1.0',
           'reference' => 'ba2ba04f3352cfa2dcbbcb90aee13ed967f505b1',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-php85',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-php85',
           'aliases' => 
           array (
           ),
@@ -2008,7 +2008,7 @@ return [
           'version' => '1.37.0.0',
           'reference' => '26dfec253c4cf3e51b541b52ddf7e42cb0908e94',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/polyfill-uuid',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/polyfill-uuid',
           'aliases' => 
           array (
           ),
@@ -2020,7 +2020,7 @@ return [
           'version' => '7.4.13.0',
           'reference' => 'f5804be144caceb570f6747519999636b664f24c',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/process',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/process',
           'aliases' => 
           array (
           ),
@@ -2032,7 +2032,7 @@ return [
           'version' => '8.1.0.0',
           'reference' => '67fd34de15ded1763aa1e330fe345f080a94022c',
           'type' => 'symfony-bridge',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/psr-http-message-bridge',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/psr-http-message-bridge',
           'aliases' => 
           array (
           ),
@@ -2044,7 +2044,7 @@ return [
           'version' => '7.4.13.0',
           'reference' => '3a162171bb008e5e0f15dce6581373a4c0e8390d',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/routing',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/routing',
           'aliases' => 
           array (
           ),
@@ -2056,7 +2056,7 @@ return [
           'version' => '3.7.1.0',
           'reference' => 'c0a284bab1ed8aa0417e3d69250ab437739563a0',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/service-contracts',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/service-contracts',
           'aliases' => 
           array (
           ),
@@ -2068,7 +2068,7 @@ return [
           'version' => '8.1.0.0',
           'reference' => 'afd5944f4005862d961efb85c8bbd5c523c4e3c9',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/string',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/string',
           'aliases' => 
           array (
           ),
@@ -2080,7 +2080,7 @@ return [
           'version' => '8.1.1.0',
           'reference' => '342b4218630dc2cf284cedcb2080c80b13404014',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/translation',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/translation',
           'aliases' => 
           array (
           ),
@@ -2092,7 +2092,7 @@ return [
           'version' => '3.7.1.0',
           'reference' => 'ccb206b98faccc511ebae8e5fad50f2dc0b30621',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/translation-contracts',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/translation-contracts',
           'aliases' => 
           array (
           ),
@@ -2112,7 +2112,7 @@ return [
           'version' => '7.4.9.0',
           'reference' => '2676b524340abcfe4d6151ec698463cebafee439',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/uid',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/uid',
           'aliases' => 
           array (
           ),
@@ -2124,7 +2124,7 @@ return [
           'version' => '7.4.14.0',
           'reference' => '9a3a56a4a1e65a5cb4f8d13801fe8ab0a170e358',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/var-dumper',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/var-dumper',
           'aliases' => 
           array (
           ),
@@ -2136,7 +2136,7 @@ return [
           'version' => '8.1.1.0',
           'reference' => '8e4cdd4311683516be06944f4b85244063cdb886',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../symfony/yaml',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../symfony/yaml',
           'aliases' => 
           array (
           ),
@@ -2148,7 +2148,7 @@ return [
           'version' => '0.8.7.0',
           'reference' => '1248f3f506ca9641d4f68cebcd538fa489754db8',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../ta-tikoma/phpunit-architecture-test',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../ta-tikoma/phpunit-architecture-test',
           'aliases' => 
           array (
           ),
@@ -2160,7 +2160,7 @@ return [
           'version' => '1.3.1.0',
           'reference' => 'b7489ce515e168639d17feec34b8847c326b0b3c',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../theseer/tokenizer',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../theseer/tokenizer',
           'aliases' => 
           array (
           ),
@@ -2172,7 +2172,7 @@ return [
           'version' => '2.4.0.0',
           'reference' => 'f0292ccf0ec75843d65027214426b6b163b48b41',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../tijsverkoyen/css-to-inline-styles',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../tijsverkoyen/css-to-inline-styles',
           'aliases' => 
           array (
           ),
@@ -2184,7 +2184,7 @@ return [
           'version' => '5.6.4.0',
           'reference' => '416df702837983f8d5ff48c9c3fee4f5f57b980b',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../vlucas/phpdotenv',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../vlucas/phpdotenv',
           'aliases' => 
           array (
           ),
@@ -2196,7 +2196,7 @@ return [
           'version' => '2.1.1.0',
           'reference' => '8e1051fe39379367aecf014f41744ce7539a856f',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../voku/portable-ascii',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../voku/portable-ascii',
           'aliases' => 
           array (
           ),
@@ -2208,7 +2208,7 @@ return [
           'version' => '2.4.1.0',
           'reference' => '2ccb7c2e821038c03a3e6e1700c570c158c55f70',
           'type' => 'library',
-          'install_path' => '/var/www/html/vendor/composer/../webmozart/assert',
+          'install_path' => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer/../webmozart/assert',
           'aliases' => 
           array (
           ),
@@ -2219,55 +2219,66 @@ return [
   ),
   'executedFilesHashes' => 
   array (
-    '/var/www/html/vendor/larastan/larastan/bootstrap.php' => '5a3eacbf63b3e41659adfee92facededf8e020a932800f93c9a8b0e67f235805',
-    'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php' => 'cb8b31e82c61ce197871c9e8a6f122256751f2ab606dd2be90846d4fa5f8933e',
-    'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php' => 'c0068e383717870a304781d462f7e2afe1c6f24e9133851852a2aca96b4fa26f',
-    'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php' => '65fe0a8bc6fe285d8ddc8798ab5b9299920af70db5ad74596bc08df823e7c5d9',
-    'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php' => '1e2fe940e4ba4e00d9ee6adb2af3ee1bf333e6f8afe61c61deb038886d293427',
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\larastan\\larastan\\bootstrap.php' => '5a3eacbf63b3e41659adfee92facededf8e020a932800f93c9a8b0e67f235805',
+    'phar://C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\phpstan\\phpstan\\phpstan.phar\\stubs\\runtime\\Attribute85.php' => 'cb8b31e82c61ce197871c9e8a6f122256751f2ab606dd2be90846d4fa5f8933e',
+    'phar://C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\phpstan\\phpstan\\phpstan.phar\\stubs\\runtime\\ReflectionAttribute.php' => 'c0068e383717870a304781d462f7e2afe1c6f24e9133851852a2aca96b4fa26f',
+    'phar://C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\phpstan\\phpstan\\phpstan.phar\\stubs\\runtime\\ReflectionIntersectionType.php' => '65fe0a8bc6fe285d8ddc8798ab5b9299920af70db5ad74596bc08df823e7c5d9',
+    'phar://C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\phpstan\\phpstan\\phpstan.phar\\stubs\\runtime\\ReflectionUnionType.php' => '1e2fe940e4ba4e00d9ee6adb2af3ee1bf333e6f8afe61c61deb038886d293427',
   ),
   'phpExtensions' => 
   array (
     0 => 'Core',
-    1 => 'PDO',
-    2 => 'Phar',
-    3 => 'Reflection',
-    4 => 'SPL',
-    5 => 'SimpleXML',
-    6 => 'Zend OPcache',
-    7 => 'bcmath',
-    8 => 'ctype',
-    9 => 'curl',
-    10 => 'date',
-    11 => 'dom',
-    12 => 'fileinfo',
-    13 => 'filter',
-    14 => 'gd',
-    15 => 'hash',
-    16 => 'iconv',
-    17 => 'intl',
-    18 => 'json',
-    19 => 'libxml',
-    20 => 'mbstring',
-    21 => 'mysqlnd',
-    22 => 'openssl',
-    23 => 'pcntl',
-    24 => 'pcre',
-    25 => 'pdo_mysql',
-    26 => 'pdo_sqlite',
-    27 => 'posix',
-    28 => 'random',
-    29 => 'readline',
-    30 => 'redis',
-    31 => 'session',
-    32 => 'sodium',
-    33 => 'sqlite3',
-    34 => 'standard',
-    35 => 'tokenizer',
-    36 => 'xml',
-    37 => 'xmlreader',
-    38 => 'xmlwriter',
-    39 => 'zip',
-    40 => 'zlib',
+    1 => 'FFI',
+    2 => 'PDO',
+    3 => 'Phar',
+    4 => 'Reflection',
+    5 => 'SPL',
+    6 => 'SimpleXML',
+    7 => 'Zend OPcache',
+    8 => 'bcmath',
+    9 => 'bz2',
+    10 => 'calendar',
+    11 => 'ctype',
+    12 => 'curl',
+    13 => 'date',
+    14 => 'dom',
+    15 => 'exif',
+    16 => 'fileinfo',
+    17 => 'filter',
+    18 => 'gd',
+    19 => 'gmp',
+    20 => 'hash',
+    21 => 'herd',
+    22 => 'iconv',
+    23 => 'intl',
+    24 => 'json',
+    25 => 'libxml',
+    26 => 'mbstring',
+    27 => 'mongodb',
+    28 => 'mysqli',
+    29 => 'mysqlnd',
+    30 => 'openssl',
+    31 => 'pcre',
+    32 => 'pdo_mysql',
+    33 => 'pdo_pgsql',
+    34 => 'pdo_sqlite',
+    35 => 'pgsql',
+    36 => 'random',
+    37 => 'readline',
+    38 => 'redis',
+    39 => 'session',
+    40 => 'shmop',
+    41 => 'soap',
+    42 => 'sockets',
+    43 => 'sodium',
+    44 => 'sqlite3',
+    45 => 'standard',
+    46 => 'tokenizer',
+    47 => 'xml',
+    48 => 'xmlreader',
+    49 => 'xmlwriter',
+    50 => 'zip',
+    51 => 'zlib',
   ),
   'stubFiles' => 
   array (
@@ -2277,4619 +2288,6 @@ return [
 	'projectExtensionFiles' => array (
 ),
 	'errorsCallback' => static function (): array { return array (
-  '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Address::$is_default.',
-       'file' => '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Cart/AddCartItemAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-       'line' => 48,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 48,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$variant_id.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 38,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 38,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$variant_id.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 39,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 40,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 40,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$status.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 47,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 47,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 49,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 49,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 53,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 53,
-       'nodeType' => 'PHPStan\\Node\\PropertyAssignNode',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 53,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 53,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 60,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 60,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 60,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 60,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 71,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 71,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 71,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 71,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 71,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 71,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 90,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 90,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$variant_id.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 91,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 91,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    11 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 92,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 92,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    12 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 93,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 93,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    13 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 94,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 94,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    14 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 95,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 95,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    15 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 96,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 96,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    16 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 96,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 96,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    17 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 115,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 115,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    18 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'line' => 163,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 163,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Crm/CreateQuotationAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php',
-       'line' => 16,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 16,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$is_active.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$starts_at.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$expires_at.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$usage_limit.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$used_count.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$type.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 47,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 47,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$value.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 48,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 48,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$value.',
-       'file' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'line' => 49,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 49,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Order/CancelOrderAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Actions/Order/CancelOrderAction.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Order/CancelOrderAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'line' => 38,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 38,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'line' => 53,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 53,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'line' => 53,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 53,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Returns/ProcessRefundAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_id.',
-       'file' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$quantity.',
-       'file' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$payment_method.',
-       'file' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$total.',
-       'file' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 34,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Actions/Returns/RequestReturnAction.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-       'line' => 19,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 19,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 53,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 53,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 54,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 54,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 54,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 54,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 63,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 63,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 64,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 64,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'line' => 64,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 64,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-       'line' => 76,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 76,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Parameter #3 $data of method App\\Actions\\Checkout\\PlaceOrderAction::handle() expects array{shippingAddressId: string, deliveryMethod: string, paymentMethod: string, couponCode?: string|null}, array{shippingAddressId: int, deliveryMethod: \'standard\', paymentMethod: \'cash_on_delivery\'} given.',
-       'file' => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-       'line' => 130,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Offset \'shippingAddressId\' (string) does not accept type int.',
-       'nodeLine' => 130,
-       'nodeType' => 'PhpParser\\Node\\Expr\\MethodCall',
-       'identifier' => 'argument.type',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Controllers/CartController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$cart_id.',
-       'file' => '/var/www/html/app/Http/Controllers/CartController.php',
-       'line' => 65,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Controllers/CartController.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 65,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Controllers/CouponController.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$code.',
-       'file' => '/var/www/html/app/Http/Controllers/CouponController.php',
-       'line' => 19,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Controllers/CouponController.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 19,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/AddressResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$label.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 19,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 19,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$full_name.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 20,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 20,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$phone.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$county.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$city.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$address_line.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$is_default.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Http\\Resources\\AddressResource::$updated_at.',
-       'file' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/AddressResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$phone.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$avatar_url.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$status.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$last_login_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\AuditLog::$action.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\AuditLog::$subject_type.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\AuditLog::$subject_id.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to protected property App\\Models\\AuditLog::$changes.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => NULL,
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.protected',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\AuditLog::$ip_address.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\AuditLog::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/CouponResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$code.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$type.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$value.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$usage_limit.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$used_count.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$starts_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$expires_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$is_active.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Coupon::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$low_stock_threshold.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$low_stock_threshold.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 33,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 33,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\InventoryItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'line' => 33,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 33,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/LeadResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$company_name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$contact_name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$email.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$phone.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$source.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$status.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$assigned_to.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Lead::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/OrderResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$subtotal.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$delivery_fee.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$vat.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$payment_method.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 34,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$placed_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 40,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 40,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ProductResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$short_description.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$description.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$compare_at_price.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$status.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$is_featured.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 33,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 33,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$is_flash_deal.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 34,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$flash_deal_ends_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    11 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 38,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 38,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    12 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 39,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    13 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 43,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 43,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    14 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 44,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 44,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    15 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$meta_title.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 48,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 48,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    16 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$meta_description.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 49,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 49,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    17 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 50,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 50,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    18 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$updated_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'line' => 51,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 51,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$rating.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$title.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$body.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 33,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 33,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$status.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 34,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 34,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$name.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$location.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$manager.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$is_active.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Warehouse::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/BrandResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
-       'file' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$logo_path.',
-       'file' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$is_active.',
-       'file' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/BrandResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/CartItemResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$variant_id.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/CartResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/CartResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Http/Resources/CartResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CartResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/CategoryResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
-       'file' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$icon_path.',
-       'file' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$position.',
-       'file' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$is_active.',
-       'file' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/CategoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/OrderItemResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_id.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_name.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$quantity.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$unit_price.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$total.',
-       'file' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/OrderResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$subtotal.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$delivery_fee.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$vat.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$payment_method.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$placed_at.',
-       'file' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderStatusHistory::$status.',
-       'file' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderStatusHistory::$note.',
-       'file' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderStatusHistory::$occurred_at.',
-       'file' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/ProductImageResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductImage::$path.',
-       'file' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductImage::$alt.',
-       'file' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductImage::$position.',
-       'file' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/ProductResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$short_description.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$description.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$compare_at_price.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$is_featured.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    8 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$is_flash_deal.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    9 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$flash_deal_ends_at.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 32,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 32,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    10 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 35,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 35,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    11 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 36,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 36,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    12 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 40,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 40,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    13 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$slug.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 41,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 41,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    14 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$meta_title.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 45,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 45,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    15 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$meta_description.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 46,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 46,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    16 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'line' => 47,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 47,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/ProductSpecificationResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductSpecification::$group.',
-       'file' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductSpecification::$label.',
-       'file' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductSpecification::$value.',
-       'file' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\ProductSpecification::$position.',
-       'file' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/ReturnResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$product_name.',
-       'file' => '/var/www/html/app/Http/Resources/ReturnResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReturnResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\OrderItem::$sku.',
-       'file' => '/var/www/html/app/Http/Resources/ReturnResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReturnResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/ReviewResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$rating.',
-       'file' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$title.',
-       'file' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$body.',
-       'file' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Review::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/ReviewResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Http/Resources/UserResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$name.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$phone.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 24,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 24,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$avatar_url.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 25,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 25,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email_verified_at.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 26,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 26,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$created_at.',
-       'file' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'line' => 27,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Http/Resources/UserResource.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 27,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Models/Product.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 219,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 219,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 220,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 220,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Brand::$name.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 221,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 221,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Category::$name.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 222,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 222,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$category_id.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 224,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 224,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    5 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$brand_id.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 225,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 225,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    6 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$price.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 226,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 226,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    7 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$status.',
-       'file' => '/var/www/html/app/Models/Product.php',
-       'line' => 233,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Models/Product.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 233,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Notifications/LowStockAlertNotification.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$name.',
-       'file' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Product::$sku.',
-       'file' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'line' => 29,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 29,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Notifications/OrderConfirmationNotification.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Notifications/OrderStatusChangedNotification.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'line' => 28,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 28,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$status.',
-       'file' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'line' => 30,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 30,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Payments/Gateways/MpesaGateway.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'line' => 42,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 42,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'line' => 47,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 47,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'line' => 48,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 48,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    3 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Payment::$status.',
-       'file' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'line' => 87,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 87,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    4 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Payment::$provider_reference.',
-       'file' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'line' => 103,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 103,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Payments/Gateways/StripeGateway.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$total.',
-       'file' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'line' => 21,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 21,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$order_number.',
-       'file' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Payment::$status.',
-       'file' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'line' => 45,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 45,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Policies/AddressPolicy.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Address::$user_id.',
-       'file' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 15,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Address::$user_id.',
-       'file' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'line' => 31,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 31,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    2 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Address::$user_id.',
-       'file' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'line' => 39,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Policies/AddressPolicy.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 39,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Policies/OrderPolicy.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$user_id.',
-       'file' => '/var/www/html/app/Policies/OrderPolicy.php',
-       'line' => 15,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Policies/OrderPolicy.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 15,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\Order::$user_id.',
-       'file' => '/var/www/html/app/Policies/OrderPolicy.php',
-       'line' => 23,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Policies/OrderPolicy.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 23,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Providers/TelescopeServiceProvider.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\User::$email.',
-       'file' => '/var/www/html/app/Providers/TelescopeServiceProvider.php',
-       'line' => 60,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Providers/TelescopeServiceProvider.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 60,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
-  '/var/www/html/app/Services/PricingService.php' => 
-  array (
-    0 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$quantity.',
-       'file' => '/var/www/html/app/Services/PricingService.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Services/PricingService.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-    1 => 
-    \PHPStan\Analyser\Error::__set_state(array(
-       'message' => 'Access to an undefined property App\\Models\\CartItem::$unit_price.',
-       'file' => '/var/www/html/app/Services/PricingService.php',
-       'line' => 22,
-       'canBeIgnored' => true,
-       'filePath' => '/var/www/html/app/Services/PricingService.php',
-       'traitFilePath' => NULL,
-       'tip' => 'Learn more: <fg=cyan>https://phpstan.org/blog/solving-phpstan-access-to-undefined-property</>',
-       'nodeLine' => 22,
-       'nodeType' => 'PhpParser\\Node\\Expr\\PropertyFetch',
-       'identifier' => 'property.notFound',
-       'metadata' => 
-      array (
-      ),
-       'fixedErrorDiff' => NULL,
-    )),
-  ),
 ); },
 	'locallyIgnoredErrorsCallback' => static function (): array { return array (
 ); },
@@ -6898,7 +2296,7 @@ return [
 	'unmatchedLineIgnores' => array (
 ),
 	'collectedDataCallback' => static function (): array { return array (
-  '/var/www/html/app/Actions/Address/CreateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -6911,7 +2309,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Address/UpdateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -6924,7 +2322,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -6936,7 +2334,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Auth/LoginAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -6948,19 +2346,34 @@ return [
         ),
       ),
     ),
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Actions\\Auth\\LoginAction',
+        1 => 'handle',
+        2 => 'App\\Actions\\Auth\\LoginAction',
+        3 => 
+        array (
+          0 => 'm' . "\0" . 'laravel\\sanctum\\http\\middleware\\ensurefrontendrequestsarestateful' . "\0" . 'fromfrontend',
+          1 => 'm' . "\0" . 'app\\actions\\auth\\loginaction' . "\0" . 'loginstateful',
+          2 => 'm' . "\0" . 'app\\actions\\auth\\loginaction' . "\0" . 'loginstateless',
+        ),
+      ),
+    ),
   ),
-  '/var/www/html/app/Actions/Auth/RegisterUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
       0 => 
       array (
         0 => 'event',
-        1 => 23,
+        1 => 26,
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Auth/ResetPasswordAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\ResetPasswordAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -6971,7 +2384,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Auth/SendPasswordResetLinkAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\SendPasswordResetLinkAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -6983,7 +2396,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -6999,7 +2412,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7015,7 +2428,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7036,7 +2449,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Crm/CreateLeadAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7052,7 +2465,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7065,7 +2478,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Order/CancelOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7078,7 +2491,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -7089,7 +2502,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Returns/ProcessRefundAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7102,7 +2515,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7115,7 +2528,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Concerns/Auditable.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitDeclarationCollector' => 
     array (
@@ -7126,7 +2539,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7168,7 +2581,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Enums/PaymentMethod.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7183,7 +2596,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Events/OrderPlaced.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7204,7 +2617,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Events/OrderStatusChanged.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7225,7 +2638,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Events/StockLevelLow.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7246,7 +2659,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Exceptions/InvalidOrderTransitionException.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7261,7 +2674,24 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CartController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'App\\Http\\Controllers\\Auth\\AuthController',
+        1 => 'userPayload',
+        2 => 'App\\Http\\Controllers\\Auth\\AuthController',
+        3 => 
+        array (
+          0 => 'm' . "\0" . 'illuminate\\http\\resources\\json\\jsonresource' . "\0" . '__construct',
+          1 => 'm' . "\0" . 'illuminate\\http\\resources\\json\\jsonresource' . "\0" . 'resolve',
+        ),
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7274,7 +2704,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Controller.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -7284,7 +2714,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Middleware/VerifyMpesaCallbackIp.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\VerifyMpesaCallbackIp.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -7295,7 +2725,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7311,7 +2741,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7326,7 +2756,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7341,7 +2771,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7357,7 +2787,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7372,7 +2802,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductImageRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7387,7 +2817,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7403,7 +2833,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7418,7 +2848,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7433,7 +2863,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreWarehouseRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7448,7 +2878,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateAdminUserRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7464,7 +2894,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7480,7 +2910,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateInventoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7495,7 +2925,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7511,7 +2941,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateOrderStatusRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7527,7 +2957,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7543,7 +2973,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7559,7 +2989,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReviewRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7575,7 +3005,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateSettingRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7590,7 +3020,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ForgotPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ForgotPasswordRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7614,7 +3044,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/LoginRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7638,7 +3068,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/RegisterRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7653,7 +3083,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ResetPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ResetPasswordRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7668,7 +3098,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/CheckoutRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7683,7 +3113,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/StkPushRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7698,7 +3128,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7713,7 +3143,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreCartItemRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7737,7 +3167,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7752,7 +3182,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/UpdateAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7767,7 +3197,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/UpdateCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateCartItemRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7791,7 +3221,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Requests/ValidateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\ValidateCouponRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7815,7 +3245,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7830,7 +3260,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/PermissionResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\PermissionResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7845,7 +3275,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7860,7 +3290,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/SettingResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7875,7 +3305,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/BrandResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7890,7 +3320,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/CartItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7905,7 +3335,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/OrderItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7920,7 +3350,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/PaginatedResourceCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\PaginatedResourceCollection.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7935,7 +3365,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Http/Resources/ProductSpecificationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductSpecificationResource.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7950,7 +3380,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -7962,7 +3392,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Listeners/InvalidateReportsCache.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -7975,7 +3405,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Address.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -7999,7 +3429,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/AiInsight.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -8022,7 +3452,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/AuditLog.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -8045,7 +3475,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Banner.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -8225,7 +3655,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Brand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -8405,7 +3835,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Cart.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -8417,7 +3847,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/CartItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -8441,7 +3871,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Category.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -8621,7 +4051,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/CompareListItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -8632,7 +4062,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Coupon.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -8812,7 +4242,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/InventoryItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -8836,7 +4266,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Lead.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -9016,7 +4446,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Order.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9040,7 +4470,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/OrderItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9064,7 +4494,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/OrderStatusHistory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9088,7 +4518,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Payment.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9112,7 +4542,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Product.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -9312,7 +4742,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/ProductImage.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -9324,7 +4754,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/ProductSpecification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -9336,7 +4766,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/ProductVariant.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9360,7 +4790,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Quotation.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -9540,7 +4970,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/QuotationItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9564,7 +4994,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/ReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9588,7 +5018,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Review.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9612,7 +5042,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Setting.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -9791,7 +5221,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/User.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -9818,7 +5248,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Warehouse.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 
   array (
     'PHPStan\\Rules\\Comparison\\ConstantConditionInTraitCollector' => 
     array (
@@ -9998,7 +5428,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Models/Wishlist.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10009,7 +5439,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Notifications/LowStockAlertNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -10032,6 +5462,17 @@ return [
         array (
         ),
       ),
+      1 => 
+      array (
+        0 => 'App\\Notifications\\LowStockAlertNotification',
+        1 => 'toMail',
+        2 => 'App\\Notifications\\LowStockAlertNotification',
+        3 => 
+        array (
+          0 => 'm' . "\0" . 'illuminate\\notifications\\messages\\simplemessage' . "\0" . 'subject',
+          1 => 'm' . "\0" . 'illuminate\\notifications\\messages\\simplemessage' . "\0" . 'line',
+        ),
+      ),
     ),
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10041,7 +5482,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Notifications/OrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -10073,7 +5514,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Notifications/OrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -10105,7 +5546,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Notifications/QueuedVerifyEmailNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\QueuedVerifyEmailNotification.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10115,7 +5556,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Notifications/SalesReportNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\SalesReportNotification.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -10156,7 +5597,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10172,7 +5613,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Payments/Gateways/MpesaGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10188,7 +5629,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Payments/PaymentGatewayManager.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10203,7 +5644,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Payments/PaymentIntent.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\ConstructorWithoutImpurePointsCollector' => 
     array (
@@ -10216,7 +5657,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Policies/AddressPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10258,7 +5699,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Policies/OrderPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10282,7 +5723,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Providers/AppServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -10306,7 +5747,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Providers/HorizonServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\HorizonServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -10318,7 +5759,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Providers/TelescopeServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\TelescopeServiceProvider.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -10348,7 +5789,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Services/OrderNumberGenerator.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\OrderNumberGenerator.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10374,7 +5815,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Services/PricingService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10390,7 +5831,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/app/Services/ReportsService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -10402,7 +5843,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/factories/CartFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10418,7 +5859,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/factories/CompareListItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10435,7 +5876,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/factories/OrderStatusHistoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10452,7 +5893,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/factories/SettingFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10467,7 +5908,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/factories/WishlistFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
@@ -10484,7 +5925,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_134224_create_permission_tables.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134224_create_permission_tables.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureFuncCallCollector' => 
     array (
@@ -10505,13 +5946,13 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_134313_create_telescope_entries_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134313_create_telescope_entries_table.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
     array (
       0 => 
       array (
-        0 => 'AnonymousClass8347368e0fee2616711bc490652af0d6',
+        0 => 'AnonymousClass525b0a0adddd7f450fc7e20b79b6e22d',
         1 => 'getConnection',
         2 => 'Illuminate\\Database\\Migrations\\Migration@anonymous/database/migrations/2026_07_15_134313_create_telescope_entries_table.php:7',
         3 => 
@@ -10521,7 +5962,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/seeders/CatalogSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10531,7 +5972,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/seeders/CouponSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10541,7 +5982,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/seeders/DatabaseSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php' => 
   array (
     'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
     array (
@@ -10551,7 +5992,101 @@ return [
       ),
     ),
   ),
-  '/var/www/html/database/seeders/RolesAndPermissionsSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Database\\Seeders\\OrderSeeder',
+        1 => 'statusProgression',
+        2 => 'Database\\Seeders\\OrderSeeder',
+        3 => 
+        array (
+        ),
+      ),
+    ),
+    'PHPStan\\Rules\\DeadCode\\PossiblyPureMethodCallCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 
+        array (
+          0 => 'Database\\Seeders\\OrderSeeder',
+        ),
+        1 => 'createOrder',
+        2 => 57,
+      ),
+    ),
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\RolesAndPermissionsSeeder.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -10570,7 +6105,27 @@ return [
       ),
     ),
   ),
-  '/var/www/html/routes/api.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php' => 
+  array (
+    'PHPStan\\Rules\\Traits\\TraitUseCollector' => 
+    array (
+      0 => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php' => 
   array (
     'PHPStan\\Rules\\DeadCode\\PossiblyPureStaticCallCollector' => 
     array (
@@ -11086,7 +6641,7 @@ return [
       ),
     ),
   ),
-  '/var/www/html/routes/web.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\web.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedViewFunctionCollector' => 
     array (
@@ -11104,3209 +6659,3348 @@ return [
   ),
 ); },
 	'dependencies' => array (
-  '/var/www/html/app/Actions/Address/CreateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php' => 
   array (
     'fileHash' => '250abf479e47b17515288106d66932105095d409de9a747b30923f51d021868e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\SetDefaultAddressAction.php' => 
   array (
     'fileHash' => '1db07ffb7b859cfe290e5a72cffc0966165e6b9df9b1ceb2000d38333cc9d8d7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Address/CreateAddressAction.php',
-      1 => '/var/www/html/app/Actions/Address/UpdateAddressAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php',
     ),
   ),
-  '/var/www/html/app/Actions/Address/UpdateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php' => 
   array (
     'fileHash' => '8bf9f8d749227c37716c473857b7834272138f6bb8d7df945e17b78888889f00',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php' => 
   array (
     'fileHash' => '5893d1e4c0110f063c051aa425f1c6a6466eb47dc1cd674457a0c3744ca23a9a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Admin/CreateRoleAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateRoleAction.php' => 
   array (
     'fileHash' => '415206a72f9194bfddfa05c176aa7e75816ce9f170a20784833e9ec470a7c8e9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Admin/UpdateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateAdminUserAction.php' => 
   array (
     'fileHash' => '06c88e63c28aaa6e047af78bee7f33da3492f1e29a000ad9d18590daa652ffde',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Admin/UpdateRoleAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateRoleAction.php' => 
   array (
     'fileHash' => '605e78e89ce1d7c7c87fc0665ca5f09a55c7718e94998c411b6c897d28fe9917',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Auth/LoginAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
   array (
-    'fileHash' => '4cdadad52eaa26b13b1b58398d0ab7ebdf7bda4770427d18d22ab6b3b74b5d52',
+    'fileHash' => '7af15a74af7efae9de8d78cd0d22b27c9946b653e24ec9b0f964a88bca2711a8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Auth/LogoutAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LogoutAction.php' => 
   array (
-    'fileHash' => '94bf31773cdbe8cf90864c6c998560b30699e74b9ee2cc078fb1bbb0627fe956',
+    'fileHash' => '74858b75fe67250f1f4dd9a85a95b2d8f5d58fc3cf5a33e75485ec237e5ad145',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Auth/RegisterUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 
   array (
-    'fileHash' => 'bff22525b7866143d7f9bd1d5aa02edeeb99b160d85459c9da613227653839d6',
+    'fileHash' => 'a3949be6353c67b4b74e20a03a9ec19dd959576ac4859abe0aa8b074c5dd011e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Auth/ResetPasswordAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\ResetPasswordAction.php' => 
   array (
     'fileHash' => 'd0e3f06916f95873526ff60b1631e7892c260337cff75473b3584ed407b56996',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Auth/SendPasswordResetLinkAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\SendPasswordResetLinkAction.php' => 
   array (
     'fileHash' => 'c03f4e6171ccd668a6c0f5de4ff7386b0f536c2442b6fc8afe0c6d9bd73793df',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Cart/AddCartItemAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php' => 
   array (
     'fileHash' => '8f29f874d33ad1e20f375adf25828ae519dd7070547f14544c15b057dc7f85ac',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php' => 
   array (
     'fileHash' => '59ef3beffc0d446b03f5ec47cc40ed2b261735f2d34fd27425438d1ceb08d8d3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Auth/LoginAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php',
     ),
   ),
-  '/var/www/html/app/Actions/Cart/UpdateCartItemAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\UpdateCartItemAction.php' => 
   array (
     'fileHash' => 'fd811ffcab7191687748c4bfa3d53da3918f0e18591ff82590c88789ccb69401',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php' => 
   array (
     'fileHash' => '7d8d1eff3573a43bfdea0f03493962f6ee2885f486c831128cb5243651fb06b0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php' => 
   array (
     'fileHash' => '8eed99be8ee8738050e2cce04632615585c5947777cb78b69325282ada924e19',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateProductAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php' => 
   array (
     'fileHash' => '4af4a06be50e15414419a870277e539739bf0dfcd3cfc0ef70d05a6cb6b021a9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/ModerateReviewAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\ModerateReviewAction.php' => 
   array (
     'fileHash' => '2032b8ec13c6e1577851885461a951625b924eec27047117d3d98f0da522c6e5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateBrandAction.php' => 
   array (
     'fileHash' => '3b25ab4f5b37d6c848ef0aadfb401533113f760e9b50e185a4f7cadae9af1571',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateCategoryAction.php' => 
   array (
     'fileHash' => '110a80103021355b33615e5a02fba7653c506657e009384deae556bb355adcec',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateProductAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php' => 
   array (
     'fileHash' => '725f882205111706bbc9793c1de5fbaed5551c2a8c4597712a45f2530f65a5ea',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php' => 
   array (
     'fileHash' => '4230df452c5bb82e9819cc0747c4e6caa01d6bfaab4ee400750b92b2d4b617ce',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php' => 
   array (
     'fileHash' => '0d206b923c965d6093533b89f8f098b56b4d6e8ddd7d5f0888826a5afd6f539a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      1 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Crm/CreateLeadAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php' => 
   array (
     'fileHash' => '5f0d62fc3fa01d15b7816103df1bfad1c6c966e1b278c3309a4dacb09e011e71',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Crm/CreateQuotationAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php' => 
   array (
     'fileHash' => '3e80354d67cf18de2484c71ef1cc76c631d315f5d602748f2ee736bb5dc55cb3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Crm/UpdateLeadAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php' => 
   array (
     'fileHash' => '94b0be30fb0b72b723e11537cb3a82ee0d8b1cba42f01cc9ad2affe812207052',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php' => 
   array (
     'fileHash' => 'ea1bc09637396176972433a8723bd863737a915d1ed3dcd553b96f3e13df52e6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php' => 
   array (
     'fileHash' => '10ad240ed374c13fad7f844e25b6fa4d18472fbee1b6507737fbbea5018a72e2',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Inventory/CreateWarehouseAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php' => 
   array (
     'fileHash' => '14c7b00ce37a430a9271bf959f73a3716e12679575ecd13d501b0abb9c7b5099',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/CreateBannerAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php' => 
   array (
     'fileHash' => 'd7407c0af4ca626ecd6530c4f030f5a4dc2cea065ef8778dff736f46876fb823',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/CreateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php' => 
   array (
     'fileHash' => '83110ce60523a854e286e2f33c92ac4790edf771dd6babc49325a1992e281acb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php' => 
   array (
     'fileHash' => 'bbff811d371bf772ac3797284e277aec0a3c5206c3a59c23e84d3f1b562baae6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CompareController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php' => 
   array (
     'fileHash' => '6005c1b9b0dfb772d8f4746a81e690d87144c0aec1a48b9860acee6ac7d345ae',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/WishlistController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/UpdateBannerAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php' => 
   array (
     'fileHash' => '54ec205ecde73582c5b9a1a5618da0fc8e6dae9542b40bc4d08d1ea6d2621011',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/UpdateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php' => 
   array (
     'fileHash' => '75f6c084be00241f013a8335bb75c272b85fbce52c85e518538a35b98adc4f8c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php' => 
   array (
     'fileHash' => '7f459b7cb074a8c6ee4ef71e35ed74ee4ff8375bf23e1fef0201625f0c1a4378',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Http/Controllers/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Order/CancelOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php' => 
   array (
     'fileHash' => '0c776e993e5b660225f8b7c6874f7946b9c665cf4e7f8347cc37b0c4702aa683',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/OrderController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php' => 
   array (
     'fileHash' => 'b6a0981712b884137015656ce14a31299aa5dac5cf29e2ebca8e5c57f618e75e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Order/CancelOrderAction.php',
-      1 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Returns/ProcessRefundAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php' => 
   array (
     'fileHash' => '3bf336e1fd2887b1854a740f8cd564d2c5e9c22c387e8924c30e5fab83d75e4a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php',
     ),
   ),
-  '/var/www/html/app/Actions/Returns/RequestReturnAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php' => 
   array (
     'fileHash' => '6a11b47e4b47240f59afa881c1aaddd36232c1e7a43144c12b04a2218e0c5ed7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php' => 
   array (
     'fileHash' => '4591fdf625ead497213f959474eb5a579c50a178db9d2f7160d1d80bc9589d42',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Concerns/Auditable.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 
   array (
     'fileHash' => 'f7539f2260c3fc66230e6460584b7414dc26d455db55514b190b9917f917521d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/CreateBrandAction.php',
-      2 => '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php',
-      3 => '/var/www/html/app/Actions/Catalog/CreateProductAction.php',
-      4 => '/var/www/html/app/Actions/Catalog/UpdateBrandAction.php',
-      5 => '/var/www/html/app/Actions/Catalog/UpdateCategoryAction.php',
-      6 => '/var/www/html/app/Actions/Catalog/UpdateProductAction.php',
-      7 => '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php',
-      8 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      9 => '/var/www/html/app/Actions/Crm/CreateLeadAction.php',
-      10 => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-      11 => '/var/www/html/app/Actions/Crm/UpdateLeadAction.php',
-      12 => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-      13 => '/var/www/html/app/Actions/Inventory/CreateWarehouseAction.php',
-      14 => '/var/www/html/app/Actions/Marketing/CreateBannerAction.php',
-      15 => '/var/www/html/app/Actions/Marketing/CreateCouponAction.php',
-      16 => '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php',
-      17 => '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php',
-      18 => '/var/www/html/app/Actions/Marketing/UpdateBannerAction.php',
-      19 => '/var/www/html/app/Actions/Marketing/UpdateCouponAction.php',
-      20 => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-      21 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      22 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      23 => '/var/www/html/app/Events/StockLevelLow.php',
-      24 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      25 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
-      26 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
-      27 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
-      28 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      29 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      30 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      31 => '/var/www/html/app/Http/Controllers/Admin/SettingController.php',
-      32 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
-      33 => '/var/www/html/app/Http/Controllers/BannerController.php',
-      34 => '/var/www/html/app/Http/Controllers/BrandController.php',
-      35 => '/var/www/html/app/Http/Controllers/CategoryController.php',
-      36 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      37 => '/var/www/html/app/Http/Controllers/CouponController.php',
-      38 => '/var/www/html/app/Http/Controllers/FlashDealController.php',
-      39 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      40 => '/var/www/html/app/Http/Controllers/SearchController.php',
-      41 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      42 => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-      43 => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-      44 => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-      45 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      46 => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-      47 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-      48 => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-      49 => '/var/www/html/app/Http/Resources/Admin/SettingResource.php',
-      50 => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-      51 => '/var/www/html/app/Http/Resources/BannerResource.php',
-      52 => '/var/www/html/app/Http/Resources/BrandResource.php',
-      53 => '/var/www/html/app/Http/Resources/CartItemResource.php',
-      54 => '/var/www/html/app/Http/Resources/CategoryResource.php',
-      55 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      56 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      57 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
-      58 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
-      59 => '/var/www/html/app/Models/Banner.php',
-      60 => '/var/www/html/app/Models/Brand.php',
-      61 => '/var/www/html/app/Models/CartItem.php',
-      62 => '/var/www/html/app/Models/Category.php',
-      63 => '/var/www/html/app/Models/CompareListItem.php',
-      64 => '/var/www/html/app/Models/Coupon.php',
-      65 => '/var/www/html/app/Models/InventoryItem.php',
-      66 => '/var/www/html/app/Models/Lead.php',
-      67 => '/var/www/html/app/Models/Order.php',
-      68 => '/var/www/html/app/Models/OrderItem.php',
-      69 => '/var/www/html/app/Models/Product.php',
-      70 => '/var/www/html/app/Models/ProductImage.php',
-      71 => '/var/www/html/app/Models/ProductSpecification.php',
-      72 => '/var/www/html/app/Models/ProductVariant.php',
-      73 => '/var/www/html/app/Models/Quotation.php',
-      74 => '/var/www/html/app/Models/QuotationItem.php',
-      75 => '/var/www/html/app/Models/Review.php',
-      76 => '/var/www/html/app/Models/Setting.php',
-      77 => '/var/www/html/app/Models/Warehouse.php',
-      78 => '/var/www/html/app/Models/Wishlist.php',
-      79 => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-      80 => '/var/www/html/app/Services/StockStatusResolver.php',
-      81 => '/var/www/html/database/factories/CartItemFactory.php',
-      82 => '/var/www/html/database/factories/CategoryFactory.php',
-      83 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      84 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      85 => '/var/www/html/database/factories/OrderItemFactory.php',
-      86 => '/var/www/html/database/factories/ProductFactory.php',
-      87 => '/var/www/html/database/factories/ProductImageFactory.php',
-      88 => '/var/www/html/database/factories/ProductSpecificationFactory.php',
-      89 => '/var/www/html/database/factories/ProductVariantFactory.php',
-      90 => '/var/www/html/database/factories/QuotationItemFactory.php',
-      91 => '/var/www/html/database/factories/ReviewFactory.php',
-      92 => '/var/www/html/database/factories/WishlistFactory.php',
-      93 => '/var/www/html/database/seeders/CatalogSeeder.php',
-      94 => '/var/www/html/database/seeders/CouponSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateBrandAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateCategoryAction.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php',
+      36 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      37 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php',
+      38 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php',
+      39 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      40 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php',
+      41 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      42 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php',
+      43 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php',
+      44 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php',
+      45 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      46 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php',
+      47 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
+      48 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      49 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php',
+      50 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php',
+      51 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php',
+      52 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php',
+      53 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php',
+      54 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CategoryResource.php',
+      55 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      56 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      57 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
+      58 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
+      59 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      60 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      61 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
+      62 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      63 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php',
+      64 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      65 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      66 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      67 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      68 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      69 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      70 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php',
+      71 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php',
+      72 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php',
+      73 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      74 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php',
+      75 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      76 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php',
+      77 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+      78 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php',
+      79 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php',
+      80 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php',
+      81 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
+      82 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CategoryFactory.php',
+      83 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      84 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      85 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      86 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
+      87 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php',
+      88 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php',
+      89 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php',
+      90 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      91 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      92 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      93 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      94 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php',
+      95 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
+      96 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php',
+      97 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
+      98 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
+      99 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      100 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
+      101 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php',
     ),
     'usedTraitDependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Banner.php',
-      1 => '/var/www/html/app/Models/Brand.php',
-      2 => '/var/www/html/app/Models/Category.php',
-      3 => '/var/www/html/app/Models/Coupon.php',
-      4 => '/var/www/html/app/Models/Lead.php',
-      5 => '/var/www/html/app/Models/Product.php',
-      6 => '/var/www/html/app/Models/Quotation.php',
-      7 => '/var/www/html/app/Models/Setting.php',
-      8 => '/var/www/html/app/Models/Warehouse.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
     ),
   ),
-  '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php' => 
   array (
     'fileHash' => '9117fa77cbc5114ffdace00ba125a4aaf8f38153e6de87c5a79e3d43edc75e96',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php' => 
   array (
     'fileHash' => 'a03bafb813d4cadd2c51987aa93a0a96c9113a4bcff5f0fd0ac2f0690e29f059',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Console/Commands/SendSalesReportCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php' => 
   array (
     'fileHash' => '62cf6809ed61dd492ae75e2c9d6606d5230698c075fddbc90ce9925b98fd3dc0',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Enums/AdminUserStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\AdminUserStatus.php' => 
   array (
     'fileHash' => 'b845f755b723989c018fd0c3aa1065dc30f8bd52881a4fbe48883687ec170d25',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php',
-      1 => '/var/www/html/app/Models/User.php',
-      2 => '/var/www/html/database/factories/UserFactory.php',
-      3 => '/var/www/html/database/migrations/0001_01_01_000000_create_users_table.php',
-      4 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\UserFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000000_create_users_table.php',
     ),
   ),
-  '/var/www/html/app/Enums/BannerPosition.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\BannerPosition.php' => 
   array (
     'fileHash' => 'edcdef0556b269928a2bca3912ec79b721cadf71e413c26b129e51bf315c6e7b',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/BannerResource.php',
-      1 => '/var/www/html/app/Models/Banner.php',
-      2 => '/var/www/html/database/factories/BannerFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php',
     ),
   ),
-  '/var/www/html/app/Enums/CouponType.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\CouponType.php' => 
   array (
     'fileHash' => '4830fb1f82dc0e491cbbeeb51dbf829c20533e1aa01e903046cc20c841e9f627',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-      1 => '/var/www/html/app/Models/Coupon.php',
-      2 => '/var/www/html/database/factories/CouponFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php',
     ),
   ),
-  '/var/www/html/app/Enums/InsightImpact.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\InsightImpact.php' => 
   array (
     'fileHash' => 'c8267943b6fd4e94f557aba06cacdf125ca885cc995537e775cb567d11d13612',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/AiInsightResource.php',
-      2 => '/var/www/html/app/Models/AiInsight.php',
-      3 => '/var/www/html/database/factories/AiInsightFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php',
     ),
   ),
-  '/var/www/html/app/Enums/LeadStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\LeadStatus.php' => 
   array (
     'fileHash' => 'ed4e0e612f862eb70b1ad2f72ccb484d7b2dfe285db4413d2a5a27cb63536447',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Crm/CreateLeadAction.php',
-      1 => '/var/www/html/app/Models/Lead.php',
-      2 => '/var/www/html/database/factories/LeadFactory.php',
-      3 => '/var/www/html/database/migrations/2026_07_16_062255_create_leads_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062255_create_leads_table.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/OrderStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\OrderStatus.php' => 
   array (
     'fileHash' => '1c2ade26c002462c684afa843810c619729d59cda0ba20c4a2de830945578886',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Order/CancelOrderAction.php',
-      2 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      3 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      4 => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-      5 => '/var/www/html/app/Events/OrderStatusChanged.php',
-      6 => '/var/www/html/app/Exceptions/InvalidOrderTransitionException.php',
-      7 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      8 => '/var/www/html/app/Models/Order.php',
-      9 => '/var/www/html/app/Models/OrderStatusHistory.php',
-      10 => '/var/www/html/app/Services/ReportsService.php',
-      11 => '/var/www/html/database/factories/OrderFactory.php',
-      12 => '/var/www/html/database/factories/OrderStatusHistoryFactory.php',
-      13 => '/var/www/html/database/migrations/2026_07_16_043509_create_orders_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043509_create_orders_table.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/PaymentMethod.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php' => 
   array (
     'fileHash' => '27ef3b54f37801e00bbc15898b5a0c8f2976e276da0d26f88e81baabcc74cbb4',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Models/Order.php',
-      2 => '/var/www/html/database/factories/OrderFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/PaymentProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentProvider.php' => 
   array (
     'fileHash' => '4a0c372b6f68bf4b0b49321c857257713e5a8462801d1ac838b64d2d2fb3ed4f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Enums/PaymentMethod.php',
-      2 => '/var/www/html/app/Models/Payment.php',
-      3 => '/var/www/html/database/factories/PaymentFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/PaymentStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentStatus.php' => 
   array (
     'fileHash' => '4e7d564d9b3a1bcee1766f67d7e7c6ad87b0957173a59e39983fffbcb8883154',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      2 => '/var/www/html/app/Models/Payment.php',
-      3 => '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php',
-      4 => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-      5 => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-      6 => '/var/www/html/app/Payments/PaymentIntent.php',
-      7 => '/var/www/html/database/factories/PaymentFactory.php',
-      8 => '/var/www/html/database/migrations/2026_07_16_043524_create_payments_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043524_create_payments_table.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/ProductStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ProductStatus.php' => 
   array (
     'fileHash' => '94a6b610c66a2910024a7368d0b3512273f2a7b4b5f566cf53516c2a1cfc99c9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Models/Product.php',
-      2 => '/var/www/html/database/factories/ProductFactory.php',
-      3 => '/var/www/html/database/migrations/2026_07_15_193936_create_products_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193936_create_products_table.php',
     ),
   ),
-  '/var/www/html/app/Enums/QuotationStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\QuotationStatus.php' => 
   array (
     'fileHash' => '34072a661851736d347db1e94acfdc7135855f9738f8bbe8a701a4f97f5096bd',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-      1 => '/var/www/html/app/Models/Quotation.php',
-      2 => '/var/www/html/database/factories/QuotationFactory.php',
-      3 => '/var/www/html/database/migrations/2026_07_16_062259_create_quotations_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062259_create_quotations_table.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/ReturnStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReturnStatus.php' => 
   array (
     'fileHash' => '06799accb737afcac385d4896c691d35c01d8a17d86fe3414c36c6c6dcf6c9e9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      1 => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-      2 => '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php',
-      3 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-      5 => '/var/www/html/app/Http/Resources/ReturnResource.php',
-      6 => '/var/www/html/app/Models/ReturnRequest.php',
-      7 => '/var/www/html/database/factories/ReturnRequestFactory.php',
-      8 => '/var/www/html/database/migrations/2026_07_16_062313_create_returns_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062313_create_returns_table.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Enums/ReviewStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReviewStatus.php' => 
   array (
     'fileHash' => 'f3cfba2e273b896047e51afcfb35bb19507b0a9371be117bea3fb5b4446cddda',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/ModerateReviewAction.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      2 => '/var/www/html/app/Models/Review.php',
-      3 => '/var/www/html/database/factories/ReviewFactory.php',
-      4 => '/var/www/html/database/migrations/2026_07_15_194014_create_reviews_table.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\ModerateReviewAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194014_create_reviews_table.php',
     ),
   ),
-  '/var/www/html/app/Enums/StockStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\StockStatus.php' => 
   array (
     'fileHash' => '2630608ba601aff1472abdc5c95a81c3cc500e614313c11917cfb0959785fb12',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/CreateProductAction.php',
-      2 => '/var/www/html/app/Actions/Catalog/UpdateProductAction.php',
-      3 => '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php',
-      4 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      5 => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-      6 => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-      7 => '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php',
-      8 => '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php',
-      9 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      10 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      11 => '/var/www/html/app/Events/StockLevelLow.php',
-      12 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      13 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      14 => '/var/www/html/app/Http/Controllers/FlashDealController.php',
-      15 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      16 => '/var/www/html/app/Http/Controllers/SearchController.php',
-      17 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      18 => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-      19 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      20 => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-      21 => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-      22 => '/var/www/html/app/Http/Resources/CartItemResource.php',
-      23 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      24 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      25 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
-      26 => '/var/www/html/app/Models/Brand.php',
-      27 => '/var/www/html/app/Models/CartItem.php',
-      28 => '/var/www/html/app/Models/Category.php',
-      29 => '/var/www/html/app/Models/CompareListItem.php',
-      30 => '/var/www/html/app/Models/InventoryItem.php',
-      31 => '/var/www/html/app/Models/OrderItem.php',
-      32 => '/var/www/html/app/Models/Product.php',
-      33 => '/var/www/html/app/Models/ProductImage.php',
-      34 => '/var/www/html/app/Models/ProductSpecification.php',
-      35 => '/var/www/html/app/Models/ProductVariant.php',
-      36 => '/var/www/html/app/Models/QuotationItem.php',
-      37 => '/var/www/html/app/Models/Review.php',
-      38 => '/var/www/html/app/Models/Wishlist.php',
-      39 => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-      40 => '/var/www/html/app/Services/StockStatusResolver.php',
-      41 => '/var/www/html/database/factories/CartItemFactory.php',
-      42 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      43 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      44 => '/var/www/html/database/factories/OrderItemFactory.php',
-      45 => '/var/www/html/database/factories/ProductImageFactory.php',
-      46 => '/var/www/html/database/factories/ProductSpecificationFactory.php',
-      47 => '/var/www/html/database/factories/ProductVariantFactory.php',
-      48 => '/var/www/html/database/factories/QuotationItemFactory.php',
-      49 => '/var/www/html/database/factories/ReviewFactory.php',
-      50 => '/var/www/html/database/factories/WishlistFactory.php',
-      51 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php',
+      36 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php',
+      37 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      38 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php',
+      39 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php',
+      40 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php',
+      41 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
+      42 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      43 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      44 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      45 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php',
+      46 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php',
+      47 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php',
+      48 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      49 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      50 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      51 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      52 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
+      53 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
+      54 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
+      55 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      56 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
     ),
   ),
-  '/var/www/html/app/Events/OrderPlaced.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php' => 
   array (
     'fileHash' => 'de0bad6a10fb7599c9fd0e8a5709bb3466b535ea2ef05acfa57c96cdb3adfaae',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      2 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
-      3 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Events/OrderStatusChanged.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php' => 
   array (
     'fileHash' => 'ffa86194e973ec107d1e7a6a00e5e8a662502a762fd6ec5d261825ad01ad3d95',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      1 => '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php',
-      2 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Events/StockLevelLow.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php' => 
   array (
     'fileHash' => '1b9d64e1784727fcd06eabfb34a6046b93d88d655423678baeb5164a55571be5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      1 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
-      2 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Exceptions/InvalidOrderTransitionException.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php' => 
   array (
     'fileHash' => 'ef28f79003ada40b5a740fbc539781307d3374d6c9ab1ecfcfb6a92511c3a7d8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/AddressController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php' => 
   array (
     'fileHash' => '97d5d78b9b630d014e9e361673ecf0af24c22d061474a78c83e6bd16ddf1e505',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php' => 
   array (
     'fileHash' => '80e008a1e020ad5ccfbdce56e64cc9ed16413bf8059206aa676ae27a2760008e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php' => 
   array (
     'fileHash' => '0debd284e56d0c391313d3a481fa7a60078cce6695228ecdf78dcabb3d21b83f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/BannerController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php' => 
   array (
     'fileHash' => 'dda6a46c8f22788d5d2b84cca9968a55d4df922ef9a3993a2186cf334ce9362a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/BrandController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php' => 
   array (
     'fileHash' => 'bd6b2dee56d00e8bc3fbdd48f12be8ffb6d8ad286fed1f895b9a1d0f4989ca7c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/CategoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php' => 
   array (
     'fileHash' => '58999c23ec034fd72ed6ca1dea6d0f690e08a8f3ecbdcd4849277a589f26ddcc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/CouponController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php' => 
   array (
     'fileHash' => '4bbcc11b1d13c6d7437f067a3054626f947a621fadbd370b268da9022335b698',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/InventoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php' => 
   array (
     'fileHash' => 'ab890b91c5cb163d7c67f1c6fdabffe92885063112b70549233a39857d6afe02',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/LeadController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php' => 
   array (
     'fileHash' => '081d69423459e86ecaf5ae587d5e05db5e3605bdb0b633f423aad852dbbb9c9e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/OrderController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php' => 
   array (
     'fileHash' => '8c46b382abc524cbdf4a2f06a76b7ff303dbfd08cdcd5e701833a907c1ccd9e9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ProductController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php' => 
   array (
     'fileHash' => 'b84f64ceb32d91cf65c566b3895a7dfeb0dd479dc3379a1666cbd011c3aa51b7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/QuotationController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php' => 
   array (
     'fileHash' => '9ebd43a9f8ce4ad5f6496b2683a6012cdf6de61d4774b03085f02493277e94bd',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReportController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php' => 
   array (
     'fileHash' => 'be6f296b8c632c9b31ab7c9b5c171074b6766768024e44c72e4e03f4bcae4524',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReturnController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php' => 
   array (
     'fileHash' => '67dded643daa0d7e017abd80e30e2219b3e3d24126fe406818ece63727f60776',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReviewController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php' => 
   array (
     'fileHash' => '54c5748884da5f36acf3f0687e5eb9d04b2303834c77cc51ae57a8a3774c309f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/RoleController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php' => 
   array (
     'fileHash' => '40984abd3ca41e921a789469d1f67044fdc9df0809e30b968c93ed4628d84971',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/SettingController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php' => 
   array (
     'fileHash' => '2f4175c1f8995f32effcf81ed60f5d9dc4744e59d46e0f748e90719e37dc57a3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/UserController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php' => 
   array (
     'fileHash' => 'c1de1de1174d58c0e90d2d52ee077596044f9a8a7715dfbb4c1511e260054139',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php' => 
   array (
     'fileHash' => 'ee84b1aa74425e7813fefc62ef0d511b68ed17ea6a69e337a175c577e0918e5d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Auth/AuthController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
   array (
-    'fileHash' => '7dd1a154f965ce87a4120c7ae08749c3a51ea5796702a0daa4fa6e6365b61435',
+    'fileHash' => '8ee7405e210c5fbf271e52c3ddc7fe78098b868e9f822428ea923e813046e675',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/BannerController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php' => 
   array (
     'fileHash' => '01c8d46c039b419d7d32440de773cd0aa5cfd57e0d9d1fe345a84f4ce4976aad',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/BrandController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php' => 
   array (
     'fileHash' => '8ecc5aeaed2cd7fc9ced08b4ba401895729c8db16feff00aa97ddbb262470d50',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CartController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php' => 
   array (
     'fileHash' => '4e0319331c6ba3549896e1b69798dbff3f89dfb7442bd1ac13c73e172ebb9cdb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CategoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php' => 
   array (
     'fileHash' => 'e56c6efefec46be70dc8ddddc3df412ae6f826282a41ad87b35fd4fb7d698e98',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CheckoutController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php' => 
   array (
     'fileHash' => 'a785cc94aaaf98b16da767fedd7be0cff0a00b8b7068e0470f3c5922d18195d5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CompareController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php' => 
   array (
     'fileHash' => '50cbe093e823308615f7d39e9d44bf607190d54bf7cd246c106f406ca82781b7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/Controller.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 
   array (
     'fileHash' => '9982ead1c00d3dc015c3b1fb8145172ba979f922400bc200f09d7ea399546528',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php',
-      3 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      4 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
-      5 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
-      6 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
-      7 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
-      8 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      9 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      10 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      11 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      12 => '/var/www/html/app/Http/Controllers/Admin/ReportController.php',
-      13 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      14 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      15 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
-      16 => '/var/www/html/app/Http/Controllers/Admin/SettingController.php',
-      17 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
-      18 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
-      19 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
-      20 => '/var/www/html/app/Http/Controllers/BannerController.php',
-      21 => '/var/www/html/app/Http/Controllers/BrandController.php',
-      22 => '/var/www/html/app/Http/Controllers/CartController.php',
-      23 => '/var/www/html/app/Http/Controllers/CategoryController.php',
-      24 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
-      25 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      26 => '/var/www/html/app/Http/Controllers/CouponController.php',
-      27 => '/var/www/html/app/Http/Controllers/FlashDealController.php',
-      28 => '/var/www/html/app/Http/Controllers/HealthController.php',
-      29 => '/var/www/html/app/Http/Controllers/OrderController.php',
-      30 => '/var/www/html/app/Http/Controllers/PaymentController.php',
-      31 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      32 => '/var/www/html/app/Http/Controllers/ReturnController.php',
-      33 => '/var/www/html/app/Http/Controllers/SearchController.php',
-      34 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      35 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\HealthController.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/CouponController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php' => 
   array (
     'fileHash' => '09aed70d64b46a2c0d8b5b8267867d7a1fecf51196eb52b9db6c5f3f0eaab540',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/FlashDealController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php' => 
   array (
     'fileHash' => '42fc139be683ee9b945d9bfcfa33dfc36641acab00a09da701e26c1dec20c067',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/HealthController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\HealthController.php' => 
   array (
     'fileHash' => 'ea58556517f5cbf27d970a7da0729a8e955d91bdf3df6f086095a5b0c28a474b',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/OrderController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php' => 
   array (
     'fileHash' => '031049fcafc7ce54df522984a93fb0383db7afb1990b382efecdc61d99d1d671',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/PaymentController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php' => 
   array (
     'fileHash' => 'ed0f79e025d86fb2b8f53964f183af8011c1c55135a1bf145ba1b6089184f534',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/ProductController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => 
   array (
     'fileHash' => '33be3306804359b9173b3541f13e1edeb89efdc6d7959de32efaf15b38c30132',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/ReturnController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php' => 
   array (
     'fileHash' => '63d356a718118ff14067aced1948d556ce38aeb74f4d024559d298d0c61429cc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/SearchController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php' => 
   array (
     'fileHash' => '7a7643fcd11fc594e33e3fefea1418a7544aae1a7bea7867274b2916a4f4162b',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Controllers/WishlistController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php' => 
   array (
     'fileHash' => '5b369516eb5b3acb26cbe3fe744dd05ab8aa6b0eb3d43bf68511cf4ac8d64308',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/routes/api.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php',
     ),
   ),
-  '/var/www/html/app/Http/Middleware/VerifyMpesaCallbackIp.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\VerifyMpesaCallbackIp.php' => 
   array (
     'fileHash' => '0309d696e520ac859c09f7123c90a8906d72f8f9bf0b6ee9e366b9c0c6d498c2',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreAdminUserRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreAdminUserRequest.php' => 
   array (
     'fileHash' => '63635eca76ba5485b17d6de3ac653d3a88f5a19e060b516150f02444b0775676',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php' => 
   array (
     'fileHash' => 'b9ebbecf72e1481db1cff0f1488c097920e207335cdfd05ab7b76d033b91fd16',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php' => 
   array (
     'fileHash' => 'e9ec7b6b99b810f2fd332c1f2d860160dd6e1b79f76928768981817c83a4f0af',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => 
   array (
     'fileHash' => '86184c020cc994d070adab15a585dd19bee7ad0494834b7ff794a4f10b7faf47',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php' => 
   array (
     'fileHash' => 'f0df6bf4feec7225033036298747c63ed2eb5822d68762562b73cbff502c0e7f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php' => 
   array (
     'fileHash' => 'd16e0b41c1a21b948a82de71b948bfda4e4076a5639ac8ec74d5f4b48b108dbb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductImageRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php' => 
   array (
     'fileHash' => '3f2a35cfa511c889c535d09f1e170f395db77b76cc20ea6fd3017c4bed89cdd0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php' => 
   array (
     'fileHash' => '32775205e3fa12b598edb78aa388aa5f62715567dd3062ff015e59a207156292',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php' => 
   array (
     'fileHash' => 'b79bdb626e5ccb32b1bddd27b8e82db3eab5e8572fdc56b3d69a979f98f928f8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php' => 
   array (
     'fileHash' => 'fcb63046b468613a51009a96ac21806cfd21b781e5902bb82d5fdd5504744965',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreWarehouseRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php' => 
   array (
     'fileHash' => 'b84f5f30f58b4d98ce2d595705404fcdae6efb449a5ee00221f2feec13d6cc20',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateAdminUserRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 
   array (
     'fileHash' => 'd61a1e92df391c921accaeda8b57dfae302ed54742cd2453fb07032468dd355f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php' => 
   array (
     'fileHash' => 'd8a6f6b2ad2e2b011f32971cd870c8e7d21285313f8b4b26a041bbd2b7aa3f57',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBrandRequest.php' => 
   array (
     'fileHash' => 'b2b783fa4405ff63edb305f7f1af5ae5369f85dae0ec94ce6b57b082933b804e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCategoryRequest.php' => 
   array (
     'fileHash' => '66e8d9bbe07dbb2ee88b4b930884a516824298bf181b4cfe3e8931560815627a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCouponRequest.php' => 
   array (
     'fileHash' => '3ad2e0541e7b633bb2b996e4ceb6e724dbaac1fe4b846b1efc4daebb2f1951a0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateInventoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php' => 
   array (
     'fileHash' => 'd1403b7606f0ecce090f7767eaff5f471d2bf56f5393ab7929c834fbe68d91b8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php' => 
   array (
     'fileHash' => 'd9c6dfa0e58668c3e4eb5eb59d55bf8b3f91aa77a1e9fd2d4ce4b0827ea47d9c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateOrderStatusRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php' => 
   array (
     'fileHash' => '7f22443d4a5ab09184a58922376da2db6fef8f82927102b667124be8eee35a8d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => 
   array (
     'fileHash' => '23ee848a93bd830b52c90720add2613349737069b324413952f720db70580e5c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php' => 
   array (
     'fileHash' => 'cf678705045f73cfc3306da3f100781da97ad42c0040fd8a1a4924a9c1f5d789',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php' => 
   array (
     'fileHash' => '36f51747e83a4808c70f882dfc7aa9139ea9ed4a0cfb6fd3a92dcc62dc2e2ef6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReviewRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php' => 
   array (
     'fileHash' => '510838ef97ab060ccfe394ab85358a2233712beba78b475cfabf3bdbd6f9ee49',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateRoleRequest.php' => 
   array (
     'fileHash' => '07beb5da44c483271c3dd217155c687938c463d627745e18925b5d03b25176cc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateSettingRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php' => 
   array (
     'fileHash' => 'bc095ef45e424ae6a24fba3cc94733b3f4fd362548863104f88d0d5c29ab738c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/SettingController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ForgotPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ForgotPasswordRequest.php' => 
   array (
     'fileHash' => 'd255fb44c4408772a05237778665bba865dd9b41d13dbd2272a660b5e1de8037',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/LoginRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
   array (
     'fileHash' => 'c65e17c69fe76347f95a6f2d1d7c952898e166bf073660c222376a35d56e3f12',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/RegisterRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => 
   array (
     'fileHash' => '7058c56d16df5971026c92edbc9ec435e3d5ffee526e0be5547716b25e4f4ba6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ResetPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ResetPasswordRequest.php' => 
   array (
     'fileHash' => '006e441b33c4ecac80e20210d34e4f6f4411cf3f0beff8317b860bd8931c0cd8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/CheckoutRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php' => 
   array (
     'fileHash' => '680041852125ef1fe11a1024a570940cd1e4a07d0cf5a46190e58e866da8a964',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/StkPushRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php' => 
   array (
     'fileHash' => '88c767cb5f40e2cc295fe2da42f5dd5ecc6b6c6545f110f942fd306bac7dec3e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/PaymentController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php' => 
   array (
     'fileHash' => '27a5cf0cb86798dce9d302b890854871fb32f45debf129fa214910beccadef5f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreCartItemRequest.php' => 
   array (
     'fileHash' => 'ea0e2017bf20356f7230eae744bdf6aa7224a8cd4657bef4704aee2ec1c1d2fa',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/StoreReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php' => 
   array (
     'fileHash' => 'bf441a1f0093cc4c454a4a51d74b3950c2aed12897943937d242918cfe5f2a48',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/UpdateAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => 
   array (
     'fileHash' => '860e78ffb9b91f3932ab64f1b8948aea7f1c83a3ba66d8a26c19e524b07ad681',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/UpdateCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateCartItemRequest.php' => 
   array (
     'fileHash' => '6dd825ef0b6074d876ed03cea80c35ed8359b9b0162b128feb32db1e8c6f50de',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
     ),
   ),
-  '/var/www/html/app/Http/Requests/ValidateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\ValidateCouponRequest.php' => 
   array (
     'fileHash' => '40f70bac6fbfead873286f1528695a21a371d3e2d80b72f491f397db652b7464',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/AddressResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\AddressResource.php' => 
   array (
     'fileHash' => 'c91d8be5a1b536c4c2bfb86386487fc8372222f5f58732704676c4e0dc49759e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/AddressController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      2 => '/var/www/html/app/Http/Resources/OrderResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php' => 
   array (
     'fileHash' => '7d1b9c9559d5492914819f39f2db4faf4e6c831074b2ce3b30ceaa4482970361',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserResource.php' => 
   array (
     'fileHash' => 'c0c9dc2aea6173779677efd91858971f3299e1fd19129bcff5a90263a08ec4e2',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php' => 
   array (
     'fileHash' => 'c25aba112349063b6643d6983b48061ebec9c9e42c12838e37db6fb0fb27c024',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php' => 
   array (
     'fileHash' => 'e570c422516a7a0cc9fd1c860f2260342add2345fb7435c4ac0c34e719f075e8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php' => 
   array (
     'fileHash' => '0679030aaaef2b879729c6b8c5c6ae45a0f75b9a3705991c7fdab3166cef9cc5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php' => 
   array (
     'fileHash' => 'd73252d5a9bb6a605781284be13e3997e04c482b33fae0ea48c6913b4649612a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/BannerCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php' => 
   array (
     'fileHash' => 'b644acd154bb71fe0d21fde3114fc9bbfd1d6e104125e05fef3741738d6bc9c0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/CouponCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php' => 
   array (
     'fileHash' => '5b585c4d7d5b1a6a4c568ac5c2d8ed185ed2b70ffa5395c2229a3b573f7cf468',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/CouponResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php' => 
   array (
     'fileHash' => '3a2a7a9307b04fda68f2b5bdb2e853b9c249989aa39f62abc7047a0b9562f31e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/CouponCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php' => 
   array (
     'fileHash' => '76df1b3f83296015a23178868332c35bdfafadd3d54bf1fdff27026cb3d6d5ce',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php' => 
   array (
     'fileHash' => 'abad61e782635927b447ad19141fff7ecd215eecf2e093b2f5f800fa6ead32fe',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/LeadCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php' => 
   array (
     'fileHash' => '7c57103a3dce856b8d5e9c3ea10d07341c94a0f6478983bf590e76b1af5ea11f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/LeadResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php' => 
   array (
     'fileHash' => '6472495eb1be9381ac3c2c08a77da1e8248355950d447a55f491ad81e43ca293',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/LeadCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/OrderCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php' => 
   array (
     'fileHash' => 'b736fd3a88e4a7ca73e56057629085f8a768db4fd46483fe8e89bdeb29df282d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/OrderResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php' => 
   array (
     'fileHash' => '9b92462ca97090d2aa4352d4421f5ee27769f84dbd8e191704cc8935147ecc04',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/OrderCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/PermissionResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\PermissionResource.php' => 
   array (
     'fileHash' => 'f0f88307b0eddbcb9f5d5f14ee646860749191b0b5f39f8a8e2cf81288a90160',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ProductCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php' => 
   array (
     'fileHash' => '5c47dd919216c60a18fbe505420d8e74125c4bff032885070bc8feecce667213',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ProductResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php' => 
   array (
     'fileHash' => '8ddb732290704bd51b2ef9a87f8bc1f54ceec45e3f4b68e5de23966683597ec6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/ProductCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php' => 
   array (
     'fileHash' => '39c6c1cbe556b90b96514a91c4fad790677ad7182b662c50dbe430281b4c15b7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php' => 
   array (
     'fileHash' => '7641e6ed53d914074884ae65252a604d646c65238b60444a164502b076a65ae4',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php' => 
   array (
     'fileHash' => '99d95a2f48f87f1a69dd66acefab3913ae110952c6db27389ee2ffa44e5ecae3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php' => 
   array (
     'fileHash' => '251dacc28d37ab66e545753945f095f9b393e02c24d1b9e092596074bad7fe11',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php' => 
   array (
     'fileHash' => '3b382fcdee942ca58c5fa5150626aef64068b71cf2505d3970b82177da9fd56a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php' => 
   array (
     'fileHash' => '52d28073054c7a51ed4fb11dd12ac463f832b3d1c1fb773f88dcc40f5e5955a0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php' => 
   array (
     'fileHash' => '68bf5a783e39b0f8b3866b7b13d441f20e696eb8a789fc231dc3daf441209ace',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/RoleCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleCollection.php' => 
   array (
     'fileHash' => '51794f5127b50f6f23b93081f0ee17813605a5e152a7eb589ac8279b9435622f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/RoleResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleResource.php' => 
   array (
     'fileHash' => '4a075a1e1f150b21eebba20ef4ad4e267715dc6a3c746f9ae87fc07d2fa31e3f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/RoleCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/SettingResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php' => 
   array (
     'fileHash' => 'f9c4dbc6a1206427fa9c40942b1ee3b00aae7f47ecb1d864918e8dd2eec37076',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/SettingController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php' => 
   array (
     'fileHash' => '9b908b6c7622fd5a194e04c5e6a135a42faf092f949cd9a277e4091bb963ddb4',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/BannerResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php' => 
   array (
     'fileHash' => '538e3c79a57d44f1349a17e36e3a724c32c4603ca225eb4d1ebb295928f7a7c9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      1 => '/var/www/html/app/Http/Controllers/BannerController.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/BannerCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/BrandResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php' => 
   array (
     'fileHash' => '995b9f1d6bfdea4e03574b6bdf90244b46697f018a4a128d0e7d3a41bdd029b9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
-      1 => '/var/www/html/app/Http/Controllers/BrandController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/CartItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php' => 
   array (
     'fileHash' => '7a9a48f7c61d8fcbadd5ab1afb13c1d438466e23402e9e3eb982ea7029d13f22',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
-      1 => '/var/www/html/app/Http/Resources/CartResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/CartResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php' => 
   array (
     'fileHash' => 'bf7dd50dc685167f7efc371c2e1f5dae7c783333d78191469705042bb4d8ba65',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/CategoryResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CategoryResource.php' => 
   array (
     'fileHash' => '8607178126869bbe24419156330a4ce0b9c223839f2a929a3914b3a26076bf8f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
-      1 => '/var/www/html/app/Http/Controllers/CategoryController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/OrderCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php' => 
   array (
     'fileHash' => '3fc338f4c9f65f4a7277e9fba0387da81329d4244af57441dec7e97dd5ee78d7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/OrderController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/OrderItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php' => 
   array (
     'fileHash' => '90ffd1d4d20c449ce3cf41e90f799c71fff3a5dc06b2c336c175296e16ad525c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      1 => '/var/www/html/app/Http/Resources/OrderResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/OrderResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php' => 
   array (
     'fileHash' => 'a7c8e0d1c82eb252e34e275556133534a2784c5aefb2a074822425a724ebf4c8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
-      1 => '/var/www/html/app/Http/Controllers/OrderController.php',
-      2 => '/var/www/html/app/Http/Resources/OrderCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php' => 
   array (
     'fileHash' => '4b8916f6284ca4e460ea44ae7fc9779c2e3e023da4bfdbeec701d6fe1c7fc76c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      1 => '/var/www/html/app/Http/Resources/OrderResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/PaginatedResourceCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\PaginatedResourceCollection.php' => 
   array (
     'fileHash' => '7aae322dfc58ccd3c54389fa312c611d39eb3246a40413fc411d1ed4236c5350',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      3 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
-      4 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
-      5 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      6 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      7 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      8 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      9 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      10 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      11 => '/var/www/html/app/Http/Controllers/Admin/RoleController.php',
-      12 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
-      13 => '/var/www/html/app/Http/Controllers/OrderController.php',
-      14 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      15 => '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php',
-      16 => '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php',
-      17 => '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php',
-      18 => '/var/www/html/app/Http/Resources/Admin/BannerCollection.php',
-      19 => '/var/www/html/app/Http/Resources/Admin/CouponCollection.php',
-      20 => '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php',
-      21 => '/var/www/html/app/Http/Resources/Admin/LeadCollection.php',
-      22 => '/var/www/html/app/Http/Resources/Admin/OrderCollection.php',
-      23 => '/var/www/html/app/Http/Resources/Admin/ProductCollection.php',
-      24 => '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php',
-      25 => '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php',
-      26 => '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php',
-      27 => '/var/www/html/app/Http/Resources/Admin/RoleCollection.php',
-      28 => '/var/www/html/app/Http/Resources/OrderCollection.php',
-      29 => '/var/www/html/app/Http/Resources/ProductCollection.php',
-      30 => '/var/www/html/app/Http/Resources/ReviewCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleCollection.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ProductCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php' => 
   array (
     'fileHash' => 'bf5184f210518c5590728324c5ce19b17a40f11cf075ed47d9fb7cc80cc80ca3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ProductImageResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductImageResource.php' => 
   array (
     'fileHash' => '2e4d71925774bb7c511bb00075ae7d031bd6c01cbda07fb15d641443af5b49ca',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      2 => '/var/www/html/app/Http/Resources/ProductResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ProductResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php' => 
   array (
     'fileHash' => 'eb5be6e21ba3bc42c237e12c2bec15d25a2c35a28bc0556bbdd0cde39d8624fe',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      1 => '/var/www/html/app/Http/Controllers/FlashDealController.php',
-      2 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      3 => '/var/www/html/app/Http/Controllers/SearchController.php',
-      4 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      5 => '/var/www/html/app/Http/Resources/ProductCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ProductSpecificationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductSpecificationResource.php' => 
   array (
     'fileHash' => '505d783f71a4640005ab82a26fde6c24d9ab77b881556467d35a7acace9b9455',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      1 => '/var/www/html/app/Http/Resources/ProductResource.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ReturnResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php' => 
   array (
     'fileHash' => '11895e51c6191031fb5dd28914f97ef98045d24981084fba25e53eea8fca7b86',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/ReturnController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ReviewCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php' => 
   array (
     'fileHash' => '3219a97903191433c586dc49930af2b325de80c36af83eb1a8166da4b73b217a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/ReviewResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewResource.php' => 
   array (
     'fileHash' => 'a4a8f698a4dd310311f88f105b6f112ec2b25b861142013110d66382e8278336',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Resources/ReviewCollection.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php',
     ),
   ),
-  '/var/www/html/app/Http/Resources/UserResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\UserResource.php' => 
   array (
     'fileHash' => '97375b8734af5c75cfa4c3ea8149d026d661362832bac72a27b55a86e61e9da4',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
     ),
   ),
-  '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php' => 
   array (
     'fileHash' => '9fe02e213cc5f103b529fb5714456c56ccc74412d0532d65371bc908244bba39',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Listeners/InvalidateReportsCache.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php' => 
   array (
     'fileHash' => 'd80de5c176ddc277d5957e60c5d25889c1950c4a3e65f11146b04d3653d52d8c',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php' => 
   array (
     'fileHash' => 'b0d9a44b06b479c8700afda0f4f3abfa780a24a55931c7434fc9b7400bfcd4a2',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php' => 
   array (
     'fileHash' => 'cd24690ab243ae5525da44837e86b882a785a453d55f9b113ca9d36c2bdabccb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php' => 
   array (
     'fileHash' => 'd6e5627d6594ea0ccb4be5b432083957033d8b166356972dbf5ddcb1dd6c02a3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Models/Address.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php' => 
   array (
     'fileHash' => '284cdc53d937e7322f42f227bac96a67c67761ebd94bf7007140d4a985cefa46',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Address/CreateAddressAction.php',
-      1 => '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php',
-      2 => '/var/www/html/app/Actions/Address/UpdateAddressAction.php',
-      3 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      4 => '/var/www/html/app/Http/Controllers/AddressController.php',
-      5 => '/var/www/html/app/Http/Requests/StoreAddressRequest.php',
-      6 => '/var/www/html/app/Http/Resources/AddressResource.php',
-      7 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      8 => '/var/www/html/app/Http/Resources/OrderResource.php',
-      9 => '/var/www/html/app/Models/Order.php',
-      10 => '/var/www/html/app/Models/User.php',
-      11 => '/var/www/html/app/Policies/AddressPolicy.php',
-      12 => '/var/www/html/database/factories/AddressFactory.php',
-      13 => '/var/www/html/database/factories/OrderFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\SetDefaultAddressAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\AddressResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/AiInsight.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php' => 
   array (
     'fileHash' => '3d5c761af1c0e65ab58ade3f849cadbbe452a9038891ed78f28ab2ab8ad8a0f5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/AiInsightResource.php',
-      4 => '/var/www/html/database/factories/AiInsightFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/AuditLog.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php' => 
   array (
     'fileHash' => 'ad2dfa08971a27146498e346b3ffcc27e5ec2dd82f57a51d7d327b3429ee03c5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-      4 => '/var/www/html/app/Models/Banner.php',
-      5 => '/var/www/html/app/Models/Brand.php',
-      6 => '/var/www/html/app/Models/Category.php',
-      7 => '/var/www/html/app/Models/Coupon.php',
-      8 => '/var/www/html/app/Models/Lead.php',
-      9 => '/var/www/html/app/Models/Product.php',
-      10 => '/var/www/html/app/Models/Quotation.php',
-      11 => '/var/www/html/app/Models/Setting.php',
-      12 => '/var/www/html/app/Models/Warehouse.php',
-      13 => '/var/www/html/app/Services/AuditLogger.php',
-      14 => '/var/www/html/database/factories/AuditLogFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\AuditLogger.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Banner.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php' => 
   array (
     'fileHash' => '232366d7a20f8afe55358a4d05f873a0458ed161d49390cca6a761b8aa80bfa5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Marketing/CreateBannerAction.php',
-      1 => '/var/www/html/app/Actions/Marketing/UpdateBannerAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      3 => '/var/www/html/app/Http/Controllers/BannerController.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/BannerCollection.php',
-      5 => '/var/www/html/app/Http/Resources/BannerResource.php',
-      6 => '/var/www/html/database/factories/BannerFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Brand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php' => 
   array (
     'fileHash' => '81d548248e56e026152184c543094f7c9d90e2e38e913664579f4591a49e5db5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/CreateBrandAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/UpdateBrandAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/BrandController.php',
-      3 => '/var/www/html/app/Http/Controllers/BrandController.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      5 => '/var/www/html/app/Http/Resources/BrandResource.php',
-      6 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      7 => '/var/www/html/app/Models/Product.php',
-      8 => '/var/www/html/database/factories/BrandFactory.php',
-      9 => '/var/www/html/database/factories/ProductFactory.php',
-      10 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateBrandAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BrandFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Cart.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php' => 
   array (
     'fileHash' => '8db4ceb3a4b0363eec60692a47394c0643403548f338e6f516b4e332fe1c021f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-      2 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      3 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      4 => '/var/www/html/app/Http/Controllers/CartController.php',
-      5 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
-      6 => '/var/www/html/app/Http/Resources/CartResource.php',
-      7 => '/var/www/html/app/Models/CartItem.php',
-      8 => '/var/www/html/app/Services/CartResolver.php',
-      9 => '/var/www/html/database/factories/CartFactory.php',
-      10 => '/var/www/html/database/factories/CartItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
     ),
   ),
-  '/var/www/html/app/Models/CartItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php' => 
   array (
     'fileHash' => '2667fd46ce8111903dd263d4e3052aaeea7ed4e98fbd222bc6ddb63662bd7554',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-      2 => '/var/www/html/app/Actions/Cart/UpdateCartItemAction.php',
-      3 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      4 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      5 => '/var/www/html/app/Http/Controllers/CartController.php',
-      6 => '/var/www/html/app/Http/Resources/CartItemResource.php',
-      7 => '/var/www/html/app/Http/Resources/CartResource.php',
-      8 => '/var/www/html/app/Models/Cart.php',
-      9 => '/var/www/html/app/Services/PricingService.php',
-      10 => '/var/www/html/database/factories/CartItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\UpdateCartItemAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
     ),
   ),
-  '/var/www/html/app/Models/Category.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 
   array (
     'fileHash' => '6c3e08489310544d9cce56b284984d42a52e4a40a9ff994df90d04873836374f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/UpdateCategoryAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/CategoryController.php',
-      3 => '/var/www/html/app/Http/Controllers/CategoryController.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      5 => '/var/www/html/app/Http/Resources/CategoryResource.php',
-      6 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      7 => '/var/www/html/app/Models/Product.php',
-      8 => '/var/www/html/database/factories/CategoryFactory.php',
-      9 => '/var/www/html/database/factories/ProductFactory.php',
-      10 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateCategoryAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CategoryResource.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CategoryFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/CompareListItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php' => 
   array (
     'fileHash' => '6e23ec8f46248b2fddd80191f15c32ee3c2f305e6bd27c56ea68ef66dcf422b7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php',
-      1 => '/var/www/html/app/Models/Product.php',
-      2 => '/var/www/html/app/Models/User.php',
-      3 => '/var/www/html/database/factories/CompareListItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Coupon.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php' => 
   array (
     'fileHash' => '56c9ba464374f4416a72fc0377c97796dfd89bdeb994166ba8632706e704e17d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Marketing/CreateCouponAction.php',
-      2 => '/var/www/html/app/Actions/Marketing/UpdateCouponAction.php',
-      3 => '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php',
-      4 => '/var/www/html/app/Http/Controllers/Admin/CouponController.php',
-      5 => '/var/www/html/app/Http/Controllers/CouponController.php',
-      6 => '/var/www/html/app/Http/Resources/Admin/CouponCollection.php',
-      7 => '/var/www/html/app/Http/Resources/Admin/CouponResource.php',
-      8 => '/var/www/html/app/Models/Order.php',
-      9 => '/var/www/html/database/factories/CouponFactory.php',
-      10 => '/var/www/html/database/seeders/CouponSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/InventoryItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => 
   array (
     'fileHash' => '5274650241cac746217f8e82a715a300375336ecb7aa0bcf0abd5436f148194d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php',
-      2 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      3 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      4 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      5 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      6 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
-      7 => '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php',
-      8 => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-      9 => '/var/www/html/app/Models/Product.php',
-      10 => '/var/www/html/app/Models/Warehouse.php',
-      11 => '/var/www/html/app/Services/StockStatusResolver.php',
-      12 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      13 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Lead.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php' => 
   array (
     'fileHash' => '213efb02f5435762d6cfc7bba177947a4afbe0761d5863fd7abd83ae9618f2ac',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Crm/CreateLeadAction.php',
-      1 => '/var/www/html/app/Actions/Crm/UpdateLeadAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/LeadCollection.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-      5 => '/var/www/html/app/Models/Quotation.php',
-      6 => '/var/www/html/database/factories/LeadFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Order.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php' => 
   array (
     'fileHash' => '6d42af55273a50ce5598ecad3412b915feae6c3e3751e7a1025b3756d8ffb7a3',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Order/CancelOrderAction.php',
-      2 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      3 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      4 => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-      5 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      6 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      7 => '/var/www/html/app/Events/OrderPlaced.php',
-      8 => '/var/www/html/app/Events/OrderStatusChanged.php',
-      9 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      10 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
-      11 => '/var/www/html/app/Http/Controllers/OrderController.php',
-      12 => '/var/www/html/app/Http/Controllers/PaymentController.php',
-      13 => '/var/www/html/app/Http/Controllers/ReturnController.php',
-      14 => '/var/www/html/app/Http/Requests/StoreReturnRequest.php',
-      15 => '/var/www/html/app/Http/Resources/Admin/OrderCollection.php',
-      16 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      17 => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-      18 => '/var/www/html/app/Http/Resources/OrderCollection.php',
-      19 => '/var/www/html/app/Http/Resources/OrderResource.php',
-      20 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      21 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
-      22 => '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php',
-      23 => '/var/www/html/app/Models/Coupon.php',
-      24 => '/var/www/html/app/Models/OrderItem.php',
-      25 => '/var/www/html/app/Models/OrderStatusHistory.php',
-      26 => '/var/www/html/app/Models/Payment.php',
-      27 => '/var/www/html/app/Models/ReturnRequest.php',
-      28 => '/var/www/html/app/Models/User.php',
-      29 => '/var/www/html/app/Notifications/OrderConfirmationNotification.php',
-      30 => '/var/www/html/app/Notifications/OrderStatusChangedNotification.php',
-      31 => '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php',
-      32 => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-      33 => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-      34 => '/var/www/html/app/Payments/PaymentGatewayContract.php',
-      35 => '/var/www/html/app/Policies/OrderPolicy.php',
-      36 => '/var/www/html/app/Services/ReportsService.php',
-      37 => '/var/www/html/database/factories/OrderFactory.php',
-      38 => '/var/www/html/database/factories/OrderItemFactory.php',
-      39 => '/var/www/html/database/factories/OrderStatusHistoryFactory.php',
-      40 => '/var/www/html/database/factories/PaymentFactory.php',
-      41 => '/var/www/html/database/factories/ReturnRequestFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php',
+      36 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php',
+      37 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      38 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      39 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php',
+      40 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php',
+      41 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
+      42 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/OrderItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php' => 
   array (
     'fileHash' => '2ded536d1fa5600653c17e73aab6dee8145ee3b041882447705993c494f38fe7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      2 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      3 => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-      4 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      5 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      6 => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-      7 => '/var/www/html/app/Http/Resources/OrderItemResource.php',
-      8 => '/var/www/html/app/Http/Resources/OrderResource.php',
-      9 => '/var/www/html/app/Http/Resources/ReturnResource.php',
-      10 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      11 => '/var/www/html/app/Models/Order.php',
-      12 => '/var/www/html/app/Models/ReturnRequest.php',
-      13 => '/var/www/html/app/Services/ReportsService.php',
-      14 => '/var/www/html/database/factories/OrderItemFactory.php',
-      15 => '/var/www/html/database/factories/ReturnRequestFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/OrderStatusHistory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php' => 
   array (
     'fileHash' => '6be35a11c9e4abfb3716fbfaedfd7e94de57686fed68bf3a90d3b0745e79715b',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      3 => '/var/www/html/app/Http/Resources/OrderResource.php',
-      4 => '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php',
-      5 => '/var/www/html/app/Models/Order.php',
-      6 => '/var/www/html/database/factories/OrderStatusHistoryFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Payment.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php' => 
   array (
     'fileHash' => '432b3f1e7503e2469588c41f7f421328e2a61da47aef318c16cf911aa507b0cc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      2 => '/var/www/html/app/Models/Order.php',
-      3 => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-      4 => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-      5 => '/var/www/html/database/factories/PaymentFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Product.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
   array (
     'fileHash' => '24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/CreateProductAction.php',
-      2 => '/var/www/html/app/Actions/Catalog/UpdateProductAction.php',
-      3 => '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php',
-      4 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      5 => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-      6 => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-      7 => '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php',
-      8 => '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php',
-      9 => '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php',
-      10 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      11 => '/var/www/html/app/Events/StockLevelLow.php',
-      12 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      13 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      14 => '/var/www/html/app/Http/Controllers/FlashDealController.php',
-      15 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      16 => '/var/www/html/app/Http/Controllers/SearchController.php',
-      17 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      18 => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-      19 => '/var/www/html/app/Http/Resources/Admin/ProductCollection.php',
-      20 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      21 => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-      22 => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-      23 => '/var/www/html/app/Http/Resources/CartItemResource.php',
-      24 => '/var/www/html/app/Http/Resources/ProductCollection.php',
-      25 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      26 => '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php',
-      27 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
-      28 => '/var/www/html/app/Models/Brand.php',
-      29 => '/var/www/html/app/Models/CartItem.php',
-      30 => '/var/www/html/app/Models/Category.php',
-      31 => '/var/www/html/app/Models/CompareListItem.php',
-      32 => '/var/www/html/app/Models/InventoryItem.php',
-      33 => '/var/www/html/app/Models/OrderItem.php',
-      34 => '/var/www/html/app/Models/ProductImage.php',
-      35 => '/var/www/html/app/Models/ProductSpecification.php',
-      36 => '/var/www/html/app/Models/ProductVariant.php',
-      37 => '/var/www/html/app/Models/QuotationItem.php',
-      38 => '/var/www/html/app/Models/Review.php',
-      39 => '/var/www/html/app/Models/Wishlist.php',
-      40 => '/var/www/html/app/Notifications/LowStockAlertNotification.php',
-      41 => '/var/www/html/app/Services/StockStatusResolver.php',
-      42 => '/var/www/html/database/factories/CartItemFactory.php',
-      43 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      44 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      45 => '/var/www/html/database/factories/OrderItemFactory.php',
-      46 => '/var/www/html/database/factories/ProductFactory.php',
-      47 => '/var/www/html/database/factories/ProductImageFactory.php',
-      48 => '/var/www/html/database/factories/ProductSpecificationFactory.php',
-      49 => '/var/www/html/database/factories/ProductVariantFactory.php',
-      50 => '/var/www/html/database/factories/QuotationItemFactory.php',
-      51 => '/var/www/html/database/factories/ReviewFactory.php',
-      52 => '/var/www/html/database/factories/WishlistFactory.php',
-      53 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php',
+      36 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php',
+      37 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php',
+      38 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      39 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php',
+      40 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php',
+      41 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php',
+      42 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
+      43 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      44 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      45 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      46 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
+      47 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php',
+      48 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php',
+      49 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php',
+      50 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      51 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      52 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      53 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      54 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
+      55 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
+      56 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
+      57 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      58 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/ProductImage.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php' => 
   array (
     'fileHash' => 'c50d462c055dfb1c863bc342707769260945036a9128c23e83ea412ce4d8b9aa',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      3 => '/var/www/html/app/Http/Resources/ProductImageResource.php',
-      4 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      5 => '/var/www/html/app/Models/Product.php',
-      6 => '/var/www/html/database/factories/ProductImageFactory.php',
-      7 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductImageResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/ProductSpecification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php' => 
   array (
     'fileHash' => '2c3daaf3fafed00c80a93a67e4f2489f34badb30deeb0260fae90ff8f03db2a6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/CreateProductAction.php',
-      1 => '/var/www/html/app/Actions/Catalog/UpdateProductAction.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/ProductResource.php',
-      3 => '/var/www/html/app/Http/Resources/ProductResource.php',
-      4 => '/var/www/html/app/Http/Resources/ProductSpecificationResource.php',
-      5 => '/var/www/html/app/Models/Product.php',
-      6 => '/var/www/html/database/factories/ProductSpecificationFactory.php',
-      7 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductSpecificationResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/ProductVariant.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php' => 
   array (
     'fileHash' => '47f43009c28d9448dc69e538b8ef03e3ebb0a5349caa8dd801404451ce9dd25e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Cart/AddCartItemAction.php',
-      1 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      2 => '/var/www/html/app/Models/CartItem.php',
-      3 => '/var/www/html/app/Models/InventoryItem.php',
-      4 => '/var/www/html/app/Models/OrderItem.php',
-      5 => '/var/www/html/app/Models/Product.php',
-      6 => '/var/www/html/database/factories/ProductVariantFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php',
     ),
   ),
-  '/var/www/html/app/Models/Quotation.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php' => 
   array (
     'fileHash' => '29cb252c6e981d1ea82cba70b548ada2829264dcce64f924c6b70c0b9b890322',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-      1 => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-      5 => '/var/www/html/app/Models/Lead.php',
-      6 => '/var/www/html/app/Models/QuotationItem.php',
-      7 => '/var/www/html/database/factories/QuotationFactory.php',
-      8 => '/var/www/html/database/factories/QuotationItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/QuotationItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php' => 
   array (
     'fileHash' => '66823f2a2eb8e38bcbe22f56f2acee2c9b0b4b7bdfc55f5e5385115316d3d174',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Crm/CreateQuotationAction.php',
-      1 => '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-      4 => '/var/www/html/app/Models/Quotation.php',
-      5 => '/var/www/html/database/factories/QuotationItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/ReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php' => 
   array (
     'fileHash' => 'c8913a6bcad3ed31915d8c908ffb3bf494b1bdfc56713231a18f94116ce0575d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Returns/ProcessRefundAction.php',
-      1 => '/var/www/html/app/Actions/Returns/RequestReturnAction.php',
-      2 => '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php',
-      3 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      4 => '/var/www/html/app/Http/Controllers/ReturnController.php',
-      5 => '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php',
-      6 => '/var/www/html/app/Http/Resources/Admin/ReturnResource.php',
-      7 => '/var/www/html/app/Http/Resources/ReturnResource.php',
-      8 => '/var/www/html/database/factories/ReturnRequestFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Review.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php' => 
   array (
     'fileHash' => '7dce963ed382549e29d640a58206d7718145f9f0e4fd32cd04cc9ce5bad17337',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Catalog/ModerateReviewAction.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      2 => '/var/www/html/app/Http/Controllers/ProductController.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php',
-      4 => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-      5 => '/var/www/html/app/Http/Resources/ReviewCollection.php',
-      6 => '/var/www/html/app/Http/Resources/ReviewResource.php',
-      7 => '/var/www/html/app/Models/Product.php',
-      8 => '/var/www/html/database/factories/ReviewFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\ModerateReviewAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewResource.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Setting.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php' => 
   array (
     'fileHash' => '285d889aeb0b2efb0902c729b6e01f8d12c1b9ae88ba023f50b6a94382d31ee2',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/SettingController.php',
-      1 => '/var/www/html/app/Http/Resources/Admin/SettingResource.php',
-      2 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
-      3 => '/var/www/html/database/factories/SettingFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/User.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 
   array (
     'fileHash' => '393cceae58109bc2e9b2c69633326a97da0c3e0f814039c94ae427a286d3fefe',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Address/CreateAddressAction.php',
-      1 => '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php',
-      2 => '/var/www/html/app/Actions/Address/UpdateAddressAction.php',
-      3 => '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php',
-      4 => '/var/www/html/app/Actions/Admin/UpdateAdminUserAction.php',
-      5 => '/var/www/html/app/Actions/Auth/LoginAction.php',
-      6 => '/var/www/html/app/Actions/Auth/RegisterUserAction.php',
-      7 => '/var/www/html/app/Actions/Auth/ResetPasswordAction.php',
-      8 => '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php',
-      9 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      10 => '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php',
-      11 => '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php',
-      12 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      13 => '/var/www/html/app/Console/Commands/SendSalesReportCommand.php',
-      14 => '/var/www/html/app/Http/Controllers/AddressController.php',
-      15 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
-      16 => '/var/www/html/app/Http/Controllers/Auth/AuthController.php',
-      17 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
-      18 => '/var/www/html/app/Http/Controllers/CompareController.php',
-      19 => '/var/www/html/app/Http/Controllers/OrderController.php',
-      20 => '/var/www/html/app/Http/Controllers/WishlistController.php',
-      21 => '/var/www/html/app/Http/Requests/Admin/StoreAdminUserRequest.php',
-      22 => '/var/www/html/app/Http/Requests/Admin/StoreBannerRequest.php',
-      23 => '/var/www/html/app/Http/Requests/Admin/StoreBrandRequest.php',
-      24 => '/var/www/html/app/Http/Requests/Admin/StoreCategoryRequest.php',
-      25 => '/var/www/html/app/Http/Requests/Admin/StoreCouponRequest.php',
-      26 => '/var/www/html/app/Http/Requests/Admin/StoreLeadRequest.php',
-      27 => '/var/www/html/app/Http/Requests/Admin/StoreProductImageRequest.php',
-      28 => '/var/www/html/app/Http/Requests/Admin/StoreProductRequest.php',
-      29 => '/var/www/html/app/Http/Requests/Admin/StoreQuotationRequest.php',
-      30 => '/var/www/html/app/Http/Requests/Admin/StoreRoleRequest.php',
-      31 => '/var/www/html/app/Http/Requests/Admin/StoreWarehouseRequest.php',
-      32 => '/var/www/html/app/Http/Requests/Admin/UpdateAdminUserRequest.php',
-      33 => '/var/www/html/app/Http/Requests/Admin/UpdateBannerRequest.php',
-      34 => '/var/www/html/app/Http/Requests/Admin/UpdateBrandRequest.php',
-      35 => '/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php',
-      36 => '/var/www/html/app/Http/Requests/Admin/UpdateCouponRequest.php',
-      37 => '/var/www/html/app/Http/Requests/Admin/UpdateInventoryRequest.php',
-      38 => '/var/www/html/app/Http/Requests/Admin/UpdateLeadRequest.php',
-      39 => '/var/www/html/app/Http/Requests/Admin/UpdateOrderStatusRequest.php',
-      40 => '/var/www/html/app/Http/Requests/Admin/UpdateProductRequest.php',
-      41 => '/var/www/html/app/Http/Requests/Admin/UpdateQuotationRequest.php',
-      42 => '/var/www/html/app/Http/Requests/Admin/UpdateReturnRequest.php',
-      43 => '/var/www/html/app/Http/Requests/Admin/UpdateReviewRequest.php',
-      44 => '/var/www/html/app/Http/Requests/Admin/UpdateRoleRequest.php',
-      45 => '/var/www/html/app/Http/Requests/Admin/UpdateSettingRequest.php',
-      46 => '/var/www/html/app/Http/Requests/CheckoutRequest.php',
-      47 => '/var/www/html/app/Http/Requests/StkPushRequest.php',
-      48 => '/var/www/html/app/Http/Requests/StoreAddressRequest.php',
-      49 => '/var/www/html/app/Http/Requests/StoreReturnRequest.php',
-      50 => '/var/www/html/app/Http/Requests/UpdateAddressRequest.php',
-      51 => '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php',
-      52 => '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php',
-      53 => '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php',
-      54 => '/var/www/html/app/Http/Resources/Admin/LeadResource.php',
-      55 => '/var/www/html/app/Http/Resources/Admin/OrderResource.php',
-      56 => '/var/www/html/app/Http/Resources/Admin/QuotationResource.php',
-      57 => '/var/www/html/app/Http/Resources/Admin/ReviewResource.php',
-      58 => '/var/www/html/app/Http/Resources/ReviewResource.php',
-      59 => '/var/www/html/app/Http/Resources/UserResource.php',
-      60 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
-      61 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
-      62 => '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php',
-      63 => '/var/www/html/app/Models/Address.php',
-      64 => '/var/www/html/app/Models/AuditLog.php',
-      65 => '/var/www/html/app/Models/Cart.php',
-      66 => '/var/www/html/app/Models/CompareListItem.php',
-      67 => '/var/www/html/app/Models/Lead.php',
-      68 => '/var/www/html/app/Models/Order.php',
-      69 => '/var/www/html/app/Models/Quotation.php',
-      70 => '/var/www/html/app/Models/Review.php',
-      71 => '/var/www/html/app/Models/Wishlist.php',
-      72 => '/var/www/html/app/Policies/AddressPolicy.php',
-      73 => '/var/www/html/app/Policies/OrderPolicy.php',
-      74 => '/var/www/html/app/Providers/AppServiceProvider.php',
-      75 => '/var/www/html/app/Providers/TelescopeServiceProvider.php',
-      76 => '/var/www/html/app/Services/CartResolver.php',
-      77 => '/var/www/html/app/Services/ReportsService.php',
-      78 => '/var/www/html/database/factories/AddressFactory.php',
-      79 => '/var/www/html/database/factories/AuditLogFactory.php',
-      80 => '/var/www/html/database/factories/CartFactory.php',
-      81 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      82 => '/var/www/html/database/factories/OrderFactory.php',
-      83 => '/var/www/html/database/factories/ReviewFactory.php',
-      84 => '/var/www/html/database/factories/UserFactory.php',
-      85 => '/var/www/html/database/factories/WishlistFactory.php',
-      86 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\SetDefaultAddressAction.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateAdminUserAction.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LogoutAction.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\ResetPasswordAction.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php',
+      13 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      14 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php',
+      15 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php',
+      16 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
+      17 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php',
+      18 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
+      19 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php',
+      20 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php',
+      21 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php',
+      22 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreAdminUserRequest.php',
+      23 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php',
+      24 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php',
+      25 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php',
+      26 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php',
+      27 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php',
+      28 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php',
+      29 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php',
+      30 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php',
+      31 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php',
+      32 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php',
+      33 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php',
+      34 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php',
+      35 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBrandRequest.php',
+      36 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCategoryRequest.php',
+      37 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCouponRequest.php',
+      38 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php',
+      39 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php',
+      40 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php',
+      41 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php',
+      42 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php',
+      43 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php',
+      44 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php',
+      45 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateRoleRequest.php',
+      46 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php',
+      47 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php',
+      48 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php',
+      49 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php',
+      50 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php',
+      51 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php',
+      52 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php',
+      53 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserResource.php',
+      54 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php',
+      55 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php',
+      56 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php',
+      57 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php',
+      58 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php',
+      59 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewResource.php',
+      60 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\UserResource.php',
+      61 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
+      62 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
+      63 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php',
+      64 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php',
+      65 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php',
+      66 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php',
+      67 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php',
+      68 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      69 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      70 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      71 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      72 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php',
+      73 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php',
+      74 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php',
+      75 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
+      76 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\TelescopeServiceProvider.php',
+      77 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php',
+      78 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php',
+      79 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php',
+      80 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php',
+      81 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php',
+      82 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      83 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      84 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      85 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\UserFactory.php',
+      86 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      87 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
+      88 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
+      89 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
+      90 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      91 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
+      92 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Warehouse.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 
   array (
     'fileHash' => 'af689e1b69f65505754ab0f742ed7c5f6a1575b33e1026a3da5a49665d0182e8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Inventory/CreateWarehouseAction.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php',
-      2 => '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php',
-      3 => '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php',
-      4 => '/var/www/html/app/Models/InventoryItem.php',
-      5 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      6 => '/var/www/html/database/factories/WarehouseFactory.php',
-      7 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WarehouseFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/app/Models/Wishlist.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php' => 
   array (
     'fileHash' => 'beb1e5fb4d729c0c6910cc6486d8517984657cf66f4eb81d9088b7673c031cdd',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php',
-      1 => '/var/www/html/app/Models/Product.php',
-      2 => '/var/www/html/app/Models/User.php',
-      3 => '/var/www/html/database/factories/WishlistFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php',
     ),
   ),
-  '/var/www/html/app/Notifications/LowStockAlertNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php' => 
   array (
     'fileHash' => 'c8c1e6900403ecd942a047c957ff00802ba9138c13f0e20a835beb31cd1603b1',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php',
     ),
   ),
-  '/var/www/html/app/Notifications/OrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php' => 
   array (
     'fileHash' => '3d3cf5bdbbd5bde1bc52d115324919575414dc899f2af371124c6443b51b7687',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php',
     ),
   ),
-  '/var/www/html/app/Notifications/OrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php' => 
   array (
     'fileHash' => '0a19810c3fc92f4ac4d5a5fb17180e27fd2422693f700e324c5b6df09c4d469e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php',
     ),
   ),
-  '/var/www/html/app/Notifications/QueuedVerifyEmailNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\QueuedVerifyEmailNotification.php' => 
   array (
     'fileHash' => '6c27703bde8e23bb278a08482a39f12525b310305f1d0bc918a4eb77faeb9951',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/User.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
     ),
   ),
-  '/var/www/html/app/Notifications/SalesReportNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\SalesReportNotification.php' => 
   array (
     'fileHash' => 'b5a94a579a6fac8c0f1f968d3d240cc7f1249a1f963cf5ce52bcc71d43e79cf0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/SendSalesReportCommand.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php',
     ),
   ),
-  '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php' => 
   array (
     'fileHash' => '4dd796a9904e446ce56ea9e71568217dec388ea2efeef330a44e27a5e8c8a1be',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Payments/PaymentGatewayManager.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php',
     ),
   ),
-  '/var/www/html/app/Payments/Gateways/MpesaGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php' => 
   array (
     'fileHash' => 'a696c8edaeb699595abcc770ffcd17939e2758a3ce8fc9ad8861ff067964afbc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/PaymentController.php',
-      1 => '/var/www/html/app/Payments/PaymentGatewayManager.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php',
     ),
   ),
-  '/var/www/html/app/Payments/Gateways/StripeGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php' => 
   array (
     'fileHash' => '380e3d63cd1b957d17443a2d8f5f5c239efad402735b07948adeca015b7c61dd',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Payments/PaymentGatewayManager.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php',
     ),
   ),
-  '/var/www/html/app/Payments/PaymentGatewayContract.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php' => 
   array (
     'fileHash' => '616701aefb94972d7ee410f452221714184fd01c2ffaa0ecabfa2e63b949d312',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/PaymentController.php',
-      1 => '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php',
-      2 => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-      3 => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-      4 => '/var/www/html/app/Payments/PaymentGatewayManager.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php',
     ),
   ),
-  '/var/www/html/app/Payments/PaymentGatewayManager.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php' => 
   array (
     'fileHash' => 'cc46b394670f090011e82b6dd467d30406597e5c35ad41753a1b8e6b52af03eb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
-      1 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Payments/PaymentIntent.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php' => 
   array (
     'fileHash' => '89ac0a6ef528cd29aef5497d8eacea6f917f72441764f58f01b2fe853085792a',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php',
-      1 => '/var/www/html/app/Payments/Gateways/MpesaGateway.php',
-      2 => '/var/www/html/app/Payments/Gateways/StripeGateway.php',
-      3 => '/var/www/html/app/Payments/PaymentGatewayContract.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php',
     ),
   ),
-  '/var/www/html/app/Policies/AddressPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php' => 
   array (
     'fileHash' => '99c0a95a87a1191e7b3bd26276baab15cf1f555560eee1692c181a06e347fd68',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Policies/OrderPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php' => 
   array (
     'fileHash' => 'ed3bcde48a6294e582daa720f3d7e165cd3848d152ddf1faea6d7fbd67d4369c',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Providers/AppServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php' => 
   array (
     'fileHash' => 'a9ffd2698f6c572cbcd2337b2cf7b683ffe14aa9c3c3341a573fd141a266deda',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Providers/HorizonServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\HorizonServiceProvider.php' => 
   array (
     'fileHash' => '2552d1f0844bf11e64ab6c68c357d71d32f980cadfdf2553c7727d563c3bfb77',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/app/Providers/TelescopeServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\TelescopeServiceProvider.php' => 
   array (
     'fileHash' => 'f971f43d0c4f2d12da208b2bf695b9ce527ccd8ad1e0cf57a8a359a8ccd6870f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Providers/AppServiceProvider.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php',
     ),
   ),
-  '/var/www/html/app/Services/AuditLogger.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\AuditLogger.php' => 
   array (
     'fileHash' => 'b64730f98973360a76a5e03246750577c6def58d4514369e540d18dd2b138918',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php',
-      1 => '/var/www/html/app/Models/Banner.php',
-      2 => '/var/www/html/app/Models/Brand.php',
-      3 => '/var/www/html/app/Models/Category.php',
-      4 => '/var/www/html/app/Models/Coupon.php',
-      5 => '/var/www/html/app/Models/Lead.php',
-      6 => '/var/www/html/app/Models/Product.php',
-      7 => '/var/www/html/app/Models/Quotation.php',
-      8 => '/var/www/html/app/Models/Setting.php',
-      9 => '/var/www/html/app/Models/Warehouse.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
     ),
   ),
-  '/var/www/html/app/Services/CartResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php' => 
   array (
     'fileHash' => '9529205f2a429dffb3216a2d784209388c0fe23e41410172ccb5c318424d9055',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/CartController.php',
-      1 => '/var/www/html/app/Http/Controllers/CheckoutController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php',
     ),
   ),
-  '/var/www/html/app/Services/OrderNumberGenerator.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\OrderNumberGenerator.php' => 
   array (
     'fileHash' => '3200218edb397e57c48f8c2d2c6d9b2036a35502753bbf8de729c2d7f26e7da9',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
     ),
   ),
-  '/var/www/html/app/Services/PricingService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php' => 
   array (
     'fileHash' => '96903a0bd53dfce34744225059707271521f61bc65a3828d08fbe9ab4a064172',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php',
     ),
   ),
-  '/var/www/html/app/Services/ReportsService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php' => 
   array (
     'fileHash' => '0e90746020ef633bfeb9d46711eeda9616a37f94c8ab63e2730da8be5f7e69b6',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/SendSalesReportCommand.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/ReportController.php',
-      2 => '/var/www/html/app/Listeners/InvalidateReportsCache.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php',
     ),
   ),
-  '/var/www/html/app/Services/StockStatusResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php' => 
   array (
     'fileHash' => '20db964bd83edf5e701c997207a73933e700f36b850c58e8eb89b319a0e6b447',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Product.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
     ),
   ),
-  '/var/www/html/app/Support/FlatQueryFilters.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Support\\FlatQueryFilters.php' => 
   array (
     'fileHash' => '05b276e451b78fa4d4003308e1c25d13f0f348ee7893a971181dede36f167607',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php',
-      1 => '/var/www/html/app/Http/Controllers/Admin/BannerController.php',
-      2 => '/var/www/html/app/Http/Controllers/Admin/InventoryController.php',
-      3 => '/var/www/html/app/Http/Controllers/Admin/LeadController.php',
-      4 => '/var/www/html/app/Http/Controllers/Admin/OrderController.php',
-      5 => '/var/www/html/app/Http/Controllers/Admin/ProductController.php',
-      6 => '/var/www/html/app/Http/Controllers/Admin/QuotationController.php',
-      7 => '/var/www/html/app/Http/Controllers/Admin/ReturnController.php',
-      8 => '/var/www/html/app/Http/Controllers/Admin/ReviewController.php',
-      9 => '/var/www/html/app/Http/Controllers/Admin/UserController.php',
-      10 => '/var/www/html/app/Http/Controllers/ProductController.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php',
     ),
   ),
-  '/var/www/html/database/factories/AddressFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php' => 
   array (
     'fileHash' => 'a3005425a391c4c89e6bed8e9539fa6ab79141449ad6478bc719332d67127ccb',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      1 => '/var/www/html/app/Models/Address.php',
-      2 => '/var/www/html/database/factories/OrderFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/AiInsightFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php' => 
   array (
     'fileHash' => 'c1e58372d57e4991b5cd9bf8f4e2562b8020cb65f2ed81c3b8dc78130bb6ffbc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/AiInsight.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/AuditLogFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php' => 
   array (
     'fileHash' => '5f34ba3ed9afae089535b860e4959163703ae6e50649fcfe0709e55432f8265d',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/AuditLog.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/BannerFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php' => 
   array (
     'fileHash' => '8387b758c2f08eb45e0f3eb024eec791d8584795801be59b7538ad9fc86d645f',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Banner.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/BrandFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BrandFactory.php' => 
   array (
     'fileHash' => 'feba9b5a71f68899ca16876c6bb1d5179b70a06faad949550a99614c9bc54cfc',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Brand.php',
-      1 => '/var/www/html/database/factories/ProductFactory.php',
-      2 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
     ),
   ),
-  '/var/www/html/database/factories/CartFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php' => 
   array (
     'fileHash' => 'd848df8fc8556d0953838d5820bc1b2526cd62b359c942893fb92d1d8258a344',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Cart.php',
-      1 => '/var/www/html/database/factories/CartItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
     ),
   ),
-  '/var/www/html/database/factories/CartItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php' => 
   array (
     'fileHash' => 'dd8da323d14a4c91a51274266b87e48e2a7e3566d80be1a4310d3b31a7919d74',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/CartItem.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php',
     ),
   ),
-  '/var/www/html/database/factories/CategoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CategoryFactory.php' => 
   array (
     'fileHash' => '7ea686237cef89ec626d4aae56c2d12e693a8789547bafa2fc81dad63d311d83',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Category.php',
-      1 => '/var/www/html/database/factories/ProductFactory.php',
-      2 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php',
     ),
   ),
-  '/var/www/html/database/factories/CompareListItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php' => 
   array (
     'fileHash' => '98e6de28fe5ff6c0781e91ebe6cc79de94e5d3fa245b8993f52862ccbfc523e5',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/CompareListItem.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php',
     ),
   ),
-  '/var/www/html/database/factories/CouponFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php' => 
   array (
     'fileHash' => 'a58ba44370b9b4bcc4d5c4e38e92c5ab6ec0c960adabd12d5090652050eee1ce',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Coupon.php',
-      1 => '/var/www/html/database/seeders/CouponSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php',
     ),
   ),
-  '/var/www/html/database/factories/InventoryItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php' => 
   array (
     'fileHash' => '0d7963c78724f6fa5148ae1b71378028c13074ee7d37f40c5b43a70423716e1e',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      1 => '/var/www/html/app/Models/InventoryItem.php',
-      2 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/LeadFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php' => 
   array (
     'fileHash' => '42fda3c85a6e5728a6b42f92db214f8604da8b914f04e2195b308b4544b5c052',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Lead.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/OrderFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php' => 
   array (
     'fileHash' => 'fbdc09626917c1669f9f097da8fe5ea319ac7487d0df5f065ab24d9c7bdc2bfe',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Order.php',
-      1 => '/var/www/html/database/factories/OrderItemFactory.php',
-      2 => '/var/www/html/database/factories/OrderStatusHistoryFactory.php',
-      3 => '/var/www/html/database/factories/PaymentFactory.php',
-      4 => '/var/www/html/database/factories/ReturnRequestFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/OrderItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php' => 
   array (
     'fileHash' => '6edd9aa02134c262b324349e89c07835e59f52a9a4b0a33cd476cbae52fd7868',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/OrderItem.php',
-      1 => '/var/www/html/database/factories/ReturnRequestFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php',
     ),
   ),
-  '/var/www/html/database/factories/OrderStatusHistoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php' => 
   array (
     'fileHash' => '9d512f70b3a5724f320a2eafb975610a61ff2deb228c715a527769ea7565a8fa',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/OrderStatusHistory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php',
     ),
   ),
-  '/var/www/html/database/factories/PaymentFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php' => 
   array (
     'fileHash' => '625ccc92e48cdb10ceef55bae42c0e868bc15b5a0504e316c19dc52e38ef5029',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Payment.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php',
     ),
   ),
-  '/var/www/html/database/factories/ProductFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php' => 
   array (
     'fileHash' => 'a57df472211d483c65f3be7e1fae719f1bb803f4d82a28e803ad4a5e86e121c4',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      1 => '/var/www/html/app/Models/Product.php',
-      2 => '/var/www/html/database/factories/CartItemFactory.php',
-      3 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      4 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      5 => '/var/www/html/database/factories/OrderItemFactory.php',
-      6 => '/var/www/html/database/factories/ProductImageFactory.php',
-      7 => '/var/www/html/database/factories/ProductSpecificationFactory.php',
-      8 => '/var/www/html/database/factories/ProductVariantFactory.php',
-      9 => '/var/www/html/database/factories/QuotationItemFactory.php',
-      10 => '/var/www/html/database/factories/ReviewFactory.php',
-      11 => '/var/www/html/database/factories/WishlistFactory.php',
-      12 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      10 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      11 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      12 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/ProductImageFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php' => 
   array (
     'fileHash' => 'fdee4f04ce7982a7dddd20c8082d384d7c91e08a6bfc01ff610eaa2318a88efa',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/ProductImage.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php',
     ),
   ),
-  '/var/www/html/database/factories/ProductSpecificationFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php' => 
   array (
     'fileHash' => '32f54e80652f96e9362050db69d298da05f382d73f75f9f8c2fa4c619adb3ba7',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/ProductSpecification.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php',
     ),
   ),
-  '/var/www/html/database/factories/ProductVariantFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php' => 
   array (
     'fileHash' => '98b283c9936c1148e7a327df26d018f7b0b7ae101204b9969b2adbdca36705f0',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/ProductVariant.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php',
     ),
   ),
-  '/var/www/html/database/factories/QuotationFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php' => 
   array (
     'fileHash' => 'f4c5783888d6c62e3b44a059b4b221b167819176292a183a284c447adaf0a322',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Quotation.php',
-      1 => '/var/www/html/database/factories/QuotationItemFactory.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/QuotationItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php' => 
   array (
     'fileHash' => '41740d182937a2a5ccbbe09d0517170d6a7448e74220be77a89dac61bb0231ab',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/QuotationItem.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php',
     ),
   ),
-  '/var/www/html/database/factories/ReturnRequestFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php' => 
   array (
     'fileHash' => '0b7584e99f109c875f231b04faf4f4f33c27ed2df2f8348a7cd973f32f44d799',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/ReturnRequest.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/ReviewFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php' => 
   array (
     'fileHash' => 'e25a0a24a1d65589070b58b5babb7da4babe5c12f9afa44a7ae0df46eec6d653',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Review.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/SettingFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php' => 
   array (
     'fileHash' => '4bf8005b1b35357bc93a28c619f5cd7350bda0e813319e1dde112d21dd93b8b8',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Setting.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php',
     ),
   ),
-  '/var/www/html/database/factories/UserFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\UserFactory.php' => 
   array (
     'fileHash' => 'd83339f1a1ddbfca8f741798f634ad11cb289695f20b9b7f118cdc62ebe17140',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php',
-      1 => '/var/www/html/app/Models/User.php',
-      2 => '/var/www/html/database/factories/AddressFactory.php',
-      3 => '/var/www/html/database/factories/AuditLogFactory.php',
-      4 => '/var/www/html/database/factories/CartFactory.php',
-      5 => '/var/www/html/database/factories/CompareListItemFactory.php',
-      6 => '/var/www/html/database/factories/OrderFactory.php',
-      7 => '/var/www/html/database/factories/ReviewFactory.php',
-      8 => '/var/www/html/database/factories/WishlistFactory.php',
-      9 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php',
+      2 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php',
+      3 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php',
+      4 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php',
+      5 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php',
+      6 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php',
+      7 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php',
+      8 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php',
+      9 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php',
     ),
   ),
-  '/var/www/html/database/factories/WarehouseFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WarehouseFactory.php' => 
   array (
     'fileHash' => '561599dc1212da087e667d949a1384bdbef0be9b1d9d7760b59a024ef9e49d04',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Warehouse.php',
-      1 => '/var/www/html/database/factories/InventoryItemFactory.php',
-      2 => '/var/www/html/database/seeders/CatalogSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php',
+      1 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php',
     ),
   ),
-  '/var/www/html/database/factories/WishlistFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php' => 
   array (
     'fileHash' => '0d9f645740f86db846e3cb87a72c82d28ea2a76a0bdf61b2588eb68a6bf81b8b',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/app/Models/Wishlist.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php',
     ),
   ),
-  '/var/www/html/database/migrations/0001_01_01_000000_create_users_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000000_create_users_table.php' => 
   array (
     'fileHash' => 'dfac7705ecec32b5bb26820d76d74d22b4f4e274a9de26314870647f5f7eb536',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/0001_01_01_000001_create_cache_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
   array (
     'fileHash' => '2ca8398390ecef8eaf72aeac7fefce67f7de631b6f2ec7b7081c8db8953215dc',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/0001_01_01_000002_create_jobs_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000002_create_jobs_table.php' => 
   array (
     'fileHash' => '7c9c712adf4091c87bf2612f4d0dccdfa1df4501553e4ac068b83d7bd5462fa5',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_132943_create_personal_access_tokens_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_132943_create_personal_access_tokens_table.php' => 
   array (
     'fileHash' => 'a0cd74a34b479c99601517c0260554627f2c6fec771e086cce97231414069221',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_134224_create_permission_tables.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134224_create_permission_tables.php' => 
   array (
     'fileHash' => '7793376ade0f8d148d0438a72cea110c8189a5c7913e219fe223eb0593d02fce',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_134313_create_telescope_entries_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134313_create_telescope_entries_table.php' => 
   array (
     'fileHash' => 'afc2a0cd0aa4394578ef188cef6d5eab2ddebd18ccf07c28095ed4d1a49da475',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_170549_create_addresses_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_170549_create_addresses_table.php' => 
   array (
     'fileHash' => '3fc61c0c7de2dedde1aac573a8eb3d8ab980a0cf9ddbd723a01af5e1fce01b2b',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_193923_create_categories_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193923_create_categories_table.php' => 
   array (
     'fileHash' => '35d97986e788fbfcc3fb2931bdee3179aa9773da8d5da4e02730212c4f8981a2',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_193930_create_brands_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193930_create_brands_table.php' => 
   array (
     'fileHash' => '5ed75e46f3173447c17a8e256eba2f7259707e9bd34840916f85cb822ce1f683',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_193936_create_products_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193936_create_products_table.php' => 
   array (
     'fileHash' => '5becb90148a809e88dc0bfb530db7b715f646097f5db297b11af3a1af82bf311',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_193942_create_product_images_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193942_create_product_images_table.php' => 
   array (
     'fileHash' => 'd8a11a5e6bb8eba6f3295c0d12e2621a5afac3252a23167419f7dcd0280aea74',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_193959_create_product_specifications_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193959_create_product_specifications_table.php' => 
   array (
     'fileHash' => '06a0763125a62b7e651f22b72d6d26ffcc2f1effe3de07a6dc285c02053e0832',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_194005_create_product_variants_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194005_create_product_variants_table.php' => 
   array (
     'fileHash' => 'b62dfb46418a9f21cd620071600b41d94c1665e6d5bd890108c1e5579d7340e5',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_194014_create_reviews_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194014_create_reviews_table.php' => 
   array (
     'fileHash' => 'f52df06696bf45c511c0be201000a2bc5f386ae734c0fcce1d43fac325130842',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_194020_create_warehouses_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194020_create_warehouses_table.php' => 
   array (
     'fileHash' => 'fcbb4f76133140a2fabdb73fc219c7b49dcbb4f191147db6b57c6a8e579dae8f',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_15_194027_create_inventory_items_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194027_create_inventory_items_table.php' => 
   array (
     'fileHash' => '7654c730bfc353e197aea49fbd863f54121ce594a23d064b4198940ecbf0e078',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043448_create_carts_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043448_create_carts_table.php' => 
   array (
     'fileHash' => 'a1c6de3b4e78933ee045ca5a6779ed27726f0428b8eeea71a872f04e7e847495',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043459_create_cart_items_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043459_create_cart_items_table.php' => 
   array (
     'fileHash' => '9a43b452e0a4a5b696177a7ad0f015f52ad643a62cb5f5b230bc1ce13fe774af',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043504_create_coupons_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043504_create_coupons_table.php' => 
   array (
     'fileHash' => '3aba936e69d8ca1c54b20d09592a5ecba77b5917560f336eb2831025c8b6ddac',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043509_create_orders_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043509_create_orders_table.php' => 
   array (
     'fileHash' => '74464942e33b0e729801813852b9dc6b9d088ea3a1c1cf705a91b588c22d2deb',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043514_create_order_items_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043514_create_order_items_table.php' => 
   array (
     'fileHash' => '785d6a1678614cfaaaed7754429acbc67eda5aacc975dc5d456f6c7da3226a76',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043519_create_order_status_history_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043519_create_order_status_history_table.php' => 
   array (
     'fileHash' => '00a73acd71c42473c28e79e5248f346de383146ad2cab217f6d438d831d64463',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043524_create_payments_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043524_create_payments_table.php' => 
   array (
     'fileHash' => '933d0c5c263af79475c9d8d9b448a661d4560d8f599520def73147ec772120af',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043529_create_wishlists_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043529_create_wishlists_table.php' => 
   array (
     'fileHash' => '3673bcf4173f79378dda643202e1e283af7b2fe0ca18662565884cfa923a6af7',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043534_create_compare_lists_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043534_create_compare_lists_table.php' => 
   array (
     'fileHash' => 'b4abe406d9425d66bee6854eccd989937c96a091107263a58d3b1ead2e3d5b98',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_043813_add_order_id_foreign_key_to_reviews_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043813_add_order_id_foreign_key_to_reviews_table.php' => 
   array (
     'fileHash' => 'dfb717656857178f0506b3f4ccf989a73c6378b27a3431043a13959af59a0984',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062250_create_audit_logs_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062250_create_audit_logs_table.php' => 
   array (
     'fileHash' => '2fda6a0dbb37e5e7aba3913a660eca38ce05b43412e3bbefa7e797601d63bd6f',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062255_create_leads_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062255_create_leads_table.php' => 
   array (
     'fileHash' => '4ad8124e5fc83509b947e8312478be2e2a717d15064b49ba2cd41ac5afe3cc9d',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062259_create_quotations_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062259_create_quotations_table.php' => 
   array (
     'fileHash' => '8f240e00ab172256ef8543454966c80f87f88c7767117b56d9ee21054bf1e514',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062304_create_quotation_items_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062304_create_quotation_items_table.php' => 
   array (
     'fileHash' => 'd6f748abdc224377535c87581bb0374b33c9e1eebcda7ad641d19d0cd5d11772',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062308_create_banners_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062308_create_banners_table.php' => 
   array (
     'fileHash' => '9ea2b899986adeb5ad86b5aa43c42f9bba0d1865d29454793deb742a1b00dc74',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_062313_create_returns_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062313_create_returns_table.php' => 
   array (
     'fileHash' => '1dae7c4455b2d418635a28fce3b05ae4d16af2aab2e64fc364b9f6897b51222d',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_072027_create_ai_insights_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072027_create_ai_insights_table.php' => 
   array (
     'fileHash' => '269c92cc9ecaec60b1ee12474a0e4ed6dc160caa57ce5c33d8c991626c16e7cf',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/migrations/2026_07_16_072032_create_settings_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072032_create_settings_table.php' => 
   array (
     'fileHash' => '4b5ee30043b7dc0c4a7ea729e55a4b94b0f31af7ffe5fd342b7a3761b1ecd4cf',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/seeders/CatalogSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php' => 
   array (
-    'fileHash' => '1ef9b3e84d53d3cf49834df383bc1e9011d14be204c172548e1fac9308a7ea2b',
+    'fileHash' => 'bf62f73ac89de5856a709654b53299c2c41303806f7b0f9c7eb92a9ae3b0b326',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
     ),
   ),
-  '/var/www/html/database/seeders/CouponSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php' => 
   array (
-    'fileHash' => '81834b18eaa4e20b3de4ab4cccddefe7df12f256c60b23575b2dde5e6d61f6be',
+    'fileHash' => 'a341c0cc8c4dd347f0c30a0d1d38108bfbb0daf5f8151617cdfd5de7d5f31692',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
     ),
   ),
-  '/var/www/html/database/seeders/DatabaseSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php' => 
   array (
-    'fileHash' => 'c802c294f4d649b8d0aeb33fde244d4ca4ddf05e2f8592658d462afae454103a',
+    'fileHash' => 'b104e2fed48bd8292fe0cb7bec7c1ab201ba89642ba51643c92f61abca116cb1',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => 
+  array (
+    'fileHash' => '38bdf9b4be1c0f5e773231bb304acc4f10611f7e6e5abc3b08df556f2f1cd249',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
+  array (
+    'fileHash' => 'ea0fc434083f15f10d515e7a44522cc556a72820f5fa65f6510883cc1ed2f889',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php' => 
+  array (
+    'fileHash' => 'f122fb8e398225a3e48be58e695f7bff2925b8af1e2511d1781f8af0c51d45dd',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php' => 
+  array (
+    'fileHash' => '226f5f57befd0cbbf6b89dcf5221c20ae56cfdb67fb09f4139a9ae2bd6651701',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
+  array (
+    'fileHash' => '3cb5f53b176cbce46dc1a7cae442ae96e4fa936f03f1c6e5676dee46376422e0',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/database/seeders/RolesAndPermissionsSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php' => 
+  array (
+    'fileHash' => 'e71f8d55c688458fed25955effee627b7d49ea09649d2febbd62aaf7aaa79fec',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php' => 
+  array (
+    'fileHash' => '5bb47d67a100f7f10952200f3426cdc98a0ee07cdbbaf687f9f0563811f6d199',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\RolesAndPermissionsSeeder.php' => 
   array (
     'fileHash' => '6a53d0febbb8b06b20079ebf326f7a2a34a5f446a5961ac70f0675a239210258',
     'dependentFiles' => 
     array (
-      0 => '/var/www/html/database/seeders/DatabaseSeeder.php',
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
     ),
   ),
-  '/var/www/html/routes/api.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php' => 
+  array (
+    'fileHash' => '76e4b35e39f445aaad26f69c4520bb1830cc9cb25281c63cfc20d6715c7a9617',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php' => 
+  array (
+    'fileHash' => '9e49272f1555644c409755a0f6f960ef06c61d9e091b1f110a75d21eac887251',
+    'dependentFiles' => 
+    array (
+      0 => 'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php',
+    ),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php' => 
   array (
     'fileHash' => '5a34343f95e07420487af104e6d38f40cc43aba361214551e57d4e7253194864',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/routes/console.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\console.php' => 
   array (
     'fileHash' => '2e15f6f2cf8849b708fae12c03700d332cb6bacbc500d803030f6435cbce93b9',
     'dependentFiles' => 
     array (
     ),
   ),
-  '/var/www/html/routes/web.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\web.php' => 
   array (
     'fileHash' => '6a9ba6c9746914dc01d38464abf4d5acd0567b7b0dd966d851433ce553079757',
     'dependentFiles' => 
@@ -14315,16 +10009,113 @@ return [
   ),
 ),
 	'packageDependencies' => array (
-  '/var/www/html/app/Actions/Cart/AddCartItemAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateAdminUserAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Actions/Catalog/CreateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\AdminUserStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\OrderStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\OrderNumberGenerator.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BrandFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043448_create_carts_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
@@ -14332,437 +10123,116 @@ return [
     3 => 'laravel/scout',
     4 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Exceptions/InvalidOrderTransitionException.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Controllers/Admin/BrandController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\UserResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Requests/UpdateAddressRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ProductCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Http/Resources/Admin/SettingResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/ProductCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/UserResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/AiInsight.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Models/Banner.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Policies/OrderPolicy.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/database/factories/AiInsightFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_170549_create_addresses_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_193942_create_product_images_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Address/CreateAddressAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Admin/CreateRoleAction.php' => 
-  array (
-    0 => 'spatie/laravel-permission',
-    1 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Auth/LogoutAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Actions/Auth/RegisterUserAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Actions/Returns/ProcessRefundAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Enums/ReviewStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/CategoryController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Controllers/CategoryController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreLeadRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Models/Review.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/Wishlist.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
-    3 => 'laravel/scout',
   ),
-  '/var/www/html/database/factories/InventoryItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
   ),
-  '/var/www/html/database/migrations/2026_07_15_134224_create_permission_tables.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_193959_create_product_specifications_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134313_create_telescope_entries_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_043524_create_payments_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_170549_create_addresses_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_043813_add_order_id_foreign_key_to_reviews_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193942_create_product_images_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_062250_create_audit_logs_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194014_create_reviews_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/routes/console.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/console',
-  ),
-  '/var/www/html/app/Actions/Catalog/ModerateReviewAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043514_create_order_items_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Enums/QuotationStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/WishlistController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/AddressResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/RoleResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
+    1 => 'laravel/scout',
     2 => 'symfony/http-foundation',
-    3 => 'nesbot/carbon',
+    3 => 'league/flysystem',
+    4 => 'psr/http-message',
   ),
-  '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/CartItemResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Http/Resources/CartResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/ReviewCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Models/Cart.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/CartItem.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/Product.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Payments/Gateways/StripeGateway.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Providers/HorizonServiceProvider.php' => 
-  array (
-    0 => 'laravel/horizon',
-    1 => 'laravel/framework',
-  ),
-  '/var/www/html/database/factories/ReturnRequestFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/database/factories/SettingFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_15_134313_create_telescope_entries_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_194014_create_reviews_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_194027_create_inventory_items_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043514_create_order_items_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Enums/PaymentMethod.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/BannerController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Controllers/CheckoutController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Controllers/CompareController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Controllers/CouponController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Controllers/OrderController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/StkPushRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/StoreCartItemRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/OrderCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/ProductImageResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'league/flysystem',
-    3 => 'psr/http-message',
-  ),
-  '/var/www/html/app/Http/Resources/ReturnResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Notifications/QueuedVerifyEmailNotification.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Payments/Gateways/MpesaGateway.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-    2 => 'symfony/http-foundation',
-    3 => 'psr/log',
-    4 => 'monolog/monolog',
-  ),
-  '/var/www/html/database/factories/CartFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/factories/CouponFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/database/factories/OrderFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_062308_create_banners_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_072032_create_settings_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/seeders/RolesAndPermissionsSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Address/UpdateAddressAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Auth/ResetPasswordAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Crm/CreateLeadAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Marketing/CreateBannerAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Enums/InsightImpact.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/UserController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
@@ -14770,541 +10240,43 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'spatie/laravel-query-builder',
   ),
-  '/var/www/html/app/Http/Controllers/CartController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBannerRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Auth/ResetPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/ProductSpecificationResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Listeners/InvalidateReportsCache.php' => 
-  array (
-  ),
-  '/var/www/html/app/Models/Brand.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Services/PricingService.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Services/ReportsService.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-    4 => 'psr/simple-cache',
-  ),
-  '/var/www/html/database/factories/AddressFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/database/factories/ProductVariantFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043534_create_compare_lists_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Admin/UpdateAdminUserAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Catalog/UpdateProductAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Enums/AdminUserStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Enums/OrderStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Enums/PaymentStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/LeadController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/OrderController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateRoleRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/Address.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/CompareListItem.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/ReturnRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Notifications/OrderConfirmationNotification.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Services/OrderNumberGenerator.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'psr/simple-cache',
-  ),
-  '/var/www/html/database/factories/BrandFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/factories/LeadFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/factories/ProductSpecificationFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043448_create_carts_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/routes/api.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateCartItemRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Actions/Cart/UpdateCartItemAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Crm/CreateQuotationAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Actions/Marketing/UpdateBannerAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/ReturnController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreQuotationRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateInventoryRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/LeadCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/BannerResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Http/Resources/PaginatedResourceCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/ProductResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/Setting.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Services/AuditLogger.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Support/FlatQueryFilters.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/database/factories/QuotationFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  '/var/www/html/database/factories/WarehouseFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_193930_create_brands_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043529_create_wishlists_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/seeders/CatalogSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Marketing/UpdateCouponAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'nesbot/carbon',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreAdminUserRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateAdminUserRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Auth/ForgotPasswordRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/Auth/LoginRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/BannerCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/LeadResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/RoleCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/ReviewResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/InventoryItem.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/ProductSpecification.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Providers/TelescopeServiceProvider.php' => 
-  array (
-    0 => 'laravel/telescope',
-    1 => 'laravel/framework',
-    2 => 'psr/container',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/database/factories/ReviewFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
-    3 => 'laravel/sanctum',
-    4 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043519_create_order_status_history_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/seeders/CouponSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Inventory/CreateWarehouseAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Concerns/Auditable.php' => 
-  array (
-  ),
-  '/var/www/html/app/Enums/BannerPosition.php' => 
-  array (
-  ),
-  '/var/www/html/app/Events/OrderStatusChanged.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Controllers/AddressController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/InventoryController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/SettingController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Controllers/Auth/AuthController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Controllers/ProductController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-    3 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBannerRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReviewRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/database/factories/ProductImageFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_193923_create_categories_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_062255_create_leads_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_062304_create_quotation_items_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Catalog/UpdateCategoryAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Enums/PaymentProvider.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/ProductController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-    3 => 'spatie/laravel-query-builder',
-  ),
-  '/var/www/html/app/Http/Controllers/HealthController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateSettingRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/Auth/RegisterRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/StoreReturnRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Requests/ValidateCouponRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
@@ -15312,222 +10284,958 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Resources/BrandResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Resources/CategoryResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Notifications/LowStockAlertNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Notifications/SalesReportNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Payments/PaymentGatewayContract.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
+    1 => 'nesbot/carbon',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'psr/simple-cache',
   ),
-  '/var/www/html/database/factories/CompareListItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072027_create_ai_insights_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
-    3 => 'laravel/scout',
   ),
-  '/var/www/html/database/migrations/2026_07_15_193936_create_products_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateRoleAction.php' => 
   array (
-    0 => 'laravel/framework',
+    0 => 'spatie/laravel-permission',
+    1 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_043509_create_orders_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Catalog/CreateProductAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Actions/Crm/UpdateLeadAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Enums/LeadStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/ReportController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Controllers/PaymentController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/StoreAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LogoutAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 
   array (
     0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'spatie/laravel-permission',
+    1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
-    3 => 'laravel/scout',
+    3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/Coupon.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Models/Quotation.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/QuotationItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Payments/PaymentGatewayManager.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReviewStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'psr/container',
+    1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Policies/AddressPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_134224_create_permission_tables.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/simple-cache',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193959_create_product_specifications_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043524_create_payments_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043813_add_order_id_foreign_key_to_reviews_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062250_create_audit_logs_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\console.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/console',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/database/factories/CartItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\ResetPasswordAction.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/database/factories/OrderStatusHistoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\InsightImpact.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\DefaultStatefulOriginForTesting.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'symfony/http-kernel',
+    3 => 'psr/container',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ResetPasswordRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+    5 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductSpecificationResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'nesbot/carbon',
+    2 => 'symfony/http-foundation',
+    3 => 'psr/log',
+    4 => 'monolog/monolog',
   ),
-  '/var/www/html/database/factories/PaymentFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
     2 => 'nesbot/carbon',
   ),
-  '/var/www/html/database/factories/WishlistFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043534_create_compare_lists_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\RolesAndPermissionsSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\UpdateCartItemAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\PaginatedResourceCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\TelescopeServiceProvider.php' => 
+  array (
+    0 => 'laravel/telescope',
+    1 => 'laravel/framework',
+    2 => 'psr/container',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\AuditLogger.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Support\\FlatQueryFilters.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WarehouseFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193930_create_brands_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043529_create_wishlists_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreCartItemRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductImageResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'league/flysystem',
+    3 => 'psr/http-message',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\QueuedVerifyEmailNotification.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'nesbot/carbon',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062308_create_banners_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_072032_create_settings_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateBrandAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
     3 => 'laravel/scout',
   ),
-  '/var/www/html/database/migrations/0001_01_01_000001_create_cache_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\StockStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/0001_01_01_000002_create_jobs_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBrandRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Actions/Admin/UpdateRoleAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php' => 
   array (
-    0 => 'spatie/laravel-permission',
-    1 => 'laravel/framework',
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Actions/Marketing/CreateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Enums/ReturnStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CategoryFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\api.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateCategoryAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentProvider.php' => 
   array (
   ),
-  '/var/www/html/app/Http/Controllers/Admin/RoleController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\ValidateCouponRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CategoryResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000002_create_jobs_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\SetDefaultAddressAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\BannerPosition.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193923_create_categories_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062255_create_leads_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062304_create_quotation_items_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\HealthController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreAdminUserRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ForgotPasswordRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\SalesReportNotification.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_193936_create_products_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043509_create_orders_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043519_create_order_status_history_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\LeadStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
     2 => 'spatie/laravel-query-builder',
     3 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Controllers/Controller.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Controllers/SearchController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreWarehouseRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCategoryRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/CheckoutRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/AuditLog.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'laravel/sanctum',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'psr/container',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/Category.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/OrderItem.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Providers/AppServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'psr/container',
@@ -15536,33 +11244,139 @@ return [
     4 => 'laravel/sanctum',
     5 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Services/CartResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000001_create_cache_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateRoleAction.php' => 
+  array (
+    0 => 'spatie/laravel-permission',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReturnStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/database/factories/QuotationItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'spatie/laravel-query-builder',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
     2 => 'laravel/scout',
   ),
-  '/var/www/html/database/migrations/2026_07_15_132943_create_personal_access_tokens_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_132943_create_personal_access_tokens_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_043459_create_cart_items_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043459_create_cart_items_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/routes/web.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\routes\\web.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Actions/Auth/LoginAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
@@ -15570,222 +11384,112 @@ return [
     3 => 'spatie/laravel-permission',
     4 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Actions/Auth/SendPasswordResetLinkAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\SendPasswordResetLinkAction.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Enums/CouponType.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\CouponType.php' => 
   array (
   ),
-  '/var/www/html/app/Http/Controllers/ReturnController.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductImageRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/CouponResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/OrderResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/Lead.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/Order.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Models/OrderStatusHistory.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Models/Warehouse.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/factories/BannerFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-  ),
-  '/var/www/html/database/factories/ProductFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'nesbot/carbon',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_194005_create_product_variants_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_15_194020_create_warehouses_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_062259_create_quotations_table.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Catalog/UpdateBrandAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-    3 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Enums/StockStatus.php' => 
-  array (
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/CouponController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'spatie/laravel-query-builder',
   ),
-  '/var/www/html/app/Http/Controllers/BrandController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCouponRequest.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/sanctum',
     3 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateOrderStatusRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReturnRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Models/ProductVariant.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Models/User.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/sanctum',
     2 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Notifications/OrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/factories/CategoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
   ),
-  '/var/www/html/database/factories/UserFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\UserFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
     2 => 'nesbot/carbon',
   ),
-  '/var/www/html/database/migrations/0001_01_01_000000_create_users_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\0001_01_01_000000_create_users_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/seeders/DatabaseSeeder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/sanctum',
-    2 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-    2 => 'symfony/http-foundation',
-    3 => 'league/flysystem',
-    4 => 'psr/http-message',
-  ),
-  '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194005_create_product_variants_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194020_create_warehouses_table.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062259_create_quotations_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php' => 
   array (
     0 => 'symfony/console',
     1 => 'laravel/framework',
     2 => 'laravel/scout',
     3 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Console/Commands/SendSalesReportCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php' => 
   array (
     0 => 'symfony/console',
     1 => 'laravel/framework',
@@ -15793,96 +11497,105 @@ return [
     3 => 'nesbot/carbon',
     4 => 'laravel/sanctum',
   ),
-  '/var/www/html/app/Events/OrderPlaced.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ProductStatus.php' => 
+  array (
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php' => 
   array (
     0 => 'laravel/framework',
+    1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReviewController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'spatie/laravel-query-builder',
   ),
-  '/var/www/html/app/Http/Controllers/BannerController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/scout',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\VerifyMpesaCallbackIp.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
+    2 => 'symfony/http-kernel',
+    3 => 'psr/container',
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\PermissionResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'spatie/laravel-permission',
+    2 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
+    2 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Requests/UpdateCartItemRequest.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/OrderCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/OrderItemResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Http/Resources/OrderResource.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'symfony/http-foundation',
-  ),
-  '/var/www/html/app/Models/Payment.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Models/ProductImage.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Payments/PaymentIntent.php' => 
-  array (
-  ),
-  '/var/www/html/database/migrations/2026_07_16_072027_create_ai_insights_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/sanctum',
+    3 => 'spatie/laravel-permission',
+    4 => 'symfony/uid',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'fakerphp/faker',
+    2 => 'laravel/scout',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_043504_create_coupons_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_16_062313_create_returns_table.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\ModerateReviewAction.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/app/Actions/Order/CancelOrderAction.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Actions/Returns/RequestReturnAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php' => 
   array (
     0 => 'symfony/console',
     1 => 'laravel/framework',
@@ -15893,94 +11606,158 @@ return [
     6 => 'laravel/sanctum',
     7 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Enums/ProductStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\QuotationStatus.php' => 
   array (
   ),
-  '/var/www/html/app/Events/StockLevelLow.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Http/Controllers/Admin/QuotationController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'spatie/laravel-query-builder',
   ),
-  '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
+    2 => 'laravel/scout',
+    3 => 'laravel/sanctum',
+    4 => 'spatie/laravel-permission',
   ),
-  '/var/www/html/app/Http/Controllers/FlashDealController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\AddressResource.php' => 
   array (
     0 => 'laravel/framework',
-    1 => 'laravel/scout',
+    1 => 'symfony/http-foundation',
     2 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Middleware/VerifyMpesaCallbackIp.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
-    2 => 'symfony/http-kernel',
-    3 => 'psr/container',
+    2 => 'laravel/scout',
+    3 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Resources/Admin/CouponCollection.php' => 
-  array (
-    0 => 'laravel/framework',
-  ),
-  '/var/www/html/app/Http/Resources/Admin/PermissionResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'spatie/laravel-permission',
     2 => 'symfony/http-foundation',
+    3 => 'nesbot/carbon',
   ),
-  '/var/www/html/app/Http/Resources/Admin/ProductResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'symfony/http-foundation',
+    2 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
     2 => 'laravel/scout',
   ),
-  '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'laravel/scout',
-  ),
-  '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'symfony/http-foundation',
   ),
-  '/var/www/html/app/Services/StockStatusResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\HorizonServiceProvider.php' => 
+  array (
+    0 => 'laravel/horizon',
+    1 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'laravel/scout',
   ),
-  '/var/www/html/database/factories/AuditLogFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php' => 
   array (
     0 => 'laravel/framework',
     1 => 'fakerphp/faker',
-    2 => 'laravel/sanctum',
-    3 => 'spatie/laravel-permission',
-    4 => 'symfony/uid',
+    2 => 'nesbot/carbon',
   ),
-  '/var/www/html/database/factories/OrderItemFactory.php' => 
-  array (
-    0 => 'laravel/framework',
-    1 => 'fakerphp/faker',
-    2 => 'laravel/scout',
-  ),
-  '/var/www/html/database/migrations/2026_07_16_043504_create_coupons_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php' => 
   array (
     0 => 'laravel/framework',
   ),
-  '/var/www/html/database/migrations/2026_07_16_062313_create_returns_table.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\migrations\\2026_07_15_194027_create_inventory_items_table.php' => 
   array (
     0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+    4 => 'symfony/console',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+    4 => 'symfony/console',
+    5 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+    4 => 'symfony/console',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+    4 => 'symfony/console',
+    5 => 'nesbot/carbon',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'laravel/scout',
+    4 => 'symfony/console',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php' => 
+  array (
+    0 => 'laravel/framework',
+    1 => 'laravel/sanctum',
+    2 => 'spatie/laravel-permission',
+    3 => 'symfony/console',
   ),
 ),
 	'exportedNodesCallback' => static function (): array { return array (
-  '/var/www/html/app/Actions/Address/CreateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\CreateAddressAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16095,7 +11872,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Address/SetDefaultAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\SetDefaultAddressAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16181,7 +11958,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Address/UpdateAddressAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Address\\UpdateAddressAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16295,7 +12072,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Admin/CreateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateAdminUserAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16369,7 +12146,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Admin/CreateRoleAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\CreateRoleAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16439,7 +12216,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Admin/UpdateAdminUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateAdminUserAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16522,7 +12299,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Admin/UpdateRoleAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Admin\\UpdateRoleAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16605,7 +12382,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Auth/LoginAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16663,6 +12440,7 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
      * @param  array{email: string, password: string}  $credentials
+     * @return array{user: User, token: ?string}
      */',
              'namespace' => 'App\\Actions\\Auth',
              'uses' => 
@@ -16672,6 +12450,8 @@ return [
               'authenticationexception' => 'Illuminate\\Auth\\AuthenticationException',
               'request' => 'Illuminate\\Http\\Request',
               'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'hash' => 'Illuminate\\Support\\Facades\\Hash',
+              'ensurefrontendrequestsarestateful' => 'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful',
             ),
              'constUses' => 
             array (
@@ -16683,7 +12463,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'App\\Models\\User',
+           'returnType' => 'array',
            'parameters' => 
           array (
             0 => 
@@ -16723,7 +12503,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Auth/LogoutAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LogoutAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16758,8 +12538,8 @@ return [
           array (
             0 => 
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'session',
-               'type' => 'Illuminate\\Contracts\\Session\\Session',
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -16780,7 +12560,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Auth/RegisterUserAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16807,13 +12587,16 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
      * @param  array{name: string, email: string, phone: ?string, password: string}  $data
+     * @return array{user: User, token: ?string}
      */',
              'namespace' => 'App\\Actions\\Auth',
              'uses' => 
             array (
               'user' => 'App\\Models\\User',
               'registered' => 'Illuminate\\Auth\\Events\\Registered',
+              'request' => 'Illuminate\\Http\\Request',
               'auth' => 'Illuminate\\Support\\Facades\\Auth',
+              'ensurefrontendrequestsarestateful' => 'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful',
             ),
              'constUses' => 
             array (
@@ -16825,10 +12608,23 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'App\\Models\\User',
+           'returnType' => 'array',
            'parameters' => 
           array (
             0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'request',
+               'type' => 'Illuminate\\Http\\Request',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => false,
+               'attributes' => 
+              array (
+              ),
+               'phpDoc' => NULL,
+               'flags' => 0,
+            )),
+            1 => 
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'data',
                'type' => 'array',
@@ -16852,7 +12648,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Auth/ResetPasswordAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\ResetPasswordAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16927,7 +12723,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Auth/SendPasswordResetLinkAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\SendPasswordResetLinkAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -16997,7 +12793,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Cart/AddCartItemAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\AddCartItemAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17084,7 +12880,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Cart/MergeGuestCartAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\MergeGuestCartAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17169,7 +12965,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Cart/UpdateCartItemAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Cart\\UpdateCartItemAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17239,7 +13035,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateBrandAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17309,7 +13105,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateCategoryAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17379,7 +13175,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/CreateProductAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\CreateProductAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17450,7 +13246,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/ModerateReviewAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\ModerateReviewAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17520,7 +13316,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateBrandAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateBrandAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17603,7 +13399,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateCategoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateCategoryAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17686,7 +13482,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/UpdateProductAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UpdateProductAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17770,7 +13566,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Catalog/UploadProductImageAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Catalog\\UploadProductImageAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -17869,7 +13665,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Checkout/PlaceOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Checkout\\PlaceOrderAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18049,7 +13845,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Crm/CreateLeadAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateLeadAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18120,7 +13916,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Crm/CreateQuotationAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\CreateQuotationAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18192,7 +13988,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Crm/UpdateLeadAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateLeadAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18275,7 +14071,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Crm/UpdateQuotationAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Crm\\UpdateQuotationAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18360,7 +14156,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Inventory/AdjustInventoryAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\AdjustInventoryAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18474,7 +14270,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Inventory/CreateWarehouseAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Inventory\\CreateWarehouseAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18544,7 +14340,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/CreateBannerAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateBannerAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18614,7 +14410,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/CreateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\CreateCouponAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18684,7 +14480,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/ToggleCompareAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleCompareAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18769,7 +14565,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/ToggleWishlistAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ToggleWishlistAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18853,7 +14649,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/UpdateBannerAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateBannerAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -18936,7 +14732,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/UpdateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\UpdateCouponAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19019,7 +14815,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Marketing/ValidateCouponAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Marketing\\ValidateCouponAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19121,7 +14917,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Order/CancelOrderAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\CancelOrderAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19209,7 +15005,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Order/TransitionOrderStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Order\\TransitionOrderStatusAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19316,7 +15112,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Returns/ProcessRefundAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\ProcessRefundAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19404,7 +15200,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Returns/RequestReturnAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\RequestReturnAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19492,7 +15288,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Actions/Returns/UpdateReturnStatusAction.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Returns\\UpdateReturnStatusAction.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19609,7 +15405,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Concerns/Auditable.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Concerns\\Auditable.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedTraitNode::__set_state(array(
@@ -19696,7 +15492,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Console/Commands/GenerateAiInsightsCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\GenerateAiInsightsCommand.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -19872,7 +15668,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Console/Commands/LoadTestCheckoutCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\LoadTestCheckoutCommand.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -20038,7 +15834,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Console/Commands/SendSalesReportCommand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Console\\Commands\\SendSalesReportCommand.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -20181,7 +15977,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/AdminUserStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\AdminUserStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20217,7 +16013,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/BannerPosition.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\BannerPosition.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20253,7 +16049,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/CouponType.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\CouponType.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20295,7 +16091,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/InsightImpact.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\InsightImpact.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20331,7 +16127,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/LeadStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\LeadStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20379,7 +16175,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/OrderStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\OrderStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20451,7 +16247,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/PaymentMethod.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentMethod.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20505,7 +16301,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/PaymentProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20553,7 +16349,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/PaymentStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\PaymentStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20601,7 +16397,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/ProductStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ProductStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20637,7 +16433,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/QuotationStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\QuotationStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20685,7 +16481,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/ReturnStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReturnStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20727,7 +16523,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/ReviewStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\ReviewStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20763,7 +16559,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Enums/StockStatus.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Enums\\StockStatus.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedEnumNode::__set_state(array(
@@ -20799,7 +16595,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Events/OrderPlaced.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderPlaced.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -20858,7 +16654,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Events/OrderStatusChanged.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\OrderStatusChanged.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -20930,7 +16726,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Events/StockLevelLow.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Events\\StockLevelLow.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -20989,7 +16785,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Exceptions/InvalidOrderTransitionException.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Exceptions\\InvalidOrderTransitionException.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21090,7 +16886,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/AddressController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\AddressController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21313,7 +17109,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/AiInsightController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AiInsightController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21370,7 +17166,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/AuditLogController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\AuditLogController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21427,7 +17223,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/BannerController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BannerController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21616,7 +17412,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/BrandController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\BrandController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -21813,7 +17609,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/CategoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CategoryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22024,7 +17820,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/CouponController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\CouponController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22213,7 +18009,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/InventoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\InventoryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22327,7 +18123,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/LeadController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\LeadController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22485,7 +18281,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/OrderController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\OrderController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22630,7 +18426,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ProductController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ProductController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -22935,7 +18731,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/QuotationController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\QuotationController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23093,7 +18889,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReportController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReportController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23248,7 +19044,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReturnController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReturnController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23362,7 +19158,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/ReviewController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\ReviewController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23499,7 +19295,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/RoleController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\RoleController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23665,7 +19461,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/SettingController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\SettingController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23740,7 +19536,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/UserController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\UserController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -23922,7 +19718,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Admin/WarehouseController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Admin\\WarehouseController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24010,7 +19806,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Auth/AuthController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24034,6 +19830,8 @@ return [
           'registerrequest' => 'App\\Http\\Requests\\Auth\\RegisterRequest',
           'resetpasswordrequest' => 'App\\Http\\Requests\\Auth\\ResetPasswordRequest',
           'userresource' => 'App\\Http\\Resources\\UserResource',
+          'user' => 'App\\Models\\User',
+          'jsonresponse' => 'Illuminate\\Http\\JsonResponse',
           'request' => 'Illuminate\\Http\\Request',
           'response' => 'Illuminate\\Http\\Response',
         ),
@@ -24065,7 +19863,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'App\\Http\\Resources\\UserResource',
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
            'parameters' => 
           array (
             0 => 
@@ -24109,7 +19907,7 @@ return [
            'abstract' => false,
            'final' => false,
            'static' => false,
-           'returnType' => 'App\\Http\\Resources\\UserResource',
+           'returnType' => 'Illuminate\\Http\\JsonResponse',
            'parameters' => 
           array (
             0 => 
@@ -24312,7 +20110,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/BannerController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BannerController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24369,7 +20167,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/BrandController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\BrandController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24459,7 +20257,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/CartController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CartController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24723,7 +20521,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/CategoryController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CategoryController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24814,7 +20612,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/CheckoutController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CheckoutController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -24897,7 +20695,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/CompareController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CompareController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25011,7 +20809,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/Controller.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Controller.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25051,7 +20849,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/CouponController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\CouponController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25121,7 +20919,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/FlashDealController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\FlashDealController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25180,7 +20978,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/HealthController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\HealthController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25244,7 +21042,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/OrderController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\OrderController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25402,7 +21200,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/PaymentController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\PaymentController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25516,7 +21314,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/ProductController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ProductController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25656,7 +21454,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/ReturnController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\ReturnController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25739,7 +21537,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/SearchController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\SearchController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25812,7 +21610,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Controllers/WishlistController.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\WishlistController.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -25926,7 +21724,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Middleware/VerifyMpesaCallbackIp.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Middleware\\VerifyMpesaCallbackIp.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26028,7 +21826,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreAdminUserRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreAdminUserRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26137,7 +21935,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBannerRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26231,7 +22029,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreBrandRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26337,7 +22135,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCategoryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26443,7 +22241,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreCouponRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26537,7 +22335,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreLeadRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26629,7 +22427,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductImageRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductImageRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26735,7 +22533,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreProductRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26844,7 +22642,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreQuotationRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -26936,7 +22734,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreRoleRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27042,7 +22840,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/StoreWarehouseRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\StoreWarehouseRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27134,7 +22932,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateAdminUserRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateAdminUserRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27243,7 +23041,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBannerRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBannerRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27337,7 +23135,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateBrandRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateBrandRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27446,7 +23244,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCategoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCategoryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27555,7 +23353,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateCouponRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27649,7 +23447,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateInventoryRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateInventoryRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27741,7 +23539,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateLeadRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateLeadRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27835,7 +23633,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateOrderStatusRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateOrderStatusRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -27929,7 +23727,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateProductRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateProductRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28038,7 +23836,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateQuotationRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateQuotationRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28132,7 +23930,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReturnRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28226,7 +24024,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateReviewRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateReviewRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28335,7 +24133,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateRoleRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateRoleRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28444,7 +24242,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Admin/UpdateSettingRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Admin\\UpdateSettingRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28536,7 +24334,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ForgotPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ForgotPasswordRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28642,7 +24440,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Auth/LoginRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28748,7 +24546,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Auth/RegisterRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\RegisterRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28857,7 +24655,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/Auth/ResetPasswordRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\Auth\\ResetPasswordRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -28966,7 +24764,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/CheckoutRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\CheckoutRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29060,7 +24858,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/StkPushRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StkPushRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29154,7 +24952,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/StoreAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreAddressRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29263,7 +25061,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/StoreCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreCartItemRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29355,7 +25153,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/StoreReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\StoreReturnRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29449,7 +25247,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/UpdateAddressRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateAddressRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29555,7 +25353,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/UpdateCartItemRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\UpdateCartItemRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29647,7 +25445,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Requests/ValidateCouponRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Requests\\ValidateCouponRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29739,7 +25537,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/AddressResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\AddressResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29824,7 +25622,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29875,7 +25673,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AdminUserResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AdminUserResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -29960,7 +25758,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30011,7 +25809,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AiInsightResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AiInsightResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30096,7 +25894,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30147,7 +25945,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/AuditLogResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\AuditLogResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30232,7 +26030,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/BannerCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\BannerCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30283,7 +26081,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/CouponCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30334,7 +26132,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/CouponResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\CouponResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30419,7 +26217,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30470,7 +26268,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/InventoryItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\InventoryItemResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30555,7 +26353,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/LeadCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30606,7 +26404,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/LeadResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\LeadResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30691,7 +26489,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/OrderCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30742,7 +26540,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/OrderResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\OrderResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30833,7 +26631,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/PermissionResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\PermissionResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30918,7 +26716,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ProductCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -30969,7 +26767,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ProductResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ProductResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31058,7 +26856,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31109,7 +26907,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationItemResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31194,7 +26992,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/QuotationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\QuotationResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31279,7 +27077,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31330,7 +27128,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReturnResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReturnResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31415,7 +27213,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31466,7 +27264,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/ReviewResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\ReviewResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31551,7 +27349,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/RoleCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31602,7 +27400,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/RoleResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\RoleResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31687,7 +27485,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/SettingResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\SettingResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31772,7 +27570,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/Admin/WarehouseResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\Admin\\WarehouseResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31857,7 +27655,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/BannerResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BannerResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -31942,7 +27740,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/BrandResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\BrandResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32027,7 +27825,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/CartItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartItemResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32112,7 +27910,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/CartResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CartResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32197,7 +27995,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/CategoryResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\CategoryResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32282,7 +28080,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/OrderCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32333,7 +28131,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/OrderItemResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderItemResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32418,7 +28216,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/OrderResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32503,7 +28301,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/OrderStatusHistoryResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\OrderStatusHistoryResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32588,7 +28386,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/PaginatedResourceCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\PaginatedResourceCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32705,7 +28503,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ProductCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32756,7 +28554,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ProductImageResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductImageResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32843,7 +28641,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ProductResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -32928,7 +28726,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ProductSpecificationResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ProductSpecificationResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33013,7 +28811,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ReturnResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReturnResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33098,7 +28896,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ReviewCollection.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewCollection.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33149,7 +28947,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/ReviewResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\ReviewResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33234,7 +29032,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Http/Resources/UserResource.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Resources\\UserResource.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33319,7 +29117,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Listeners/CheckForLowStockAfterOrder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\CheckForLowStockAfterOrder.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33377,7 +29175,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Listeners/InvalidateReportsCache.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\InvalidateReportsCache.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33452,7 +29250,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Listeners/NotifyAdminsOfLowStock.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\NotifyAdminsOfLowStock.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33510,7 +29308,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Listeners/SendOrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderConfirmationNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33568,7 +29366,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Listeners/SendOrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Listeners\\SendOrderStatusChangedNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33644,7 +29442,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Address.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Address.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33792,7 +29590,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/AiInsight.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AiInsight.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -33919,7 +29717,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/AuditLog.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\AuditLog.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -34081,7 +29879,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Banner.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Banner.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -34315,7 +30113,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Brand.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Brand.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -34522,7 +30320,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Cart.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Cart.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -34690,7 +30488,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/CartItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CartItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -34928,7 +30726,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Category.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Category.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -35217,7 +31015,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/CompareListItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\CompareListItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -35401,7 +31199,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Coupon.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Coupon.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -35556,7 +31354,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/InventoryItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\InventoryItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -35845,7 +31643,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Lead.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Lead.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -36042,7 +31840,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Order.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Order.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -36415,7 +32213,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/OrderItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -36653,7 +32451,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/OrderStatusHistory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\OrderStatusHistory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -36848,7 +32646,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Payment.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Payment.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -37022,7 +32820,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Product.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38151,7 +33949,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/ProductImage.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductImage.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38261,7 +34059,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/ProductSpecification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductSpecification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38371,7 +34169,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/ProductVariant.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ProductVariant.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38519,7 +34317,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Quotation.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Quotation.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38755,7 +34553,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/QuotationItem.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\QuotationItem.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -38939,7 +34737,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/ReturnRequest.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\ReturnRequest.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -39152,7 +34950,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Review.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Review.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -39396,7 +35194,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Setting.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Setting.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -39548,7 +35346,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/User.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\User.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -39913,7 +35711,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Warehouse.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Warehouse.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40065,7 +35863,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Models/Wishlist.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Wishlist.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40224,7 +36022,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Notifications/LowStockAlertNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\LowStockAlertNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40362,7 +36160,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Notifications/OrderConfirmationNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderConfirmationNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40500,7 +36298,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Notifications/OrderStatusChangedNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\OrderStatusChangedNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40638,7 +36436,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Notifications/QueuedVerifyEmailNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\QueuedVerifyEmailNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40666,7 +36464,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Notifications/SalesReportNotification.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Notifications\\SalesReportNotification.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40861,7 +36659,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/Gateways/CashOnDeliveryGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\CashOnDeliveryGateway.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -40950,7 +36748,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/Gateways/MpesaGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\MpesaGateway.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41105,7 +36903,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/Gateways/StripeGateway.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\Gateways\\StripeGateway.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41194,7 +36992,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/PaymentGatewayContract.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayContract.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedInterfaceNode::__set_state(array(
@@ -41270,7 +37068,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/PaymentGatewayManager.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentGatewayManager.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41387,7 +37185,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Payments/PaymentIntent.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Payments\\PaymentIntent.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41472,7 +37270,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Policies/AddressPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\AddressPolicy.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41717,7 +37515,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Policies/OrderPolicy.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Policies\\OrderPolicy.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41859,7 +37657,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Providers/AppServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\AppServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -41979,7 +37777,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Providers/HorizonServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\HorizonServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42073,7 +37871,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Providers/TelescopeServiceProvider.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Providers\\TelescopeServiceProvider.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42206,7 +38004,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/AuditLogger.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\AuditLogger.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42325,7 +38123,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/CartResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\CartResolver.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42399,7 +38197,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/OrderNumberGenerator.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\OrderNumberGenerator.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42459,7 +38257,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/PricingService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\PricingService.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42574,7 +38372,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/ReportsService.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\ReportsService.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42858,7 +38656,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Services/StockStatusResolver.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Services\\StockStatusResolver.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -42932,7 +38730,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/app/Support/FlatQueryFilters.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Support\\FlatQueryFilters.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43032,7 +38830,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/AddressFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AddressFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43141,7 +38939,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/AiInsightFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AiInsightFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43217,7 +39015,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/AuditLogFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\AuditLogFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43295,7 +39093,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/BannerFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BannerFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43371,7 +39169,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/BrandFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\BrandFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43447,7 +39245,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/CartFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43556,7 +39354,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/CartItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CartItemFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43634,7 +39432,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/CategoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CategoryFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43756,7 +39554,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/CompareListItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CompareListItemFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -43834,7 +39632,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/CouponFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\CouponFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44022,7 +39820,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/InventoryItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\InventoryItemFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44168,7 +39966,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/LeadFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\LeadFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44244,7 +40042,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/OrderFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44326,7 +40124,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/OrderItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderItemFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44404,7 +40202,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/OrderStatusHistoryFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\OrderStatusHistoryFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44482,7 +40280,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/PaymentFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\PaymentFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44597,7 +40395,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ProductFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44751,7 +40549,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ProductImageFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductImageFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44827,7 +40625,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ProductSpecificationFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductSpecificationFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44903,7 +40701,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ProductVariantFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ProductVariantFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -44979,7 +40777,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/QuotationFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45055,7 +40853,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/QuotationItemFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\QuotationItemFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45133,7 +40931,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ReturnRequestFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReturnRequestFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45213,7 +41011,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/ReviewFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\ReviewFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45363,7 +41161,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/SettingFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\SettingFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45437,7 +41235,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/UserFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\UserFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45664,7 +41462,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/WarehouseFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WarehouseFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45738,7 +41536,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/factories/WishlistFactory.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\factories\\WishlistFactory.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45816,7 +41614,184 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/seeders/CatalogSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\AiInsightSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Normally populated nightly by `php artisan app:generate-ai-insights` —
+ * seeded here too so GET /admin/ai-insights has something to show
+ * immediately on a fresh database, without waiting for the schedule.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'aiinsight' => 'App\\Models\\AiInsight',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\AuditLogSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * The Auditable trait (app/Concerns/Auditable.php) would normally write
+ * these rows automatically, but every seeder here runs under
+ * WithoutModelEvents to avoid a flood of notifications/cache-invalidation
+ * side effects during seeding — so audit_logs needs its own seeder to give
+ * GET /admin/audit-logs something realistic to show. Runs last, once
+ * categories/products/settings/users already exist, so it can reference
+ * real subject IDs.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'auditlog' => 'App\\Models\\AuditLog',
+          'category' => 'App\\Models\\Category',
+          'product' => 'App\\Models\\Product',
+          'setting' => 'App\\Models\\Setting',
+          'user' => 'App\\Models\\User',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\BannerSeeder',
+       'phpDoc' => NULL,
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45843,7 +41818,12 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * Run the database seeds.
+     * Run the database seeds. Every lookup is firstOrCreate() keyed on the
+     * real unique column (slug/sku) so a plain `db:seed` on top of an
+     * already-seeded database — not just `migrate:fresh --seed` — never
+     * violates categories.slug / brands.slug / products.slug|sku. Nested
+     * images/specs/inventory only get created alongside a genuinely new
+     * product, so re-running doesn\'t pile up duplicate rows under it.
      */',
              'namespace' => 'Database\\Seeders',
              'uses' => 
@@ -45880,7 +41860,7 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/seeders/CouponSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45907,7 +41887,9 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * Run the database seeds.
+     * firstOrCreate() keyed on code — coupons.code is unique, so re-running
+     * this seeder on top of an already-seeded database must not try to
+     * insert \'WELCOME10\'/\'SAVE500\' a second time.
      */',
              'namespace' => 'Database\\Seeders',
              'uses' => 
@@ -45940,7 +41922,137 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/seeders/DatabaseSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\CrmSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Runs after UserSeeder (for assigned_to / customer_id) and CatalogSeeder
+ * (for quotation line items).
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'leadstatus' => 'App\\Enums\\LeadStatus',
+          'quotationstatus' => 'App\\Enums\\QuotationStatus',
+          'lead' => 'App\\Models\\Lead',
+          'product' => 'App\\Models\\Product',
+          'quotation' => 'App\\Models\\Quotation',
+          'user' => 'App\\Models\\User',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\CustomerActivitySeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Runs after UserSeeder and CatalogSeeder — wishlist/compare entries for
+ * customers so those endpoints aren\'t empty on a fresh seed.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'comparelistitem' => 'App\\Models\\CompareListItem',
+          'product' => 'App\\Models\\Product',
+          'user' => 'App\\Models\\User',
+          'wishlist' => 'App\\Models\\Wishlist',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -45967,13 +42079,14 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * Seed the application\'s database.
+     * Seed the application\'s database. Order matters — each seeder after
+     * the first few queries records created by earlier ones (customers,
+     * products, categories) rather than creating its own, so the whole
+     * dataset reads as one coherent store rather than disconnected islands.
      */',
              'namespace' => 'Database\\Seeders',
              'uses' => 
             array (
-              'adminuserstatus' => 'App\\Enums\\AdminUserStatus',
-              'user' => 'App\\Models\\User',
               'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
               'seeder' => 'Illuminate\\Database\\Seeder',
             ),
@@ -46001,7 +42114,146 @@ return [
       ),
     )),
   ),
-  '/var/www/html/database/seeders/RolesAndPermissionsSeeder.php' => 
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\OrderSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Runs after UserSeeder (customers + addresses) and CatalogSeeder (products).
+ * One order per point in the state machine (pending -> ... -> delivered,
+ * plus the cancelled/refunded terminal branches) so every admin order-list
+ * filter and the customer order-history view both have realistic data —
+ * including one delivered order with a return request already filed.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'orderstatus' => 'App\\Enums\\OrderStatus',
+          'paymentmethod' => 'App\\Enums\\PaymentMethod',
+          'paymentstatus' => 'App\\Enums\\PaymentStatus',
+          'returnstatus' => 'App\\Enums\\ReturnStatus',
+          'address' => 'App\\Models\\Address',
+          'order' => 'App\\Models\\Order',
+          'product' => 'App\\Models\\Product',
+          'returnrequest' => 'App\\Models\\ReturnRequest',
+          'user' => 'App\\Models\\User',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+          'carbon' => 'Illuminate\\Support\\Carbon',
+          'str' => 'Illuminate\\Support\\Str',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\ReviewSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Runs after UserSeeder and CatalogSeeder — needs customers and products to
+ * already exist. Seeds a mix of statuses so the admin moderation queue
+ * (pending) and the storefront\'s own review list (approved only) both have
+ * something to show.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'product' => 'App\\Models\\Product',
+          'review' => 'App\\Models\\Review',
+          'user' => 'App\\Models\\User',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\RolesAndPermissionsSeeder.php' => 
   array (
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
@@ -46063,6 +42315,134 @@ return [
             array (
             ),
           )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\SettingSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * Setting::current() would lazily create this row on first access anyway,
+ * but seeding it explicitly means /admin/settings shows real values from
+ * the first request rather than whatever bare defaults firstOrCreate([])
+ * happens to leave in place.
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'setting' => 'App\\Models\\Setting',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => 'void',
+           'parameters' => 
+          array (
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+      ),
+       'attributes' => 
+      array (
+      ),
+    )),
+  ),
+  'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php' => 
+  array (
+    0 => 
+    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
+       'name' => 'Database\\Seeders\\UserSeeder',
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * One admin per Spatie role (see RolesAndPermissionsSeeder) plus a handful
+ * of ordinary customers with addresses, so every role and the "customer"
+ * case (a user with no role at all — see ReportsService::dashboard()\'s
+ * whereDoesntHave(\'roles\') convention) has at least one login to test with.
+ * Every seeded user shares UserFactory\'s default password ("password").
+ */',
+         'namespace' => 'Database\\Seeders',
+         'uses' => 
+        array (
+          'address' => 'App\\Models\\Address',
+          'user' => 'App\\Models\\User',
+          'withoutmodelevents' => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+          'seeder' => 'Illuminate\\Database\\Seeder',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
+       'abstract' => false,
+       'final' => false,
+       'extends' => 'Illuminate\\Database\\Seeder',
+       'implements' => 
+      array (
+      ),
+       'usedTraits' => 
+      array (
+        0 => 'Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents',
+      ),
+       'traitUseAdaptations' => 
+      array (
+      ),
+       'statements' => 
+      array (
+        0 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'run',
+           'phpDoc' => NULL,
            'byRef' => false,
            'public' => true,
            'private' => false,

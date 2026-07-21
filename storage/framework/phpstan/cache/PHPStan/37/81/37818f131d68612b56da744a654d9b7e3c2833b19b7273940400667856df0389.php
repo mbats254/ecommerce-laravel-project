@@ -128,7 +128,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => '1ef9b3e84d53d3cf49834df383bc1e9011d14be204c172548e1fac9308a7ea2b',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => '38bdf9b4be1c0f5e773231bb304acc4f10611f7e6e5abc3b08df556f2f1cd249',
       'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\vendor\\composer\\..\\laravel\\framework\\src\\Illuminate\\Database\\Console\\Seeds\\WithoutModelEvents.php' => 'b546128633d71f88c7834595917a65683bf5415a5add0eeba398571c2f63ccc0',
     ),
   ),

@@ -147,7 +147,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\DatabaseSeeder.php' => 
     array (
-      0 => 'c802c294f4d649b8d0aeb33fde244d4ca4ddf05e2f8592658d462afae454103a',
+      0 => '3cb5f53b176cbce46dc1a7cae442ae96e4fa936f03f1c6e5676dee46376422e0',
       1 => 
       array (
         0 => 'database\\seeders\\databaseseeder',
@@ -454,7 +454,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CatalogSeeder.php' => 
     array (
-      0 => '1ef9b3e84d53d3cf49834df383bc1e9011d14be204c172548e1fac9308a7ea2b',
+      0 => '38bdf9b4be1c0f5e773231bb304acc4f10611f7e6e5abc3b08df556f2f1cd249',
       1 => 
       array (
         0 => 'database\\seeders\\catalogseeder',
@@ -759,7 +759,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CouponSeeder.php' => 
     array (
-      0 => '81834b18eaa4e20b3de4ab4cccddefe7df12f256c60b23575b2dde5e6d61f6be',
+      0 => 'ea0fc434083f15f10d515e7a44522cc556a72820f5fa65f6510883cc1ed2f889',
       1 => 
       array (
         0 => 'database\\seeders\\couponseeder',
@@ -1007,6 +1007,144 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'up',
         1 => 'down',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AiInsightSeeder.php' => 
+    array (
+      0 => 'bf62f73ac89de5856a709654b53299c2c41303806f7b0f9c7eb92a9ae3b0b326',
+      1 => 
+      array (
+        0 => 'database\\seeders\\aiinsightseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\AuditLogSeeder.php' => 
+    array (
+      0 => 'a341c0cc8c4dd347f0c30a0d1d38108bfbb0daf5f8151617cdfd5de7d5f31692',
+      1 => 
+      array (
+        0 => 'database\\seeders\\auditlogseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\BannerSeeder.php' => 
+    array (
+      0 => 'b104e2fed48bd8292fe0cb7bec7c1ab201ba89642ba51643c92f61abca116cb1',
+      1 => 
+      array (
+        0 => 'database\\seeders\\bannerseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CrmSeeder.php' => 
+    array (
+      0 => 'f122fb8e398225a3e48be58e695f7bff2925b8af1e2511d1781f8af0c51d45dd',
+      1 => 
+      array (
+        0 => 'database\\seeders\\crmseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\CustomerActivitySeeder.php' => 
+    array (
+      0 => '226f5f57befd0cbbf6b89dcf5221c20ae56cfdb67fb09f4139a9ae2bd6651701',
+      1 => 
+      array (
+        0 => 'database\\seeders\\customeractivityseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\OrderSeeder.php' => 
+    array (
+      0 => 'e71f8d55c688458fed25955effee627b7d49ea09649d2febbd62aaf7aaa79fec',
+      1 => 
+      array (
+        0 => 'database\\seeders\\orderseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+        1 => 'database\\seeders\\createorder',
+        2 => 'database\\seeders\\statusprogression',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\ReviewSeeder.php' => 
+    array (
+      0 => '5bb47d67a100f7f10952200f3426cdc98a0ee07cdbbaf687f9f0563811f6d199',
+      1 => 
+      array (
+        0 => 'database\\seeders\\reviewseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\SettingSeeder.php' => 
+    array (
+      0 => '76e4b35e39f445aaad26f69c4520bb1830cc9cb25281c63cfc20d6715c7a9617',
+      1 => 
+      array (
+        0 => 'database\\seeders\\settingseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+      ),
+      3 => 
+      array (
+      ),
+    ),
+    'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\database\\seeders\\UserSeeder.php' => 
+    array (
+      0 => '9e49272f1555644c409755a0f6f960ef06c61d9e091b1f110a75d21eac887251',
+      1 => 
+      array (
+        0 => 'database\\seeders\\userseeder',
+      ),
+      2 => 
+      array (
+        0 => 'database\\seeders\\run',
+        1 => 'database\\seeders\\admin',
       ),
       3 => 
       array (

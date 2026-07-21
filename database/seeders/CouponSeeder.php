@@ -11,18 +11,13 @@ class CouponSeeder extends Seeder
     use WithoutModelEvents;
 
     /**
-     * Run the database seeds.
+     * firstOrCreate() keyed on code — coupons.code is unique, so re-running
+     * this seeder on top of an already-seeded database must not try to
+     * insert 'WELCOME10'/'SAVE500' a second time.
      */
     public function run(): void
     {
-        Coupon::factory()->create([
-            'code' => 'WELCOME10',
-            'type' => 'percentage',
-            'value' => 10,
-        ]);
-
-        Coupon::factory()->fixed(500)->create([
-            'code' => 'SAVE500',
-        ]);
+        Coupon::query()->firstOrCreate(['code' => 'WELCOME10'], ['type' => 'percentage', 'value' => 10]);
+        Coupon::query()->firstOrCreate(['code' => 'SAVE500'], ['type' => 'fixed', 'value' => 500]);
     }
 }

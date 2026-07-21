@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Http\Controllers\Auth\AuthController.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Http\Controllers\Auth\AuthController
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-7dd1a154f965ce87a4120c7ae08749c3a51ea5796702a0daa4fa6e6365b61435',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-8ee7405e210c5fbf271e52c3ddc7fe78098b868e9f822428ea923e813046e675',
    'data' => 
   array (
     'locatedSource' => 
@@ -28,8 +28,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 22,
-    'endLine' => 63,
+    'startLine' => 24,
+    'endLine' => 84,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'App\\Http\\Controllers\\Controller',
@@ -71,8 +71,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 24,
-            'endLine' => 24,
+            'startLine' => 26,
+            'endLine' => 26,
             'startColumn' => 30,
             'endColumn' => 53,
             'parameterIndex' => 0,
@@ -97,8 +97,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 24,
-            'endLine' => 24,
+            'startLine' => 26,
+            'endLine' => 26,
             'startColumn' => 56,
             'endColumn' => 81,
             'parameterIndex' => 1,
@@ -111,7 +111,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
           'data' => 
           array (
-            'name' => 'App\\Http\\Resources\\UserResource',
+            'name' => 'Illuminate\\Http\\JsonResponse',
             'isIdentifier' => false,
           ),
         ),
@@ -119,8 +119,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 24,
-        'endLine' => 29,
+        'startLine' => 26,
+        'endLine' => 31,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -158,8 +158,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 31,
-            'endLine' => 31,
+            'startLine' => 33,
+            'endLine' => 33,
             'startColumn' => 27,
             'endColumn' => 47,
             'parameterIndex' => 0,
@@ -184,8 +184,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 31,
-            'endLine' => 31,
+            'startLine' => 33,
+            'endLine' => 33,
             'startColumn' => 50,
             'endColumn' => 68,
             'parameterIndex' => 1,
@@ -198,7 +198,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
           'data' => 
           array (
-            'name' => 'App\\Http\\Resources\\UserResource',
+            'name' => 'Illuminate\\Http\\JsonResponse',
             'isIdentifier' => false,
           ),
         ),
@@ -206,8 +206,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 31,
-        'endLine' => 36,
+        'startLine' => 33,
+        'endLine' => 38,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -215,6 +215,100 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'isGenerator' => false,
         'isVariadic' => false,
         'modifiers' => 1,
+        'namespace' => 'App\\Http\\Controllers\\Auth',
+        'declaringClassName' => 'App\\Http\\Controllers\\Auth\\AuthController',
+        'implementingClassName' => 'App\\Http\\Controllers\\Auth\\AuthController',
+        'currentClassName' => 'App\\Http\\Controllers\\Auth\\AuthController',
+        'aliasName' => NULL,
+      ),
+      'userPayload' => 
+      array (
+        'name' => 'userPayload',
+        'parameters' => 
+        array (
+          'request' => 
+          array (
+            'name' => 'request',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'Illuminate\\Http\\Request',
+                'isIdentifier' => false,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 48,
+            'endLine' => 48,
+            'startColumn' => 34,
+            'endColumn' => 49,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
+          'result' => 
+          array (
+            'name' => 'result',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'array',
+                'isIdentifier' => true,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 48,
+            'endLine' => 48,
+            'startColumn' => 52,
+            'endColumn' => 64,
+            'parameterIndex' => 1,
+            'isOptional' => false,
+          ),
+        ),
+        'returnsReference' => false,
+        'returnType' => 
+        array (
+          'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+          'data' => 
+          array (
+            'name' => 'array',
+            'isIdentifier' => true,
+          ),
+        ),
+        'attributes' => 
+        array (
+        ),
+        'docComment' => '/**
+ * UserResource::additional() would wrap the response under a "data" key
+ * whenever the additional array is non-empty — merging the token in by
+ * hand keeps the flat shape the rest of the API already commits to.
+ *
+ * @param  array{user: User, token: ?string}  $result
+ * @return array<string, mixed>
+ */',
+        'startLine' => 48,
+        'endLine' => 57,
+        'startColumn' => 5,
+        'endColumn' => 5,
+        'couldThrow' => false,
+        'isClosure' => false,
+        'isGenerator' => false,
+        'isVariadic' => false,
+        'modifiers' => 4,
         'namespace' => 'App\\Http\\Controllers\\Auth',
         'declaringClassName' => 'App\\Http\\Controllers\\Auth\\AuthController',
         'implementingClassName' => 'App\\Http\\Controllers\\Auth\\AuthController',
@@ -245,8 +339,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 38,
-            'endLine' => 38,
+            'startLine' => 59,
+            'endLine' => 59,
             'startColumn' => 28,
             'endColumn' => 43,
             'parameterIndex' => 0,
@@ -271,8 +365,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 38,
-            'endLine' => 38,
+            'startLine' => 59,
+            'endLine' => 59,
             'startColumn' => 46,
             'endColumn' => 65,
             'parameterIndex' => 1,
@@ -293,8 +387,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 38,
-        'endLine' => 43,
+        'startLine' => 59,
+        'endLine' => 64,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -332,8 +426,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 45,
-            'endLine' => 45,
+            'startLine' => 66,
+            'endLine' => 66,
             'startColumn' => 24,
             'endColumn' => 39,
             'parameterIndex' => 0,
@@ -354,8 +448,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 45,
-        'endLine' => 48,
+        'startLine' => 66,
+        'endLine' => 69,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -393,8 +487,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 50,
-            'endLine' => 50,
+            'startLine' => 71,
+            'endLine' => 71,
             'startColumn' => 36,
             'endColumn' => 65,
             'parameterIndex' => 0,
@@ -419,8 +513,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 50,
-            'endLine' => 50,
+            'startLine' => 71,
+            'endLine' => 71,
             'startColumn' => 68,
             'endColumn' => 102,
             'parameterIndex' => 1,
@@ -441,8 +535,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 50,
-        'endLine' => 55,
+        'startLine' => 71,
+        'endLine' => 76,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,
@@ -480,8 +574,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 57,
-            'endLine' => 57,
+            'startLine' => 78,
+            'endLine' => 78,
             'startColumn' => 35,
             'endColumn' => 63,
             'parameterIndex' => 0,
@@ -506,8 +600,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 57,
-            'endLine' => 57,
+            'startLine' => 78,
+            'endLine' => 78,
             'startColumn' => 66,
             'endColumn' => 92,
             'parameterIndex' => 1,
@@ -528,8 +622,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => NULL,
-        'startLine' => 57,
-        'endLine' => 62,
+        'startLine' => 78,
+        'endLine' => 83,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

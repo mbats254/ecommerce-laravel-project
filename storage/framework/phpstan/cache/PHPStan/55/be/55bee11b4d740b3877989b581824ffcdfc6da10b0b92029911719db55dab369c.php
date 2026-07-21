@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\database\seeders\DatabaseSeeder.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Seeders\DatabaseSeeder
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-c802c294f4d649b8d0aeb33fde244d4ca4ddf05e2f8592658d462afae454103a',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-3cb5f53b176cbce46dc1a7cae442ae96e4fa936f03f1c6e5676dee46376422e0',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 10,
-    'endLine' => 33,
+    'startLine' => 8,
+    'endLine' => 35,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Seeder',
@@ -66,10 +66,13 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => '/**
- * Seed the application\'s database.
+ * Seed the application\'s database. Order matters — each seeder after
+ * the first few queries records created by earlier ones (customers,
+ * products, categories) rather than creating its own, so the whole
+ * dataset reads as one coherent store rather than disconnected islands.
  */',
-        'startLine' => 17,
-        'endLine' => 32,
+        'startLine' => 18,
+        'endLine' => 34,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

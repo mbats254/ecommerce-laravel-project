@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\database\seeders\CouponSeeder.php-PHPStan\BetterReflection\Reflection\ReflectionClass-Database\Seeders\CouponSeeder
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-81834b18eaa4e20b3de4ab4cccddefe7df12f256c60b23575b2dde5e6d61f6be',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-ea0fc434083f15f10d515e7a44522cc556a72820f5fa65f6510883cc1ed2f889',
    'data' => 
   array (
     'locatedSource' => 
@@ -27,7 +27,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     array (
     ),
     'startLine' => 9,
-    'endLine' => 28,
+    'endLine' => 23,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => 'Illuminate\\Database\\Seeder',
@@ -66,10 +66,12 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
         ),
         'docComment' => '/**
- * Run the database seeds.
+ * firstOrCreate() keyed on code — coupons.code is unique, so re-running
+ * this seeder on top of an already-seeded database must not try to
+ * insert \'WELCOME10\'/\'SAVE500\' a second time.
  */',
-        'startLine' => 16,
-        'endLine' => 27,
+        'startLine' => 18,
+        'endLine' => 22,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

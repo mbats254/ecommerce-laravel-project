@@ -1,14 +1,14 @@
 <?php
-// source: phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.neon
-// source: phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon
-// source: /var/www/html/phpstan.neon
+// source: phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar/conf/config.neon
+// source: phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar/conf/config.level6.neon
+// source: C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon
 // source: array
 
 /** @noinspection PhpParamsInspection,PhpMethodMayBeStaticInspection */
 
 declare(strict_types=1);
 
-class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
+class Container_5c87a4e061 extends _PHPStan_02959ca10\Nette\DI\Container
 {
 	protected $tags = [
 		'phpstan.broker.allowedSubTypesClassReflectionExtension' => ['017' => true, '018' => true],
@@ -2654,28 +2654,28 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			$this->getService('0459'),
 			$this->getService('0145'),
 			$this->getParameter('analysedPaths'),
-			'/var/www/html',
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api',
 			($this->getParameter('sysGetTempDir')) . '/phpstan-fixer',
-			['/var/www/html'],
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 			[
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/var/www/html/phpstan.neon',
-				'/var/www/html/vendor/larastan/larastan/extension.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\parametersSchema.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level6.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level5.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level4.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level3.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level2.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level1.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level0.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\extension.neon',
 			],
 			null,
 			[
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-				'/var/www/html/vendor/larastan/larastan/bootstrap.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionUnionType.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionAttribute.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\Attribute85.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionIntersectionType.php',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\bootstrap.php',
 			],
 			null,
 			'6',
@@ -2739,7 +2739,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService09(): PHPStan\Php\PhpVersionFactoryFactory
 	{
-		return new PHPStan\Php\PhpVersionFactoryFactory(null, ['/var/www/html']);
+		return new PHPStan\Php\PhpVersionFactoryFactory(null, ['C:/Users/Afya/Documents/Personal/Anchor/anchor-api']);
 	}
 
 
@@ -2757,7 +2757,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService012(): PHPStan\Php\ComposerPhpVersionFactory
 	{
-		return new PHPStan\Php\ComposerPhpVersionFactory(['/var/www/html']);
+		return new PHPStan\Php\ComposerPhpVersionFactory(['C:/Users/Afya/Documents/Personal/Anchor/anchor-api']);
 	}
 
 
@@ -2910,7 +2910,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			[],
 			[],
 			$this->getParameter('analysedPaths'),
-			['/var/www/html'],
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 			$this->getParameter('analysedPathsFromConfig'),
 			false,
 			$this->getParameter('singleReflectionFile')
@@ -3009,7 +3009,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService041(): PHPStan\File\FileHelper
 	{
-		return new PHPStan\File\FileHelper('/var/www/html');
+		return new PHPStan\File\FileHelper('C:\Users\Afya\Documents\Personal\Anchor\anchor-api');
 	}
 
 
@@ -3697,11 +3697,14 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 	public function createService0126(): PHPStan\DependencyInjection\DerivativeContainerFactory
 	{
 		return new PHPStan\DependencyInjection\DerivativeContainerFactory(
-			'/var/www/html',
-			'/var/www/html/storage/framework/phpstan',
-			['phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon', '/var/www/html/phpstan.neon'],
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api',
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan',
+			[
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar/conf/config.level6.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon',
+			],
 			$this->getParameter('analysedPaths'),
-			['/var/www/html'],
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 			$this->getParameter('analysedPathsFromConfig'),
 			'6',
 			null,
@@ -3833,38 +3836,38 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			$this->getService('0125'),
 			$this->getService('041'),
 			[
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Memcached.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Redis.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/stream_socket_client.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/stream_socket_server.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ctype.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Memcached.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Redis.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionAttribute.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionClassConstant.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionFunctionAbstract.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionMethod.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionParameter.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionProperty.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\iterable.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ArrayObject.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\WeakReference.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ext-ds.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ImagickPixel.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\PDOStatement.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\date.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ibm_db2.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\mysqli.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\zip.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\dom.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\spl.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\SplObjectStorage.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Exception.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\arrayFunctions.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\core.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\typeCheckingFunctions.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Countable.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\file.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\stream_socket_client.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\stream_socket_server.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ctype.stub',
 			],
-			['/var/www/html']
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api']
 		);
 	}
 
@@ -5266,7 +5269,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService0371(): PHPStan\Analyser\ResultCache\ResultCacheClearer
 	{
-		return new PHPStan\Analyser\ResultCache\ResultCacheClearer('/var/www/html/storage/framework/phpstan/resultCache.php');
+		return new PHPStan\Analyser\ResultCache\ResultCacheClearer('C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan/resultCache.php');
 	}
 
 
@@ -5919,7 +5922,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -5967,7 +5970,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6025,7 +6028,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6092,7 +6095,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6112,7 +6115,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6137,7 +6140,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6157,7 +6160,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6177,7 +6180,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			private $container;
 
 
-			public function __construct(Container_21fe0c36bb $container)
+			public function __construct(Container_5c87a4e061 $container)
 			{
 				$this->container = $container;
 			}
@@ -6192,18 +6195,18 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 					$this->container->getService('0145'),
 					$this->container->getService('041'),
 					$this->container->getService('0799'),
-					'/var/www/html/storage/framework/phpstan/resultCache.php',
+					'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan/resultCache.php',
 					$this->container->getParameter('analysedPaths'),
 					$this->container->getParameter('analysedPathsFromConfig'),
-					['/var/www/html'],
+					['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 					'6',
 					null,
 					[
-						'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-						'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-						'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-						'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-						'/var/www/html/vendor/larastan/larastan/bootstrap.php',
+						'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionUnionType.php',
+						'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionAttribute.php',
+						'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\Attribute85.php',
+						'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionIntersectionType.php',
+						'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\bootstrap.php',
 					],
 					[],
 					[],
@@ -8076,7 +8079,11 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService0733(): PHPStan\Rules\Keywords\RequireFileExistsRule
 	{
-		return new PHPStan\Rules\Keywords\RequireFileExistsRule('/var/www/html', $this->getService('06'), false);
+		return new PHPStan\Rules\Keywords\RequireFileExistsRule(
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api',
+			$this->getService('06'),
+			false
+		);
 	}
 
 
@@ -8505,7 +8512,10 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService0799(): PHPStan\Dependency\PackageDependencyResolver
 	{
-		return new PHPStan\Dependency\PackageDependencyResolver(['/var/www/html'], $this->getService('041'));
+		return new PHPStan\Dependency\PackageDependencyResolver(
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
+			$this->getService('041')
+		);
 	}
 
 
@@ -9330,7 +9340,10 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createService0920(): Larastan\Larastan\Properties\MigrationCache
 	{
-		return new Larastan\Larastan\Properties\MigrationCache('/var/www/html/storage/framework/phpstan', false);
+		return new Larastan\Larastan\Properties\MigrationCache(
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan',
+			false
+		);
 	}
 
 
@@ -9684,11 +9697,11 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createServiceCacheStorage(): PHPStan\Cache\FileCacheStorage
 	{
-		return new PHPStan\Cache\FileCacheStorage('/var/www/html/storage/framework/phpstan/cache/PHPStan');
+		return new PHPStan\Cache\FileCacheStorage('C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan/cache/PHPStan');
 	}
 
 
-	public function createServiceContainer(): Container_21fe0c36bb
+	public function createServiceContainer(): Container_5c87a4e061
 	{
 		return $this;
 	}
@@ -9853,7 +9866,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createServiceParentDirectoryRelativePathHelper(): PHPStan\File\ParentDirectoryRelativePathHelper
 	{
-		return new PHPStan\File\ParentDirectoryRelativePathHelper('/var/www/html');
+		return new PHPStan\File\ParentDirectoryRelativePathHelper('C:\Users\Afya\Documents\Personal\Anchor\anchor-api');
 	}
 
 
@@ -9899,18 +9912,18 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			$this->getService('011'),
 			null,
 			$this->getService('041'),
-			['/var/www/html'],
+			['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 			[
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/var/www/html/phpstan.neon',
-				'/var/www/html/vendor/larastan/larastan/extension.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\parametersSchema.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level6.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level5.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level4.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level3.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level2.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level1.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level0.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\extension.neon',
 			],
 			$this->getService('012'),
 			$this->getService('simpleRelativePathHelper')
@@ -9940,7 +9953,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 	{
 		return new PHPStan\File\FuzzyRelativePathHelper(
 			$this->getService('parentDirectoryRelativePathHelper'),
-			'/var/www/html',
+			'C:\Users\Afya\Documents\Personal\Anchor\anchor-api',
 			$this->getParameter('analysedPaths')
 		);
 	}
@@ -9972,7 +9985,7 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 
 	public function createServiceSimpleRelativePathHelper(): PHPStan\File\SimpleRelativePathHelper
 	{
-		return new PHPStan\File\SimpleRelativePathHelper('/var/www/html');
+		return new PHPStan\File\SimpleRelativePathHelper('C:\Users\Afya\Documents\Personal\Anchor\anchor-api');
 	}
 
 
@@ -10041,15 +10054,19 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 	{
 		return [
 			'bootstrapFiles' => [
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionUnionType.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionAttribute.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/Attribute85.php',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/runtime/ReflectionIntersectionType.php',
-				'/var/www/html/vendor/larastan/larastan/bootstrap.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionUnionType.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionAttribute.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\Attribute85.php',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\runtime\ReflectionIntersectionType.php',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\bootstrap.php',
 			],
 			'excludePaths' => ['analyseAndScan' => [], 'analyse' => []],
 			'level' => 6,
-			'paths' => ['/var/www/html/app', '/var/www/html/database', '/var/www/html/routes'],
+			'paths' => [
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\database',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\routes',
+			],
 			'exceptions' => [
 				'implicitThrows' => true,
 				'reportUncheckedExceptionDeadCatch' => true,
@@ -10172,40 +10189,40 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			'typeAliases' => [],
 			'universalObjectCratesClasses' => ['stdClass', 'Illuminate\Http\Request', 'Illuminate\Support\Optional'],
 			'stubFiles' => [
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Memcached.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Redis.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionAttribute.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionClassConstant.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionFunctionAbstract.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionMethod.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionParameter.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ReflectionProperty.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/iterable.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ArrayObject.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/WeakReference.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ext-ds.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ImagickPixel.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/PDOStatement.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/date.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ibm_db2.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/mysqli.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/zip.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/dom.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/spl.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/SplObjectStorage.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Exception.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/arrayFunctions.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/core.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/typeCheckingFunctions.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/Countable.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/file.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/stream_socket_client.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/stream_socket_server.stub',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/stubs/ctype.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Memcached.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Redis.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionAttribute.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionClassConstant.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionFunctionAbstract.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionMethod.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionParameter.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ReflectionProperty.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\iterable.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ArrayObject.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\WeakReference.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ext-ds.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ImagickPixel.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\PDOStatement.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\date.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ibm_db2.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\mysqli.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\zip.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\dom.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\spl.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\SplObjectStorage.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Exception.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\arrayFunctions.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\core.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\typeCheckingFunctions.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\Countable.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\file.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\stream_socket_client.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\stream_socket_server.stub',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\stubs\ctype.stub',
 			],
 			'earlyTerminatingMethodCalls' => [],
 			'earlyTerminatingFunctionCalls' => ['abort', 'dd'],
-			'resultCachePath' => '/var/www/html/storage/framework/phpstan/resultCache.php',
+			'resultCachePath' => 'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan/resultCache.php',
 			'resultCacheSkipIfOlderThanDays' => 7,
 			'resultCacheChecksProjectExtensionFilesDependencies' => false,
 			'dynamicConstantNames' => [
@@ -10306,122 +10323,130 @@ class Container_21fe0c36bb extends _PHPStan_02959ca10\Nette\DI\Container
 			'checkAuthCallsWhenInRequestScope' => false,
 			'parseModelCastsMethod' => true,
 			'enableMigrationCache' => false,
-			'tmpDir' => '/var/www/html/storage/framework/phpstan',
+			'tmpDir' => 'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan',
 			'debugMode' => true,
 			'productionMode' => false,
-			'tempDir' => '/var/www/html/storage/framework/phpstan',
-			'rootDir' => '/var/www/html/vendor/phpstan/phpstan',
-			'currentWorkingDirectory' => '/var/www/html',
+			'tempDir' => 'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\storage\framework\phpstan',
+			'rootDir' => 'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan',
+			'currentWorkingDirectory' => 'C:\Users\Afya\Documents\Personal\Anchor\anchor-api',
 			'cliArgumentsVariablesRegistered' => true,
 			'additionalConfigFiles' => [
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'/var/www/html/phpstan.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar/conf/config.level6.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon',
 			],
 			'allConfigFiles' => [
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/parametersSchema.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level6.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level5.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level4.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level3.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level2.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level1.neon',
-				'phar:///var/www/html/vendor/phpstan/phpstan/phpstan.phar/conf/config.level0.neon',
-				'/var/www/html/phpstan.neon',
-				'/var/www/html/vendor/larastan/larastan/extension.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\parametersSchema.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level6.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level5.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level4.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level3.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level2.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level1.neon',
+				'phar://C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\phpstan\phpstan\phpstan.phar\conf\config.level0.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\phpstan.neon',
+				'C:\Users\Afya\Documents\Personal\Anchor\anchor-api\vendor\larastan\larastan\extension.neon',
 			],
-			'composerAutoloaderProjectPaths' => ['/var/www/html'],
+			'composerAutoloaderProjectPaths' => ['C:/Users/Afya/Documents/Personal/Anchor/anchor-api'],
 			'generateBaselineFile' => null,
 			'usedLevel' => '6',
 			'cliAutoloadFile' => null,
 			'env' => [
-				'DELIVERY_FEE_STANDARD' => '300',
-				'LOG_STACK' => 'single',
-				'DELIVERY_FEE_EXPRESS' => '800',
-				'REDIS_PORT' => '6379',
-				'LOG_LEVEL' => 'debug',
-				'DB_CONNECTION' => 'mysql',
-				'MAIL_USERNAME' => 'null',
-				'APP_DEBUG' => 'true',
-				'HOSTNAME' => 'b3b2aa05ec65',
-				'APP_URL' => 'http://localhost:8000',
-				'DB_PORT' => '3306',
-				'MAIL_FROM_ADDRESS' => 'orders@anchor.africa',
-				'PHP_INI_DIR' => '/usr/local/etc/php',
-				'MPESA_SHORTCODE' => '',
-				'AWS_USE_PATH_STYLE_ENDPOINT' => 'false',
-				'SHLVL' => '1',
-				'MPESA_ALLOWED_CALLBACK_IPS' => '',
-				'STRIPE_WEBHOOK_SECRET' => '',
-				'REDIS_CLIENT' => 'phpredis',
-				'HOME' => '/root',
-				'STRIPE_SECRET' => '',
-				'MAIL_FROM_NAME' => 'Anchor API',
-				'SESSION_PATH' => '/',
-				'DB_DATABASE' => 'anchor_api',
-				'PHP_LDFLAGS' => '-Wl,-O1 -pie',
-				'APP_NAME' => 'Anchor API',
-				'PHP_CFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
-				'PHP_VERSION' => '8.4.23',
-				'SESSION_DRIVER' => 'redis',
-				'DB_USERNAME' => 'root',
-				'LOG_CHANNEL' => 'stack',
-				'GPG_KEYS' => 'AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD',
+				'AI_AGENT' => 'claude-code_2-1-212_agent',
+				'ALLUSERSPROFILE' => 'C:\ProgramData',
+				'APPDATA' => 'C:\Users\Afya\AppData\Roaming',
+				'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL' => '1',
+				'APPLICATION_INSIGHTS_NO_STATSBEAT' => 'true',
+				'CHROME_CRASHPAD_PIPE_NAME' => '\\\.\pipe\crashpad_16336_EJFZQVLUAXCONSWL',
+				'CLAUDECODE' => '1',
+				'CLAUDE_AGENT_SDK_VERSION' => '0.3.212',
+				'CLAUDE_CODE_CHILD_SESSION' => '1',
+				'CLAUDE_CODE_ENABLE_SDK_FILE_CHECKPOINTING' => 'true',
+				'CLAUDE_CODE_ENABLE_TASKS' => '0',
+				'CLAUDE_CODE_ENTRYPOINT' => 'claude-vscode',
+				'CLAUDE_CODE_EXECPATH' => 'C:\Users\Afya\.vscode\extensions\anthropic.claude-code-2.1.212-win32-x64\resources\native-binary\claude.exe',
+				'CLAUDE_CODE_SESSION_ID' => 'bf5255e2-eebb-47f7-ab3c-0d407434e368',
+				'CLAUDE_CODE_SUBAGENT_MODEL' => 'haiku',
+				'CLAUDE_EFFORT' => 'high',
+				'COLUMNS' => '120',
+				'COMMONPROGRAMFILES' => 'C:\Program Files\Common Files',
+				'COMPUTERNAME' => 'PC',
+				'COMSPEC' => 'C:\WINDOWS\system32\cmd.exe',
+				'COPILOT_OTEL_FILE_EXPORTER_PATH' => '\\\.\nul',
+				'COREPACK_ENABLE_AUTO_PIN' => '0',
+				'CommonProgramFiles(x86)' => 'C:\Program Files (x86)\Common Files',
+				'CommonProgramW6432' => 'C:\Program Files\Common Files',
+				'DriverData' => 'C:\Windows\System32\Drivers\DriverData',
+				'EFC_12740_1262719628' => '1',
+				'EFC_12740_1592913036' => '1',
+				'EFC_12740_2283032206' => '1',
+				'EFC_12740_2775293581' => '1',
+				'EFC_12740_3789132940' => '1',
+				'EFC_12740_4126798990' => '1',
+				'ELECTRON_RUN_AS_NODE' => '1',
+				'EXEPATH' => 'C:\Program Files\Git\bin',
+				'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer',
+				'FPS_BROWSER_USER_PROFILE_STRING' => 'Default',
+				'GIT_CONFIG_COUNT' => '1',
+				'GIT_CONFIG_KEY_0' => 'safe.bareRepository',
+				'GIT_CONFIG_VALUE_0' => 'explicit',
+				'GIT_EDITOR' => 'true',
+				'HOME' => 'C:\Users\Afya',
+				'HOMEDRIVE' => 'C:',
+				'HOMEPATH' => '\Users\Afya',
+				'LINES' => '9001',
+				'LOCALAPPDATA' => 'C:\Users\Afya\AppData\Local',
+				'LOGONSERVER' => '\\\PC',
+				'MCP_CONNECTION_NONBLOCKING' => 'true',
+				'MSYSTEM' => 'MINGW64',
+				'MXC_BIN_DIR' => 'c:\Users\Afya\AppData\Local\Programs\Microsoft VS Code\7e7950df89\resources\app\node_modules\@microsoft\mxc-sdk\bin',
+				'NUMBER_OF_PROCESSORS' => '12',
+				'NVM_HOME' => 'C:\Users\Afya\.config\herd\bin\nvm',
+				'NVM_SYMLINK' => 'C:\Program Files\nodejs',
+				'NoDefaultCurrentDirectoryInExePath' => '1',
+				'OLDPWD' => 'C:/Users/Afya/Documents/Personal/Anchor/anchor-api',
+				'OS' => 'Windows_NT',
+				'OneDrive' => 'C:\Users\Afya\OneDrive',
+				'PATH' => 'C:\Users\Afya\.config\herd\bin;C:\Users\Afya\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Afya\bin;C:\Program Files\Eclipse Adoptium\jdk-21.0.9.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs;C:\Program Files\PowerShell\7-preview\preview;C:\Users\Afya\.config\herd\bin\nvm;C:\Program Files\nodejs;C:\Program Files\PuTTY;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\GitHub CLI;C:\Users\Afya\AppData\Local\Programs\Python\Python311\Scripts;C:\Users\Afya\AppData\Local\Programs\Python\Python311;C:\Users\Afya\.local\bin;C:\Users\Afya\.config\herd\bin;C:\Users\Afya\AppData\Local\Microsoft\WindowsApps;C:\Users\Afya\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Docker\Docker;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl',
+				'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+				'PLINK_PROTOCOL' => 'ssh',
+				'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro',
+				'PROCESSOR_ARCHITECTURE' => 'AMD64',
+				'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 186 Stepping 3, GenuineIntel',
+				'PROCESSOR_LEVEL' => '6',
+				'PROCESSOR_REVISION' => 'ba03',
+				'PROGRAMFILES' => 'C:\Program Files',
+				'PROMPT' => '$P$G',
+				'PSModulePath' => 'C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules',
+				'PUBLIC' => 'C:\Users\Public',
+				'PWD' => 'C:/Users/Afya/Documents/Personal/Anchor/anchor-api',
+				'ProgramData' => 'C:\ProgramData',
+				'ProgramFiles(x86)' => 'C:\Program Files (x86)',
+				'ProgramW6432' => 'C:\Program Files',
+				'SESSIONNAME' => 'Console',
+				'SHELL' => 'C:\Program Files\Git\bin\bash.exe',
 				'SHELL_VERBOSITY' => '0',
-				'PHP_CPPFLAGS' => '-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64',
-				'PHP_ASC_URL' => 'https://www.php.net/distributions/php-8.4.23.tar.xz.asc',
-				'AWS_DEFAULT_REGION' => 'af-south-1',
-				'VAT_RATE' => '0.16',
-				'PHP_URL' => 'https://www.php.net/distributions/php-8.4.23.tar.xz',
-				'COLUMNS' => '80',
-				'CACHE_PREFIX' => '',
-				'SCOUT_DRIVER' => 'meilisearch',
-				'PATH' => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin',
-				'SENTRY_LARAVEL_DSN' => '',
-				'STRIPE_KEY' => '',
-				'MPESA_BASE_URL' => 'https://sandbox.safaricom.co.ke',
-				'MAIL_PASSWORD' => 'null',
-				'AWS_BUCKET' => '',
-				'MPESA_PASSKEY' => '',
-				'SENTRY_TRACES_SAMPLE_RATE' => '0.0',
-				'MPESA_CALLBACK_URL' => 'http://localhost:8000/api/webhooks/mpesa/callback',
-				'MPESA_ENV' => 'sandbox',
-				'MPESA_CONSUMER_SECRET' => '',
-				'SESSION_ENCRYPT' => 'false',
-				'MAIL_HOST' => '127.0.0.1',
-				'FILESYSTEM_DISK' => 'local',
-				'APP_FAKER_LOCALE' => 'en_US',
-				'SCOUT_QUEUE' => 'true',
-				'MEILISEARCH_KEY' => '',
-				'BCRYPT_ROUNDS' => '12',
-				'APP_MAINTENANCE_DRIVER' => 'file',
-				'BROADCAST_CONNECTION' => 'log',
-				'MAIL_SCHEME' => 'null',
-				'SESSION_LIFETIME' => '120',
-				'AWS_ACCESS_KEY_ID' => '',
-				'AWS_SECRET_ACCESS_KEY' => '',
-				'APP_FALLBACK_LOCALE' => 'en',
-				'REDIS_PASSWORD' => 'null',
-				'SENTRY_ENVIRONMENT' => '',
-				'LOG_DEPRECATIONS_CHANNEL' => 'null',
-				'MAIL_MAILER' => 'log',
-				'CACHE_STORE' => 'redis',
-				'SESSION_DOMAIN' => 'null',
-				'MAIL_PORT' => '2525',
-				'REDIS_HOST' => 'redis',
-				'APP_ENV' => 'local',
-				'DB_PASSWORD' => '',
-				'APP_KEY' => 'base64:Msg5uEaj1jFkNV/1aznLfZRnpjoD1yb0SxxHrv50oKQ=',
-				'MEILISEARCH_HOST' => 'http://meilisearch:7700',
-				'PHPIZE_DEPS' => "autoconf \t\tdpkg-dev dpkg \t\tfile \t\tg++ \t\tgcc \t\tlibc-dev \t\tmake \t\tpkgconf \t\tre2c",
-				'PWD' => '/var/www/html',
-				'PHP_SHA256' => '1ab9f52008414e43bb2427ffa288eff2a4de39e1a830f957e800ba368d887a72',
-				'LINES' => '50',
-				'MPESA_CONSUMER_KEY' => '',
-				'DB_HOST' => 'mysql',
-				'QUEUE_CONNECTION' => 'redis',
-				'APP_LOCALE' => 'en',
-				'SANCTUM_STATEFUL_DOMAINS' => 'localhost:3000',
-				'FRONTEND_URL' => 'http://localhost:3000',
+				'SHLVL' => '1',
+				'SYSTEMDRIVE' => 'C:',
+				'SYSTEMROOT' => 'C:\WINDOWS',
+				'TEMP' => 'C:\Users\Afya\AppData\Local\Temp',
+				'TERM' => 'xterm-256color',
+				'TMP' => 'C:\Users\Afya\AppData\Local\Temp',
+				'USERDOMAIN' => 'PC',
+				'USERDOMAIN_ROAMINGPROFILE' => 'PC',
+				'USERNAME' => 'Afya',
+				'USERPROFILE' => 'C:\Users\Afya',
+				'VSCODE_CODE_CACHE_PATH' => 'C:\Users\Afya\AppData\Roaming\Code\CachedData\7e7950df89d055b5a378379db9ee14290772148a',
+				'VSCODE_CRASH_REPORTER_PROCESS_TYPE' => 'extensionHost',
+				'VSCODE_CWD' => 'C:\Users\Afya\AppData\Local\Programs\Microsoft VS Code',
+				'VSCODE_DOTNET_INSTALL_TOOL_ORIGINAL_HOME' => 'undefined',
+				'VSCODE_ESM_ENTRYPOINT' => 'vs/workbench/api/node/extensionHostProcess',
+				'VSCODE_HANDLES_UNCAUGHT_ERRORS' => 'true',
+				'VSCODE_IPC_HOOK' => '\\\.\pipe\34f6bd11-1.126.0-main-sock',
+				'VSCODE_L10N_BUNDLE_LOCATION' => '',
+				'VSCODE_NLS_CONFIG' => '{"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\\Users\\\Afya\\\AppData\\\Local\\\Programs\\\Microsoft VS Code\\\7e7950df89\\\resources\\\app\\\out\\\nls.messages.json","locale":"en-us","availableLanguages":{}}',
+				'VSCODE_PID' => '16336',
+				'WINDIR' => 'C:\WINDOWS',
+				'_' => 'C:/Users/Afya/.config/herd/bin/php84.bat',
 			],
 		];
 	}

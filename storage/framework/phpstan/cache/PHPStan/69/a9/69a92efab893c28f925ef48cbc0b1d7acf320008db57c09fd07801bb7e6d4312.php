@@ -114,7 +114,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LoginAction.php' => 
     array (
-      0 => '4cdadad52eaa26b13b1b58398d0ab7ebdf7bda4770427d18d22ab6b3b74b5d52',
+      0 => '7af15a74af7efae9de8d78cd0d22b27c9946b653e24ec9b0f964a88bca2711a8',
       1 => 
       array (
         0 => 'app\\actions\\auth\\loginaction',
@@ -123,6 +123,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\actions\\auth\\__construct',
         1 => 'app\\actions\\auth\\handle',
+        2 => 'app\\actions\\auth\\loginstateful',
+        3 => 'app\\actions\\auth\\loginstateless',
       ),
       3 => 
       array (
@@ -130,7 +132,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\LogoutAction.php' => 
     array (
-      0 => '94bf31773cdbe8cf90864c6c998560b30699e74b9ee2cc078fb1bbb0627fe956',
+      0 => '74858b75fe67250f1f4dd9a85a95b2d8f5d58fc3cf5a33e75485ec237e5ad145',
       1 => 
       array (
         0 => 'app\\actions\\auth\\logoutaction',
@@ -145,7 +147,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 
     array (
-      0 => 'bff22525b7866143d7f9bd1d5aa02edeeb99b160d85459c9da613227653839d6',
+      0 => 'a3949be6353c67b4b74e20a03a9ec19dd959576ac4859abe0aa8b074c5dd011e',
       1 => 
       array (
         0 => 'app\\actions\\auth\\registeruseraction',
@@ -256,7 +258,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Http\\Controllers\\Auth\\AuthController.php' => 
     array (
-      0 => '7dd1a154f965ce87a4120c7ae08749c3a51ea5796702a0daa4fa6e6365b61435',
+      0 => '8ee7405e210c5fbf271e52c3ddc7fe78098b868e9f822428ea923e813046e675',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\authcontroller',
@@ -265,10 +267,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
         0 => 'app\\http\\controllers\\auth\\register',
         1 => 'app\\http\\controllers\\auth\\login',
-        2 => 'app\\http\\controllers\\auth\\logout',
-        3 => 'app\\http\\controllers\\auth\\me',
-        4 => 'app\\http\\controllers\\auth\\forgotpassword',
-        5 => 'app\\http\\controllers\\auth\\resetpassword',
+        2 => 'app\\http\\controllers\\auth\\userpayload',
+        3 => 'app\\http\\controllers\\auth\\logout',
+        4 => 'app\\http\\controllers\\auth\\me',
+        5 => 'app\\http\\controllers\\auth\\forgotpassword',
+        6 => 'app\\http\\controllers\\auth\\resetpassword',
       ),
       3 => 
       array (
@@ -1358,7 +1361,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Models\\Product.php' => 
     array (
-      0 => '526e760324c06ed26bcf5041ea475369eb2d0495de43e965308c2ae61704fae7',
+      0 => '24b0bdb785163392de209d0de7249cb0b60b8378c7794220dad61fd41ba5fcf1',
       1 => 
       array (
         0 => 'app\\models\\product',

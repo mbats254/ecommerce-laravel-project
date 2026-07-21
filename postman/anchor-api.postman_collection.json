@@ -2,29 +2,16 @@
   "info": {
     "_postman_id": "6f0a1c3e-6b2a-4b3a-9a3e-anchorapi0001",
     "name": "Anchor API",
-    "description": "Complete request collection for the Anchor e-commerce API (Laravel 12, Sanctum SPA cookie auth). Folders mirror docs/api-design.md's domains in user-journey order: Auth -> Catalog -> Cart/Checkout -> Orders/Payments/Returns -> Admin domains -> Reports/Settings/Audit -> Health.\n\n## Auth setup (do this once per Postman session)\n1. Enable this collection's cookie jar: Settings > General > 'Automatically follow redirects' and make sure Postman's cookie manager is allowed to store cookies for {{baseUrl}}.\n2. Run 'Auth > Get CSRF Cookie' first. It hits Sanctum's /sanctum/csrf-cookie route and sets the XSRF-TOKEN cookie.\n3. Run 'Auth > Login' (or Register). Cookies (session + XSRF-TOKEN) are stored automatically by Postman against {{baseUrl}}.\n4. Every subsequent request automatically sends the session cookie. This collection's pre-request script also copies the XSRF-TOKEN cookie into an X-XSRF-TOKEN header on every request, matching what api-client.ts does in the real frontend — you don't need to do this by hand.\n5. Admin endpoints require the logged-in user to hold the relevant Spatie permission (see each folder's description) — log in as a seeded Administrator, or promote a user via `php artisan tinker`.\n\n## Known contract inconsistency (flagged, not fixed by this collection)\nCustomer-facing endpoints and Settings use camelCase body fields (`productId`, `shippingAddressId`, `emailOnNewOrder`). Admin write endpoints (categories/brands/products/warehouses/leads/quotations/coupons/banners/users/roles/inventory/order-status) currently use snake_case (`category_id`, `is_active`, `full_name`). The example bodies below match the API AS IT CURRENTLY BEHAVES so every request in this collection actually works — this is a pre-existing inconsistency worth fixing in the backend, not something to paper over here.\n\n## Variables\n`baseUrl` is the app root (no /api). Requests build `{{baseUrl}}/api/v1/...` themselves. ID variables (e.g. `{{categoryId}}`) are auto-populated by test scripts on the matching 'Create'/'Register' requests where practical — run folders top-to-bottom the first time through.",
+    "description": "Complete request collection for the Anchor e-commerce API (Laravel 12). Folders mirror docs/api-design.md's domains in user-journey order: Auth -> Catalog -> Cart/Checkout -> Orders/Payments/Returns -> Admin domains -> Reports/Settings/Audit -> Health.\n\n## Auth setup (do this once per Postman session)\nThe real frontend authenticates via Sanctum SPA session cookies, but Sanctum also supports Bearer tokens on the same guard for non-browser clients — that's what this collection uses, since it's dramatically simpler from Postman (no CSRF, no cookie jar, no Origin/Referer spoofing).\n1. Run 'Auth > Login (Customer)' or 'Auth > Login (Administrator)' (or 'Register'). Its test script captures the `token` field from the response into the `authToken` collection variable automatically.\n2. This collection's Authorization is set to Bearer `{{authToken}}` at the collection level, inherited by every request — nothing else to configure.\n3. Admin endpoints require the logged-in user to hold the relevant Spatie permission (see each folder's description) — run 'Login (Administrator)' with a seeded Administrator before using the Admin folders. Running a customer login afterward overwrites `authToken` with the customer's token.\n4. 'Auth > Logout' revokes only the token that request itself authenticated with (not every token the user holds).\n\n## Known contract inconsistency (flagged, not fixed by this collection)\nCustomer-facing endpoints and Settings use camelCase body fields (`productId`, `shippingAddressId`, `emailOnNewOrder`). Admin write endpoints (categories/brands/products/warehouses/leads/quotations/coupons/banners/users/roles/inventory/order-status) currently use snake_case (`category_id`, `is_active`, `full_name`). The example bodies below match the API AS IT CURRENTLY BEHAVES so every request in this collection actually works — this is a pre-existing inconsistency worth fixing in the backend, not something to paper over here.\n\n## Variables\n`baseUrl` is the app root (no /api). Requests build `{{baseUrl}}/api/v1/...` themselves. ID variables (e.g. `{{categoryId}}`) are auto-populated by test scripts on the matching 'Create'/'Register' requests where practical — run folders top-to-bottom the first time through.",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "type": "text/javascript",
-        "exec": [
-          "// Mirrors what axios/api-client.ts does automatically for Sanctum SPA auth:",
-          "// read the XSRF-TOKEN cookie set by /sanctum/csrf-cookie and echo it back",
-          "// as a request header, since Postman's cookie jar sends the cookie but",
-          "// does not do this translation for you.",
-          "const token = pm.cookies.get('XSRF-TOKEN');",
-          "if (token) {",
-          "    pm.request.headers.upsert({ key: 'X-XSRF-TOKEN', value: decodeURIComponent(token) });",
-          "}"
-        ]
-      }
-    }
-  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [{ "key": "token", "value": "{{authToken}}", "type": "string" }]
+  },
   "variable": [
     { "key": "baseUrl", "value": "http://localhost:8000", "description": "App root, no /api suffix. Swap to your Herd domain (e.g. http://anchor-api.test) if not using `php artisan serve`." },
+    { "key": "authToken", "value": "", "description": "Bearer token captured automatically by Login/Register's test script. Sent as Authorization on every request via the collection's auth setting." },
     { "key": "userEmail", "value": "jane.customer@example.com" },
     { "key": "userPassword", "value": "Password!234" },
     { "key": "adminEmail", "value": "admin@anchor.test" },
@@ -55,44 +42,48 @@
       "description": "Registration, login, and password recovery. First four endpoints are unauthenticated and rate-limited (throttle:auth, 5/min/IP).",
       "item": [
         {
-          "name": "Get CSRF Cookie",
-          "request": {
-            "method": "GET",
-            "header": [{ "key": "Accept", "value": "application/json" }],
-            "url": { "raw": "{{baseUrl}}/sanctum/csrf-cookie", "host": ["{{baseUrl}}"], "path": ["sanctum", "csrf-cookie"] },
-            "description": "Run this before Register/Login in a fresh Postman session so the XSRF-TOKEN cookie exists."
-          }
-        },
-        {
           "name": "Register",
           "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
-            "if (pm.response.code === 201) { pm.test('registered', () => pm.expect(pm.response.code).to.eql(201)); }"
+            "pm.test('registered', () => pm.expect(pm.response.code).to.eql(201));",
+            "const token = pm.response.json().token;",
+            "if (token) { pm.collectionVariables.set('authToken', token); }"
           ] } }],
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
             "body": { "mode": "raw", "raw": "{\n  \"name\": \"Jane Customer\",\n  \"email\": \"{{userEmail}}\",\n  \"phone\": \"254712345678\",\n  \"password\": \"{{userPassword}}\",\n  \"password_confirmation\": \"{{userPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
             "url": { "raw": "{{baseUrl}}/api/v1/auth/register", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "register"] },
-            "description": "Creates the account and logs it in (session cookie set). Queues an email-verification job."
+            "description": "Creates the account and returns a bearer token, captured automatically into {{authToken}}. Queues an email-verification job."
           }
         },
         {
           "name": "Login (Customer)",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "pm.test('logged in', () => pm.expect(pm.response.code).to.eql(200));",
+            "const token = pm.response.json().token;",
+            "if (token) { pm.collectionVariables.set('authToken', token); }"
+          ] } }],
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
             "body": { "mode": "raw", "raw": "{\n  \"email\": \"{{userEmail}}\",\n  \"password\": \"{{userPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
-            "url": { "raw": "{{baseUrl}}/api/v1/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "login"] }
+            "url": { "raw": "{{baseUrl}}/api/v1/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "login"] },
+            "description": "Captures the returned token into {{authToken}} automatically."
           }
         },
         {
           "name": "Login (Administrator)",
+          "event": [{ "listen": "test", "script": { "type": "text/javascript", "exec": [
+            "pm.test('logged in', () => pm.expect(pm.response.code).to.eql(200));",
+            "const token = pm.response.json().token;",
+            "if (token) { pm.collectionVariables.set('authToken', token); }"
+          ] } }],
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }, { "key": "Accept", "value": "application/json" }],
             "body": { "mode": "raw", "raw": "{\n  \"email\": \"{{adminEmail}}\",\n  \"password\": \"{{adminPassword}}\"\n}", "options": { "raw": { "language": "json" } } },
             "url": { "raw": "{{baseUrl}}/api/v1/auth/login", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "login"] },
-            "description": "Use a seeded Administrator (see RolesAndPermissionsSeeder) before running the Admin folders."
+            "description": "Use a seeded Administrator (see RolesAndPermissionsSeeder) before running the Admin folders. Captures the returned token into {{authToken}}, overwriting any customer token."
           }
         },
         {
@@ -120,7 +111,7 @@
             "method": "GET",
             "header": [{ "key": "Accept", "value": "application/json" }],
             "url": { "raw": "{{baseUrl}}/api/v1/auth/me", "host": ["{{baseUrl}}"], "path": ["api", "v1", "auth", "me"] },
-            "description": "Requires an authenticated session (auth:sanctum)."
+            "description": "Requires the Bearer token from Login/Register (sent automatically via the collection's auth setting)."
           }
         },
         {

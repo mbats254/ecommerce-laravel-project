@@ -2,7 +2,7 @@
 
 // odsl-C:\Users\Afya\Documents\Personal\Anchor\anchor-api\app\Actions\Auth\RegisterUserAction.php-PHPStan\BetterReflection\Reflection\ReflectionClass-App\Actions\Auth\RegisterUserAction
 return \PHPStan\Cache\CacheItem::__set_state(array(
-   'variableKey' => 'v2-6.70.0.3-8.4.18-bff22525b7866143d7f9bd1d5aa02edeeb99b160d85459c9da613227653839d6',
+   'variableKey' => 'v2-6.70.0.3-8.4.18-a3949be6353c67b4b74e20a03a9ec19dd959576ac4859abe0aa8b074c5dd011e',
    'data' => 
   array (
     'locatedSource' => 
@@ -26,8 +26,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     'attributes' => 
     array (
     ),
-    'startLine' => 9,
-    'endLine' => 29,
+    'startLine' => 11,
+    'endLine' => 40,
     'startColumn' => 1,
     'endColumn' => 1,
     'parentClassName' => NULL,
@@ -50,6 +50,32 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         'name' => 'handle',
         'parameters' => 
         array (
+          'request' => 
+          array (
+            'name' => 'request',
+            'default' => NULL,
+            'type' => 
+            array (
+              'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
+              'data' => 
+              array (
+                'name' => 'Illuminate\\Http\\Request',
+                'isIdentifier' => false,
+              ),
+            ),
+            'isVariadic' => false,
+            'byRef' => false,
+            'isPromoted' => false,
+            'attributes' => 
+            array (
+            ),
+            'startLine' => 17,
+            'endLine' => 17,
+            'startColumn' => 28,
+            'endColumn' => 43,
+            'parameterIndex' => 0,
+            'isOptional' => false,
+          ),
           'data' => 
           array (
             'name' => 'data',
@@ -69,11 +95,11 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
             'attributes' => 
             array (
             ),
-            'startLine' => 14,
-            'endLine' => 14,
-            'startColumn' => 28,
-            'endColumn' => 38,
-            'parameterIndex' => 0,
+            'startLine' => 17,
+            'endLine' => 17,
+            'startColumn' => 46,
+            'endColumn' => 56,
+            'parameterIndex' => 1,
             'isOptional' => false,
           ),
         ),
@@ -83,8 +109,8 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
           'class' => 'PHPStan\\BetterReflection\\Reflection\\ReflectionNamedType',
           'data' => 
           array (
-            'name' => 'App\\Models\\User',
-            'isIdentifier' => false,
+            'name' => 'array',
+            'isIdentifier' => true,
           ),
         ),
         'attributes' => 
@@ -92,9 +118,10 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         ),
         'docComment' => '/**
  * @param  array{name: string, email: string, phone: ?string, password: string}  $data
+ * @return array{user: User, token: ?string}
  */',
-        'startLine' => 14,
-        'endLine' => 28,
+        'startLine' => 17,
+        'endLine' => 39,
         'startColumn' => 5,
         'endColumn' => 5,
         'couldThrow' => false,

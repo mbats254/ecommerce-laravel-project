@@ -13,6 +13,8 @@ use App\Http\Requests\Auth\LoginRequest;
 use App\Http\Requests\Auth\RegisterRequest;
 use App\Http\Requests\Auth\ResetPasswordRequest;
 use App\Http\Resources\UserResource;
+use App\Models\User;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
@@ -21,23 +23,42 @@ use Illuminate\Http\Response;
  */
 class AuthController extends Controller
 {
-    public function register(RegisterRequest $request, RegisterUserAction $action): UserResource
+    public function register(RegisterRequest $request, RegisterUserAction $action): JsonResponse
     {
-        $user = $action->handle($request->validated());
+        $result = $action->handle($request, $request->validated());
 
-        return new UserResource($user);
+        return response()->json($this->userPayload($request, $result), 201);
     }
 
-    public function login(LoginRequest $request, LoginAction $action): UserResource
+    public function login(LoginRequest $request, LoginAction $action): JsonResponse
     {
-        $user = $action->handle($request, $request->validated());
+        $result = $action->handle($request, $request->validated());
 
-        return new UserResource($user);
+        return response()->json($this->userPayload($request, $result));
+    }
+
+    /**
+     * UserResource::additional() would wrap the response under a "data" key
+     * whenever the additional array is non-empty — merging the token in by
+     * hand keeps the flat shape the rest of the API already commits to.
+     *
+     * @param  array{user: User, token: ?string}  $result
+     * @return array<string, mixed>
+     */
+    private function userPayload(Request $request, array $result): array
+    {
+        $payload = (new UserResource($result['user']))->resolve($request);
+
+        if ($result['token']) {
+            $payload['token'] = $result['token'];
+        }
+
+        return $payload;
     }
 
     public function logout(Request $request, LogoutAction $action): Response
     {
-        $action->handle($request->session());
+        $action->handle($request);
 
         return response()->noContent();
     }

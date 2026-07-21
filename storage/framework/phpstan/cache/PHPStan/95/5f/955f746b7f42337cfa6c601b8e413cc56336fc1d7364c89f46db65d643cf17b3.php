@@ -14,7 +14,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'user' => 'App\\Models\\User',
           'registered' => 'Illuminate\\Auth\\Events\\Registered',
+          'request' => 'Illuminate\\Http\\Request',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          'ensurefrontendrequestsarestateful' => 'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful',
         ),
          'className' => 'App\\Actions\\Auth\\RegisterUserAction',
          'functionName' => NULL,
@@ -39,7 +41,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         array (
           'user' => 'App\\Models\\User',
           'registered' => 'Illuminate\\Auth\\Events\\Registered',
+          'request' => 'Illuminate\\Http\\Request',
           'auth' => 'Illuminate\\Support\\Facades\\Auth',
+          'ensurefrontendrequestsarestateful' => 'Laravel\\Sanctum\\Http\\Middleware\\EnsureFrontendRequestsAreStateful',
         ),
          'className' => 'App\\Actions\\Auth\\RegisterUserAction',
          'functionName' => 'handle',
@@ -60,7 +64,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     1 => 
     array (
-      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 'bff22525b7866143d7f9bd1d5aa02edeeb99b160d85459c9da613227653839d6',
+      'C:\\Users\\Afya\\Documents\\Personal\\Anchor\\anchor-api\\app\\Actions\\Auth\\RegisterUserAction.php' => 'a3949be6353c67b4b74e20a03a9ec19dd959576ac4859abe0aa8b074c5dd011e',
     ),
   ),
 ));

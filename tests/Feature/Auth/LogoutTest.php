@@ -16,3 +16,21 @@ test('logout requires authentication', function () {
 
     $response->assertUnauthorized();
 });
+
+test('a token-authenticated client logging out revokes only that token', function () {
+    $user = User::factory()->create();
+    $token = $user->createToken('api-client')->plainTextToken;
+    $otherToken = $user->createToken('other-device')->plainTextToken;
+
+    $this->withoutHeader('Origin')
+        ->withHeader('Authorization', "Bearer {$token}")
+        ->postJson('/api/v1/auth/logout')
+        ->assertNoContent();
+
+    $this->assertDatabaseCount('personal_access_tokens', 1);
+
+    $this->withoutHeader('Origin')
+        ->withHeader('Authorization', "Bearer {$otherToken}")
+        ->getJson('/api/v1/auth/me')
+        ->assertOk();
+});
